@@ -122,3 +122,8 @@ add_action( 'admin_menu', function()
 	remove_meta_box('authordiv', 'post', 'normal');
 	remove_meta_box('sqpt-meta-tags', 'post', 'normal');
 });
+
+/**
+ * Remove Generator for Security
+ */
+remove_action('wp_head', 'wp_generator');
