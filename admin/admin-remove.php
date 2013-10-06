@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Remove the admin bar.
+ */
+show_admin_bar(false);
+
+/**
  * Remove menu items deppended on user role.
  *
  * @return void
