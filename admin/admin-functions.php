@@ -31,22 +31,6 @@ add_filter('admin_footer_text', function()
 	return 'Thank you for creating with <a href="'.AUTHOR_URL.'">'.AUTHOR.'</a>.';
 });
 
-
-/**
- * Force slug to update on save.
- *
- * @return $string
- */
-add_filter('wp_insert_post_data', function($data, $postarr)
-{
-    if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
-    {
-        $data['post_name'] = sanitize_title_with_dashes($data['post_title']);
-    }
-
-    return $data;
-}, 99, 2 );
-
 /**
  * Force Perfect JPG Images.
  *
