@@ -53,13 +53,13 @@ add_filter('widget_text', 'do_shortcode');
  * @return array
  */
 add_filter('wp_insert_post_data', function($data, $postarr) {
-    if (!in_array( $data['post_status'], ['draft', 'pending', 'auto-draft'])) {
+    if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft'])) {
 
     	$title = $data['post_title'];
     	$title = iconv('UTF8', 'ASCII//TRANSLIT', $title);
     	$title = preg_replace('/[^a-zA-Z0-9]/', '_', $title);
 
-        $data['post_name'] = sanitize_title_with_dashes( $title );
+        $data['post_name'] = sanitize_title_with_dashes($title);
     }
 
     return $data;
