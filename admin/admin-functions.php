@@ -34,7 +34,7 @@ add_filter('admin_footer_text', function()
 /**
  * Force Perfect JPG Images.
  *
- * @return  integer
+ * @return integer
  */
 add_filter('jpeg_quality', function()
 {
@@ -46,3 +46,21 @@ add_filter('jpeg_quality', function()
  */
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');
+
+/**
+ * Force slug to update on save.
+ *
+ * @return array
+ */
+add_filter('wp_insert_post_data', function($data, $postarr) {
+    if (!in_array( $data['post_status'], ['draft', 'pending', 'auto-draft'])) {
+
+    	$title = $data['post_title'];
+    	$title = iconv('UTF8', 'ASCII//TRANSLIT', $title);
+    	$title = preg_replace('/[^a-zA-Z0-9]/', '_', $title);
+
+        $data['post_name'] = sanitize_title_with_dashes( $title );
+    }
+
+    return $data;
+}, 99, 2 );
