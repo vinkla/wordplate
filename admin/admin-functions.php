@@ -66,7 +66,7 @@ add_filter('wp_insert_post_data', function($data, $postarr) {
             'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b',
             'ÿ'=>'y', 'Ŕ'=>'R', 'ŕ'=>'r',
         ];
-        $title = strtr($title, $table);
+        $title = strtr($title, $characters);
         $title = preg_replace('/[^a-zA-Z0-9]/', '-', $title);
 
         $data['post_name'] = sanitize_title_with_dashes($title);
