@@ -71,12 +71,20 @@ add_action('wp_dashboard_setup', function()
 });
 
 /**
- * Remove update messages.
+ * Remove core update messages.
  *
  * @return void
  */
 add_action('init', create_function('$a', "remove_action('init', 'wp_version_check');"), 2);
 add_filter('pre_option_update_core', create_function('$a', "return null;"));
+
+/**
+ * Remove plugins update messages.
+ *
+ * @return void
+ */
+remove_action( 'load-update-core.php', 'wp_update_plugins' );
+add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;"));
 
 /**
  * Remove links from admin toolbar.
