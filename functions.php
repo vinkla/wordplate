@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Load admin dependencies
+ * Load admin dependencies.
  */
 $tempdir = get_template_directory();
 require_once($tempdir.'/admin/init.php');
 
 /**
- * Filter wp_title with name and description.
+ * Configure Default Title.
  */
 add_filter('wp_title', function($title)
 {
@@ -17,4 +17,12 @@ add_filter('wp_title', function($title)
 	if (is_front_page()) { return "$name - $description"; }
 
 	return trim($title).' - '.$name;
+});
+
+/**
+ * Configure Excerpt String.
+ */
+add_filter('wp_trim_excerpt', function($excerpt)
+{
+	return str_replace('[...]', '…', $excerpt);
 });
