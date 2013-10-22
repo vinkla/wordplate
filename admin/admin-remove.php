@@ -71,7 +71,7 @@ add_filter('pre_option_update_core', create_function('$a', "return null;"));
  */
 add_action('admin_bar_menu', function($wp_admin_bar)
 {
-	$nodes = array(
+	$nodes = [
 		'comments',
 		'wp-logo',
 		'edit',
@@ -80,7 +80,7 @@ add_action('admin_bar_menu', function($wp_admin_bar)
 		'new-content',
 		'updates',
 		'search'
-	);
+	];
 
 	foreach($nodes as $node)
 	{
@@ -113,7 +113,7 @@ add_action('admin_head', function() {
  *
  * @return void
  */
-add_action( 'admin_menu', function()
+add_action('admin_menu', function()
 {
 	remove_meta_box('linktargetdiv', 'link', 'normal');
 	remove_meta_box('linkxfndiv', 'link', 'normal');

@@ -7,7 +7,7 @@
  */
 add_action('login_head', function()
 {
-	$path = ADMIN_URL.'/images/admin-login-logo.png';
+    $path = LOGIN_IMAGE_PATH;
 	echo "<style> h1 a { background-image:url($path) !important; background-size: auto auto !important; } </style>";
 });
 
@@ -53,7 +53,8 @@ add_filter('widget_text', 'do_shortcode');
  * @return array
  */
 add_filter('wp_insert_post_data', function($data, $postarr) {
-    if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft'])) {
+    if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
+    {
 
         $title = $data['post_title'];
         $characters = [

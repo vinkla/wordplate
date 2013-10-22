@@ -9,6 +9,7 @@ define('ADMIN_URL', get_template_directory_uri() .'/admin');
 define('AUTHOR', 'Vincent Klaiber');
 define('AUTHOR_URL', 'http://vinkla.com');
 
+define('LOGIN_IMAGE_PATH', ADMIN_URL.'/images/admin-login-logo.png');
 define('LOGIN_HEADER_URL', 'http://vinkla.com');
 
 /**
