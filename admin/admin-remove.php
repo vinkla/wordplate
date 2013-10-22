@@ -46,14 +46,28 @@ add_action('wp_dashboard_setup', function()
 {
 	global $wp_meta_boxes;
 
-	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
-	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
-	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
-	unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
-	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
-	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
-	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
-	unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
+	$positions = [
+		'side' => [
+			'dashboard_primary',
+			'dashboard_secondary',
+			'dashboard_quick_press',
+			'dashboard_recent_drafts'
+		],
+		'normal' => [
+			'dashboard_plugins',
+			'dashboard_recent_comments',
+			'dashboard_incoming_links',
+			'dashboard_right_now'
+		]
+	];
+
+	foreach ($positions as $position => $boxes)
+	{
+		foreach ($boxes as $box)
+		{
+			unset($wp_meta_boxes['dashboard'][$position]['core'][$box]);
+		}
+	}
 });
 
 /**
