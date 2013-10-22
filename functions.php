@@ -3,4 +3,5 @@
 /**
  * Load admin dependencies
  */
-require('admin/admin-init.php');
+$tempdir = get_template_directory();
+require_once($tempdir.'/admin/init.php');
