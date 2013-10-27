@@ -134,17 +134,28 @@ add_action('admin_head', function() {
  */
 add_action('admin_menu', function()
 {
-	remove_meta_box('linktargetdiv', 'link', 'normal');
-	remove_meta_box('linkxfndiv', 'link', 'normal');
-	remove_meta_box('linkadvanceddiv', 'link', 'normal');
-	remove_meta_box('postexcerpt', 'post', 'normal');
-	remove_meta_box('trackbacksdiv', 'post', 'normal');
-	remove_meta_box('postcustom', 'post', 'normal');
-	remove_meta_box('commentstatusdiv', 'post', 'normal');
-	remove_meta_box('commentsdiv', 'post', 'normal');
-	remove_meta_box('revisionsdiv', 'post', 'normal');
-	remove_meta_box('authordiv', 'post', 'normal');
-	remove_meta_box('sqpt-meta-tags', 'post', 'normal');
+	$types = [
+		'link' = [
+			'linktargetdiv',
+			'linkxfndiv',
+			'linkadvanceddiv',
+		],
+		'post' = [
+			'postexcerpt',
+			'trackbacksdiv',
+			'postcustom',
+			'commentstatusdiv',
+			'commentsdiv',
+			'revisionsdiv',
+			'authordiv',
+			'sqpt-meta-tags'
+		]
+	];
+
+	foreach ($types as $type => $boxes)
+	{
+		foreach ($boxes as $box) { remove_meta_box($box, $type, 'normal'); }
+	}
 });
 
 /**
