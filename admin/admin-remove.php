@@ -18,7 +18,7 @@ add_action('admin_head', function()
 		'#menu-dashboard',
 		'#menu-comments',
 		'#menu-media',
-		'#menu-tools',
+
 		'#footer-upgrade',
 		'#wp-admin-bar-updates',
 		'.update-nag',
@@ -30,7 +30,8 @@ add_action('admin_head', function()
 			'#menu-settings',
 			'#menu-appearance',
 			'#menu-plugins',
-			'li#menu-users'
+			'#menu-users',
+			'#menu-tools'
 		]);
 	}
 

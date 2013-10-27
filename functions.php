@@ -42,7 +42,7 @@ add_filter('wp_trim_excerpt', function($excerpt)
 });
 
 /**
- * Change Default Excerpt Length.
+ * Change Default Excerpt Length (55).
  */
 add_filter('excerpt_length', function($length)
 {
