@@ -154,7 +154,10 @@ add_action('admin_menu', function()
 
 	foreach ($types as $type => $boxes)
 	{
-		foreach ($boxes as $box) { remove_meta_box($box, $type, 'normal'); }
+		foreach ($boxes as $box)
+		{
+			remove_meta_box($box, $type, 'normal');
+		}
 	}
 });
 
