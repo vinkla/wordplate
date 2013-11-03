@@ -36,9 +36,9 @@ add_filter('wp_title', function($title)
 /**
  * Configure Excerpt String.
  */
-add_filter('wp_trim_excerpt', function($excerpt)
+add_filter('excerpt_more', function($excerpt)
 {
-	return str_replace('[...]', '…', $excerpt);
+	return '…';
 });
 
 /**
