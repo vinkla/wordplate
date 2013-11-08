@@ -135,12 +135,12 @@ add_action('admin_head', function() {
 add_action('admin_menu', function()
 {
 	$types = [
-		'link' = [
+		'link' => [
 			'linktargetdiv',
 			'linkxfndiv',
 			'linkadvanceddiv',
 		],
-		'post' = [
+		'post' => [
 			'postexcerpt',
 			'trackbacksdiv',
 			'postcustom',
