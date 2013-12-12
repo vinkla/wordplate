@@ -18,3 +18,4 @@ define('LOGIN_HEADER_URL', get_site_url());
  */
 require_once(ADMIN_DIR .'/admin-remove.php');
 require_once(ADMIN_DIR .'/admin-functions.php');
+require_once(ADMIN_DIR .'/admin-acf.php');
