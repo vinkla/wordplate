@@ -38,11 +38,11 @@ class CustomPostType
      */
     public function register_post_type()
     {
-    	$n = ucwords($this->post_type_name);
+    	$name = ucwords($this->post_type_name);
 
     	$args = [
-    		'label' => $n . 's',
-    		'singular_name' => $n,
+    		'label' => $name . 's',
+    		'singular_name' => $name,
     		'public' => true,
     		'publicly_queryable' => true,
     		'query_var' => true,
