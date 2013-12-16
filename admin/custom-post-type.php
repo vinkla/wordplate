@@ -77,6 +77,9 @@ class CustomPostType
         // Taxonomies need to be lowercase, but displaying them will look better this way...
     	$name = ucwords($name);
 
+    	// Taxonomy slug converted to lowercase
+    	$slug = strtolower($name);
+
         // At WordPress' init, register the taxonomy
     	add_action('init', function() use($name, $plural, $post_type_name, $options)
     	{
@@ -87,11 +90,11 @@ class CustomPostType
 				'singular_label' => $plural,
 				'show_ui' => true,
 				'query_var' => true,
-				'rewrite' => ['slug' => strtolower($name)]
+				'rewrite' => ['slug' => $slug]
 			], $options);
 
 			// name of taxonomy, associated post type, options
-    		register_taxonomy(strtolower($name), $post_type_name, $options);
+    		register_taxonomy($slug, $post_type_name, $options);
     	});
     }
 }
