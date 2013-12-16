@@ -15,7 +15,7 @@ class CustomPostType
      * A list of user-specific options for the post type.
      * @var array
      */
-    public $post_type_args;
+    public $options;
 
     /**
      * Sets default values, registers the passed post type, and
@@ -23,10 +23,10 @@ class CustomPostType
      *
      * @return void
      */
-    public function __construct($name, $post_type_args = [])
+    public function __construct($name, $options = [])
     {
     	$this->post_type_name = strtolower($name);
-    	$this->post_type_args = (array) $post_type_args;
+    	$this->options = (array) $options;
 
         // First step, register that new post type
     	add_action('init', [&$this, 'register_post_type']);
@@ -56,7 +56,7 @@ class CustomPostType
     	];
 
         // Take user provided options, and override the defaults.
-    	$args = array_merge($args, $this->post_type_args);
+    	$args = array_merge($args, $this->options);
 
     	register_post_type($this->post_type_name, $args);
     }
@@ -66,35 +66,32 @@ class CustomPostType
      *
      * @return void
      */
-    public function add_taxonomy($taxonomy_name, $plural = '', $options = [])
+    public function add_taxonomy($name, $plural = '', $options = [])
     {
         // Create local reference so we can pass it to the init cb.
     	$post_type_name = $this->post_type_name;
 
         // If no plural form of the taxonomy was provided, do a crappy fix.
-    	if (empty($plural))
-    	{
-    		$plural = $taxonomy_name . 's';
-    	}
+    	if (empty($plural)) { $plural = $name . 's'; }
 
         // Taxonomies need to be lowercase, but displaying them will look better this way...
-    	$taxonomy_name = ucwords($taxonomy_name);
+    	$name = ucwords($name);
 
         // At WordPress' init, register the taxonomy
-    	add_action('init', function() use($taxonomy_name, $plural, $post_type_name, $options)
+    	add_action('init', function() use($name, $plural, $post_type_name, $options)
     	{
 			// Override defaults with user provided options
     		$options = array_merge([
 				'hierarchical' => false,
-				'label' => $taxonomy_name,
+				'label' => $name,
 				'singular_label' => $plural,
 				'show_ui' => true,
 				'query_var' => true,
-				'rewrite' => ['slug' => strtolower($taxonomy_name)]
+				'rewrite' => ['slug' => strtolower($name)]
 			], $options);
 
 			// name of taxonomy, associated post type, options
-    		register_taxonomy(strtolower($taxonomy_name), $post_type_name, $options);
+    		register_taxonomy(strtolower($name), $post_type_name, $options);
     	});
     }
 }
