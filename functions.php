@@ -6,18 +6,6 @@
 $tempdir = get_template_directory();
 require_once($tempdir.'/admin/init.php');
 
-$snippet = new PostType('book');
-$snippet->add_taxonomy('Difficulty');
-$snippet->add_taxonomy('Language');
-
-$snippet->add_meta_box('Snippet Info', array(
-  'Associated URL' => 'text',
-  'GitHub Link' => 'text',
-  'Additional Notes' => 'textarea',
-  'Original Snippet' => 'checkbox',
-  'Snippet Image' => 'file'
-));
-
 /**
  * Theme set up settings.
  *

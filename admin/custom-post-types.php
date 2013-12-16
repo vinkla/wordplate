@@ -324,3 +324,18 @@ class PostType
     	});
 	}
 }
+
+/** Example usage
+
+$book = new PostType('book');
+$book->add_taxonomy('Difficulty');
+$book->add_taxonomy('Language');
+$book->add_meta_box('Information', [
+	'Associated URL' => 'text',
+	'GitHub Link' => 'text',
+	'Additional Notes' => 'textarea',
+	'Original Snippet' => 'checkbox',
+	'Snippet Image' => 'file'
+]);
+
+*/
