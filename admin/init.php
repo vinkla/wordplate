@@ -4,8 +4,9 @@
  * Define Constants.
  */
 define('TEMPLATE_DIR', get_template_directory());
+define('TEMPLATE_URI', get_template_directory_uri());
 define('ADMIN_DIR', TEMPLATE_DIR.'/admin');
-define('ADMIN_URL', get_template_directory_uri().'/admin');
+define('ADMIN_URL', TEMPLATE_URI.'/admin');
 
 define('AUTHOR', 'Vincent Klaiber');
 define('AUTHOR_URL', 'http://vinkla.com');
@@ -19,3 +20,5 @@ define('LOGIN_HEADER_URL', get_site_url());
 require_once(ADMIN_DIR .'/admin-remove.php');
 require_once(ADMIN_DIR .'/admin-functions.php');
 require_once(ADMIN_DIR .'/admin-acf.php');
+
+require_once(ADMIN_DIR .'/custom-post-types.php');
