@@ -50,7 +50,7 @@ class CustomPostType
     		'rewrite' => true,
     		'capability_type' => 'post',
     		'hierarchical' => false,
-    		'menu_position' => null,
+    		'menu_position' => 5,
     		'supports' => ['title', 'editor', 'thumbnail'],
     		'has_archive' => true
     	];
