@@ -21,4 +21,16 @@ require_once(ADMIN_DIR .'/admin-remove.php');
 require_once(ADMIN_DIR .'/admin-functions.php');
 require_once(ADMIN_DIR .'/admin-acf.php');
 
-require_once(ADMIN_DIR .'/custom-post-types.php');
+/**
+ * Custom Post Types.
+ */
+require_once(ADMIN_DIR .'/custom-post-type.php');
+
+/**
+ * Example usage of the custom post types class.
+ */
+$book = new CustomPostType('book', [
+	'menu_icon' => 'dashicons-location-alt',
+	'supports' => ['title', 'editor'],
+]);
+$book->add_taxonomy('Language');
