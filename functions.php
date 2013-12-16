@@ -8,6 +8,8 @@ require_once($tempdir.'/admin/init.php');
 
 /**
  * Theme set up settings.
+ *
+ * @return void
  */
 add_action('after_setup_theme', function()
 {
@@ -23,6 +25,8 @@ add_action('after_setup_theme', function()
 
 /**
  * Configure Default Title.
+ *
+ * @return string
  */
 add_filter('wp_title', function($title)
 {
@@ -36,6 +40,8 @@ add_filter('wp_title', function($title)
 
 /**
  * Configure Excerpt String.
+ *
+ * @return string
  */
 add_filter('excerpt_more', function($excerpt)
 {
@@ -44,6 +50,8 @@ add_filter('excerpt_more', function($excerpt)
 
 /**
  * Change Default Excerpt Length (default: 55).
+ *
+ * @return integer
  */
 add_filter('excerpt_length', function($length)
 {

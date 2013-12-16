@@ -19,6 +19,7 @@ add_action('admin_head', function()
 		'#menu-comments',
 		'#menu-media',
 
+		// Include update messages.
 		'#footer-upgrade',
 		'#wp-admin-bar-updates',
 		'.update-nag',
