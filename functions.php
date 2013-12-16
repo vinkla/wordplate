@@ -24,6 +24,19 @@ add_action('after_setup_theme', function()
 });
 
 /**
+ * Enqueue and register scripts the right way.
+ *
+ * @return  void
+ */
+add_action('wp_enqueue_scripts', function()
+{
+	wp_deregister_script('jquery');
+
+	// Example;
+	// wp_enqueue_script('main', TEMPLATE_URI . '/scripts/main.min.js', '', '', true);
+});
+
+/**
  * Configure Default Title.
  *
  * @return string
