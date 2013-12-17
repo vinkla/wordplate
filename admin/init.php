@@ -29,7 +29,7 @@ require_once(ADMIN_DIR .'/custom-post-type.php');
 /**
  * Example usage of the custom post types class.
  */
-$book = new CustomPostType('book', [
+$book = new CustomPostType('Vänner', [
 	'menu_icon' => 'dashicons-location-alt',
 	'supports' => ['title', 'editor'],
 ]);

@@ -58,7 +58,7 @@ class CustomPostType
         // Take user provided options, and override the defaults.
     	$args = array_merge($args, $this->options);
 
-    	register_post_type($this->post_type_name, $args);
+    	register_post_type(sanitize_title($name), $args);
     }
 
     /**
