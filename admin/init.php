@@ -30,7 +30,7 @@ require_once(ADMIN_DIR .'/custom-post-type.php');
  * Example usage of the custom post types class.
  */
 $book = new CustomPostType('Book', [
-	'menu_icon' => 'dashicons-welcome-learn-more',
+	'menu_icon' => 'dashicons-book',
 	'supports' => ['title', 'editor'],
 ]);
 $book->add_taxonomy('Language');
