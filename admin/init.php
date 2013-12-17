@@ -29,8 +29,8 @@ require_once(ADMIN_DIR .'/custom-post-type.php');
 /**
  * Example usage of the custom post types class.
  */
-$book = new CustomPostType('Vänner', [
-	'menu_icon' => 'dashicons-location-alt',
+$book = new CustomPostType('Book', [
+	'menu_icon' => 'dashicons-welcome-learn-more',
 	'supports' => ['title', 'editor'],
 ]);
 $book->add_taxonomy('Language');

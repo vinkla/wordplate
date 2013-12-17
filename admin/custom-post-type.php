@@ -46,7 +46,7 @@ class CustomPostType
     		'public' => true,
     		'publicly_queryable' => true,
     		'query_var' => true,
-            'menu_icon' => 'dashicons-location-alt',
+            'menu_icon' => 'dashicons-share-alt',
     		'rewrite' => true,
     		'capability_type' => 'post',
     		'hierarchical' => false,
