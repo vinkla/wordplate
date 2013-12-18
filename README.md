@@ -5,8 +5,6 @@ A [WordPress](https://github.com/WordPress/WordPress) theming boilerplate with s
 
 This boilerplate requires PHP 5.4+ and is built for the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
----
-
 Usage
 --------------
 **Example:** Setting up a new custom post type feed. With a simple way to add custom Taxonomies.
