@@ -7,8 +7,9 @@ This boilerplate requires PHP 5.4+ and is built for the latest version of [WordP
 
 ---
 
-### Usage
-This is an example of setting up a new custom post type feed. With a simple way to add custom Taxonomies.
+Usage
+--------------
+**Example:** Setting up a new custom post type feed. With a simple way to add custom Taxonomies.
 
 ```php
 $book = new CustomPostType('book', [
@@ -20,9 +21,8 @@ $book = new CustomPostType('book', [
 $book->add_taxonomy('Language', 'Languages');
 ```
 
----
-
-##### To-do
+To-do
+--------------
 - Add a simple way to add meta boxes to pages and posts.
 - Move all configuration to init.php in admin framework.
 - Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in new versions of WordPress.
