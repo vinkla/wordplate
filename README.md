@@ -5,19 +5,15 @@ A [WordPress](https://github.com/WordPress/WordPress) theming boilerplate with s
 
 This boilerplate requires PHP 5.4+ and is built for the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
-###Usage
-
+### Usage
 This is an example of setting up a new custom post type feed. With a simple way to add custom Taxonomies.
 
 ```php
 $book = new CustomPostType('book', [
-
 	'menu_icon' => 'dashicons-book',
-
 	'supports' => ['title', 'editor'],
-
 ]);
 
-// Super simple
+// Super simple taxonomies
 $book->add_taxonomy('Language', 'Languages');
 ```
