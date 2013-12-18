@@ -33,4 +33,4 @@ $book = new CustomPostType('Book', [
 	'menu_icon' => 'dashicons-book',
 	'supports' => ['title', 'editor'],
 ]);
-$book->add_taxonomy('Language');
+$book->register_taxonomy('Language');

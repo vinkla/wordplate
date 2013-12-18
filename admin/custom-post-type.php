@@ -20,8 +20,6 @@ class CustomPostType
     /**
      * Sets default values, registers the passed post type, and
      * listens for when the post is saved.
-     *
-     * @return void
      */
     public function __construct($name, $options = [])
     {
@@ -29,7 +27,7 @@ class CustomPostType
     	$this->options = (array) $options;
 
         // First step, register that new post type
-    	add_action('init', [&$this, 'register_post_type']);
+    	$this->add_action('init', [&$this, 'register_post_type']);
     }
 
     /**
@@ -63,10 +61,8 @@ class CustomPostType
 
     /**
      * Registers a new taxonomy, associated with the instantiated post type.
-     *
-     * @return void
      */
-    public function add_taxonomy($name, $plural = '', $options = [])
+    public function register_taxonomy($name, $plural = '', $options = [])
     {
         // Create local reference so we can pass it to the init cb.
     	$post_type_name = $this->post_type_name;
@@ -77,13 +73,13 @@ class CustomPostType
         // Taxonomies need to be lowercase, but displaying them will look better this way...
     	$name = ucwords($name);
 
-    	// Taxonomy slug converted to lowercase
-    	$slug = strtolower($name);
+    	// Taxonomy slug converted to lowercase.
+    	$slug = $this->get_slug($name);
 
-        // At WordPress' init, register the taxonomy
+        // At WordPress' init, register the taxonomy.
     	add_action('init', function() use($name, $plural, $post_type_name, $options)
     	{
-			// Override defaults with user provided options
+			// Override defaults with user provided options.
     		$options = array_merge([
 				'hierarchical' => false,
 				'label' => $name,
@@ -93,8 +89,51 @@ class CustomPostType
 				'rewrite' => ['slug' => $slug]
 			], $options);
 
-			// name of taxonomy, associated post type, options
+			// Name of taxonomy, associated post type, options.
     		register_taxonomy($slug, $post_type_name, $options);
     	});
     }
+
+    /**
+     * Helper function add_action used to create add_action wordpress filter.
+     *
+     * Wordpress Codex:
+     * http://codex.wordpress.org/Function_Reference/add_action
+     */
+    function add_action($action, $function, $priority = 10, $accepted_args = 1)
+    {
+        // Pass variables into Wordpress add_action function
+        add_action($action, $function, $priority, $accepted_args);
+	}
+
+    /**
+     * Helper function add_filter used to create add_filter wordpress filter.
+     *
+     * Wordpress Codex:
+     * http://codex.wordpress.org/Function_Reference/add_filter
+     */
+    function add_filter($action, $function, $priority = 10, $accepted_args = 1)
+    {
+        // Pass variables into Wordpress add_action function.
+        add_filter($action, $function, $priority, $accepted_args);
+    }
+
+	/**
+	 * Helper function get slug creates url friendly slug.
+	 *
+	 * @return string
+	 */
+	function get_slug($name = null)
+	{
+		// If no name set use the post type name.
+		if (!isset($name)) { $name = $this->post_type_name; }
+
+		// Name to lower case.
+		$name = strtolower($name);
+
+		// Replace spaces or underscore with hyphen.
+		$name = str_replace('/(\s|_)/', '-', $name);
+
+		return $name;
+	}
 }
