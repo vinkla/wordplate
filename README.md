@@ -7,12 +7,12 @@ This boilerplate requires PHP 5.4+ and is built for the latest version of [WordP
 
 ###Usage
 
-This is an example of setting up a new custom post type feed. With a simple way to add taxonomies.
+This is an example of setting up a new custom post type feed. With a simple way to add custom Taxonomies.
 
 ```php
 $book = new CustomPostType('book', [
 
-	'menu_icon' => 'dashicons-location-alt',
+	'menu_icon' => 'dashicons-book',
 
 	'supports' => ['title', 'editor'],
 
