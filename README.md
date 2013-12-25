@@ -5,24 +5,13 @@ A [WordPress](https://github.com/WordPress/WordPress) theming boilerplate with s
 
 This boilerplate requires PHP 5.4+ and is built for the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
-Usage
---------------
-**Example:** Setting up a new custom post type feed. With a simple way to add custom Taxonomies.
-
-```php
-$book = new CustomPostType('book', [
-	'menu_icon' => 'dashicons-book',
-	'supports' => ['title', 'editor'],
-]);
-
-// Super simple taxonomies
-$book->register_taxonomy('Language', 'Languages');
-```
-
 To-do
 --------------
-- Add a simple way to add meta boxes to pages and posts.
 - Move all configuration to init.php in admin framework.
 - Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in new versions of WordPress.
 - Write down coding and naming conventions.
-- Add menu priority to custom post types.
+- ~~Add menu priority to custom post types.~~
+
+Thanks to…
+--------------
+- @jjgrainger and his [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class).
