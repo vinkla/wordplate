@@ -14,4 +14,4 @@ To-do
 
 Thanks to…
 --------------
-- @jjgrainger and his [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class).
+- [@jjgrainger](https://github.com/jjgrainger) and his [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class).
