@@ -23,14 +23,8 @@ require_once(ADMIN_DIR .'/admin-acf.php');
 
 /**
  * Custom Post Types.
+ *
+ * Read more about custom post type class:
+ * https://github.com/jjgrainger/wp-custom-post-type-class
  */
-require_once(ADMIN_DIR .'/custom-post-type.php');
-
-/**
- * Example usage of the custom post types class.
- */
-$book = new CustomPostType('Book', [
-	'menu_icon' => 'dashicons-book',
-	'supports' => ['title', 'editor'],
-]);
-$book->register_taxonomy('Language');
+require_once(ADMIN_DIR .'/custom-post-type/CPT.php');

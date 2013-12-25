@@ -1,0 +1,3 @@
+[submodule "admin/custom-post-type"]
+	path = admin/custom-post-type
+	url = git@github.com:jjgrainger/wp-custom-post-type-class.git
