@@ -60,4 +60,4 @@ add_filter('wp_insert_post_data', function($data, $postarr) {
     }
 
     return $data;
-}, 99, 2 );
+}, 99, 2);
