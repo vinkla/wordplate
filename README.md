@@ -5,7 +5,7 @@ A [WordPress](https://github.com/WordPress/WordPress) theming boilerplate with s
 
 This boilerplate requires PHP 5.4+ and is built for the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
-### Usage
+**Usage**
 All configuration should be done within `admin/init.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
 
 To-do
