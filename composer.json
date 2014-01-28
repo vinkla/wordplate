@@ -1,0 +1,5 @@
+{
+	"require": {
+		"jjgrainger/wp-custom-post-type-class": "dev-master"
+	}
+}

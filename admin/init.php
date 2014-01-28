@@ -17,14 +17,6 @@ define('LOGIN_HEADER_URL', get_site_url());
 /**
  * Load Admin Components.
  */
-require_once(ADMIN_DIR .'/admin-remove.php');
-require_once(ADMIN_DIR .'/admin-functions.php');
-require_once(ADMIN_DIR .'/admin-acf.php');
-
-/**
- * Custom Post Types.
- *
- * Read more about custom post type class:
- * https://github.com/jjgrainger/wp-custom-post-type-class
- */
-require_once(ADMIN_DIR .'/custom-post-type/CPT.php');
+require ADMIN_DIR.'/admin-remove.php';
+require ADMIN_DIR.'/admin-functions.php';
+require ADMIN_DIR.'/admin-acf.php';
