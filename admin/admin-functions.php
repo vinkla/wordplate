@@ -55,7 +55,7 @@ add_filter('widget_text', 'do_shortcode');
 add_filter('wp_insert_post_data', function($data, $postarr) {
     if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
     {
-        $title = preg_replace('/[^a-zA-Z0-9]/', '-', $title);
+        $title = preg_replace('/[^a-zA-Z0-9]/', '-', $data['post_title']);
         $data['post_name'] = sanitize_title($title);
     }
 
