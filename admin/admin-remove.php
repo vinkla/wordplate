@@ -169,6 +169,7 @@ remove_action('wp_head', 'wp_generator');
 
 /**
  * Modifying TinyMCE editor to remove unused items.
+ * For full list please visit: http://www.tinymce.com/wiki.php/Controls
  */
 function customformat_tinyMCE($init) {
 	// Add block format elements you want to show in dropdown
