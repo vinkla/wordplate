@@ -22,7 +22,7 @@ define('TINYMCE_DISABLED', implode(',', [
 	'underline',
 	'forecolor',
 	'justifyfull'
-]);
+]));
 
 /**
  * Load Admin Components.
