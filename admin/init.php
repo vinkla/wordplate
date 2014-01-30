@@ -14,6 +14,16 @@ define('AUTHOR_URL', 'http://vinkla.com');
 define('LOGIN_IMAGE_PATH', TEMPLATE_DIR.'/images/admin-login-logo.png');
 define('LOGIN_HEADER_URL', get_site_url());
 
+define('TINYMCE_BLOCKFORMATS', implode(',', [
+	'p', 'h2', 'h3'
+]));
+define('TINYMCE_DISABLED', implode(',', [
+	'strikethrough',
+	'underline',
+	'forecolor',
+	'justifyfull'
+]);
+
 /**
  * Load Admin Components.
  */
