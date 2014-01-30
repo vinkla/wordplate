@@ -166,3 +166,17 @@ add_action('admin_menu', function()
  * Remove Generator for Security
  */
 remove_action('wp_head', 'wp_generator');
+
+/**
+ * Modifying TinyMCE editor to remove unused items.
+ * For full list please visit: http://www.tinymce.com/wiki.php/Controls
+ */
+function customformat_tinyMCE($init) {
+	// Add block format elements you want to show in dropdown
+	$init['theme_advanced_blockformats'] = 'p,h2,h3';
+	$init['theme_advanced_disable'] = 'strikethrough,underline,forecolor,justifyfull';
+
+	return $init;
+}
+
+add_filter('tiny_mce_before_init', 'customformat_tinyMCE');
