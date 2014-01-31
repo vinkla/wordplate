@@ -14,6 +14,8 @@ define('TEMPLATE_URI', get_template_directory_uri());
 define('AUTHOR', 'Vincent Klaiber');
 define('AUTHOR_URL', 'http://vinkla.com');
 
+define('FOOTER_TEXT', 'Thank you for creating with <a href="'.AUTHOR_URL.'">'.AUTHOR.'</a>.');
+
 define('LOGIN_IMAGE_PATH', TEMPLATE_DIR.'/images/admin-login-logo.png');
 define('LOGIN_HEADER_URL', get_site_url());
 

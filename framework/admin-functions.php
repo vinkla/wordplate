@@ -28,7 +28,7 @@ add_filter('login_headerurl', function()
  */
 add_filter('admin_footer_text', function()
 {
-	return 'Thank you for creating with <a href="'.AUTHOR_URL.'">'.AUTHOR.'</a>.';
+	return FOOTER_TEXT;
 });
 
 /**
