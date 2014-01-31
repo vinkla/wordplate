@@ -1,11 +1,6 @@
 <?php
 
 /**
- * Register the Composer autoloader.
- */
-require get_template_directory().'/vendor/autoload.php';
-
-/**
  * Load admin dependencies.
  */
 require get_template_directory().'/admin/init.php';
