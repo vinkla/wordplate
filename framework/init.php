@@ -10,8 +10,6 @@ require get_template_directory().'/vendor/autoload.php';
  */
 define('TEMPLATE_DIR', get_template_directory());
 define('TEMPLATE_URI', get_template_directory_uri());
-define('FRAMEWORK_DIR', TEMPLATE_DIR.'/framework');
-define('FRAMEWORK_URL', TEMPLATE_URI.'/framework');
 
 define('AUTHOR', 'Vincent Klaiber');
 define('AUTHOR_URL', 'http://vinkla.com');
@@ -30,6 +28,6 @@ define('TINYMCE_DISABLED', implode(',', [
 /**
  * Load Framework Components.
  */
-require FRAMEWORK_DIR.'/admin-remove.php';
-require FRAMEWORK_DIR.'/admin-functions.php';
-require FRAMEWORK_DIR.'/admin-acf.php';
+require TEMPLATE_DIR.'/framework/admin-remove.php';
+require TEMPLATE_DIR.'/framework/admin-functions.php';
+require TEMPLATE_DIR.'/framework/admin-acf.php';
