@@ -9,7 +9,7 @@ This boilerplate requires PHP 5.4+ and is built for the latest version of [WordP
 To install dependencies, navigate to your project root and run ```composer install --prefer-dist```.
 
 ##### Usage
-All configuration should be done within `admin/init.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
+All configuration should be done within `framework/init.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
 
 To-do
 --------------
