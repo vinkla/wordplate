@@ -7,7 +7,7 @@
  */
 add_action('login_head', function()
 {
-    $path = LOGIN_IMAGE_PATH;
+	$path = LOGIN_IMAGE_PATH;
 	echo "<style> h1 a { background-image:url($path) !important; background-size: auto auto !important; } </style>";
 });
 
@@ -32,7 +32,7 @@ add_filter('admin_footer_text', function()
 });
 
 /**
- * Force Perfect JPG Images.
+ * Force perfect JPG images.
  *
  * @return integer
  */
@@ -42,7 +42,7 @@ add_filter('jpeg_quality', function()
 });
 
 /**
- * Filters that allow shortcodes in Text Widgets.
+ * Filters that allow shortcodes in text widgets.
  */
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');

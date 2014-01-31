@@ -75,7 +75,7 @@ add_action('wp_dashboard_setup', function()
 /**
  * Modifying TinyMCE editor to remove unused items.
  *
- * For full list please visit: http://www.tinymce.com/wiki.php/Controls
+ * Controls: http://www.tinymce.com/wiki.php/Controls
  */
 add_filter('tiny_mce_before_init', function($init)
 {
@@ -118,7 +118,7 @@ add_action('admin_bar_menu', function($wp_admin_bar)
 
 	foreach($nodes as $node)
 	{
-    	$wp_admin_bar->remove_node($node);
+		$wp_admin_bar->remove_node($node);
 	}
 }, 999);
 
@@ -137,9 +137,10 @@ add_filter('screen_options_show_screen', function()
  *
  * @return void
  */
-add_action('admin_head', function() {
-    $screen = get_current_screen();
-    $screen->remove_help_tabs();
+add_action('admin_head', function()
+{
+	$screen = get_current_screen();
+	$screen->remove_help_tabs();
 });
 
 /**
