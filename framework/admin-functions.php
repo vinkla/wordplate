@@ -53,11 +53,11 @@ add_filter('widget_text', 'do_shortcode');
  * @return array
  */
 add_filter('wp_insert_post_data', function($data, $postarr) {
-    if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
-    {
-    	$title = remove_accents($data['post_title']);
-        $data['post_name'] = sanitize_title_for_query($title);
-    }
+	if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
+	{
+		$title = remove_accents($data['post_title']);
+		$data['post_name'] = sanitize_title_for_query($title);
+	}
 
-    return $data;
+	return $data;
 }, 99, 2);
