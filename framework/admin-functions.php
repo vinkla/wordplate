@@ -42,7 +42,7 @@ add_filter('jpeg_quality', function()
 });
 
 /**
- * Filters that allow shortcodes in Text Widgets
+ * Filters that allow shortcodes in Text Widgets.
  */
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');

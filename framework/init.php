@@ -15,7 +15,9 @@ define('LOGIN_IMAGE_PATH', TEMPLATE_DIR.'/images/admin-login-logo.png');
 define('LOGIN_HEADER_URL', get_site_url());
 
 define('TINYMCE_BLOCKFORMATS', implode(',', [
-	'p', 'h2', 'h3'
+	'p',
+	'h2',
+	'h3'
 ]));
 define('TINYMCE_DISABLED', implode(',', [
 	'strikethrough',
@@ -25,7 +27,7 @@ define('TINYMCE_DISABLED', implode(',', [
 ]));
 
 /**
- * Load Admin Components.
+ * Load Framework Components.
  */
 require ADMIN_DIR.'/admin-remove.php';
 require ADMIN_DIR.'/admin-functions.php';
