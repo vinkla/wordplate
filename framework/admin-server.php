@@ -42,12 +42,6 @@ function server_information()
 
 	<h3 class="title">Server</h3><!-- /title -->
 	<table class="widefat">
-		<thead>
-			<tr>
-				<th>Key</th>
-				<th>Value</th>
-			</tr>
-		</thead>
 		<tbody>
 			<tr>
 				<td>Key</td>
@@ -58,12 +52,6 @@ function server_information()
 
 	<h3 class="title">PHP</h3><!-- /title -->
 	<table class="widefat">
-		<thead>
-			<tr>
-				<th>Key</th>
-				<th>Value</th>
-			</tr>
-		</thead>
 		<tbody>
 			<tr>
 				<td>Key</td>
@@ -74,12 +62,7 @@ function server_information()
 
 	<h3 class="title">Database</h3><!-- /title -->
 	<table class="widefat">
-		<thead>
-			<tr>
-				<th>Key</th>
-				<th>Value</th>
-			</tr>
-		</thead>
+			</thead>
 		<tbody>
 			<tr>
 				<td>Key</td>
