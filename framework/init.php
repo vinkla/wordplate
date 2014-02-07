@@ -32,4 +32,5 @@ define('TINYMCE_DISABLED', implode(',', [
  */
 require TEMPLATE_DIR.'/framework/admin-remove.php';
 require TEMPLATE_DIR.'/framework/admin-functions.php';
+require TEMPLATE_DIR.'/framework/admin-server.php';
 require TEMPLATE_DIR.'/framework/admin-acf.php';
