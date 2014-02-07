@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Speed up page load in WordPress 3.8+.
+ */
+define('WP_HTTP_BLOCK_EXTERNAL', true);
+
+/**
  * Remove the admin bar.
  */
 show_admin_bar(false);
