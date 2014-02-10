@@ -91,7 +91,7 @@
 					$data = '';
 					$tables = $wpdb->get_results('SHOW TABLE STATUS');
 					foreach ($tables as $table) { $data += $table->Data_length; }
-					echo $data ? sprintf('%s bytes', $data) : 'N/A';
+					echo $data ? formatBytes($data) : 'N/A';
 					?>
 				</td>
 			</tr>
