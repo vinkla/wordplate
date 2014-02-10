@@ -1,6 +1,6 @@
 <div class="wrap">
 	<h2>Server Information</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<p>See information like operating system, IP address, Hostname, Date/Time configuration, PHP version, MySQL data usage and much more.</p>
 
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
