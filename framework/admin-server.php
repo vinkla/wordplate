@@ -23,53 +23,13 @@
  */
 add_action('admin_menu', function()
 {
-	add_submenu_page(
-		'options-general.php',
-		'Server Information',
-		'Server Information',
-		'update_core',
-		'server-information',
-		'server_information'
-	);
+	$parent = 'options-general.php';
+	$title = 'Server Information';
+	$permission = 'update_core';
+	$slug = 'server-information';
+
+	add_submenu_page($parent, $title, $title, $permission, $slug, function()
+	{
+		require TEMPLATE_DIR.'/framework/views/server-information.php';
+	});
 });
-
-function server_information()
-{
-?>
-<div class="wrap">
-	<h2>Server Information</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-	<h3 class="title">Server</h3><!-- /title -->
-	<table class="widefat">
-		<tbody>
-			<tr>
-				<td>Key</td>
-				<td>Value</td>
-			</tr>
-		</tbody>
-	</table><!-- /widefat -->
-
-	<h3 class="title">PHP</h3><!-- /title -->
-	<table class="widefat">
-		<tbody>
-			<tr>
-				<td>Key</td>
-				<td>Value</td>
-			</tr>
-		</tbody>
-	</table><!-- /widefat -->
-
-	<h3 class="title">Database</h3><!-- /title -->
-	<table class="widefat">
-			</thead>
-		<tbody>
-			<tr>
-				<td>Key</td>
-				<td>Value</td>
-			</tr>
-		</tbody>
-	</table><!-- /widefat -->
-</div><!-- /wrap -->
-<?php
-}
