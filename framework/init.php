@@ -30,8 +30,8 @@ define('TINYMCE_DISABLED', implode(',', [
 /**
  * Load Framework Components.
  */
-require TEMPLATE_DIR.'/framework/admin-acf.php';
-require TEMPLATE_DIR.'/framework/admin-functions.php';
-require TEMPLATE_DIR.'/framework/admin-helpers.php';
-require TEMPLATE_DIR.'/framework/admin-remove.php';
-require TEMPLATE_DIR.'/framework/admin-server.php';
+require TEMPLATE_DIR.'/framework/acf.php';
+require TEMPLATE_DIR.'/framework/functions.php';
+require TEMPLATE_DIR.'/framework/helpers.php';
+require TEMPLATE_DIR.'/framework/remove.php';
+require TEMPLATE_DIR.'/framework/server.php';
