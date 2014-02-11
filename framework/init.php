@@ -19,6 +19,8 @@ define('FOOTER_TEXT', 'Thank you for creating with <a href="'.AUTHOR_URL.'">'.AU
 define('LOGIN_IMAGE_PATH', TEMPLATE_DIR.'/images/admin-login-logo.png');
 define('LOGIN_HEADER_URL', get_site_url());
 
+define('LOGIN_ERROR_MESSAGE', 'Whoops! Looks like you missed something there. Have another go.');
+
 define('TINYMCE_BLOCKFORMATS', implode(',', ['p', 'h2', 'h3']));
 define('TINYMCE_DISABLED', implode(',', [
 	'strikethrough',
@@ -35,3 +37,4 @@ require TEMPLATE_DIR.'/framework/functions.php';
 require TEMPLATE_DIR.'/framework/helpers.php';
 require TEMPLATE_DIR.'/framework/remove.php';
 require TEMPLATE_DIR.'/framework/server.php';
+require TEMPLATE_DIR.'/framework/security.php';

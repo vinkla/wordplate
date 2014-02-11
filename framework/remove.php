@@ -182,7 +182,3 @@ add_action('admin_menu', function()
 	}
 });
 
-/**
- * Remove Generator for Security
- */
-remove_action('wp_head', 'wp_generator');
