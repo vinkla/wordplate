@@ -1,25 +1,7 @@
 <?php
+
 /**
- * OS
- * Server
- * Server Hostname
- * Server IP:Port
- * Server Document Root
- * Server Admin
- * Server Load
- * Server Date/Time
- *
- * MySQL
- * Database Index Disk Usage
- * Database Data Disk Usage
- * MYSQL Maximum Packet Size
- * MYSQL Maximum No. Connection
- *
- * PHP version
- * PHP Memory Limit
- * PHP Max Upload Size
- * PHP Max Post Size
- * PHP Max Script Execute Time
+ * Add Server Information view to WP admin.
  */
 add_action('admin_menu', function()
 {
