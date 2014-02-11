@@ -69,6 +69,14 @@
 				<td>Max Execution Time</td>
 				<td><?php echo ini_get('max_execution_time') ? ini_get('max_execution_time') : 'N/A'; ?></td>
 			</tr>
+			<tr>
+				<td>Max Input Time</td>
+				<td><?php echo ini_get('max_input_time') ? ini_get('max_input_time') : 'N/A'; ?></td>
+			</tr>
+			<tr>
+				<td>Display Errors</td>
+				<td><?php echo ini_get('display_errors') ? (!ini_get('display_errors') ? 'On' : 'Off') : 'N/A'; ?></td>
+			</tr>
 		</tbody>
 	</table><!-- /widefat -->
 
