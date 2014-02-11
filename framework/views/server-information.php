@@ -5,8 +5,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th><strong>Server</strong></th>
-				<th>&nbsp;</th>
+				<th width="50%"><strong>Server</strong></th>
+				<th width="50%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,8 +44,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th><strong>PHP</strong></th>
-				<th>&nbsp;</th>
+				<th width="50%"><strong>PHP</strong></th>
+				<th width="50%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -75,7 +75,7 @@
 			</tr>
 			<tr>
 				<td>Display Errors</td>
-				<td><?php echo ini_get('display_errors') ? (!ini_get('display_errors') ? 'On' : 'Off') : 'N/A'; ?></td>
+				<td><?php echo ini_get('display_errors') ? (ini_get('display_errors') ? 'On' : 'Off') : 'N/A'; ?></td>
 			</tr>
 		</tbody>
 	</table><!-- /widefat -->
@@ -83,8 +83,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th><strong>MySQL</strong></th>
-				<th>&nbsp;</th>
+				<th width="50%"><strong>MySQL</strong></th>
+				<th width="50%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
