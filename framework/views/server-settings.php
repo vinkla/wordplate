@@ -1,6 +1,6 @@
 <div class="wrap">
-	<h2>Server Information</h2>
-	<p>See information like operating system, IP address, Hostname, Date/Time configuration, PHP version, MySQL data usage and much more.</p>
+	<h2>Server Settings</h2>
+	<p>See server settings information like operating system, IP address, Hostname, Date/Time configuration, PHP version, MySQL data usage and much more.</p>
 
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
