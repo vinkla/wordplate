@@ -104,7 +104,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Max Allowed Connections</td>
+				<td>Maximum No. Connections</td>
 				<td>
 					<?php
 					$query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_connections'");
@@ -113,7 +113,16 @@
 					?>
 				</td>
 			</tr>
-
+			<tr>
+				<td>Maximum Packet Size</td>
+				<td>
+					<?php
+					$query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_allowed_packet'");
+					$value = $query->Value;
+					echo $value ? formatBytes($value) : 'N/A';
+					?>
+				</td>
+			</tr>
 		</tbody>
 	</table><!-- /widefat -->
 </div><!-- /wrap -->
