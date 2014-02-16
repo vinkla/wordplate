@@ -6,7 +6,7 @@ return array(
 	 * Remember to create the post types within post-types directory.
 	 */
 	'custom_post_types' => array(
-		'book'
+		// 'book'
 	),
 
 	/**
