@@ -1,9 +1,34 @@
 <?php
 
 /**
- * Remove the admin bar.
+ * Custom login logo.
+ *
+ * @return void
  */
-show_admin_bar(false);
+add_action('login_head', function() use ($config)
+{
+	$path = $config['login_image_path'];
+	echo "<style> h1 a { background-image:url($path) !important; background-size: auto auto !important; } </style>";
+});
+
+/**
+ * Add Server Information view to WP admin.
+ */
+add_action('admin_menu', function() use ($config)
+{
+	global $wpdb;
+
+	$parent = 'options-general.php';
+	$title = 'Server';
+	$permission = 'update_core';
+	$slug = 'server-settings';
+
+	add_submenu_page($parent, $title, $title, $permission, $slug, function() use ($wpdb, $config)
+	{
+		require $config['template_dir'].'/framework/views/server-settings.php';
+	});
+});
+
 
 /**
  * Remove menu items deppended on user role.
@@ -73,32 +98,6 @@ add_action('wp_dashboard_setup', function()
 });
 
 /**
- * Modifying TinyMCE editor to remove unused items.
- *
- * Controls: http://www.tinymce.com/wiki.php/Controls
- */
-add_filter('tiny_mce_before_init', function($init)
-{
-	// Add block format elements you want to show in dropdown
-	$init['theme_advanced_blockformats'] = TINYMCE_BLOCKFORMATS;
-	$init['theme_advanced_disable'] = TINYMCE_DISABLED;
-
-	return $init;
-});
-
-/**
- * Remove core, plugins and themes update messages.
- *
- * @return void
- */
-remove_action('load-update-core.php', 'wp_update_plugins');
-add_action('init', create_function('$a', "remove_action('init', 'wp_version_check');"), 2);
-add_filter('pre_option_update_core', create_function('$a', "return null;"));
-add_filter('pre_site_transient_update_core', create_function('$a', "return null;"));
-add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;"));
-add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
-
-/**
  * Remove links from admin toolbar.
  *
  * @return void
@@ -121,16 +120,6 @@ add_action('admin_bar_menu', function($wp_admin_bar)
 		$wp_admin_bar->remove_node($node);
 	}
 }, 999);
-
-/**
- * Remove screen options tab.
- *
- * @return void
- */
-add_filter('screen_options_show_screen', function()
-{
-    return false;
-});
 
 /**
  * Remove help tab.

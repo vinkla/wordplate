@@ -1,40 +1,48 @@
 <?php
 
 /**
- * Register the Composer autoloader.
+ * Setup global configuration variable.
  */
-require get_template_directory().'/vendor/autoload.php';
+$config = require 'config.php';
 
 /**
- * Define Constants.
+ * Register the Composer autoloader.
  */
-define('TEMPLATE_DIR', get_template_directory());
-define('TEMPLATE_URI', get_template_directory_uri());
-
-define('AUTHOR', 'Vincent Klaiber');
-define('AUTHOR_URL', 'http://vinkla.com');
-
-define('FOOTER_TEXT', 'Thank you for creating with <a href="'.AUTHOR_URL.'">'.AUTHOR.'</a>.');
-
-define('LOGIN_IMAGE_PATH', TEMPLATE_DIR.'/images/admin-login-logo.png');
-define('LOGIN_HEADER_URL', get_site_url());
-
-define('LOGIN_ERROR_MESSAGE', 'Whoops! Looks like you missed something there. Have another go.');
-
-define('TINYMCE_BLOCKFORMATS', implode(',', ['p', 'h2', 'h3']));
-define('TINYMCE_DISABLED', implode(',', [
-	'strikethrough',
-	'underline',
-	'forecolor',
-	'justifyfull'
-]));
+require $config['template_dir'].'/vendor/autoload.php';
 
 /**
  * Load Framework Components.
  */
-require TEMPLATE_DIR.'/framework/acf.php';
-require TEMPLATE_DIR.'/framework/functions.php';
-require TEMPLATE_DIR.'/framework/helpers.php';
-require TEMPLATE_DIR.'/framework/remove.php';
-require TEMPLATE_DIR.'/framework/server.php';
-require TEMPLATE_DIR.'/framework/security.php';
+require $config['template_dir'].'/framework/helpers.php';
+require $config['template_dir'].'/framework/actions.php';
+require $config['template_dir'].'/framework/filters.php';
+
+/**
+ * Speed up page load in WordPress 3.8+.
+ */
+define('WP_HTTP_BLOCK_EXTERNAL', true);
+
+/**
+ * Prevent file edit from WP admin.
+ */
+define('DISALLOW_FILE_EDIT', true);
+
+/**
+ * Remove Generator for Security reasons.
+ */
+remove_action('wp_head', 'wp_generator');
+
+/**
+ * Hide the admin bar.
+ */
+show_admin_bar(false);
+
+/**
+ * Remove core, plugins and themes update messages.
+ */
+remove_action('load-update-core.php', 'wp_update_plugins');
+add_action('init', create_function('$a', "remove_action('init', 'wp_version_check');"), 2);
+add_filter('pre_option_update_core', create_function('$a', "return null;"));
+add_filter('pre_site_transient_update_core', create_function('$a', "return null;"));
+add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;"));
+add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
