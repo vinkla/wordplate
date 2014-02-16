@@ -46,11 +46,16 @@ remove_action('wp_head', 'wp_generator');
 show_admin_bar(false);
 
 /**
- * Remove core, plugins and themes update messages.
+ * Remove option to update themes for non admins.
+ */
+remove_action('load-update-core.php','wp_update_themes');
+add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+wp_clear_scheduled_hook('wp_update_themes');
+
+/**
+ * Removes plugin update notification for non-admin users.
  */
 remove_action('load-update-core.php', 'wp_update_plugins');
-add_action('init', create_function('$a', "remove_action('init', 'wp_version_check');"), 2);
-add_filter('pre_option_update_core', create_function('$a', "return null;"));
-add_filter('pre_site_transient_update_core', create_function('$a', "return null;"));
 add_filter('pre_site_transient_update_plugins', create_function('$a', "return null;"));
-add_filter('pre_site_transient_update_themes', create_function('$a', "return null;"));
+wp_clear_scheduled_hook('wp_update_plugins');
+
