@@ -5,8 +5,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th width="50%"><strong>Server</strong></th>
-				<th width="50%">&nbsp;</th>
+				<th width="30%"><strong>Server</strong></th>
+				<th width="70%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,8 +44,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th width="50%"><strong>PHP</strong></th>
-				<th width="50%">&nbsp;</th>
+				<th width="30%"><strong>PHP</strong></th>
+				<th width="70%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -83,8 +83,8 @@
 	<table class="widefat" style="margin:0 0 20px;">
 		<thead>
 			<tr>
-				<th width="50%"><strong>MySQL</strong></th>
-				<th width="50%">&nbsp;</th>
+				<th width="30%"><strong>MySQL</strong></th>
+				<th width="70%">&nbsp;</th>
 			</tr>
 		</thead>
 		<tbody>
