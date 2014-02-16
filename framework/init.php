@@ -22,7 +22,9 @@ require get_template_directory().'/framework/filters.php';
  */
 foreach ($config['custom_post_types'] as $type)
 {
-	require get_template_directory()."/framework/post-types/$type.php";
+	$path = get_template_directory()."/framework/post-types/$type.php";
+
+	if (file_exists($path)) { require $path; }
 }
 
 /**
