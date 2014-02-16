@@ -37,19 +37,21 @@ add_action('admin_menu', function() use ($config)
  */
 add_action('admin_head', function() use ($config)
 {
-	/*
-	$elements = implode(', ', array(
-		'#footer-upgrade',
-		'#wp-admin-bar-updates',
-		'.update-nag',
-	));
-	*/
+	$separator = ', #menu-';
 
-	$elements = implode(', ', $config['remove_menu_items']);
-
-	if (!is_admin())
+	if (is_admin())
 	{
-		$elements .= ','.implode(', ', $config['remove_menu_items_except_admin']);
+		$elements = implode(
+			$separator,
+			$config['remove_menu_items']['administrator']
+		);
+	}
+	else
+	{
+		$elements = implode(
+			$separator,
+			$config['remove_menu_items']['default']
+		);
 	}
 
 	echo "<style> $elements { display: none !important; } </style>";
