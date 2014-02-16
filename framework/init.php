@@ -18,6 +18,14 @@ require get_template_directory().'/framework/actions.php';
 require get_template_directory().'/framework/filters.php';
 
 /**
+ * Load Custom Post Types.
+ */
+foreach ($config['custom_post_types'] as $type)
+{
+	require get_template_directory()."/framework/post-types/$type.php";
+}
+
+/**
  * Speed up page load in WordPress 3.8+.
  */
 define('WP_HTTP_BLOCK_EXTERNAL', true);

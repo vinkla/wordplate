@@ -2,6 +2,14 @@
 
 return array(
 	/**
+	 * Register custom post types.
+	 * Remember to create the post types within post-types directory.
+	 */
+	'custom_post_types' => array(
+		'book'
+	),
+
+	/**
 	 * Replace footer text.
 	 */
 	'footer_text' => 'Thank you for creating with <a href="http://vinkla.com">Vincent Klaiber</a>.',
