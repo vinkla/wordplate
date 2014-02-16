@@ -110,7 +110,7 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Remove Meny Bar Links
+	| Remove Menu Bar Links
 	|--------------------------------------------------------------------------
 	|
 	| The menu bar in WordPress administrator dashboard looks cluttered.
@@ -181,7 +181,9 @@ return array(
 			'revisionsdiv',
 			'authordiv',
 			'sqpt-meta-tags',
-			'slugdiv'
+			'slugdiv',
+			// 'categorydiv'
+			//'tagsdiv-post_tag'
 		)
 	)
 );
