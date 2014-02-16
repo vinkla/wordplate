@@ -13,6 +13,14 @@ All configuration should be done within `framework/config.php`. Visit [wp-custom
 
 This boilerplate doesn't include a way to create custom fields. Instead, use [Advanced Custom Fields](http://www.advancedcustomfields.com/).
 
+Checklist
+--------------
+List with necessary tasks to do when installing a new WordPress enviroment.
+
+- Delete unused default themes and plugins.
+- Add .htaccess to the web root.
+- Download and add language files (if necessary).
+
 To-do
 --------------
 - Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in new versions of WordPress.
