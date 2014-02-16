@@ -11,7 +11,7 @@ To install dependencies, navigate to your project root and run ```composer insta
 ##### Usage
 All configuration should be done within `framework/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
 
-This boilerplate doesn't include a way to create custom fields and meta boxes. Instead, please use [Advanced Custom Fields](http://www.advancedcustomfields.com/).
+This boilerplate doesn't include a way to create custom fields. Instead, use [Advanced Custom Fields](http://www.advancedcustomfields.com/).
 
 To-do
 --------------
