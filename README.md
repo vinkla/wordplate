@@ -11,6 +11,9 @@ To install dependencies, navigate to your project root and run ```composer insta
 ##### Usage
 All configuration should be done within `framework/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
 
+##### Custom fields
+Use [Advanced Custom Fields](http://www.advancedcustomfields.com/) for custom fields and meta boxes.
+
 To-do
 --------------
 - Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in new versions of WordPress.
