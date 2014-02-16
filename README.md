@@ -15,7 +15,7 @@ This boilerplate doesn't include a way to create custom fields. Instead, use [Ad
 
 Checklist
 --------------
-List with necessary tasks to do when installing a new WordPress enviroment.
+List with necessary tasks for installing a new WordPress enviroment.
 
 1. Delete unused default themes and plugins.
 2. Add .htaccess to the web root.
