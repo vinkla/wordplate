@@ -23,9 +23,9 @@ add_action('admin_menu', function() use ($config)
 	$permission = 'update_core';
 	$slug = 'server-settings';
 
-	add_submenu_page($parent, $title, $title, $permission, $slug, function() use ($wpdb, $config)
+	add_submenu_page($parent, $title, $title, $permission, $slug, function() use ($wpdb)
 	{
-		require $config['template_dir'].'/framework/views/server-settings.php';
+		require get_template_directory().'/framework/views/server-settings.php';
 	});
 });
 
@@ -35,30 +35,20 @@ add_action('admin_menu', function() use ($config)
  *
  * @return void
  */
-add_action('admin_head', function()
+add_action('admin_head', function() use ($config)
 {
 	$elements = implode(', ', [
-		// '#menu-posts',
-		// '#menu-pages',
-		'#menu-dashboard',
-		'#menu-comments',
-		'#menu-media',
-
-		// Include update messages.
+		// Remove update messages.
 		'#footer-upgrade',
 		'#wp-admin-bar-updates',
 		'.update-nag',
 	]);
 
+	$elements .= ','.implode(', ', $config['remove_menu_items']);
+
 	if (!is_admin())
 	{
-		$elements .= ','.implode(', ', [
-			'#menu-settings',
-			'#menu-appearance',
-			'#menu-plugins',
-			'#menu-users',
-			'#menu-tools'
-		]);
+		$elements .= ','.implode(', ', $config['remove_menu_items_except_admin']);
 	}
 
 	echo "<style> $elements { display: none !important; } </style>";
@@ -69,24 +59,11 @@ add_action('admin_head', function()
  *
  * @return void
  */
-add_action('wp_dashboard_setup', function()
+add_action('wp_dashboard_setup', function() use ($config)
 {
 	global $wp_meta_boxes;
 
-	$positions = [
-		'side' => [
-			'dashboard_primary',
-			'dashboard_secondary',
-			'dashboard_quick_press',
-			'dashboard_recent_drafts'
-		],
-		'normal' => [
-			'dashboard_plugins',
-			'dashboard_recent_comments',
-			'dashboard_incoming_links',
-			'dashboard_right_now'
-		]
-	];
+	$positions = $config['remove_dashboard_widgets'];
 
 	foreach ($positions as $position => $boxes)
 	{
@@ -102,21 +79,11 @@ add_action('wp_dashboard_setup', function()
  *
  * @return void
  */
-add_action('admin_bar_menu', function($wp_admin_bar)
+add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
 {
-	$nodes = [
-		'comments',
-		'wp-logo',
-		'edit',
-		'appearance',
-		'view',
-		'new-content',
-		'updates',
-		'search'
-	];
+	$nodes = $config['remove_menu_bar_links'];
 
-	foreach($nodes as $node)
-	{
+	foreach ($nodes as $node) {
 		$wp_admin_bar->remove_node($node);
 	}
 }, 999);
@@ -137,25 +104,9 @@ add_action('admin_head', function()
  *
  * @return void
  */
-add_action('admin_menu', function()
+add_action('admin_menu', function() use ($config)
 {
-	$types = [
-		'link' => [
-			'linktargetdiv',
-			'linkxfndiv',
-			'linkadvanceddiv',
-		],
-		'post' => [
-			'postexcerpt',
-			'trackbacksdiv',
-			'postcustom',
-			'commentstatusdiv',
-			'commentsdiv',
-			'revisionsdiv',
-			'authordiv',
-			'sqpt-meta-tags'
-		]
-	];
+	$types = $config['remove_post_edit_meta_boxes'];
 
 	foreach ($types as $type => $boxes)
 	{

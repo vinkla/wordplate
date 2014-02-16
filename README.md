@@ -13,6 +13,7 @@ All configuration should be done within `framework/config.php`. Visit [wp-custom
 
 To-do
 --------------
-- Move all configuration to config.php.
 - Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in new versions of WordPress.
 - Add coding conventions and styleguide.
+- ~~Move all configuration to config.php.~~
+- ~~Add custom post type class.~~

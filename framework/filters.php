@@ -32,9 +32,9 @@ add_filter('login_errors', function() use ($config)
  *
  * @return string
  */
-add_filter('login_headerurl', function() use ($config)
+add_filter('login_headerurl', function()
 {
-	return $config['login_header_url'];
+	return get_site_url();
 });
 
 /**
@@ -68,7 +68,8 @@ add_filter('widget_text', 'do_shortcode');
  *
  * @return array
  */
-add_filter('wp_insert_post_data', function($data, $postarr) {
+add_filter('wp_insert_post_data', function($data, $postarr)
+{
 	if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
 	{
 		$title = remove_accents($data['post_title']);

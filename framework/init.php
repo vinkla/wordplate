@@ -8,14 +8,14 @@ $config = require 'config.php';
 /**
  * Register the Composer autoloader.
  */
-require $config['template_dir'].'/vendor/autoload.php';
+require get_template_directory().'/vendor/autoload.php';
 
 /**
  * Load Framework Components.
  */
-require $config['template_dir'].'/framework/helpers.php';
-require $config['template_dir'].'/framework/actions.php';
-require $config['template_dir'].'/framework/filters.php';
+require get_template_directory().'/framework/helpers.php';
+require get_template_directory().'/framework/actions.php';
+require get_template_directory().'/framework/filters.php';
 
 /**
  * Speed up page load in WordPress 3.8+.
