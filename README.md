@@ -17,9 +17,9 @@ Checklist
 --------------
 List with necessary tasks to do when installing a new WordPress enviroment.
 
-- Delete unused default themes and plugins.
-- Add .htaccess to the web root.
-- Download and add language files (if necessary).
+1. Delete unused default themes and plugins.
+2. Add .htaccess to the web root.
+3. Download and add language files (if necessary).
 
 To-do
 --------------
