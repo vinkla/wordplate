@@ -180,7 +180,8 @@ return array(
 			'commentsdiv',
 			'revisionsdiv',
 			'authordiv',
-			'sqpt-meta-tags'
+			'sqpt-meta-tags',
+			'slugdiv'
 		)
 	)
 );

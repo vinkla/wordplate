@@ -37,18 +37,19 @@ add_action('admin_menu', function() use ($config)
  */
 add_action('admin_head', function() use ($config)
 {
+	$elements = '#menu-';
 	$separator = ', #menu-';
 
 	if (is_admin())
 	{
-		$elements = implode(
+		$elements .= implode(
 			$separator,
 			$config['remove_menu_items']['administrator']
 		);
 	}
 	else
 	{
-		$elements = implode(
+		$elements .= implode(
 			$separator,
 			$config['remove_menu_items']['default']
 		);
