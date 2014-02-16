@@ -37,12 +37,12 @@ add_action('admin_menu', function() use ($config)
  */
 add_action('admin_head', function() use ($config)
 {
-	$elements = implode(', ', [
+	$elements = implode(', ', array(
 		// Remove update messages.
 		'#footer-upgrade',
 		'#wp-admin-bar-updates',
 		'.update-nag',
-	]);
+	));
 
 	$elements .= ','.implode(', ', $config['remove_menu_items']);
 
@@ -83,7 +83,8 @@ add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
 {
 	$nodes = $config['remove_menu_bar_links'];
 
-	foreach ($nodes as $node) {
+	foreach ($nodes as $node)
+	{
 		$wp_admin_bar->remove_node($node);
 	}
 }, 999);
