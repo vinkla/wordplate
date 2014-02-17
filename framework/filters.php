@@ -99,7 +99,7 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
  *
  * @return void
  */
-add_filter('screen_options_show_screen', function()
+add_filter('screen_options_show_screen', function() use ($config)
 {
-    return false;
+	return $config['panel_tabs']['screen_options'] || false;
 });

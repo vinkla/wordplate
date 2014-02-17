@@ -94,14 +94,17 @@ add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
 }, 999);
 
 /**
- * Remove help tab.
+ * Remove help panel tab.
  *
  * @return void
  */
-add_action('admin_head', function()
+add_action('admin_head', function() use ($config)
 {
-	$screen = get_current_screen();
-	$screen->remove_help_tabs();
+	if ($config['panel_tabs']['help'] !== false)
+	{
+		$screen = get_current_screen();
+		$screen->remove_help_tabs();
+	}
 });
 
 /**
@@ -111,7 +114,7 @@ add_action('admin_head', function()
  */
 add_action('admin_menu', function() use ($config)
 {
-	$types = $config['remove_post_edit_meta_boxes'];
+	$types = $config['meta_boxes'];
 
 	foreach ($types as $type => $boxes)
 	{

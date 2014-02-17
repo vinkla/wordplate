@@ -166,7 +166,7 @@ return array(
 	|
 	*/
 
-	'remove_post_edit_meta_boxes' => array(
+	'meta_boxes' => array(
 		'link' => array(
 			'linktargetdiv',
 			'linkxfndiv',
@@ -185,5 +185,20 @@ return array(
 			//'categorydiv',
 			//'tagsdiv-post_tag'
 		)
+	),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Hide Panel Tabs
+	|--------------------------------------------------------------------------
+	|
+	| Remove and hide screen options and help panel tab. This will make the
+	| administrator interface more leaned up for users.
+	|
+	*/
+
+	'panel_tabs' => array(
+		'help' => true,
+		'screen_options' => true
 	)
 );
