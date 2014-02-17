@@ -5,6 +5,8 @@ A [WordPress](https://github.com/WordPress/WordPress) theming boilerplate with s
 
 This boilerplate requires PHP 5.4+ and is built for the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
+Included within the repository is Server Settings page. The page is a list of server configuration. Instead of login in to the server you can visit this page to get the most necessary information. Once the framework is installed you can locate the page in Settings > Server.
+
 ##### Installation
 To install dependencies, navigate to your project root and run ```composer install --prefer-dist```.
 
