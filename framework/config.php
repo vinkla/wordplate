@@ -68,6 +68,19 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Block External HTTP Requests
+	|--------------------------------------------------------------------------
+	|
+	| On each page load in the administrator area, WordPress sends HTTP
+	| requests to check for new updates for themes and plugins. To block
+	| external HTTP requests right in WordPress's core itself set this to true.
+	|
+	*/
+
+	'http_block_external' => true,
+
+	/*
+	|--------------------------------------------------------------------------
 	| TinyMCE editor
 	|--------------------------------------------------------------------------
 	|

@@ -54,7 +54,7 @@ add_filter('admin_footer_text', function() use ($config)
  */
 add_filter('jpeg_quality', function() use ($config)
 {
-	return $config['jpeg_quality'] || 100;
+	return isset($config['jpeg_quality']) ? $config['jpeg_quality'] : 100;
 });
 
 /**
@@ -101,5 +101,10 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
  */
 add_filter('screen_options_show_screen', function() use ($config)
 {
-	return $config['panel_tabs']['screen_options'] || false;
+	if (isset($config['panel_tabs']['screen_options'])
+	{
+		return $config['panel_tabs']['screen_options'];
+	}
+
+	return false;
 });

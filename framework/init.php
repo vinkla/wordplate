@@ -30,7 +30,7 @@ foreach ($config['custom_post_types'] as $type)
 /**
  * Speed up page load in WordPress 3.8+.
  */
-define('WP_HTTP_BLOCK_EXTERNAL', true);
+define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
 
 /**
  * Prevent file edit from WP admin.
