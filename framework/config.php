@@ -112,6 +112,7 @@ return array(
 	|
 	| Available items: appearance, comments, dashboard, media, plugins, pages,
 	| posts, settings, tools, users
+	|
 	*/
 
 	'remove_menu_items' => array(
