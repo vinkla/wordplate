@@ -100,7 +100,7 @@ add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
  */
 add_action('admin_head', function() use ($config)
 {
-	if ($config['panel_tabs']['help'] !== false)
+	if (!$config['panel_tabs']['help'])
 	{
 		$screen = get_current_screen();
 		$screen->remove_help_tabs();

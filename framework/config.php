@@ -245,12 +245,12 @@ return array(
 	|--------------------------------------------------------------------------
 	|
 	| Remove and hide screen options and help panel tab. This will make the
-	| administrator interface more leaned up for users.
+	| administrator interface more cleaned up for users.
 	|
 	*/
 
 	'panel_tabs' => array(
-		'help' => true,
-		'screen_options' => true
+		'help' => false,
+		'screen_options' => false
 	)
 );

@@ -101,10 +101,8 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
  */
 add_filter('screen_options_show_screen', function() use ($config)
 {
-	if (isset($config['panel_tabs']['screen_options'])
+	if (isset($config['panel_tabs']['screen_options']))
 	{
 		return $config['panel_tabs']['screen_options'];
 	}
-
-	return false;
 });
