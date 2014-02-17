@@ -52,9 +52,9 @@ add_filter('admin_footer_text', function() use ($config)
  *
  * @return integer
  */
-add_filter('jpeg_quality', function()
+add_filter('jpeg_quality', function() use ($config)
 {
-	return 100;
+	return $config['jpeg_quality'] || 100;
 });
 
 /**

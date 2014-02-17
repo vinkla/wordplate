@@ -55,6 +55,19 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| JPEG Quality
+	|--------------------------------------------------------------------------
+	|
+	| WordPress does automatically compress JPEG images at 90% quality. Setting
+	| it to 100 would mean that WordPress would compress the image at its
+	| highest quality.
+	|
+	*/
+
+	'jpeg_quality' => 100,
+
+	/*
+	|--------------------------------------------------------------------------
 	| TinyMCE editor
 	|--------------------------------------------------------------------------
 	|
