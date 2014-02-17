@@ -84,8 +84,8 @@ return array(
 	|
 	| Specified below which menu items should be deleted for which users.
 	|
-	| Available menu items: appearance, comments, dashboard, media, plugins,
-	| settings, tools, users, pages, posts
+	| Available items: appearance, comments, dashboard, media, plugins, pages,
+	| posts, settings, tools, users
 	*/
 
 	'remove_menu_items' => array(
@@ -182,7 +182,7 @@ return array(
 			'authordiv',
 			'sqpt-meta-tags',
 			'slugdiv',
-			// 'categorydiv'
+			//'categorydiv',
 			//'tagsdiv-post_tag'
 		)
 	)
