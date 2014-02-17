@@ -45,7 +45,7 @@ remove_action('wp_head', 'wp_generator');
 /**
  * Hide the admin bar.
  */
-show_admin_bar(false);
+show_admin_bar($config['show_admin_bar']);
 
 /**
  * Remove option to update themes.
