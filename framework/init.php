@@ -33,7 +33,7 @@ foreach ($config['custom_post_types'] as $type)
 define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
 
 /**
- * Prevent file edit from WP admin.
+ * Prevent file edit from WordPress administrator dashboard.
  */
 define('DISALLOW_FILE_EDIT', true);
 
