@@ -35,7 +35,7 @@ define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
 /**
  * Prevent file edit from WordPress administrator dashboard.
  */
-define('DISALLOW_FILE_EDIT', true);
+define('DISALLOW_FILE_EDIT', $config['disallow_file_edit']);
 
 /**
  * Remove Generator for Security reasons.
