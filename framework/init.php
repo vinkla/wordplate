@@ -43,11 +43,6 @@ define('DISALLOW_FILE_EDIT', $config['disallow_file_edit']);
 remove_action('wp_head', 'wp_generator');
 
 /**
- * Hide the admin bar.
- */
-show_admin_bar($config['show_admin_bar']);
-
-/**
  * Remove option to update themes.
  */
 remove_action('load-update-core.php','wp_update_themes');

@@ -29,7 +29,6 @@ add_action('admin_menu', function() use ($config)
 	});
 });
 
-
 /**
  * Remove menu items deppended on user role.
  *

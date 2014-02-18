@@ -92,16 +92,6 @@ return array(
 
 	'disallow_file_edit' => true,
 
-	/*
-	|--------------------------------------------------------------------------
-	| Show Admin Bar
-	|--------------------------------------------------------------------------
-	|
-	| Set the display status of the Toolbar for the front side of your website
-	| (you cannot turn off the toolbar on the WordPress dashboard).
-	|
-	*/
-
 	'show_admin_bar' => false,
 
 	/*

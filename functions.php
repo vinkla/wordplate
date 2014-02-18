@@ -15,11 +15,13 @@ add_action('after_setup_theme', function()
 	// Configure WP 2.9+ Thumbnails.
 	add_theme_support('post-thumbnails');
 	set_post_thumbnail_size(50, 50, true);
-
 	// add_image_size('thumbnail-large', 500, '', false);
 
 	// Add support for post formats.
 	add_theme_support('post-formats', ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio']);
+
+	// Show the admin bar.
+	show_admin_bar(false);
 });
 
 /**
