@@ -12,7 +12,7 @@ add_action('login_head', function() use ($config)
 });
 
 /**
- * Add Server Information view to WP admin.
+ * Add Server Information view to WordPress admin.
  */
 add_action('admin_menu', function() use ($config)
 {

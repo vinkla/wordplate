@@ -11,9 +11,9 @@ add_filter('acf/fields/wysiwyg/toolbars', function($toolbars)
 	$toolbars['Simple'] = array();
 	$toolbars['Simple'][1] = array('bold', 'italic', 'underline');
 
-	if (!array_search('code' , $toolbars['Full' ][2]))
+	if (!array_search('code' , $toolbars['Full'][2]))
 	{
-		unset($toolbars['Full' ][2][$key]);
+		unset($toolbars['Full'][2][$key]);
 	}
 
 	return $toolbars;
@@ -81,7 +81,6 @@ add_filter('wp_insert_post_data', function($data, $postarr)
 
 /**
  * Modifying TinyMCE editor to remove unused items.
- * http://www.tinymce.com/wiki.php/Controls
  *
  * @return array
  */
