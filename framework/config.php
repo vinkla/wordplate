@@ -92,8 +92,6 @@ return array(
 
 	'disallow_file_edit' => true,
 
-	'show_admin_bar' => false,
-
 	/*
 	|--------------------------------------------------------------------------
 	| TinyMCE editor
