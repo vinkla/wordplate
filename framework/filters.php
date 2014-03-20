@@ -73,8 +73,14 @@ add_filter('wp_insert_post_data', function($data, $postarr)
 	if (!in_array($data['post_status'], array('draft', 'pending', 'auto-draft')))
 	{
 		$title = remove_accents($data['post_title']);
-        	$title = sanitize_title($title);
-        	$data['post_name'] = wp_unique_post_slug($title, $postarr['ID'], $data['post_status'], $data['post_type'], $data['post_parent']);
+			$title = sanitize_title($title);
+			$data['post_name'] = wp_unique_post_slug(
+				$title,
+				$postarr['ID'],
+				$data['post_status'],
+				$data['post_type'],
+				$data['post_parent']
+			);
 	}
 
 	return $data;
