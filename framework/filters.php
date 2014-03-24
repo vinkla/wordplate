@@ -97,6 +97,13 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
 	$init['theme_advanced_blockformats'] = implode(',', $config['tinymce_blockformats']);
 	$init['theme_advanced_disable'] = implode(',', $config['tinymce_disabled']);
 
+	// Disable custom format on copy paste (useful when clients copy from Ms Word)
+	$init['plugins'] = "paste";
+	$init['paste_auto_cleanup_on_paste'] = true;
+	$init['paste_text_sticky'] = true;
+	$init['paste_text_sticky_default'] = true;
+
+
 	return $init;
 });
 
