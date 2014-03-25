@@ -63,7 +63,7 @@ wp_clear_scheduled_hook('wp_maybe_auto_update');
 remove_action('load-update-core.php', 'wp_update_plugins');
 wp_clear_scheduled_hook('wp_update_plugins');
 
-/*
+/**
  * Disable all automatic updates.
  */
 add_filter('auto_update_translation', '__return_false');
