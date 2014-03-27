@@ -39,7 +39,7 @@ add_action('admin_head', function() use ($config)
 	$elements = '#menu-';
 	$separator = ', #menu-';
 
-	if (is_admin())
+	if (current_user_can('manage_options'))
 	{
 		$elements .= implode(
 			$separator,
