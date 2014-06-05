@@ -34,7 +34,7 @@ add_action('wp_enqueue_scripts', function()
 	wp_deregister_script('jquery');
 
 	// Example;
-	// wp_enqueue_script('main', get_template_directory().'/scripts/main.min.js', '', '', true);
+	// wp_enqueue_script('main', get_template_directory_uri().'/scripts/main.min.js', '', '', true);
 });
 
 /**
