@@ -38,11 +38,6 @@ define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
 define('DISALLOW_FILE_EDIT', $config['disallow_file_edit']);
 
 /**
- * Remove Generator for Security reasons.
- */
-remove_action('wp_head', 'wp_generator');
-
-/**
  * Remove option to update themes.
  */
 remove_action('load-update-core.php', 'wp_update_themes');

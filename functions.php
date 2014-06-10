@@ -3,7 +3,7 @@
 /**
  * Load admin dependencies.
  */
-require get_template_directory().'/framework/init.php';
+require get_template_directory().'/lib/init.php';
 
 /**
  * Theme set up settings.
