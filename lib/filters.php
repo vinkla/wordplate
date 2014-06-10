@@ -98,13 +98,22 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
 	$init['theme_advanced_disable'] = implode(',', $config['tinymce_disabled']);
 
 	// Disable custom format on copy paste (useful when clients copy from Ms Word)
-	$init['plugins'] = 'paste';
+	$init['extended_valid_elements'] = 'span[!class]';
 	$init['paste_auto_cleanup_on_paste'] = true;
-	$init['paste_text_sticky'] = true;
-	$init['paste_text_sticky_default'] = true;
-
+	$init['paste_strip_class_attributes'] = "all";
+	$init['paste_remove_styles'] = true;
 
 	return $init;
+});
+
+/**
+ * Remove Microsoft Word formatting on save for TinyMCE
+ *
+ * @return var
+ */
+add_filter('content_save_pre', function($content)
+{
+  return preg_replace( '/<!--\[if gte mso.*?-->/ms', '', $content );
 });
 
 /**
