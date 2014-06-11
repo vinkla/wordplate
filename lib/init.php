@@ -16,7 +16,9 @@ require get_template_directory().'/vendor/autoload.php';
 require get_template_directory().'/lib/cleanup.php';
 require get_template_directory().'/lib/editor.php';
 require get_template_directory().'/lib/login.php';
+require get_template_directory().'/lib/page.php';
 require get_template_directory().'/lib/updates.php';
+require get_template_directory().'/lib/utils.php';
 
 /**
  * Speed up page load in WordPress 3.8+.
