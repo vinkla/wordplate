@@ -1,5 +1,6 @@
 {
 	"require": {
-		"jjgrainger/wp-custom-post-type-class": "dev-master"
+		"jjgrainger/wp-custom-post-type-class": "dev-master",
+		"vinkla/wp-server-info": "dev-master"
 	}
 }

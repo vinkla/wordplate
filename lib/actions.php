@@ -12,24 +12,6 @@ add_action('login_head', function() use ($config)
 });
 
 /**
- * Add Server Information view to WordPress admin.
- */
-add_action('admin_menu', function() use ($config)
-{
-	global $wpdb;
-
-	$parent = 'options-general.php';
-	$title = 'Server';
-	$permission = 'update_core';
-	$slug = 'server-settings';
-
-	add_submenu_page($parent, $title, $title, $permission, $slug, function() use ($wpdb)
-	{
-		require get_template_directory().'/framework/views/server-settings.php';
-	});
-});
-
-/**
  * Cleanup WordPress wp_head().
  */
 add_action('init', function()
