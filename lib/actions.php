@@ -7,8 +7,10 @@
  */
 add_action('login_head', function() use ($config)
 {
-	$path = $config['login_image_path'];
-	echo "<style> h1 a { background-image:url($path) !important; background-size: auto auto !important; } </style>";
+	$path 	= $config['login_image_path'];
+	$width 	= $config['login_image_width'];
+
+	echo "<style> h1 a { background-image:url($path) !important; background-size: 100% auto !important; width: $width !important; } </style>";
 });
 
 /**
