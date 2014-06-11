@@ -1,19 +1,6 @@
 <?php
 
 /**
- * Custom login logo.
- *
- * @return void
- */
-add_action('login_head', function() use ($config)
-{
-	$path 	= $config['login_image_path'];
-	$width 	= $config['login_image_width'];
-
-	echo "<style> h1 a { background-image:url($path) !important; background-size: 100% auto !important; width: $width !important; } </style>";
-});
-
-/**
  * Cleanup WordPress wp_head().
  */
 add_action('init', function()
@@ -91,20 +78,6 @@ add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
 }, 999);
 
 /**
- * Remove help panel tab.
- *
- * @return void
- */
-add_action('admin_head', function() use ($config)
-{
-	if (!$config['panel_tabs']['help'])
-	{
-		$screen = get_current_screen();
-		$screen->remove_help_tabs();
-	}
-});
-
-/**
  * Remove meta boxes in post edit.
  *
  * @return void
@@ -122,3 +95,29 @@ add_action('admin_menu', function() use ($config)
 	}
 });
 
+/**
+ * Remove help panel tab.
+ *
+ * @return void
+ */
+add_action('admin_head', function() use ($config)
+{
+	if (!$config['panel_tabs']['help'])
+	{
+		$screen = get_current_screen();
+		$screen->remove_help_tabs();
+	}
+});
+
+/**
+ * Remove screen options tab.
+ *
+ * @return void
+ */
+add_filter('screen_options_show_screen', function() use ($config)
+{
+	if (isset($config['panel_tabs']['screen_options']))
+	{
+		return $config['panel_tabs']['screen_options'];
+	}
+});

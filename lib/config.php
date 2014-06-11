@@ -4,20 +4,6 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Custom Post Types
-	|--------------------------------------------------------------------------
-	|
-	| Register custom post types. Remember to create the post types within
-	| post-types directory before registering them here.
-	|
-	*/
-
-	'custom_post_types' => array(
-		// 'book'
-	),
-
-	/*
-	|--------------------------------------------------------------------------
 	| Footer Text
 	|--------------------------------------------------------------------------
 	|
@@ -39,7 +25,7 @@ return array(
 	*/
 
 	'login_image_path' => get_template_directory_uri().'/images/admin-login-logo.png',
-	
+
 	/*
 	|--------------------------------------------------------------------------
 	| Login Logo Width

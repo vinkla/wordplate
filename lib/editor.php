@@ -20,34 +20,6 @@ add_filter('acf/fields/wysiwyg/toolbars', function($toolbars)
 });
 
 /**
- * Add custom login error message.
- */
-add_filter('login_errors', function() use ($config)
-{
-	return $config['login_error_message'];
-});
-
-/**
- * Custom login logo url.
- *
- * @return string
- */
-add_filter('login_headerurl', function()
-{
-	return get_site_url();
-});
-
-/**
- * Custom footer text.
- *
- * @return string
- */
-add_filter('admin_footer_text', function() use ($config)
-{
-	return $config['footer_text'];
-});
-
-/**
  * Force perfect JPG images.
  *
  * @return integer
@@ -113,18 +85,5 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
  */
 add_filter('content_save_pre', function($content)
 {
-  return preg_replace( '/<!--\[if gte mso.*?-->/ms', '', $content );
-});
-
-/**
- * Remove screen options tab.
- *
- * @return void
- */
-add_filter('screen_options_show_screen', function() use ($config)
-{
-	if (isset($config['panel_tabs']['screen_options']))
-	{
-		return $config['panel_tabs']['screen_options'];
-	}
+	return preg_replace( '/<!--\[if gte mso.*?-->/ms', '', $content );
 });
