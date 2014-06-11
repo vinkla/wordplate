@@ -39,6 +39,17 @@ return array(
 	*/
 
 	'login_image_path' => get_template_directory_uri().'/images/admin-login-logo.png',
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Login Logo Width
+	|--------------------------------------------------------------------------
+	|
+	| Define the width of your custom login logo
+	|
+	*/
+
+	'login_image_width' =>  '80px',
 
 	/*
 	|--------------------------------------------------------------------------
