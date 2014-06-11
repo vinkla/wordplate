@@ -63,6 +63,19 @@ add_action('wp_dashboard_setup', function() use ($config)
 });
 
 /**
+ * Disable Default Widgets from WordPress admin.
+ *
+ * @return void
+ */
+add_action('widgets_init', function() use ($config) {
+
+	foreach ($config['widgets'] as $widget)
+	{
+		unregister_widget($widget);
+	}
+}, 1);
+
+/**
  * Remove links from admin toolbar.
  *
  * @return void

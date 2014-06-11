@@ -22,20 +22,12 @@ return array(
 	| Replace the default login logo with clients logo or name will give your
 	| custom built theme an extra touch.
 	|
+	| Define the width of your custom login logo in pixels.
+	|
 	*/
 
 	'login_image_path' => get_template_directory_uri().'/images/admin-login-logo.png',
-
-	/*
-	|--------------------------------------------------------------------------
-	| Login Logo Width
-	|--------------------------------------------------------------------------
-	|
-	| Define the width of your custom login logo
-	|
-	*/
-
-	'login_image_width' =>  '80px',
+	'login_image_width' =>  80,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -223,6 +215,29 @@ return array(
 			//'tagsdiv-post_tag'
 		)
 	),
+
+	/*
+	|--------------------------------------------------------------------------
+	| Disable Default Widgets
+	|--------------------------------------------------------------------------
+	|
+	| Hide and disable default widgets within WordPress core. Add widgets to
+	| the list to leave them out of WordPress admin.
+	|
+	*/
+
+	'widgets' => [
+		'WP_Widget_Pages',
+		'WP_Widget_Calendar',
+		'WP_Widget_Archives',
+		'WP_Widget_Meta',
+		'WP_Widget_Search',
+		'WP_Widget_Categories',
+		'WP_Widget_Recent_Posts',
+		'WP_Widget_Recent_Comments',
+		'WP_Widget_RSS',
+		'WP_Widget_Tag_Cloud'
+	],
 
 	/*
 	|--------------------------------------------------------------------------
