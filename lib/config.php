@@ -38,7 +38,7 @@ return array(
 	|
 	*/
 
-	'login_image_path' => get_template_directory().'/images/admin-login-logo.png',
+	'login_image_path' => get_template_directory_uri().'/images/admin-login-logo.png',
 
 	/*
 	|--------------------------------------------------------------------------
