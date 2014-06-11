@@ -14,11 +14,12 @@ add_action('after_setup_theme', function()
 {
 	// Configure WP 2.9+ Thumbnails.
 	add_theme_support('post-thumbnails');
-	set_post_thumbnail_size(50, 50, true);
+	// set_post_thumbnail_size(50, 50, true);
 	// add_image_size('thumbnail-large', 500, '', false);
 
 	// Add support for post formats.
-	add_theme_support('post-formats', ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio']);
+	// $formats = ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio'];
+	// add_theme_support('post-formats', $formats);
 
 	// Show the admin bar.
 	show_admin_bar(false);
@@ -47,9 +48,9 @@ add_filter('wp_title', function($title)
 	$name = get_bloginfo('name');
 	$description = get_bloginfo('description');
 
-	if (is_front_page()) { return "$name - $description"; }
+	if (is_front_page()) { return sprintf('%s - % s', $name, $description); }
 
-	return trim($title).' - '.$name;
+	return sprintf('%s - % s', trim($title), $name);
 });
 
 /**
