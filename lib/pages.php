@@ -7,6 +7,8 @@
  */
 add_action('admin_menu', function()
 {
+	global $wpdb;
+
 	$parent = 'options-general.php';
 	$title = 'Server';
 	$permission = 'update_core';
