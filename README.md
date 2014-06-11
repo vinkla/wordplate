@@ -11,7 +11,7 @@ A Server Settings page is included within the repository. The page is a list of 
 To install dependencies, navigate to your project root and run ```composer install --prefer-dist```.
 
 ##### Usage
-All configuration should be done within `framework/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types.
+All library configuration should be done within `lib/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types should be added within the `includes/post-types` directory.
 
 This boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/).
 
