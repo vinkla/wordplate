@@ -27,7 +27,7 @@ A Server Settings page. This page lists server configuration. Instead of login i
 
 4. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
 
-5. Login in and visit *Settings > General* page and remove `/wordpress` from **Site Address (URL)**.
+5. Login in and visit *Settings > General* page and remove `/wordpress` from Site Address (URL).
 
 6. We're done. Lets build themes.
 
