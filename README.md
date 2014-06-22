@@ -9,11 +9,11 @@ This boilerplate requires PHP 5.4+ and is built with the latest version of [Word
 
 WordPress as a dependency. Move your content out of WordPress core.
 
-[WordPress Packagist](http://wpackagist.org/). Instead of installing plugins manually, specify them in the `composer.json` and they will be included automatically.
+[WordPress Packagist](http://wpackagist.org/). Instead of installing plugins manually, specify them in the `composer.json`, they will added to the plugins directory automatically.
 
-A boilerplate theme filled with actions and filters to get the most out of WordPress. It also cleans up the admin dashboard. A lot.
+A boilerplate theme filled with actions and filters to get the most out of WordPress.
 
-[Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class) by @jjgrainger.
+Joe Grainger's super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
