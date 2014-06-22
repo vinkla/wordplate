@@ -29,6 +29,9 @@
 		"wpackagist/advanced-custom-fields": "4.3.8",
 		"wpackagist/wordpress-importer": "0.6.1"
 	},
+	"config": {
+		"preferred-install": "dist"
+	},
 	"extra": {
 		"installer-paths": {
 			"wp-content/plugins/{$name}": ["type:wordpress-plugin"]
