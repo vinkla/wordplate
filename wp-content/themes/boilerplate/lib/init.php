@@ -8,7 +8,7 @@ $config = require 'config.php';
 /**
  * Register the Composer autoloader.
  */
-require get_template_directory().'/vendor/autoload.php';
+require WP_CONTENT_DIR.'/../vendor/autoload.php';
 
 /**
  * Load Framework Components.
