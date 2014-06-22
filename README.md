@@ -36,18 +36,11 @@ Library configuration can be done within `lib/config.php`. Visit [wp-custom-post
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in `composer.json`.
 
-Checklist
---------------
-List with necessary tasks for installing a new WordPress enviroment.
+## To-do
+- [ ] Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in newer versions of WordPress.
+- [ ] Add coding conventions and styleguide.
+- [ ] Add .htaccess with `wp-admin` redirect.
 
-1. Delete unused default themes and plugins.
-2. Add .htaccess to the web root.
-3. Download and add language files (if necessary).
-
-To-do
---------------
-- Test if [remove_menu_page()](http://codex.wordpress.org/Function_Reference/remove_menu_page) is less buggy in newer versions of WordPress.
-- Add coding conventions and styleguide.
-- Add .htaccess with `wp-admin` redirect.
-- ~~Move all configuration to config.php.~~
-- ~~Add custom post type class.~~
+**Already done.**
+- [x] Move all configuration to config.php.
+- [x] Add custom post type class.
