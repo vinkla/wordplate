@@ -13,7 +13,7 @@ WordPress as a dependency. Move your content out of WordPress core.
 
 A boilerplate theme filled with actions and filters to get the most out of WordPress.
 
-Joe Grainger's super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
+[Joe Grainger's](https://github.com/jjgrainger) super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
