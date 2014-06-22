@@ -18,8 +18,7 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
 ## Installation
-1. Clone this repository to your development environment.
-`git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`
+1. Clone this repository to your development environment `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`.
 2. To install dependencies, navigate to your project root and run ```composer install```.
 3. Create a database and add the credentials to `wp-config.php`.
 4. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
