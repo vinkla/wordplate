@@ -35,3 +35,11 @@ A Server Settings page. This page lists server configuration. Instead of login i
 Library configuration can be done within `lib/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `includes/post-types` directory.
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in `composer.json`.
+
+## Contributing
+
+Thank you for considering contributing to the boilerplate. Whether you are submitting a bug-fix, enhancement, breaking change or an entirely new component, submit your pull request to the `master` branch.
+
+### License
+
+The WordPress boilerplate is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
