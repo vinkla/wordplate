@@ -20,15 +20,10 @@ A Server Settings page. This page lists server configuration. Instead of login i
 ## Installation
 1. Clone this repository to your development environment.
 `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`
-
 2. To install dependencies, navigate to your project root and run ```composer install```.
-
 3. Create a database and add the credentials to `wp-config.php`.
-
 4. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
-
 5. Login in and visit *Settings > General* page and remove `/wordpress` from Site Address (URL).
-
 6. We're done. Lets build themes.
 
 ## Theming
