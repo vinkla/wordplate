@@ -1,6 +1,6 @@
 {
-	"name": "vinkla/tgbjer-se",
-	"description": "Package to build tgbjer.se",
+	"name": "wordpress-boilerplate",
+	"description": "Boilerplate that scaffolds a basic wordpress project using composer.",
 	"repositories": [
 		{
 			"type": "composer",
@@ -11,11 +11,11 @@
 			"package": {
 				"name": "wordpress/wordpress",
 				"type": "webroot",
-				"version": "3.9.1",
+				"version": "3.9.2",
 				"source": {
 					"type": "git",
 					"url": "https://github.com/WordPress/WordPress.git",
-					"reference": "3.9.1"
+					"reference": "3.9.2"
 				},
 				"require": {
 					"fancyguy/webroot-installer": "1.0.0"
@@ -24,7 +24,7 @@
 		}
 	],
 	"require": {
-		"wordpress/wordpress": "3.9.1",
+		"wordpress/wordpress": "3.9.2",
 		"jjgrainger/wp-custom-post-type-class": "v1.2.2",
 		"wpackagist/advanced-custom-fields": "4.3.8",
 		"wpackagist/wordpress-importer": "0.6.1"
