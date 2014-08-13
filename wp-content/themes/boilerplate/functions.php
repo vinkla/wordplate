@@ -6,6 +6,11 @@
 require get_template_directory().'/lib/init.php';
 
 /**
+ * Load admin includes.
+ */
+require get_template_directory().'/includes/init.php';
+
+/**
  * Theme set up settings.
  *
  * @return void
