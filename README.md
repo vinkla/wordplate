@@ -18,7 +18,7 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
 ## Installation
-1. Clone this repository `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`.
+1. Clone this repo `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`.
 2. To install dependencies, navigate to your project root and run ```composer install```.
 3. Create a database and add the credentials to `wp-config.php`.
 4. Add [Keys and Salts](https://api.wordpress.org/secret-key/1.1/salt) to to `wp-config.php`.
@@ -26,7 +26,7 @@ A Server Settings page. This page lists server configuration. Instead of login i
 6. Login and visit *Settings > General* page and remove `/wordpress` from Site Address (URL).
 7. We're done. Lets build themes.
 
-If you're not running your installation from the root you'll have to update [Custom content directory](wp-config.php) in `wp-config.php`.
+If you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
 ## Theming
 Library configuration can be done within `lib/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `includes/post-types` directory.
