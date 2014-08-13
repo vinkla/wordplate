@@ -8,8 +8,8 @@
  */
 add_filter('acf/fields/wysiwyg/toolbars', function($toolbars)
 {
-	$toolbars['Simple'] = array();
-	$toolbars['Simple'][1] = array('bold', 'italic', 'underline');
+	$toolbars['Simple'] = [];
+	$toolbars['Simple'][1] = ['bold', 'italic', 'underline'];
 
 	if (!array_search('code' , $toolbars['Full'][2]))
 	{
@@ -42,7 +42,7 @@ add_filter('widget_text', 'do_shortcode');
  */
 add_filter('wp_insert_post_data', function($data, $postarr)
 {
-	if (!in_array($data['post_status'], array('draft', 'pending', 'auto-draft')))
+	if (!in_array($data['post_status'], ['draft', 'pending', 'auto-draft']))
 	{
 		$title = remove_accents($data['post_title']);
 			$title = sanitize_title($title);
