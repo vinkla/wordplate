@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'tinymce_blockformats' => array('p', 'h2', 'h3'),
+	'tinymce_blockformats' => array('Paragraph=p', 'Heading 2=h2', 'Heading 3=h3'),
 	'tinymce_disabled' => array(
 		'strikethrough',
 		'underline',
