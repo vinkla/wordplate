@@ -66,8 +66,17 @@ add_filter('wp_insert_post_data', function($data, $postarr)
 add_filter('tiny_mce_before_init', function($init) use ($config)
 {
 	// Add block format elements you want to show in dropdown
-	$init['theme_advanced_blockformats'] = implode(',', $config['tinymce_blockformats']);
-	$init['theme_advanced_disable'] = implode(',', $config['tinymce_disabled']);
+	$init['block_formats'] = implode(';', $config['tinymce_blockformats']);
+
+	// Disable buttons for the two toolbars
+	$toolbar1 = explode(',', $init['toolbar1']);
+	$buttons1 = array_diff($toolbar1, $config['tinymce_disabled']);
+
+	$toolbar2 = explode(',', $init['toolbar2']);
+	$buttons2 = array_diff($toolbar2, $config['tinymce_disabled']);
+
+	$init['toolbar1'] = implode(',', $buttons1);
+	$init['toolbar2'] = implode(',', $buttons2);
 
 	// Disable custom format on copy paste (useful when clients copy from Ms Word)
 	$init['extended_valid_elements'] = 'span[!class]';
