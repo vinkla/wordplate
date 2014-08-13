@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,8 @@ return array(
 	|
 	*/
 
-	'login_image_path' => get_template_directory_uri().'/images/admin-login-logo.png',
+	'login_image_path' => sprintf('%s/images/admin-login-logo.png', get_template_directory_uri()),
+
 	'login_image_width' =>  80,
 
 	/*
@@ -93,13 +94,18 @@ return array(
 	|
 	*/
 
-	'tinymce_blockformats' => array('Paragraph=p', 'Heading 2=h2', 'Heading 3=h3'),
-	'tinymce_disabled' => array(
+	'tinymce_blockformats' => [
+		'Paragraph=p',
+		'Heading 2=h2',
+		'Heading 3=h3'
+	],
+
+	'tinymce_disabled' => [
 		'strikethrough',
 		'underline',
 		'forecolor',
 		'justifyfull'
-	),
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -117,9 +123,9 @@ return array(
 	|
 	*/
 
-	'remove_menu_items' => array(
+	'remove_menu_items' => [
 		// removed for user without administrator capabilities
-		'default' => array(
+		'default' => [
 			'appearance',
 			'comments',
 			'dashboard',
@@ -128,14 +134,15 @@ return array(
 			'settings',
 			'tools',
 			'users'
-		),
+		],
+
 		// removed for user with administrator capabilities
-		'administrator' => array(
+		'administrator' => [
 			'comments',
 			'dashboard',
 			'media'
-		)
-	),
+		]
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -147,7 +154,7 @@ return array(
 	|
 	*/
 
-	'remove_menu_bar_links' => array(
+	'remove_menu_bar_links' => [
 		'comments',
 		'wp-logo',
 		'edit',
@@ -156,7 +163,7 @@ return array(
 		'new-content',
 		'updates',
 		'search'
-	),
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -169,21 +176,22 @@ return array(
 	|
 	*/
 
-	'remove_dashboard_widgets' => array(
-		'side' => array(
+	'remove_dashboard_widgets' => [
+		'side' => [
 			'dashboard_primary',
 			'dashboard_secondary',
 			'dashboard_quick_press',
 			'dashboard_recent_drafts'
-		),
-		'normal' => array(
+		],
+
+		'normal' => [
 			'dashboard_plugins',
 			'dashboard_recent_comments',
 			'dashboard_incoming_links',
 			'dashboard_right_now',
 			'dashboard_activity'
-		)
-	),
+		]
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -195,13 +203,14 @@ return array(
 	|
 	*/
 
-	'meta_boxes' => array(
-		'link' => array(
+	'meta_boxes' => [
+		'link' => [
 			'linktargetdiv',
 			'linkxfndiv',
 			'linkadvanceddiv',
-		),
-		'post' => array(
+		],
+
+		'post' => [
 			'postexcerpt',
 			'trackbacksdiv',
 			'postcustom',
@@ -213,8 +222,8 @@ return array(
 			'slugdiv',
 			//'categorydiv',
 			//'tagsdiv-post_tag'
-		)
-	),
+		]
+	],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -249,8 +258,8 @@ return array(
 	|
 	*/
 
-	'panel_tabs' => array(
+	'panel_tabs' => [
 		'help' => false,
 		'screen_options' => false
-	)
-);
+	]
+];

@@ -65,10 +65,10 @@ add_filter('wp_insert_post_data', function($data, $postarr)
  */
 add_filter('tiny_mce_before_init', function($init) use ($config)
 {
-	// Add block format elements you want to show in dropdown
+	// Add block format elements you want to show in dropdown.
 	$init['block_formats'] = implode(';', $config['tinymce_blockformats']);
 
-	// Disable buttons for the two toolbars
+	// Disable buttons for the two toolbars.
 	$toolbar1 = explode(',', $init['toolbar1']);
 	$buttons1 = array_diff($toolbar1, $config['tinymce_disabled']);
 
@@ -78,7 +78,7 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
 	$init['toolbar1'] = implode(',', $buttons1);
 	$init['toolbar2'] = implode(',', $buttons2);
 
-	// Disable custom format on copy paste (useful when clients copy from Ms Word)
+	// Disable custom format on copy paste (useful when clients copy from Ms Word).
 	$init['extended_valid_elements'] = 'span[!class]';
 	$init['paste_auto_cleanup_on_paste'] = true;
 	$init['paste_strip_class_attributes'] = "all";
@@ -88,7 +88,7 @@ add_filter('tiny_mce_before_init', function($init) use ($config)
 });
 
 /**
- * Remove Microsoft Word formatting on save for TinyMCE
+ * Remove Microsoft Word formatting on save for TinyMCE.
  *
  * @return var
  */
