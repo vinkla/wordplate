@@ -16,6 +16,6 @@ add_action('admin_menu', function()
 
 	add_submenu_page($parent, $title, $title, $permission, $slug, function() use ($wpdb)
 	{
-		require get_template_directory().'/lib/views/info.view.php';
+		require get_template_directory().'/lib/views/info.php';
 	});
 });
