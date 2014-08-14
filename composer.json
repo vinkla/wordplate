@@ -12,10 +12,9 @@
 				"name": "wordpress/wordpress",
 				"type": "webroot",
 				"version": "3.9.2",
-				"source": {
-					"type": "git",
-					"url": "https://github.com/WordPress/WordPress.git",
-					"reference": "3.9.2"
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/WordPress/WordPress/archive/3.9.2.zip"
 				},
 				"require": {
 					"fancyguy/webroot-installer": "1.1.0"
