@@ -25,7 +25,7 @@
 	],
 	"require": {
 		"wordpress/wordpress": "3.9.2",
-		"jjgrainger/wp-custom-post-type-class": "v1.2.2",
+		"jjgrainger/wp-custom-post-type-class": "v1.2.3",
 		"wpackagist/advanced-custom-fields": "4.3.8",
 		"wpackagist/wordpress-importer": "0.6.1"
 	},
