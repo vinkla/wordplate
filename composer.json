@@ -11,10 +11,10 @@
 			"package": {
 				"name": "wordpress/wordpress",
 				"type": "webroot",
-				"version": "3.9.2",
+				"version": "4.0",
 				"dist": {
 					"type": "zip",
-					"url": "https://github.com/WordPress/WordPress/archive/3.9.2.zip"
+					"url": "https://wordpress.org/wordpress-4.0.zip"
 				},
 				"require": {
 					"fancyguy/webroot-installer": "1.1.0"
@@ -23,8 +23,8 @@
 		}
 	],
 	"require": {
-		"wordpress/wordpress": "3.9.2",
-		"jjgrainger/wp-custom-post-type-class": "v1.2.3",
+		"wordpress/wordpress": "4.0",
+		"jjgrainger/wp-custom-post-type-class": "dev-master",
 		"wpackagist/advanced-custom-fields": "4.3.8",
 		"wpackagist/wordpress-importer": "0.6.1"
 	},
