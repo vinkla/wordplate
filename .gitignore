@@ -1,5 +1,10 @@
 .DS_Store
+
 composer.lock
 composer.phar
+
 vendor
 wordpress
+
+wp-content/plugins/
+!wp-content/plugins/index.php
