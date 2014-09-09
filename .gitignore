@@ -1,5 +1,14 @@
 .DS_Store
+.sass-cache
+
+bower_components/
+node_modules/
+
 composer.lock
 composer.phar
+
 vendor
 wordpress
+
+wp-content/plugins/
+!wp-content/plugins/index.php
