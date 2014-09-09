@@ -1,0 +1,96 @@
+/* typography */
+
+/* Fonts */
+// @include font-face('NAME', 'PATH', 300, normal, false);
+
+body {
+	font-family: $base-font-family;
+	color: $base-font-color;
+
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: $special-font-family;
+  font-size: 3em;
+  line-height: 1;
+
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: $special-font-family;
+  font-size: 2em;
+  line-height: 1.5;
+
+  margin-top: .75em;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-family: $special-font-family;
+  font-size: 1.5em;
+  line-height: 1;
+
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.2;
+
+  margin-top: 1.2em;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 1em;
+  line-height: 1.5;
+
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+h6 {
+  font-size: .875em;
+  line-height: 1.7143em;
+
+  margin-top: 1.7143em;
+  margin-bottom: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+address {
+
+}
+
+small {
+  font-weight: 300;
+
+  font-size: .875em;
+  line-height: 1.7143em;
+
+  margin-top: 1.7143em;
+  margin-bottom: 0;
+}
+
+a {
+  transition: color .2s;
+  color: $link-default-color;
+
+  text-decoration: none;
+
+  &:hover { color: $link-hover-color; }
+}
+
+strong { font-weight: 700; }
