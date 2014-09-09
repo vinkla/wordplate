@@ -13,12 +13,12 @@ require WP_CONTENT_DIR.'/../vendor/autoload.php';
 /**
  * Load Framework Components.
  */
-require get_template_directory().'/lib/cleanup.php';
-require get_template_directory().'/lib/editor.php';
-require get_template_directory().'/lib/login.php';
-require get_template_directory().'/lib/pages.php';
-require get_template_directory().'/lib/updates.php';
-require get_template_directory().'/lib/utils.php';
+require get_template_directory().'/library/cleanup.php';
+require get_template_directory().'/library/editor.php';
+require get_template_directory().'/library/login.php';
+require get_template_directory().'/library/pages.php';
+require get_template_directory().'/library/updates.php';
+require get_template_directory().'/library/utils.php';
 
 /**
  * Speed up page load in WordPress 3.8+.
