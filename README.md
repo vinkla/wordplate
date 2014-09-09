@@ -35,7 +35,7 @@ The boilerplate doesn't include a way to create custom fields. Instead use [Adva
 
 ## Contributing
 
-Thank you for considering contributing to the WordPress boilerplate. If you are submitting a bug-fix, or an enhancement that is **not** a breaking change, submit your pull request to the master branch. If you are submitting a breaking change or an entirely new component, submit your pull request to the `develop` branch.
+Thank you for considering contributing to the WordPress boilerplate. If you are submitting a bug-fix, or an enhancement that is **not** a breaking change, submit your pull request to the `master` branch. If you are submitting a breaking change or an entirely new component, submit your pull request to the `develop` branch.
 
 Thank you for considering contributing to the boilerplate. Whether you are submitting a bug-fix, enhancement, breaking change or an entirely new component, submit your pull request to the `master` branch.
 
