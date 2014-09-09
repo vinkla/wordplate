@@ -40,7 +40,12 @@ add_action('wp_enqueue_scripts', function()
 	wp_deregister_script('jquery');
 
 	// Example;
-	// wp_enqueue_script('main', get_template_directory_uri().'/scripts/main.min.js', '', '', true);
+	// wp_enqueue_script('main', get_template_directory_uri().'/scripts/main.js', '', '', true);
+
+  wp_enqueue_style('boilerplate', get_template_directory_uri().'/assets/styles/boilerplate.css');
+  wp_register_script('boilerplate', get_template_directory_uri().'/assets/scripts/boilerplate.js', '', '', true);
+
+  wp_enqueue_script('boilerplate');
 });
 
 /**

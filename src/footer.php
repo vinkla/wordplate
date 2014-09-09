@@ -1,0 +1,1 @@
+  <?php wp_footer(); ?>
