@@ -67,7 +67,7 @@ return [
 	|
 	*/
 
-	'http_block_external' => true,
+	'http_block_external' => false,
 
 	/*
 	|--------------------------------------------------------------------------
