@@ -14,17 +14,17 @@
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+// ** MySQL settings - You can get this info from your web host. ** //
+/** The name of the database for WordPress. */
 define('DB_NAME', 'database_name_here');
 
-/** MySQL database username */
+/** MySQL database username. */
 define('DB_USER', 'username_here');
 
-/** MySQL database password */
+/** MySQL database password. */
 define('DB_PASSWORD', 'password_here');
 
-/** MySQL hostname */
+/** MySQL hostname. */
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
@@ -36,6 +36,9 @@ define('DB_COLLATE', '');
 /** Custom content directory. */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
+
+/** Set the trash to less days to optimize WP. */
+define('EMPTY_TRASH_DAYS', 7); // default 30
 
 /**#@+
  * Authentication Unique Keys and Salts.
