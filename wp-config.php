@@ -37,6 +37,9 @@ define('DB_COLLATE', '');
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
 
+/** Set the trash to less days to optimize WP */
+define ('EMPTY_TRASH_DAYS', 7); // default 30
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
