@@ -21,6 +21,14 @@ require get_template_directory().'/library/updates.php';
 require get_template_directory().'/library/utils.php';
 
 /**
+ * Enable Gzip if available.
+ */
+if (extension_loaded('zlib') && (ini_get('output_handler') !== 'ob_gzhandler'))
+{
+	add_action('wp', create_function('', '@ob_end_clean();@ini_set("zlib.output_compression", 1);'));
+}
+
+/**
  * Speed up page load in WordPress 3.8+.
  */
 define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
