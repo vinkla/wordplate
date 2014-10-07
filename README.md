@@ -37,6 +37,6 @@ The boilerplate doesn't include a way to create custom fields. Instead use [Adva
 
 Thank you for considering contributing to the WordPress boilerplate. If you are submitting a bug-fix, or an enhancement that is **not** a breaking change, submit your pull request to the `master` branch. If you are submitting a breaking change or an entirely new component, submit your pull request to the `develop` branch.
 
-### License
+## License
 
 The WordPress boilerplate is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
