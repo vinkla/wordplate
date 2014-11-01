@@ -1,7 +1,0 @@
-@mixin breakpoint($res)
-{
-  @media (max-width: $res)
-  {
-    @content;
-  }
-}
