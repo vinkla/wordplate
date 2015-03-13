@@ -1,0 +1,4 @@
+vendor
+wordpress
+composer.lock
+wp-content/plugins
