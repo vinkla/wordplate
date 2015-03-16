@@ -13,5 +13,11 @@
  */
 define('WP_USE_THEMES', true);
 
+/** Register the Composer autoloader. */
+require __DIR__ . '/vendor/autoload.php';
+
+/** Load .env file into WordPress. */
+Dotenv::load(__DIR__);
+
 /** Loads the WordPress Environment and Template */
-require(dirname(__FILE__) . '/wordpress/wp-blog-header.php');
+require(__DIR__ . '/wordpress/wp-blog-header.php');
