@@ -6,11 +6,6 @@
 $config = require 'config.php';
 
 /**
- * Register the Composer autoloader.
- */
-require WP_CONTENT_DIR . '/../vendor/autoload.php';
-
-/**
  * Load Framework Components.
  */
 require get_template_directory().'/library/cleanup.php';
