@@ -3,12 +3,12 @@
 /**
  * Load admin dependencies.
  */
-require get_template_directory().'/library/init.php';
+require get_template_directory().'/library/index.php';
 
 /**
  * Load admin includes.
  */
-require get_template_directory().'/includes/init.php';
+require get_template_directory().'/includes/index.php';
 
 /**
  * Theme set up settings.
