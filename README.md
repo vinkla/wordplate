@@ -36,10 +36,6 @@ Library configuration can be done within `library/config.php`. Visit [wp-custom-
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in `composer.json`.
 
-## Contributing
-
-Thank you for considering contributing to the WordPress boilerplate. If you are submitting a bug-fix, or an enhancement that is **not** a breaking change, submit your pull request to the `master` branch. If you are submitting a breaking change or an entirely new component, submit your pull request to the `develop` branch.
-
 ## License
 
 The WordPress boilerplate is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
