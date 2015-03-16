@@ -14,6 +14,12 @@
  * @package WordPress
  */
 
+/** Register the Composer autoloader. */
+require __DIR__ . '/vendor/autoload.php';
+
+/** Load .env file into WordPress. */
+Dotenv::load(__DIR__);
+
 // ** MySQL settings - You can get this info from your web host. ** //
 /** The name of the database for WordPress. */
 define('DB_NAME', getenv('DB_NAME'));

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
@@ -12,12 +13,6 @@
  * @var bool
  */
 define('WP_USE_THEMES', true);
-
-/** Register the Composer autoloader. */
-require __DIR__ . '/vendor/autoload.php';
-
-/** Load .env file into WordPress. */
-Dotenv::load(__DIR__);
 
 /** Loads the WordPress Environment and Template */
 require(__DIR__ . '/wordpress/wp-blog-header.php');
