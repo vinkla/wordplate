@@ -29,14 +29,6 @@ if (extension_loaded('zlib') && (ini_get('output_handler') !== 'ob_gzhandler'))
 }
 
 /**
- * Speed up page load in WordPress 3.8+.
- */
-if (!defined('WP_HTTP_BLOCK_EXTERNAL'))
-{
-	define('WP_HTTP_BLOCK_EXTERNAL', $config['http_block_external']);
-}
-
-/**
  * Prevent file edit from WordPress administrator dashboard.
  */
 if (!defined('DISALLOW_FILE_EDIT'))
