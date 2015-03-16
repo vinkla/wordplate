@@ -1,4 +1,5 @@
 vendor
 wordpress
 composer.lock
+.env
 wp-content/plugins
