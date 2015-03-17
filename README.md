@@ -19,15 +19,22 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
+## Advanced Custom Fields Pro
+If you have bought [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro) you can require it as a dependency. Add your developer key to the Advanced Custom Field package in composer.json.
+```
+"url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=YOURKEY"
+```
+If you want to use the free version of Advanced Custom Fields, replace ```"advanced-custom-fields/advanced-custom-fields-pro": "5.2"``` with ```"advanced-custom-fields/advanced-custom-fields": "~4.0"``` in composer.json.
+
 ## Installation
 1. Clone this repo `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`.
 2. To install dependencies, navigate to your project root and run `composer install`.
 3. Copy the `.env.example` file to `.env`.
-3. Create a database and add the credentials to the `.env` configuration file.
-4. Add [Keys and Salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` file.
-5. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
-6. Login and visit *Settings > General* page and remove `/wordpress` from Site Address `home`.
-7. We're done. Lets build themes.
+4. Create a database and add the credentials to the `.env` configuration file.
+5. Add [Keys and Salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` file.
+6. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
+7. Login and visit *Settings > General* page and remove `/wordpress` from Site Address `home`.
+8. We're done. Lets build themes.
 
 If you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
