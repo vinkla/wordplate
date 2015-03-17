@@ -15,7 +15,7 @@
  */
 
 /** Register the Composer autoloader. */
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__.'/vendor/autoload.php';
 
 /** Load .env file into WordPress. */
 Dotenv::load(__DIR__);
@@ -40,8 +40,8 @@ define('DB_CHARSET', getenv('DB_CHARSET'));
 define('DB_COLLATE', getenv('DB_COLLATE'));
 
 /** Custom content directory. */
-define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
+define('WP_CONTENT_DIR', __DIRL__.'/wp-content');
+define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 
 /** Set the trash to less days to optimize WP. */
 define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS')); // default 30
@@ -86,8 +86,9 @@ define('WP_DEBUG', getenv('WP_DEBUG'));
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/wordpress');
+if (!defined('ABSPATH')) {
+    define('ABSPATH', __DIRL__.'/wordpress');
+}
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

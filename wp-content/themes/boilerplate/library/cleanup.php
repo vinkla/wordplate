@@ -3,15 +3,14 @@
 /**
  * Cleanup WordPress wp_head().
  */
-add_action('init', function()
-{
-	remove_action('wp_head', 'feed_links', 2);
-	remove_action('wp_head', 'feed_links_extra', 3);
-	remove_action('wp_head', 'rsd_link');
-	remove_action('wp_head', 'wlwmanifest_link');
-	remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-	remove_action('wp_head', 'wp_generator');
-	remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+add_action('init', function () {
+    remove_action('wp_head', 'feed_links', 2);
+    remove_action('wp_head', 'feed_links_extra', 3);
+    remove_action('wp_head', 'rsd_link');
+    remove_action('wp_head', 'wlwmanifest_link');
+    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+    remove_action('wp_head', 'wp_generator');
+    remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 });
 
 /**
@@ -19,27 +18,23 @@ add_action('init', function()
  *
  * @return void
  */
-add_action('admin_head', function() use ($config)
-{
-	$elements = '#menu-';
-	$separator = ', #menu-';
+add_action('admin_head', function () use ($config) {
+    $elements = '#menu-';
+    $separator = ', #menu-';
 
-	if (current_user_can('manage_options'))
-	{
-		$elements .= implode(
-			$separator,
-			$config['remove_menu_items']['administrator']
-		);
-	}
-	else
-	{
-		$elements .= implode(
-			$separator,
-			$config['remove_menu_items']['default']
-		);
-	}
+    if (current_user_can('manage_options')) {
+        $elements .= implode(
+            $separator,
+            $config['remove_menu_items']['administrator']
+        );
+    } else {
+        $elements .= implode(
+            $separator,
+            $config['remove_menu_items']['default']
+        );
+    }
 
-	echo "<style> $elements { display: none !important; } </style>";
+    echo "<style> $elements { display: none !important; } </style>";
 });
 
 /**
@@ -47,19 +42,16 @@ add_action('admin_head', function() use ($config)
  *
  * @return void
  */
-add_action('wp_dashboard_setup', function() use ($config)
-{
-	global $wp_meta_boxes;
+add_action('wp_dashboard_setup', function () use ($config) {
+    global $wp_meta_boxes;
 
-	$positions = $config['remove_dashboard_widgets'];
+    $positions = $config['remove_dashboard_widgets'];
 
-	foreach ($positions as $position => $boxes)
-	{
-		foreach ($boxes as $box)
-		{
-			unset($wp_meta_boxes['dashboard'][$position]['core'][$box]);
-		}
-	}
+    foreach ($positions as $position => $boxes) {
+        foreach ($boxes as $box) {
+            unset($wp_meta_boxes['dashboard'][$position]['core'][$box]);
+        }
+    }
 });
 
 /**
@@ -67,12 +59,11 @@ add_action('wp_dashboard_setup', function() use ($config)
  *
  * @return void
  */
-add_action('widgets_init', function() use ($config) {
+add_action('widgets_init', function () use ($config) {
 
-	foreach ($config['widgets'] as $widget)
-	{
-		unregister_widget($widget);
-	}
+    foreach ($config['widgets'] as $widget) {
+        unregister_widget($widget);
+    }
 }, 1);
 
 /**
@@ -80,14 +71,12 @@ add_action('widgets_init', function() use ($config) {
  *
  * @return void
  */
-add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
-{
-	$nodes = $config['remove_menu_bar_links'];
+add_action('admin_bar_menu', function ($wp_admin_bar) use ($config) {
+    $nodes = $config['remove_menu_bar_links'];
 
-	foreach ($nodes as $node)
-	{
-		$wp_admin_bar->remove_node($node);
-	}
+    foreach ($nodes as $node) {
+        $wp_admin_bar->remove_node($node);
+    }
 }, 999);
 
 /**
@@ -95,17 +84,14 @@ add_action('admin_bar_menu', function($wp_admin_bar) use ($config)
  *
  * @return void
  */
-add_action('admin_menu', function() use ($config)
-{
-	$types = $config['meta_boxes'];
+add_action('admin_menu', function () use ($config) {
+    $types = $config['meta_boxes'];
 
-	foreach ($types as $type => $boxes)
-	{
-		foreach ($boxes as $box)
-		{
-			remove_meta_box($box, $type, 'normal');
-		}
-	}
+    foreach ($types as $type => $boxes) {
+        foreach ($boxes as $box) {
+            remove_meta_box($box, $type, 'normal');
+        }
+    }
 });
 
 /**
@@ -113,13 +99,11 @@ add_action('admin_menu', function() use ($config)
  *
  * @return void
  */
-add_action('admin_head', function() use ($config)
-{
-	if (!$config['panel_tabs']['help'])
-	{
-		$screen = get_current_screen();
-		$screen->remove_help_tabs();
-	}
+add_action('admin_head', function () use ($config) {
+    if (!$config['panel_tabs']['help']) {
+        $screen = get_current_screen();
+        $screen->remove_help_tabs();
+    }
 });
 
 /**
@@ -127,10 +111,8 @@ add_action('admin_head', function() use ($config)
  *
  * @return void
  */
-add_filter('screen_options_show_screen', function() use ($config)
-{
-	if (isset($config['panel_tabs']['screen_options']))
-	{
-		return $config['panel_tabs']['screen_options'];
-	}
+add_filter('screen_options_show_screen', function () use ($config) {
+    if (isset($config['panel_tabs']['screen_options'])) {
+        return $config['panel_tabs']['screen_options'];
+    }
 });

@@ -96,31 +96,33 @@
 				<td>Data Usage</td>
 				<td>
 					<?php
-					$data = '';
-					$tables = $wpdb->get_results('SHOW TABLE STATUS');
-					foreach ($tables as $table) { $data += $table->Data_length; }
-					echo $data ? format_bytes($data) : 'N/A';
-					?>
+                    $data = '';
+                    $tables = $wpdb->get_results('SHOW TABLE STATUS');
+                    foreach ($tables as $table) {
+                        $data += $table->Data_length;
+                    }
+                    echo $data ? format_bytes($data) : 'N/A';
+                    ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Maximum No. Connections</td>
 				<td>
 					<?php
-					$query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_connections'");
-					$value = $query->Value;
-					echo $value ? $value : 'N/A';
-					?>
+                    $query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_connections'");
+                    $value = $query->Value;
+                    echo $value ? $value : 'N/A';
+                    ?>
 				</td>
 			</tr>
 			<tr>
 				<td>Maximum Packet Size</td>
 				<td>
 					<?php
-					$query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_allowed_packet'");
-					$value = $query->Value;
-					echo $value ? format_bytes($value) : 'N/A';
-					?>
+                    $query = $wpdb->get_row("SHOW VARIABLES LIKE 'max_allowed_packet'");
+                    $value = $query->Value;
+                    echo $value ? format_bytes($value) : 'N/A';
+                    ?>
 				</td>
 			</tr>
 		</tbody>
