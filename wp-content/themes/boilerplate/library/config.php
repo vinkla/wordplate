@@ -116,6 +116,7 @@ return [
             'appearance',
             'comments',
             'dashboard',
+            'links',
             'media',
             'plugins',
             'settings',
@@ -127,6 +128,7 @@ return [
         'administrator' => [
             'comments',
             'dashboard',
+            'links',
             'media'
         ]
     ],
