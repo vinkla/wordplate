@@ -1,4 +1,4 @@
-WordPress boilerplate
+WordPress Boilerplate
 =====================
 
 A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project is trying to simplify the way we're setting up a new WordPress project. [Don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself).
