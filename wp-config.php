@@ -87,7 +87,7 @@ define('WP_DEBUG', getenv('WP_DEBUG'));
 
 /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
-    define('ABSPATH', __DIRL__.'/wordpress');
+    define('ABSPATH', __DIR__.'/wordpress');
 }
 
 /** Sets up WordPress vars and included files. */
