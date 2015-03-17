@@ -24,7 +24,7 @@
 	],
 	"require": {
 		"wordpress/wordpress": "~4.0",
-		"vlucas/phpdotenv": "~1.1",
+		"vlucas/phpdotenv": "~1.0",
 		"jjgrainger/wp-custom-post-type-class": "~1.0",
 		"wpackagist-plugin/advanced-custom-fields": "~4.0",
 		"wpackagist-plugin/wordpress-importer": "~0.6",
