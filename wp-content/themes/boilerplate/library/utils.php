@@ -3,7 +3,7 @@
 /**
  * Format bytes to kilobytes, megabytes, gigabytes.
  *
- * @param  integer  $bytes
+ * @param integer $bytes
  * @param  integer $precision
  * @return string
  */

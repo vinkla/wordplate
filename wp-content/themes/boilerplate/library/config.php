@@ -84,14 +84,14 @@ return [
     'tinymce_blockformats' => [
         'Paragraph=p',
         'Heading 2=h2',
-        'Heading 3=h3'
+        'Heading 3=h3',
     ],
 
     'tinymce_disabled' => [
         'strikethrough',
         'underline',
         'forecolor',
-        'justifyfull'
+        'justifyfull',
     ],
 
     /*
@@ -111,7 +111,8 @@ return [
     */
 
     'remove_menu_items' => [
-        // removed for user without administrator capabilities
+        
+        // Hidden for user without admin capabilities.
         'default' => [
             'appearance',
             'comments',
@@ -121,16 +122,17 @@ return [
             'plugins',
             'settings',
             'tools',
-            'users'
+            'users',
         ],
 
-        // removed for user with administrator capabilities
+        // Hidden for user with admin capabilities.
         'administrator' => [
             'comments',
             'dashboard',
             'links',
-            'media'
+            'media',
         ]
+        
     ],
 
     /*
@@ -144,7 +146,6 @@ return [
     */
 
     'remove_menu_bar_links' => [
-
         'comments',
         'wp-logo',
         'edit',
@@ -152,8 +153,7 @@ return [
         'view',
         'new-content',
         'updates',
-        'search'
-
+        'search',
     ],
 
     /*
@@ -168,11 +168,12 @@ return [
     */
 
     'remove_dashboard_widgets' => [
+    
         'side' => [
             'dashboard_primary',
             'dashboard_secondary',
             'dashboard_quick_press',
-            'dashboard_recent_drafts'
+            'dashboard_recent_drafts',
         ],
 
         'normal' => [
@@ -180,8 +181,9 @@ return [
             'dashboard_recent_comments',
             'dashboard_incoming_links',
             'dashboard_right_now',
-            'dashboard_activity'
-        ]
+            'dashboard_activity',
+        ],
+        
     ],
 
     /*
@@ -195,6 +197,7 @@ return [
     */
 
     'meta_boxes' => [
+    
         'link' => [
             'linktargetdiv',
             'linkxfndiv',
@@ -212,8 +215,9 @@ return [
             'sqpt-meta-tags',
             'slugdiv',
             //'categorydiv',
-            //'tagsdiv-post_tag'
-        ]
+            //'tagsdiv-post_tag',
+        ],
+        
     ],
 
     /*
@@ -236,7 +240,7 @@ return [
         'WP_Widget_Recent_Posts',
         'WP_Widget_Recent_Comments',
         'WP_Widget_RSS',
-        'WP_Widget_Tag_Cloud'
+        'WP_Widget_Tag_Cloud',
     ],
 
     /*
@@ -251,6 +255,7 @@ return [
 
     'panel_tabs' => [
         'help' => false,
-        'screen_options' => false
-    ]
+        'screen_options' => false,
+    ],
+    
 ];

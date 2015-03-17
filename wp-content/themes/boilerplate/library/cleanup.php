@@ -2,6 +2,8 @@
 
 /**
  * Cleanup WordPress wp_head().
+ * 
+ * @return void
  */
 add_action('init', function () {
     remove_action('wp_head', 'feed_links', 2);
@@ -23,18 +25,12 @@ add_action('admin_head', function () use ($config) {
     $separator = ', #menu-';
 
     if (current_user_can('manage_options')) {
-        $elements .= implode(
-            $separator,
-            $config['remove_menu_items']['administrator']
-        );
+        $elements .= implode($separator, $config['remove_menu_items']['administrator']);
     } else {
-        $elements .= implode(
-            $separator,
-            $config['remove_menu_items']['default']
-        );
+        $elements .= implode($separator, $config['remove_menu_items']['default']);
     }
 
-    echo "<style> $elements { display: none !important; } </style>";
+    echo sprintf('<style> %s { display: none !important; } </style>', $elements);
 });
 
 /**
@@ -68,7 +64,9 @@ add_action('widgets_init', function () use ($config) {
 
 /**
  * Remove links from admin toolbar.
- *
+ * 
+ * @param $wp_admin_bar
+ * 
  * @return void
  */
 add_action('admin_bar_menu', function ($wp_admin_bar) use ($config) {

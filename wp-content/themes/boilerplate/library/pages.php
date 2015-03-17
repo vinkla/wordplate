@@ -14,6 +14,6 @@ add_action('admin_menu', function () {
     $slug = 'server-settings';
 
     add_submenu_page($parent, $title, $title, $permission, $slug, function () use ($wpdb) {
-        require get_template_directory().'/library/views/info.php';
+        require sprintf('%s/library/views/info.php', get_template_directory());
     });
 });
