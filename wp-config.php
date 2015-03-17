@@ -40,7 +40,7 @@ define('DB_CHARSET', getenv('DB_CHARSET'));
 define('DB_COLLATE', getenv('DB_COLLATE'));
 
 /** Custom content directory. */
-define('WP_CONTENT_DIR', __DIRL__.'/wp-content');
+define('WP_CONTENT_DIR', __DIR__.'/wp-content');
 define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 
 /** Set the trash to less days to optimize WP. */
