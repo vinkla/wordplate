@@ -20,14 +20,26 @@
 					"fancyguy/webroot-installer": "1.1.0"
 				}
 			}
-		}
+		},
+        {
+          "type": "package",
+          "package": {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.2",
+            "type": "wordpress-plugin",
+            "dist": {
+              "type": "zip",
+              "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzQyMTl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTEwIDA2OjEwOjM3"
+            }
+          }
+        }
 	],
 	"require": {
 		"wordpress/wordpress": "~4.0",
 		"vlucas/phpdotenv": "~1.1",
 		"jjgrainger/wp-custom-post-type-class": "~1.0",
-		"wpackagist-plugin/advanced-custom-fields": "~4.0",
 		"wpackagist-plugin/wordpress-importer": "~0.6",
+        "advanced-custom-fields/advanced-custom-fields-pro": "5.2"
 	},
 	"config": {
 		"preferred-install": "dist"
