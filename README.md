@@ -19,8 +19,8 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
-## Advanced Custom Fields PRO
-If you have bought (Advanced Custom Fields Pro)[http://www.advancedcustomfields.com/pro] you can require it as a dependency. Add your developer key to the Advanced Custom Field package in composer.json.
+## Advanced Custom Fields Pro
+If you have bought [Advanced Custom Fields Pro](http://www.advancedcustomfields.com/pro) you can require it as a dependency. Add your developer key to the Advanced Custom Field package in composer.json.
 ```
 "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=YOURKEY"
 ```
