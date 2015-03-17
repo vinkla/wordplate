@@ -8,12 +8,12 @@ $config = require 'config.php';
 /**
  * Load Framework Components.
  */
+require get_template_directory().'/library/helpers.php';
 require get_template_directory().'/library/cleanup.php';
 require get_template_directory().'/library/editor.php';
 require get_template_directory().'/library/login.php';
 require get_template_directory().'/library/pages.php';
 require get_template_directory().'/library/updates.php';
-require get_template_directory().'/library/utils.php';
 
 /**
  * Enable Gzip if available.
