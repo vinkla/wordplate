@@ -16,27 +16,27 @@
 			</tr>
 			<tr>
 				<td>Software</td>
-				<td><?php echo $_SERVER['SERVER_SOFTWARE']; ?></td>
+				<td><?php echo $_SERVER['SERVER_SOFTWARE'] ?: 'N/A'; ?></td>
 			</tr>
 			<tr>
 				<td>Hostname</td>
-				<td><?php echo $_SERVER['SERVER_NAME']; ?></td>
+				<td><?php echo $_SERVER['SERVER_NAME'] ?: 'N/A'; ?></td>
 			</tr>
 			<tr>
 				<td>IP</td>
-				<td><?php echo sprintf('%s:%s', $_SERVER['SERVER_ADDR'], $_SERVER['SERVER_PORT']); ?></td>
+				<td><?php echo sprintf('%s:%s', $_SERVER['SERVER_ADDR'], $_SERVER['SERVER_PORT']) ?: 'N/A'; ?></td>
 			</tr>
 			<tr>
 				<td>Admin</td>
-				<td><?php echo $_SERVER['SERVER_ADMIN']; ?></td>
+				<td><?php echo $_SERVER['SERVER_ADMIN'] ?: 'N/A'; ?></td>
 			</tr>
 			<tr>
 				<td>Document Root</td>
-				<td><?php echo $_SERVER['DOCUMENT_ROOT']; ?></td>
+				<td><?php echo $_SERVER['DOCUMENT_ROOT'] ?: 'N/A'; ?></td>
 			</tr>
 			<tr>
 				<td>Date/Time</td>
-				<td><?php echo date(sprintf('%s @ %s', get_option('date_format'), get_option('time_format')), current_time('timestamp')); ?></td>
+				<td><?php echo date(sprintf('%s @ %s', get_option('date_format'), get_option('time_format')), current_time('timestamp')) ?: 'N/A'; ?></td>
 			</tr>
 		</tbody>
 	</table><!-- /widefat -->
