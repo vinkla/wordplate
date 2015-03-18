@@ -1,43 +1,52 @@
 {
-  "name": "vinkla/wordpress",
-  "description": "Boilerplate that scaffolds a basic WordPress project using Composer.",
-  "homepage": "https://github.com/vinkla/wordpress",
-  "license": "MIT",
-  "keywords": ["wordpress", "boilerplate", "scaffold", "generator", "composer"],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "http://wpackagist.org"
-    }
-  ],
-  "require": {
-    "php": ">= 5.4",
-    "composer/installers": "~1.0",
-    "johnpbloch/wordpress": "~4.0",
-    "vlucas/phpdotenv": "~1.0",
-    "jjgrainger/wp-custom-post-type-class": "~1.0",
-    "wpackagist-plugin/advanced-custom-fields": "~4.0",
-    "wpackagist-plugin/wordpress-importer": "~0.6"
-  },
-  "extra": {
-    "installer-paths": {
-      "wp-content/plugins/{$name}": ["type:wordpress-plugin"]
+    "name": "vinkla/wordpress",
+    "description": "Boilerplate that scaffolds a basic WordPress project using Composer.",
+    "homepage": "https://github.com/vinkla/wordpress",
+    "license": "MIT",
+    "keywords": [
+        "wordpress",
+        "boilerplate",
+        "scaffold",
+        "generator",
+        "composer"
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "php": ">= 5.4",
+        "composer/installers": "~1.0",
+        "johnpbloch/wordpress": "~4.0",
+        "vlucas/phpdotenv": "~1.0",
+        "jjgrainger/wp-custom-post-type-class": "~1.0",
+        "wpackagist-plugin/advanced-custom-fields": "~4.0",
+        "wpackagist-plugin/wordpress-importer": "~0.6"
     },
-    "wordpress-install-dir": "wordpress"
-  },
-  "config": {
-    "preferred-install": "dist"
-  },
-  "scripts": {
-    "post-create-project-cmd": [
-      "rm README.md LICENSE .styleci.yml"
-    ]
-  },
-  "extra": {
-      "branch-alias": {
-          "dev-master": "1.0-dev"
-      }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ]
+        },
+        "wordpress-install-dir": "wordpress"
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "php -r \"copy('.env.example', '.env');\"",
+            "rm README.md LICENSE .styleci.yml"
+        ]
+    },
+    "extra":{
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
