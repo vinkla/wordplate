@@ -20,21 +20,49 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
 ## Installation
-1. Clone this repo `git clone git@github.com:vinkla/wordpress-boilerplate.git wordpress`.
-2. To install dependencies, navigate to your project root and run `composer install`.
-3. Copy the `.env.example` file to `.env`.
-3. Create a database and add the credentials to the `.env` configuration file.
-4. Add [Keys and Salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` file.
-5. Open up your browser and visit `/wordpress/wp-admin/install.php` to install WordPress.
-6. Login and visit *Settings > General* page and remove `/wordpress` from Site Address `home`.
-7. We're done. Lets build themes.
+Start by creating a new project with composer.
 
-If you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
+```bash
+composer create-project vinkla/wordpress --prefer-dist awesome-project
+```
+
+Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
+```
+WP_DEBUG=false
+
+DB_HOST=localhost
+DB_NAME=wordpress
+DB_USER=homestead
+DB_PASSWORD=secret
+DB_CHARSET=utf8
+DB_COLLATE=
+
+EMPTY_TRASH_DAYS=7
+
+TABLE_PREFIX=wp_
+
+AUTH_KEY=yourrandomstring
+SECURE_AUTH_KEY=yourrandomstring
+LOGGED_IN_KEY=yourrandomstring
+NONCE_KEY=yourrandomstring
+AUTH_SALT=yourrandomstring
+SECURE_AUTH_SALT=yourrandomstring
+LOGGED_IN_SALT=yourrandomstring
+NONCE_SALT=yourrandomstring
+```
+
+Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
+
+Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
+
+Thats it. We're done. Lets build stuff!
+
+Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
 ## Theming
 Library configuration can be done within `library/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `includes/post-types` directory.
 
-The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in `composer.json`.
+The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
 
 ## License
 
