@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Load admin dependencies.
+ * Load library dependencies.
  */
-require get_template_directory().'/library/index.php';
+require get_template_directory().'/library/library.php';
 
 /**
  * Load admin includes.
  */
-require get_template_directory().'/includes/index.php';
+require get_template_directory().'/includes/includes.php';
 
 /**
  * Theme set up settings.

@@ -6,8 +6,8 @@
  * @return void
  */
 add_action('login_head', function () use ($config) {
-    $path = $config['login_image_path'];
-    $width = sprintf('%spx', $config['login_image_width']);
+    $path = $config['login']['image_path'];
+    $width = sprintf('%spx', $config['image_width']);
 
     echo "<style> h1 a { background-image:url($path) !important; background-size: 100% auto !important; width: $width !important; } </style>";
 });
@@ -16,7 +16,7 @@ add_action('login_head', function () use ($config) {
  * Add custom login error message.
  */
 add_filter('login_errors', function () use ($config) {
-    return $config['login_error_message'];
+    return $config['login']['error_message'];
 });
 
 /**
