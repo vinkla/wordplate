@@ -34,7 +34,7 @@ define('DB_PASSWORD', getenv('DB_PASSWORD'));
 define('DB_HOST', getenv('DB_HOST'));
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', getenv('DB_CHARSET'));
+define('DB_CHARSET', getenv('DB_CHARSET') ?: 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', getenv('DB_COLLATE') ?: '');
@@ -44,7 +44,7 @@ define('WP_CONTENT_DIR', __DIR__.'/wp-content');
 define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 
 /** Set the trash to less days to optimize WP. */
-define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS') ?: 30); // default 30
+define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS') ?: 7); // default 30
 
 /**#@+
  * Authentication Unique Keys and Salts.
