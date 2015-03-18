@@ -37,14 +37,14 @@ define('DB_HOST', getenv('DB_HOST'));
 define('DB_CHARSET', getenv('DB_CHARSET'));
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', getenv('DB_COLLATE'));
+define('DB_COLLATE', getenv('DB_COLLATE') ?: '');
 
 /** Custom content directory. */
 define('WP_CONTENT_DIR', __DIR__.'/wp-content');
 define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 
 /** Set the trash to less days to optimize WP. */
-define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS')); // default 30
+define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS') ?: 30); // default 30
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -81,7 +81,7 @@ $table_prefix  = getenv('TABLE_PREFIX') ?: 'wp_';
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', getenv('WP_DEBUG'));
+define('WP_DEBUG', getenv('WP_DEBUG') ?: false);
 
 /* That's all, stop editing! Happy blogging. */
 

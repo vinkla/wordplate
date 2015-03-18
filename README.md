@@ -20,13 +20,13 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
 ## Installation
-1. Start by creating a new project with composer.
+Start by creating a new project with composer.
 
 ```bash
 composer create-project vinkla/wordpress awesome-project
 ```
 
-2. Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
+Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
 ```
 WP_DEBUG=false
 
@@ -35,7 +35,6 @@ DB_NAME=wordpress
 DB_USER=homestead
 DB_PASSWORD=secret
 DB_CHARSET=utf8
-DB_COLLATE=
 
 EMPTY_TRASH_DAYS=7
 
@@ -51,9 +50,9 @@ LOGGED_IN_SALT=yourrandomstring
 NONCE_SALT=yourrandomstring
 ```
 
-3. Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
+Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
 
-4. Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
+Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
 
 Thats it. We're done. Lets build stuff!
 
