@@ -8,39 +8,25 @@
 		{
 			"type": "composer",
 			"url": "http://wpackagist.org"
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "wordpress/wordpress",
-				"type": "webroot",
-				"version": "4.1.1",
-				"dist": {
-					"type": "zip",
-					"url": "https://wordpress.org/wordpress-4.1.1.zip"
-				},
-				"require": {
-					"fancyguy/webroot-installer": "1.1.0"
-				}
-			}
 		}
 	],
 	"require": {
-		"wordpress/wordpress": "~4.0",
+		"php": ">= 5.4",
+		"composer/installers": "~1.0",
+		"johnpbloch/wordpress": "~4.0",
 		"vlucas/phpdotenv": "~1.0",
 		"jjgrainger/wp-custom-post-type-class": "~1.0",
 		"wpackagist-plugin/advanced-custom-fields": "~4.0",
 		"wpackagist-plugin/wordpress-importer": "~0.6"
 	},
-	"config": {
-		"preferred-install": "dist"
-	},
 	"extra": {
 		"installer-paths": {
 			"wp-content/plugins/{$name}": ["type:wordpress-plugin"]
 		},
-		"webroot-dir": "wordpress",
-		"webroot-package": "wordpress/wordpress"
+		"wordpress-install-dir": "wordpress"
+	},
+	"config": {
+		"preferred-install": "dist"
 	},
 	"extra": {
 	    "branch-alias": {
