@@ -1,6 +1,9 @@
 {
-	"name": "wordpress-boilerplate",
+	"name": "vinkla/wordpress",
 	"description": "Boilerplate that scaffolds a basic WordPress project using Composer.",
+	"homepage": "https://github.com/vinkla/wordpress-boilerplate",
+	"license": "MIT",
+	"keywords": ["wordpress", "boilerplate", "scaffold", "generator", "composer"],
 	"repositories": [
 		{
 			"type": "composer",
@@ -38,5 +41,12 @@
 		},
 		"webroot-dir": "wordpress",
 		"webroot-package": "wordpress/wordpress"
-	}
+	},
+	"extra": {
+	    "branch-alias": {
+	        "dev-master": "1.0-dev"
+	    }
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
 }
