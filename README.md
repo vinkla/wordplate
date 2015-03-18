@@ -20,13 +20,13 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
 ## Installation
-Start by creating a new project with composer.
+1. Start by creating a new project with composer.
 
 ```bash
 composer create-project vinkla/wordpress awesome-project
 ```
 
-Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
+2. Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
 ```
 WP_DEBUG=false
 
@@ -51,13 +51,13 @@ LOGGED_IN_SALT=yourrandomstring
 NONCE_SALT=yourrandomstring
 ```
 
-Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
+3. Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
 
-Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
+4. Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
 
 Thats it. We're done. Lets build stuff!
 
-Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
+> Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
 ## Theming
 Library configuration can be done within `library/config.php`. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `includes/post-types` directory.
