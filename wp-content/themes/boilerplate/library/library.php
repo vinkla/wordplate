@@ -19,6 +19,8 @@ require __DIR__.'/modules/editor.php';
 require __DIR__.'/modules/footer.php';
 require __DIR__.'/modules/login.php';
 require __DIR__.'/modules/menus.php';
+require __DIR__.'/modules/plugins.php';
+require __DIR__.'/modules/server.php';
 require __DIR__.'/modules/updates.php';
 require __DIR__.'/modules/widgets.php';
 
