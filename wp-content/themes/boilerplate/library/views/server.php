@@ -75,7 +75,7 @@
 			</tr>
 			<tr>
 				<td>Display Errors</td>
-				<td><?php echo (ini_get('display_errors') ? 'On' : 'Off') ?: 'N/A'; ?></td>
+				<td><?php echo ini_get('display_errors') ? 'On' : 'N/A'; ?></td>
 			</tr>
 		</tbody>
 	</table><!-- /widefat -->

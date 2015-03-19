@@ -5,6 +5,10 @@ A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project 
 
 This boilerplate requires PHP 5.4+ and is built with the latest version of [WordPress](https://github.com/WordPress/WordPress).
 
+[![StyleCI](https://styleci.io/repos/13329845/shield?style=flat)](https://styleci.io/repos/13329845)
+[![Latest Stable Version](http://img.shields.io/packagist/v/vinkla/wordpress.svg?style=flat)](https://packagist.org/packages/vinkla/wordpress)
+[![License](https://img.shields.io/packagist/l/vinkla/wordpress.svg?style=flat)](https://packagist.org/packages/vinkla/wordpress)
+
 ## What's included?
 
 WordPress as a dependency. Move your content out of WordPress core.

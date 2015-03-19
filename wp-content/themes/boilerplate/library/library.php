@@ -23,4 +23,3 @@ require __DIR__.'/modules/plugins.php';
 require __DIR__.'/modules/server.php';
 require __DIR__.'/modules/updates.php';
 require __DIR__.'/modules/widgets.php';
-
