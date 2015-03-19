@@ -1,6 +1,8 @@
 WordPress Boilerplate
 =====================
 
+![image](https://raw.githubusercontent.com/vinkla/vinkla.github.io/master/images/package-wordpress.png)
+
 A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project is trying to simplify the way we're setting up a new WordPress project. [Don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself).
 
 This boilerplate requires PHP 5.4+ and is built with the latest version of [WordPress](https://github.com/WordPress/WordPress).
