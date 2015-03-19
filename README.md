@@ -55,7 +55,7 @@ NONCE_SALT=yourrandomstring
 
 Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
 
-Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the database in the `wp_options` table, the column name i `home`.
+Login and visit *Settings > General* page and remove `/wordpress` from Site Address. This can also be updated in the `wp_options` table, the option name is `home`.
 
 Thats it. We're done. Lets build stuff!
 
