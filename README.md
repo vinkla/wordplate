@@ -21,6 +21,8 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 [Vance Lucas's](https://github.com/vlucas) great [PHP dotenv](https://github.com/vlucas/phpdotenv) package. Which loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.
 
+[TinyPNG](https://wordpress.org/plugins/tiny-compress-images/) - Speed up your website. Optimize your JPEG and PNG images automatically with TinyPNG.
+
 [Joe Grainger's](https://github.com/jjgrainger) super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
 
 [Roots](https://github.com/roots) [Soild](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
