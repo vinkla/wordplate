@@ -4,6 +4,16 @@
     "homepage": "https://github.com/vinkla/wordpress",
     "license": "MIT",
     "keywords": ["wordpress", "boilerplate", "scaffold", "generator", "composer"],
+    "authors": [
+        {
+            "name": "Vincent Klaiber",
+            "email": "hello@vinkla.com"
+        },
+        {
+            "name": "Chris Andersson",
+            "email": "chris@puredazzle.se"
+        }
+    ],
     "repositories": [
         {
             "type": "composer",
