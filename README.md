@@ -23,6 +23,8 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 [TinyPNG](https://wordpress.org/plugins/tiny-compress-images/) - Speed up your website. Optimize your JPEG and PNG images automatically with TinyPNG.
 
+[Lester Chan's](https://github.com/lesterchan) WP-Sweep plugin. It allows you to clean up unused, orphaned and duplicated data in your WordPress. It also optimizes your database tables.
+
 [Joe Grainger's](https://github.com/jjgrainger) super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
 
 [Roots](https://github.com/roots) [Soild](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
