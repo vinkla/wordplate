@@ -19,3 +19,8 @@ require get_template_directory().'/includes/menus/primary-enu.php';
  * Register widgets.
  */
 // require get_template_directory().'/includes/widgets/facebook.php';
+
+/**
+ * ACF Options pages.
+ */
+// require get_template_directory().'/includes/option-pages/general.php';
