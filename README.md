@@ -74,4 +74,4 @@ The boilerplate doesn't include a way to create custom fields. Instead use [Adva
 
 ## License
 
-The WordPress boilerplate is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+WordPress boilerplate is licensed under [The MIT License (MIT)](LICENSE).
