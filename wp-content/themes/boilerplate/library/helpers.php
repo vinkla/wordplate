@@ -3,8 +3,8 @@
 /**
  * Format bytes to kilobytes, megabytes, gigabytes.
  *
- * @param integer $bytes
- * @param  integer $precision
+ * @param int $bytes
+ * @param  int $precision
  * @return string
  */
 function format_bytes($bytes, $precision = 2)

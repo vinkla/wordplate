@@ -21,7 +21,7 @@ add_filter('acf/fields/wysiwyg/toolbars', function ($toolbars) {
 /**
  * Force perfect JPG images.
  *
- * @return integer
+ * @return int
  */
 add_filter('jpeg_quality', function () use ($config) {
     return $config['editor']['jpeg_quality'] ?: 100;
@@ -73,7 +73,7 @@ add_filter('tiny_mce_before_init', function ($init) use ($config) {
     // Disable custom format on copy paste (useful when clients copy from Ms Word).
     $init['extended_valid_elements'] = 'span[!class]';
     $init['paste_auto_cleanup_on_paste'] = true;
-    $init['paste_strip_class_attributes'] = "all";
+    $init['paste_strip_class_attributes'] = 'all';
     $init['paste_remove_styles'] = true;
 
     return $init;

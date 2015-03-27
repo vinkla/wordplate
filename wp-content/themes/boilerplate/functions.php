@@ -78,7 +78,7 @@ add_filter('excerpt_more', function () {
 /**
  * Change Default Excerpt Length (default: 55).
  *
- * @return integer
+ * @return int
  */
 add_filter('excerpt_length', function () {
     return 55;
