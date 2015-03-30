@@ -8,7 +8,7 @@ require get_template_directory().'/includes/post-types/book.php';
 /**
  * Register menus.
  */
-require get_template_directory().'/includes/menus/primary-enu.php';
+require get_template_directory().'/includes/menus/primary-menu.php';
 
 /**
  * Register sidebars.

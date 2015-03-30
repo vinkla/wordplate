@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Setup global configuration variable.
- */
-$config = require __DIR__.'/config.php';
-
-/**
  * Load helper methods.
  */
 require __DIR__.'/helpers.php';
+
+/**
+ * Setup global configuration variable.
+ */
+require __DIR__.'/config.php';
 
 /**
  * Load Framework Components.
