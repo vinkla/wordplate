@@ -23,8 +23,8 @@ add_filter('acf/fields/wysiwyg/toolbars', function ($toolbars) {
  *
  * @return int
  */
-add_filter('jpeg_quality', function () use ($config) {
-    return $config['editor']['jpeg_quality'] ?: 100;
+add_filter('jpeg_quality', function () {
+    return config('editor.jpeg_quality', 100);
 });
 
 /**
@@ -56,16 +56,16 @@ add_filter('wp_insert_post_data', function ($data, $post) {
  *
  * @return array
  */
-add_filter('tiny_mce_before_init', function ($init) use ($config) {
+add_filter('tiny_mce_before_init', function ($init) {
     // Add block format elements you want to show in dropdown.
-    $init['block_formats'] = implode(';', $config['editor']['tinymce_blockformats']);
+    $init['block_formats'] = implode(';', config('editor.tinymce_blockformats'));
 
     // Disable buttons for the two toolbars.
     $toolbar1 = explode(',', $init['toolbar1']);
-    $buttons1 = array_diff($toolbar1, $config['editor']['tinymce_disabled']);
+    $buttons1 = array_diff($toolbar1, config('editor.tinymce_disabled'));
 
     $toolbar2 = explode(',', $init['toolbar2']);
-    $buttons2 = array_diff($toolbar2, $config['editor']['tinymce_disabled']);
+    $buttons2 = array_diff($toolbar2, config('editor.tinymce_disabled'));
 
     $init['toolbar1'] = implode(',', $buttons1);
     $init['toolbar2'] = implode(',', $buttons2);
@@ -95,8 +95,8 @@ add_filter('content_save_pre', function ($content) {
  *
  * @return void
  */
-add_action('admin_menu', function () use ($config) {
-    $types = $config['editor']['meta_boxes'];
+add_action('admin_menu', function () {
+    $types = config('editor.meta_boxes');
 
     foreach ($types as $type => $boxes) {
         foreach ($boxes as $box) {

@@ -5,6 +5,6 @@
  *
  * @return string
  */
-add_filter('admin_footer_text', function () use ($config) {
-    return $config['footer']['footer_text'];
+add_filter('admin_footer_text', function () {
+    return config('footer.footer_text');
 });
