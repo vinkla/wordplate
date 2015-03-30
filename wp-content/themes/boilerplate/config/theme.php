@@ -14,6 +14,6 @@ return [
     |
     */
 
-    'slug' => 'boilerplate',
+    'slug' => getenv('THEME_SLUG'),
 
 ];
