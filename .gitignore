@@ -1,5 +1,5 @@
-vendor
-wordpress
+/vendor
 composer.lock
+wordpress
 .env
 wp-content/plugins
