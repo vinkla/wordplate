@@ -9,6 +9,19 @@
  * file that was distributed with this source code.
  */
 
+if (!function_exists('head')) {
+    /**
+     * Get the first element of an array. Useful for method chaining.
+     *
+     * @param  array  $array
+     * @return mixed
+     */
+    function head($array)
+    {
+        return reset($array);
+    }
+}
+
 if (!function_exists('dd')) {
 
     /**
