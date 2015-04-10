@@ -15,5 +15,5 @@
  * @return string
  */
 add_filter('admin_footer_text', function () {
-    return config('footer.footer_text');
+    return config('footer.footer_text', 'Thank you for creating with WordPress.');
 });
