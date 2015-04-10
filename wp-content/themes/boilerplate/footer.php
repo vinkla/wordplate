@@ -7,6 +7,6 @@
     ga('create', '<?php echo getenv('GOOGLE_ANALYTICS_KEY'); ?>', 'auto');
     ga('send', 'pageview');
   </script>
-  <?php wp_foote(); ?>
+  <?php wp_footer(); ?>
 </body>
 </html>

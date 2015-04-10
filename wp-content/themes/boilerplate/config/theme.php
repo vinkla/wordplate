@@ -14,6 +14,6 @@ return [
     |
     */
 
-    'slug' => env('THEME_SLUG'),
+    'slug' => getenv('THEME_SLUG'),
 
 ];
