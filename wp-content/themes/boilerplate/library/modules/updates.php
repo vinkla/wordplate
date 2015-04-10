@@ -49,5 +49,4 @@ if (config('app.updates', false)) {
     add_filter('automatic_updates_send_debug_email', '__return_false');
     add_filter('automatic_updates_is_vcs_checkout', '__return_true');
     add_filter('pre_site_transient_update_plugins', '__return_null');
-
 }
