@@ -32,6 +32,10 @@
         "wpackagist-plugin/tiny-compress-images": "~1.0",
         "wpackagist-plugin/wp-sweep": "~1.0"
     },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "~2.0@dev",
+        "filp/whoops": "~1.0"
+    },
     "extra": {
         "installer-paths": {
             "wp-content/plugins/{$name}": [
