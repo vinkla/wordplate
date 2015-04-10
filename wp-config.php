@@ -22,29 +22,29 @@ Dotenv::load(__DIR__);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', env('DB_NAME'));
+define('DB_NAME', getenv('DB_NAME'));
 
 /** MySQL database username. */
-define('DB_USER', env('DB_USER'));
+define('DB_USER', getenv('DB_USER'));
 
 /** MySQL database password. */
-define('DB_PASSWORD', env('DB_PASSWORD'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
 
 /** MySQL hostname. */
-define('DB_HOST', env('DB_HOST'));
+define('DB_HOST', getenv('DB_HOST'));
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', env('DB_CHARSET', 'utf8'));
+define('DB_CHARSET', getenv('DB_CHARSET') ?: 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', env('DB_COLLATE', ''));
+define('DB_COLLATE', getenv('DB_COLLATE') ?: '');
 
 /** Custom content directory. */
 define('WP_CONTENT_DIR', __DIR__.'/wp-content');
 define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 
 /** Set the trash to less days to optimize WP. */
-define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7)); // default 30
+define('EMPTY_TRASH_DAYS', getenv('EMPTY_TRASH_DAYS') ?: 7); // default 30
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -55,14 +55,14 @@ define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7)); // default 30
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', env('AUTH_KEY'));
-define('SECURE_AUTH_KEY', env('SECURE_AUTH_KEY'));
-define('LOGGED_IN_KEY', env('LOGGED_IN_KEY'));
-define('NONCE_KEY', env('NONCE_KEY'));
-define('AUTH_SALT', env('AUTH_SALT'));
-define('SECURE_AUTH_SALT', env('SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
-define('NONCE_SALT', env('NONCE_SALT'));
+define('AUTH_KEY', getenv('AUTH_KEY'));
+define('SECURE_AUTH_KEY', getenv('SECURE_AUTH_KEY'));
+define('LOGGED_IN_KEY', getenv('LOGGED_IN_KEY'));
+define('NONCE_KEY', getenv('NONCE_KEY'));
+define('AUTH_SALT', getenv('AUTH_SALT'));
+define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT', getenv('LOGGED_IN_SALT'));
+define('NONCE_SALT', getenv('NONCE_SALT'));
 
 /**#@-*/
 
@@ -72,7 +72,7 @@ define('NONCE_SALT', env('NONCE_SALT'));
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = env('TABLE_PREFIX', 'wp_');
+$table_prefix  = getenv('TABLE_PREFIX') ?: 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -81,8 +81,8 @@ $table_prefix  = env('TABLE_PREFIX', 'wp_');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', env('WP_DEBUG', false));
-define('WP_DEBUG_DISPLAY', env('WP_DEBUG', false));
+define('WP_DEBUG', getenv('WP_DEBUG') ?: false);
+define('WP_DEBUG_DISPLAY', getenv('WP_DEBUG') ?: false);
 
 /* That's all, stop editing! Happy blogging. */
 
