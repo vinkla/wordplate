@@ -23,6 +23,7 @@
     "require": {
         "php": ">= 5.4",
         "composer/installers": "~1.0",
+        "illuminate/support": "~5.0",
         "johnpbloch/wordpress": "~4.0",
         "vlucas/phpdotenv": "~1.0",
         "roots/soil": "~3.0",
@@ -31,6 +32,11 @@
         "wpackagist-plugin/wordpress-importer": "~0.6",
         "wpackagist-plugin/tiny-compress-images": "~1.0",
         "wpackagist-plugin/wp-sweep": "~1.0"
+    },
+    "require-dev": {
+        "fabpot/php-cs-fixer": "~2.0@dev",
+        "filp/whoops": "~1.0",
+        "symfony/var-dumper": "~3.0@dev"
     },
     "extra": {
         "installer-paths": {

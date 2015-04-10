@@ -9,43 +9,47 @@
  * file that was distributed with this source code.
  */
 
-if (!function_exists('head')) {
+use Illuminate\Support\Str;
+
+if (!function_exists('env')) {
     /**
-     * Get the first element of an array. Useful for method chaining.
+     * Gets the value of an environment variable. Supports boolean, empty and null.
      *
-     * @param  array  $array
+     * @param string $key
+     * @param mixed $default
      * @return mixed
      */
-    function head($array)
+    function env($key, $default = null)
     {
-        return reset($array);
-    }
-}
+        $value = getenv($key);
 
-if (!function_exists('last')) {
-    /**
-     * Get the last element from an array.
-     *
-     * @param  array  $array
-     * @return mixed
-     */
-    function last($array)
-    {
-        return end($array);
-    }
-}
+        if (!$value) {
+            return value($default);
+        }
 
-if (!function_exists('dd')) {
+        switch (strtolower($value)) {
+            case 'true':
+            case '(true)':
+                return true;
 
-    /**
-     * Dump the passed variables and end the script.
-     *
-     * @param  mixed
-     */
-    function dd()
-    {
-        array_map(function ($x) { var_dump($x); }, func_get_args());
-        die;
+            case 'false':
+            case '(false)':
+                return false;
+
+            case 'empty':
+            case '(empty)':
+                return '';
+
+            case 'null':
+            case '(null)':
+                return;
+        }
+
+        if (Str::startsWith($value, '"') && Str::endsWith($value, '"')) {
+            return substr($value, 1, -1);
+        }
+
+        return $value;
     }
 }
 
