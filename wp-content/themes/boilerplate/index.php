@@ -1,4 +1,4 @@
-<?php get_header(); dd('hej');?>
+<?php get_header(); ?>
 
 <main role="main">
   <?php
