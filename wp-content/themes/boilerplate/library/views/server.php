@@ -1,3 +1,15 @@
+<?php
+
+/*
+ * This file is part of WordPress Boilerplate.
+ *
+ * (c) Vincent Klaiber <hello@vinkla.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+?>
 <div class="wrap">
 	<h2>Server Information</h2>
 	<p>Server settings information like operating system, IP address, Hostname, date/time configuration, PHP version, MySQL data usage and much more.</p>
