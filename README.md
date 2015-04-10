@@ -27,7 +27,7 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 [Joe Grainger's](https://github.com/jjgrainger) super [Custom Post Type Class](https://github.com/jjgrainger/wp-custom-post-type-class). It simplifies the way we do custom post types.
 
-[Laravel's](http://laravel.com/) [Helper Functions](http://laravel.com/docs/master/helpers). It gives use useful functions that isn't included in PHP out of the box.
+[Laravel's](http://laravel.com/) string and array [helper functions](http://laravel.com/docs/master/helpers). It gives use useful helpers that isn't included in PHP out of the box.
 
 [Roots](https://github.com/roots) [Soild](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
 
