@@ -27,4 +27,15 @@ return [
 
     'disallow_file_edit' => true,
 
+    /*
+    |--------------------------------------------------------------------------
+    | WordPress Updates
+    |--------------------------------------------------------------------------
+    |
+    | Enable or disable WordPress core, plugins and themes updates.
+    |
+    */
+
+    'updates' => false,
+
 ];
