@@ -29,7 +29,7 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 
 [Laravel's](http://laravel.com/) string and array [helper functions](http://laravel.com/docs/master/helpers). It gives use useful helpers that isn't included in PHP out of the box.
 
-[Roots](https://github.com/roots) [Soild](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
+[Roots](https://github.com/roots) [soil](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
 
