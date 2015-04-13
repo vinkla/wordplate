@@ -12,8 +12,8 @@
     "require": {
         "wordplate/framework": "2.0.*@dev",
         "wpackagist-plugin/advanced-custom-fields": "~4.0",
-        "wpackagist-plugin/wordpress-importer": "~0.6",
         "wpackagist-plugin/tiny-compress-images": "~1.0",
+        "wpackagist-plugin/wordpress-importer": "~0.6",
         "wpackagist-plugin/wp-sweep": "~1.0"
     },
     "repositories": [
