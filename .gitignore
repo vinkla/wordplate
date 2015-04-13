@@ -2,4 +2,13 @@
 composer.lock
 wordpress
 .env
+sitemap.xml
 wp-content/plugins
+wp-content/backup-db
+wp-content/backups
+wp-content/blogs.dir
+wp-content/cache
+wp-content/upgrade
+wp-content/uploads
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
