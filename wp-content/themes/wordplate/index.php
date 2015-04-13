@@ -1,4 +1,4 @@
-<?php get_header(); dd(env('WP_DEBUG'));?>
+<?php get_header(); ?>
 
 <main role="main">
   <?php

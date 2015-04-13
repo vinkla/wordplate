@@ -3,7 +3,7 @@
 /**
  * Initiate the WordPlate Framework.
  */
-new WordPlate\Application();
+new WordPlate\Framework();
 
 /**
  * Load admin includes.
