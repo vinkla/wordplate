@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'image_path' => sprintf('%s/images/admin-login-logo.png', get_template_directory_uri()),
+    'image_path' => get_template_directory_uri().'/assets/images/logo.png',
 
     'image_width' =>  80,
 

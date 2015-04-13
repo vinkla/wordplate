@@ -33,6 +33,7 @@ return [
     | Set this to true if you want to enable shortcodes in text widgets.
     |
     */
+   
     'shortcodes' => true,
 
 ];

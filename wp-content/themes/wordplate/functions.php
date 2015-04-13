@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Load library dependencies.
+ * Initiate the WordPlate Framework.
  */
-require get_template_directory().'/library/library.php';
+new WordPlate\Application();
 
 /**
  * Load admin includes.
