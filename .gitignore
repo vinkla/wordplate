@@ -1,5 +1,12 @@
 /vendor
 /wordpress
+
 /wp-content/plugins
+/wp-content/backups
+/wp-content/cache
+/wp-content/upgrade
+/wp-content/uploads
+
 composer.lock
+sitemap.xml
 .env
