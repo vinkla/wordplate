@@ -1,5 +1,5 @@
-WordPress Boilerplate
-=====================
+WordPlate
+=========
 
 ![wordplate](https://cloud.githubusercontent.com/assets/499192/7115057/a50304e2-e1e4-11e4-8676-979281d2dca5.png)
 
