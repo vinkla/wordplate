@@ -74,4 +74,6 @@ The boilerplate doesn't include a way to create custom fields. Instead use [Adva
 
 ## License
 
-WordPress boilerplate is licensed under [The MIT License (MIT)](LICENSE).
+WordPlate icon made by [Andrey Vasiliev](https://thenounproject.com/andvasiliev/). Licensed as [Creative Commons – Attribution (CC BY 3.0)](http://creativecommons.org/licenses/by/3.0/us/)
+
+WordPlate is licensed under [The MIT License (MIT)](LICENSE).
