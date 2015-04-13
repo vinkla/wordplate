@@ -1,9 +1,8 @@
 {
-    "name": "vinkla/wordpress",
+    "name": "wordplate/wordplate",
     "description": "Boilerplate that scaffolds a basic WordPress project using composer.",
-    "homepage": "https://github.com/vinkla/wordpress",
-    "license": "MIT",
     "keywords": ["wordpress", "boilerplate", "scaffold", "generator", "composer"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Vincent Klaiber",

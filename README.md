@@ -37,7 +37,7 @@ A Server Settings page. This page lists server configuration. Instead of login i
 Start by creating a new project with composer.
 
 ```bash
-composer create-project vinkla/wordpress awesome-project
+composer create-project wordplate/wordplate awesome-project
 ```
 
 Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
