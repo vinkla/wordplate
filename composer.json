@@ -45,9 +45,6 @@
         },
         "wordpress-install-dir": "wordpress"
     },
-    "config": {
-        "preferred-install": "dist"
-    },
     "scripts": {
         "post-create-project-cmd": [
             "php -r \"copy('.env.example', '.env');\"",
