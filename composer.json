@@ -1,50 +1,27 @@
 {
     "name": "wordplate/wordplate",
-    "description": "Boilerplate that scaffolds a basic WordPress project using composer.",
-    "keywords": ["wordpress", "boilerplate", "scaffold", "generator", "composer"],
+    "description": "The WordPlate Boilerplate.",
+    "keywords": ["wordplate", "wordpress", "boilerplate"],
     "license": "MIT",
     "authors": [
         {
             "name": "Vincent Klaiber",
             "email": "hello@vinkla.com"
-        },
-        {
-            "name": "Chris Andersson",
-            "email": "chris@puredazzle.se"
         }
     ],
+    "require": {
+        "wordplate/framework": "2.0.*@dev",
+        "wpackagist-plugin/advanced-custom-fields": "~4.0",
+        "wpackagist-plugin/wordpress-importer": "~0.6",
+        "wpackagist-plugin/tiny-compress-images": "~1.0",
+        "wpackagist-plugin/wp-sweep": "~1.0"
+    },
     "repositories": [
         {
             "type": "composer",
             "url": "http://wpackagist.org"
         }
     ],
-    "require": {
-        "php": ">= 5.4",
-        "composer/installers": "~1.0",
-        "illuminate/support": "~5.0",
-        "symfony/var-dumper": "~2.0",
-        "johnpbloch/wordpress": "~4.0",
-        "vlucas/phpdotenv": "~1.0",
-        "roots/soil": "~3.0",
-        "jjgrainger/wp-custom-post-type-class": "~1.0",
-        "wpackagist-plugin/advanced-custom-fields": "~4.0",
-        "wpackagist-plugin/wordpress-importer": "~0.6",
-        "wpackagist-plugin/tiny-compress-images": "~1.0",
-        "wpackagist-plugin/wp-sweep": "~1.0"
-    },
-    "require-dev": {
-        "fabpot/php-cs-fixer": "~2.0@dev",
-        "filp/whoops": "~1.0"
-    },
-    "extra": {
-        "installer-paths": {
-            "wp-content/plugins/{$name}": [
-                "type:wordpress-plugin"
-            ]
-        },
-        "wordpress-install-dir": "wordpress"
-    },
     "scripts": {
         "post-create-project-cmd": [
             "php -r \"copy('.env.example', '.env');\"",
@@ -53,7 +30,7 @@
     },
     "extra":{
         "branch-alias": {
-            "dev-master": "1.1-dev"
+            "dev-master": "2.0-dev"
         }
     },
     "minimum-stability": "dev",
