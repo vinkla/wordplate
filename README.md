@@ -42,23 +42,10 @@ composer create-project wordplate/wordplate awesome-project
 
 Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
 ```
-WP_DEBUG=false
-
 DB_HOST=localhost
 DB_NAME=wordpress
 DB_USER=homestead
 DB_PASSWORD=secret
-
-GOOGLE_ANALYTICS_KEY=
-
-AUTH_KEY=yourrandomstring
-SECURE_AUTH_KEY=yourrandomstring
-LOGGED_IN_KEY=yourrandomstring
-NONCE_KEY=yourrandomstring
-AUTH_SALT=yourrandomstring
-SECURE_AUTH_SALT=yourrandomstring
-LOGGED_IN_SALT=yourrandomstring
-NONCE_SALT=yourrandomstring
 ```
 
 Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
@@ -68,7 +55,7 @@ Thats it. We're done. Lets build stuff!
 > Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
 ## Theming
-Library configuration can be editet in the `boilerplate/config` directory. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `includes/post-types` directory.
+Library configuration can be editet in the `wp-content/themes/wordplate/config` directory. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `wp-content/themes/wordplate/includes/post-types` directory.
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
 
