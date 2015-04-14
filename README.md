@@ -21,7 +21,7 @@ composer global require wordplate/installer
 
 Make sure to place the `~/.composer/vendor/bin` directory in your PATH so the `wordplate` executable can be located by your system.
 
-Once installed, the simple WordPlate new command will create a fresh WordPlate installation in the directory you specify. For instance, WordPlate new acme would create a directory named acme containing a fresh WordPlate installation with all dependencies installed. This method of installation is much faster than installing via Composer:
+Once installed, the simple WordPlate new command will create a fresh WordPlate installation in the directory you specify. For instance, `wordplate new acme` would create a directory named acme containing a fresh WordPlate installation with all dependencies installed. This method of installation is much faster than installing via Composer:
 
 ```bash
 wordplate new acme
