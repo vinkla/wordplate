@@ -31,11 +31,7 @@ wordplate new acme
 You may also install WordPlate by issuing the Composer create-project command in your terminal:
 
 ```bash
-composer create-project wordplate/wordplate --prefer-dist
-```
-
-```bash
-composer create-project wordplate/wordplate awesome-project
+composer create-project wordplate/wordplate acme
 ```
 
 ## Environment
