@@ -17,11 +17,12 @@ return [
     'soil' => [
         'features' => [
             'soil-clean-up',
-            'soil-relative-urls',
-            'soil-nice-search',
-            'soil-js-to-footer',
-            'soil-disable-trackbacks',
             'soil-disable-asset-versioning',
+            'soil-disable-trackbacks',
+            'soil-jquery-cdn',
+            'soil-js-to-footer',
+            'soil-nice-search',
+            'soil-relative-urls',
         ]
     ],
 

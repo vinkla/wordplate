@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of WordPress Boilerplate.
+ * This file is part of WordPlate.
  *
  * (c) Vincent Klaiber <hello@vinkla.com>
  *
