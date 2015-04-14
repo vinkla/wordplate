@@ -5,11 +5,62 @@ WordPlate
 
 A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project is trying to simplify the way we're setting up a new WordPress project. [Don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself).
 
-This boilerplate requires PHP 5.4+ and is built with the latest version of [WordPress](https://github.com/WordPress/WordPress).
-
 [![StyleCI](https://styleci.io/repos/13329845/shield?style=flat)](https://styleci.io/repos/13329845)
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
+
+## Install Composer
+WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, you will need to make sure you have Composer installed on your machine.
+
+## Install WordPlate
+First, download the WordPlate installer using Composer.
+
+```bash
+composer global require wordplate/installer
+```
+
+Make sure to place the `~/.composer/vendor/bin` directory in your PATH so the `wordpalte` executable can be located by your system.
+
+Once installed, the simple WordPlate new command will create a fresh WordPlate installation in the directory you specify. For instance, WordPlate new acme would create a directory named acme containing a fresh WordPlate installation with all dependencies installed. This method of installation is much faster than installing via Composer:
+
+```bash
+wordplate new acme
+```
+
+### Via Composer Create-Project
+You may also install WordPlate by issuing the Composer create-project command in your terminal:
+
+```bash
+composer create-project wordplate/wordplate --prefer-dist
+```
+
+```bash
+composer create-project wordplate/wordplate awesome-project
+```
+
+## Environment
+
+Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
+
+```
+DB_HOST=localhost
+DB_NAME=wordpress
+DB_USER=homestead
+DB_PASSWORD=secret
+```
+
+## Install WordPress
+
+Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
+
+Thats it. We're done. Lets build stuff!
+
+> Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
+
+## Theming
+Library configuration can be edited in the `wp-content/themes/wordplate/config` directory. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `wp-content/themes/wordplate/includes/post-types` directory.
+
+The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
 
 ## What's included?
 
@@ -32,32 +83,6 @@ A boilerplate theme filled with actions and filters to get the most out of WordP
 [Roots](https://github.com/roots) [soil](https://github.com/roots/soil) plugin, clean up WordPress markup, use relative URLs, nicer search URLs, and disable trackbacks.
 
 A Server Settings page. This page lists server configuration. Instead of login in to the server you can visit this page to get the necessary information. Located under *Settings > Server*.
-
-## Installation
-Start by creating a new project with composer.
-
-```bash
-composer create-project wordplate/wordplate awesome-project
-```
-
-Add the database credentials and [salts](https://api.wordpress.org/secret-key/1.1/salt) to the `.env` configuration environment file.
-```
-DB_HOST=localhost
-DB_NAME=wordpress
-DB_USER=homestead
-DB_PASSWORD=secret
-```
-
-Open up your browser and visit the project URL with `/wordpress/wp-admin/install.php` to install WordPress.
-
-Thats it. We're done. Lets build stuff!
-
-> Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
-
-## Theming
-Library configuration can be editet in the `wp-content/themes/wordplate/config` directory. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `wp-content/themes/wordplate/includes/post-types` directory.
-
-The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
 
 ## License
 
