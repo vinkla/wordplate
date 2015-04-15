@@ -56,6 +56,9 @@ define('WP_CONTENT_URL', 'http://'.$_SERVER['HTTP_HOST'].'/wp-content');
 /** Set the trash to less days to optimize WordPress. */
 define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
 
+/** Set the default WordPress theme. */
+define('WP_DEFAULT_THEME', env('WP_THEME', 'wordplate'));
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

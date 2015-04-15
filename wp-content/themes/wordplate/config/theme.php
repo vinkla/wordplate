@@ -14,6 +14,6 @@ return [
     |
     */
 
-    'slug' => env('THEME_SLUG', 'wordplate'),
+    'slug' => env('WP_THEME', 'wordplate'),
 
 ];
