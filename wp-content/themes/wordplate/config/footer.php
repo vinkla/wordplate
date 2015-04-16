@@ -12,6 +12,6 @@ return [
     |
     */
 
-    'footer_text' => 'Thank you for creating with <a href="http://github.com/vinkla/wordpress-boilerplate" target="_blank">wordpress-boilerplate</a>.',
+    'footer_text' => 'Thank you for creating with <a href="http://github.com/wordplate/wordplate" target="_blank">WordPlate</a>.',
 
 ];
