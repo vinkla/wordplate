@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0 (released 2013-04-16)
+
+* Rename the project to WordPlate
+* Moved project to an organization
+* Moved library to framework repository
+* Added installer CLI tool
+* Added theme activation on theme setup (#56)
+* Added new installation guide
+* Added changelog
+* Update @roots soil plugin to the latest version
+
 ## 1.3.0 (released 2013-04-10)
 
 * Added TinyPGN plugin (#57)
