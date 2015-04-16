@@ -25,7 +25,7 @@
     "scripts": {
         "post-create-project-cmd": [
             "php -r \"copy('.env.example', '.env');\"",
-            "rm README.md LICENSE .styleci.yml"
+            "rm README.md LICENSE CHANGELOG.md .styleci.yml"
         ]
     },
     "extra":{
