@@ -24,11 +24,19 @@
  * @package WordPress
  */
 
-/** Register the Composer autoloader. */
-require __DIR__.'/vendor/autoload.php';
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our application. We just need to utilize it! We'll simply require it
+| into the script here so that we don't have to worry about manual
+| loading any of our classes later on. It feels nice to relax.
+|
+*/
 
-/** Load .env file into WordPress. */
-Dotenv::load(__DIR__);
+require __DIR__.'/../bootstrap/autoload.php';
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */

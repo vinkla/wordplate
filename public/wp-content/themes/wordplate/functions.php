@@ -1,11 +1,6 @@
 <?php
 
 /**
- * Initiate the WordPlate Framework.
- */
-new WordPlate\Framework();
-
-/**
  * Load admin includes.
  */
 require get_template_directory().'/includes/includes.php';

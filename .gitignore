@@ -1,12 +1,8 @@
 /vendor
-/wordpress
-
-/wp-content/plugins
-/wp-content/backups
-/wp-content/cache
-/wp-content/upgrade
-/wp-content/uploads
-
 composer.lock
-sitemap.xml
 .env
+
+/public/wordpress
+/public/wp-content/*
+!/public/wp-content/themes
+!/public/wp-content/index.php
