@@ -17,17 +17,8 @@
 | TODO: Add documentation.
 |
 */
-require __DIR__.'/../vendor/autoload.php';
 
-/*
-|--------------------------------------------------------------------------
-| Bind Paths
-|--------------------------------------------------------------------------
-|
-| TODO: Add documentation.
-|
-*/
-$paths = require __DIR__.'/paths.php';
+require __DIR__.'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,4 +28,5 @@ $paths = require __DIR__.'/paths.php';
 | TODO: Add documentation.
 |
 */
+
 Dotenv::load(__DIR__.'/..');

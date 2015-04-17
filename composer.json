@@ -31,7 +31,13 @@
     "extra":{
         "branch-alias": {
             "dev-master": "2.1-dev"
-        }
+        },
+        "installer-paths": {
+            "public/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+            "public/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+            "public/wp-content/themes/{$name}": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "public/wordpress"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

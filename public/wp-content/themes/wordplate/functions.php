@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * Initialize the WordPlate Application.
+ */
+new WordPlate\Foundation\Application(
+    realpath(__DIR__.'/../../../../')
+);
+
+/**
  * Load admin includes.
  */
 require get_template_directory().'/includes/includes.php';

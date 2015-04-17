@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'image_path' => get_template_directory_uri().'/assets/images/logo.png',
+    'image_path' => '/assets/images/logo.png',
 
     'image_width' =>  80,
 

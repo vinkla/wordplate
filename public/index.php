@@ -9,27 +9,19 @@
  * file that was distributed with this source code.
  */
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels nice to relax.
-|
-*/
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-require __DIR__.'/../bootstrap/autoload.php';
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-/*
-|--------------------------------------------------------------------------
-| Start the Application
-|--------------------------------------------------------------------------
-|
-| TODO: Add documentation.
-|
-*/
-
-require __DIR__.'/../bootstrap/app.php';
+/** Loads the WordPress Environment and Template */
+require __DIR__.'/wordpress/wp-blog-header.php';
