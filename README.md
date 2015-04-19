@@ -53,7 +53,17 @@ Thats it. We're done. Lets build stuff!
 
 > Please note that if you aren't running your installation from the root you'll have to update [WP_CONTENT_URL](wp-config.php) in `wp-config.php`.
 
-## Theming
+## Plugins & Themes
+
+We are using [WordPress Packagist](http://wpackagist.org/) for plugins. To add a plugin from the [WordPress Plugin Directory](https://wordpress.org/plugins/) add the to the required array in the [composer.json](composer.json) file. Specify them with `wpackagist-plugin` following by the plugin slug name. Example below.
+
+```json
+"wpackagist-plugin/wp-sweep": "~1.0"
+```
+
+Please note that this also works with themes and WordPress multi-site plugins.
+
+## Templating
 Library configuration can be edited in the `wp-content/themes/wordplate/config` directory. Visit [wp-custom-post-type-class](https://github.com/jjgrainger/wp-custom-post-type-class) to read about adding custom post types. Custom post types can be added within the `wp-content/themes/wordplate/includes/post-types` directory.
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
