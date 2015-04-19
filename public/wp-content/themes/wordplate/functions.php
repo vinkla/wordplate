@@ -4,7 +4,7 @@
  * Initialize the WordPlate Application.
  */
 new WordPlate\Foundation\Application(
-    realpath(__DIR__.'/../../../../')
+    realpath(ABSPATH.'../../')
 );
 
 /**
