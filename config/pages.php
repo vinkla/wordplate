@@ -28,5 +28,6 @@ return [
             'type' => 'blog',
             'parent' => 'About',
         ],
-    ]
+    ],
+
 ];

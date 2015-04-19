@@ -15,7 +15,6 @@ return [
     */
 
     'image_path' => '/assets/images/logo.png',
-
     'image_width' =>  80,
 
     /*

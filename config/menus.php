@@ -14,7 +14,7 @@ return [
     | Specified below which menu items should be deleted for which users.
     |
     | Available items: appearance, comments, dashboard, media, plugins, pages,
-    | posts, settings, tools, users
+    | posts, settings, tools, users.
     |
     */
 
