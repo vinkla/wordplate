@@ -31,10 +31,10 @@ return [
             'soil-clean-up',
             'soil-disable-asset-versioning',
             'soil-disable-trackbacks',
-            'soil-jquery-cdn',
             'soil-js-to-footer',
             'soil-nice-search',
             'soil-relative-urls',
+            //'soil-jquery-cdn',
         ]
     ],
 
