@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2 (released 2013-04-21)
+
+- Fix infinite pages issue (#76)
+
 ## 2.1.1 (released 2013-04-21)
 
 - Deregister jQuery by default (#73)
