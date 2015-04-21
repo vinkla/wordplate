@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.1 (released 2013-04-21)
+
+- Deregister jQuery by default (#73)
+- Fix login image URL bug (#74)
+- Fix infinite pages if the title key isn't available (#75)
+
 ## 2.1.0 (released 2013-04-19)
 
 - Added default screenshot and favicon (#71)
