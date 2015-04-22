@@ -24,16 +24,5 @@ return [
         'WP_Widget_RSS',
         'WP_Widget_Tag_Cloud',
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Enable Shortcodes
-    |--------------------------------------------------------------------------
-    |
-    | Set this to true if you want to enable shortcodes in text widgets.
-    |
-    */
-   
-    'shortcodes' => true,
-
+    
 ];
