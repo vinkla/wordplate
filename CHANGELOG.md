@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3 (released 2013-04-22)
+
+- Fix template bug for pages (#80)
+
 ## 2.1.2 (released 2013-04-21)
 
 - Fix infinite pages issue (#76)
