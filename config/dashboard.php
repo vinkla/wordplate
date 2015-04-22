@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'remove_dashboard_widgets' => [
+    'widgets' => [
     
         'side' => [
             'dashboard_primary',
