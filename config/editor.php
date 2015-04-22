@@ -13,18 +13,22 @@ return [
     | Full list of formats http://www.tinymce.com/wiki.php/Controls
     |
     */
+    
+    'tinymce' => [
+    
+        'blockformats' => [
+            'Paragraph=p',
+            'Heading 2=h2',
+            'Heading 3=h3',
+        ],
 
-    'tinymce_blockformats' => [
-        'Paragraph=p',
-        'Heading 2=h2',
-        'Heading 3=h3',
-    ],
-
-    'tinymce_disabled' => [
-        'strikethrough',
-        'underline',
-        'forecolor',
-        'justifyfull',
+        'disabled' => [
+            'strikethrough',
+            'underline',
+            'forecolor',
+            'justifyfull',
+        ],
+        
     ],
 
     /*
