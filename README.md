@@ -68,6 +68,25 @@ Library configuration can be edited in the `wp-content/themes/wordplate/config` 
 
 The boilerplate doesn't include a way to create custom fields. Instead use [Advanced Custom Fields](http://www.advancedcustomfields.com/). It is specified by default in our `composer.json` file.
 
+## Pages
+This boilerplate allows you to create WordPress pages trough the configuration files. You can eveb specify which template the page should use, if it has a parent and if it should act as the home or blog page. Accepted parameters: `title`, `type`, `template` and `parent`. Example below.
+
+```php
+[
+    'title' => 'Start',
+    'type' => 'home',
+],
+[
+    'title' => 'About',
+    'template' => 'pages/about.php',
+],
+[
+    'title' => 'Archive',
+    'type' => 'blog',
+    'parent' => 'About',
+],
+```
+
 ## What's included?
 
 WordPress as a dependency. Move your content out of WordPress core.

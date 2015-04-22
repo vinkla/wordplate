@@ -12,22 +12,10 @@ return [
     |
     | Accepted parameters: title, type, template and parent.
     |
+    | Read more at https://github.com/wordplate/wordplate#pages
+    |
     */
 
-    'pages' => [
-        [
-            'title' => 'Start',
-            'type' => 'home',
-        ],
-        [
-            'title' => 'About',
-            'template' => 'pages/about.php',
-        ],
-        [
-            'title' => 'Archive',
-            'type' => 'blog',
-            'parent' => 'About',
-        ],
-    ],
+    'pages' => [],
 
 ];
