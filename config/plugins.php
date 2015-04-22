@@ -34,7 +34,6 @@ return [
             'soil-js-to-footer',
             'soil-nice-search',
             'soil-relative-urls',
-            //'soil-jquery-cdn',
         ]
     ],
 
