@@ -13,9 +13,12 @@ return [
     | Define the width of your custom login logo in pixels.
     |
     */
-
-    'image_path' => '/assets/images/logo.png',
-    'image_width' =>  80,
+    
+    'image' => [
+        'path' => '/assets/images/logo.png',
+        
+        'width' => 200,
+    ],
 
     /*
     |--------------------------------------------------------------------------
