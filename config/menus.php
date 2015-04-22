@@ -18,7 +18,7 @@ return [
     |
     */
 
-    'remove_menu_items' => [
+    'items' => [
 
         // Hidden for user without admin capabilities.
         'default' => [
@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'remove_menu_bar_links' => [
+    'links' => [
         'comments',
         'wp-logo',
         'edit',
@@ -75,7 +75,7 @@ return [
     |
     */
 
-    'panel_tabs' => [
+    'tabs' => [
         'help' => false,
         'screen_options' => false,
     ],
