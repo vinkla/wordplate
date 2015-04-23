@@ -27,6 +27,9 @@ add_action('after_setup_theme', function () {
     // $formats = ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio'];
     // add_theme_support('post-formats', $formats);
 
+    // Add title theme support.
+    add_theme_support('title-tag');
+
     // Show the admin bar.
     show_admin_bar(false);
 });
@@ -38,7 +41,7 @@ add_action('after_setup_theme', function () {
  */
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
-    
+
     // wp_enqueue_style('wordplate', get_template_directory_uri().'/assets/styles/wordplate.css');
     // wp_register_script('wordplate', get_template_directory_uri().'/assets/scripts/wordplate.js', '', '', true);
 
