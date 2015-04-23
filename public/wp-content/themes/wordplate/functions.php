@@ -46,7 +46,7 @@ add_action('wp_enqueue_scripts', function () {
 });
 
 /**
- * Configure Default Title.
+ * Configure default title.
  *
  * @return string
  */
@@ -66,7 +66,7 @@ add_filter('wp_title', function ($title) {
 });
 
 /**
- * Configure Excerpt String.
+ * Configure excerpt string.
  *
  * @return string
  */
@@ -75,10 +75,10 @@ add_filter('excerpt_more', function () {
 });
 
 /**
- * Change Default Excerpt Length (default: 55).
+ * Change default excerpt length (default: 55).
  *
  * @return int
  */
 add_filter('excerpt_length', function () {
-    return 55;
+    return 101;
 });
