@@ -27,7 +27,7 @@ add_action('after_setup_theme', function () {
     // $formats = ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio'];
     // add_theme_support('post-formats', $formats);
 
-    // Add title theme support.
+    // Add title tag theme support.
     add_theme_support('title-tag');
 
     // Show the admin bar.
