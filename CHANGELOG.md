@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.2.0 (released 2013-04-26)
+## 2.2.0 (released 2015-04-26)
 
 - Add theme color meta tag (#84)
 - Add title tag theme support (#83)
@@ -12,21 +12,21 @@
 - Update @roots Soil plugin version (#86)
 - Remove ACF simple editor toolbar (#87)
 
-## 2.1.3 (released 2013-04-22)
+## 2.1.3 (released 2015-04-22)
 
 - Fix template bug for pages (#80)
 
-## 2.1.2 (released 2013-04-21)
+## 2.1.2 (released 2015-04-21)
 
 - Fix infinite pages issue (#76)
 
-## 2.1.1 (released 2013-04-21)
+## 2.1.1 (released 2015-04-21)
 
 - Deregister jQuery by default (#73)
 - Fix login image URL bug (#74)
 - Fix infinite pages if the title key isn't available (#75)
 
-## 2.1.0 (released 2013-04-19)
+## 2.1.0 (released 2015-04-19)
 
 - Added default screenshot and favicon (#71)
 - Added new directory structure (#70)
@@ -34,7 +34,7 @@
 - Added Google Analytics to configuration files (#68)
 - Added plugin activation on theme switch (#66)
 
-## 2.0.0 (released 2013-04-16)
+## 2.0.0 (released 2015-04-16)
 
 - Rename the project to WordPlate
 - Moved project to an organization
@@ -45,35 +45,35 @@
 - Added changelog
 - Update @roots soil plugin to the latest version
 
-## 1.3.0 (released 2013-04-10)
+## 1.3.0 (released 2015-04-10)
 
 - Added TinyPGN plugin (#57)
 - Added @laravel's helper methods (#63)
 - Added rename the home URL on theme setup (#64)
 
-## 1.2.2 (released 2013-04-10)
+## 1.2.2 (released 2015-04-10)
 
 - Added Whoops php errors for cool kids (#62)
 
-## 1.2.1 (released 2013-04-10)
+## 1.2.1 (released 2015-04-10)
 
 - Added configuration to disbale/enable updates
 
-## 1.2.0 (released 2013-03-31)
+## 1.2.0 (released 2015-03-31)
 
 - Added config helper method (#61)
 
-## 1.1.1 (released 2013-03-27)
+## 1.1.1 (released 2015-03-27)
 
 - Added WP Sweep plugin by @lesterchan (#59)
 
-## 1.1.0 (released 2013-03-20)
+## 1.1.0 (released 2015-03-20)
 
 - Added Dotenv environment package by @vlucas (#44)
 - Added @roots Soil plugin (#49)
 - Added Google Analytics (#52)
 
-## 1.0.0 (released 2013-03-20)
+## 1.0.0 (released 2015-03-20)
 
 - Move Boilerplate to Composer
 - Added Server Settings page
