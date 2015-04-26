@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2.0 (released 2013-04-26)
+
+- Add theme color meta tag (#84)
+- Add title tag theme support (#83)
+- Add Windows support to post-create-project-cmd (#82)
+- Add HTML5 tags theme support (#77)
+- Update configuration files structure (#79)
+- Update WordPress to version 4.2 (#78)
+- Update header HTML (#85)
+- Update @roots Soil plugin version (#86)
+- Remove ACF simple editor toolbar (#87)
+
 ## 2.1.3 (released 2013-04-22)
 
 - Fix template bug for pages (#80)
