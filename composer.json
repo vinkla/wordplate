@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "wordplate/framework": "2.2.*",
+        "wordplate/framework": "dev-develop",
         "wpackagist-plugin/advanced-custom-fields": "~4.0",
         "wpackagist-plugin/tiny-compress-images": "~1.0",
         "wpackagist-plugin/wordpress-importer": "~0.6",
@@ -29,6 +29,9 @@
         ]
     },
     "extra":{
+        "branch-alias": {
+            "dev-master": "2.3-dev"
+        },
         "installer-paths": {
             "public/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
             "public/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
