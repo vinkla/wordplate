@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "wordplate/framework": "dev-develop",
+        "wordplate/framework": "2.3.*@dev",
         "wpackagist-plugin/advanced-custom-fields": "~4.0",
         "wpackagist-plugin/tiny-compress-images": "~1.0",
         "wpackagist-plugin/wordpress-importer": "~0.6",
@@ -33,9 +33,9 @@
             "dev-master": "2.3-dev"
         },
         "installer-paths": {
-            "public/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
-            "public/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
-            "public/wp-content/themes/{$name}": ["type:wordpress-theme"]
+            "public/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+            "public/plugins/{$name}": ["type:wordpress-plugin"],
+            "public/themes/{$name}": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "public/wordpress"
     },

@@ -2,7 +2,8 @@
 composer.lock
 .env
 
+/public/languages
+/public/plugins
+/public/upgrade
+/public/uploads
 /public/wordpress
-/public/wp-content/*
-!/public/wp-content/themes
-!/public/wp-content/index.php

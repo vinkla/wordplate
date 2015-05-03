@@ -38,8 +38,8 @@ define('WP_HOME', env('WP_URL', 'http://'.$_SERVER['HTTP_HOST']));
 define('WP_SITEURL', WP_HOME .'/wordpress');
 
 /** Custom content directory. */
-define('WP_CONTENT_DIR', __DIR__.'/wp-content');
-define('WP_CONTENT_URL', WP_HOME.'/wp-content');
+define('WP_CONTENT_DIR', __DIR__);
+define('WP_CONTENT_URL', WP_HOME);
 
 /** Set the trash to less days to optimize WordPress. */
 define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
@@ -84,6 +84,7 @@ $table_prefix  = env('TABLE_PREFIX', 'wp_');
  */
 define('WP_DEBUG', env('WP_DEBUG', false));
 define('WP_DEBUG_DISPLAY', env('WP_DEBUG', false));
+define('SCRIPT_DEBUG', env('WP_DEBUG', false));
 
 /* That's all, stop editing! Happy blogging. */
 
