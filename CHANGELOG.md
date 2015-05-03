@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.3.0 (released 2015-05-03)
+
+- Add plate console commander (#92)
+- Add plate salts generator command (#81)
+- Add new exception handler (#91)
+- Add WP_HOME and WP_SITEURL (#89)
+- Update Soil plugin to latest version (#90)
+- Rename wp-content directory to public (#88)
+
 ## 2.2.0 (released 2015-04-26)
 
 - Add theme color meta tag (#84)
