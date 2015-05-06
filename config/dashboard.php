@@ -14,7 +14,7 @@ return [
     */
 
     'widgets' => [
-    
+
         'side' => [
             'dashboard_primary',
             'dashboard_secondary',
@@ -29,7 +29,7 @@ return [
             'dashboard_right_now',
             'dashboard_activity',
         ],
-        
+
     ],
-    
+
 ];

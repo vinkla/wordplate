@@ -39,7 +39,7 @@ return [
             'dashboard',
             'links',
             'media',
-        ]
+        ],
 
     ],
 
@@ -64,7 +64,6 @@ return [
         'search',
     ],
 
-
     /*
     |--------------------------------------------------------------------------
     | Hide Panel Tabs
@@ -79,6 +78,5 @@ return [
         'help' => false,
         'screen_options' => false,
     ],
-
 
 ];

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    
+
     /*
     |--------------------------------------------------------------------------
     | TinyMCE editor
@@ -13,9 +13,9 @@ return [
     | Full list of formats http://www.tinymce.com/wiki.php/Controls
     |
     */
-    
+
     'tinymce' => [
-    
+
         'blockformats' => [
             'Paragraph=p',
             'Heading 2=h2',
@@ -28,7 +28,7 @@ return [
             'forecolor',
             'justifyfull',
         ],
-        
+
     ],
 
     /*
@@ -42,7 +42,7 @@ return [
     */
 
     'meta_boxes' => [
-    
+
         'link' => [
             'linktargetdiv',
             'linkxfndiv',
@@ -62,9 +62,9 @@ return [
             //'categorydiv',
             //'tagsdiv-post_tag',
         ],
-        
+
     ],
-    
+
     /*
     |--------------------------------------------------------------------------
     | JPEG Quality
@@ -77,5 +77,5 @@ return [
     */
 
     'jpeg_quality' => 100,
-    
+
 ];

@@ -24,5 +24,5 @@ return [
         'WP_Widget_RSS',
         'WP_Widget_Tag_Cloud',
     ],
-    
+
 ];

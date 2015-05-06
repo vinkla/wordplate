@@ -12,7 +12,7 @@ new WordPlate\Foundation\Application(
  */
 require get_template_directory().'/includes/includes.php';
 
-/**
+/*
  * Theme set up settings.
  *
  * @return void
@@ -34,7 +34,7 @@ add_action('after_setup_theme', function () {
     show_admin_bar(false);
 });
 
-/**
+/*
  * Enqueue and register scripts the right way.
  *
  * @return  void
@@ -48,7 +48,7 @@ add_action('wp_enqueue_scripts', function () {
     // wp_enqueue_script('wordplate');
 });
 
-/**
+/*
  * Configure default title.
  *
  * @return string
@@ -68,7 +68,7 @@ add_filter('wp_title', function ($title) {
     return sprintf('%s - % s', trim($title), $name);
 });
 
-/**
+/*
  * Configure excerpt string.
  *
  * @return string
@@ -77,7 +77,7 @@ add_filter('excerpt_more', function () {
     return '…';
 });
 
-/**
+/*
  * Change default excerpt length (default: 55).
  *
  * @return int
