@@ -1,4 +1,4 @@
-# Changelog
+# CHANGELOG
 
 ## 2.3.0 (released 2015-05-03)
 
