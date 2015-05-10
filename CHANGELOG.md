@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 2.4.0 (released 2015-05-10)
+
+- Add post revisions to config (#98)
+- Add IMAGE_EDIT_OVERWRITE (#94)
+- Disable WordPress core updates (#97)
+- Disable plugin and theme update and installation (#95)
+- Make Whoops to handle all errors (#93)
+- Require SSL for admin and logins (#99)
+
 ## 2.3.0 (released 2015-05-03)
 
 - Add plate console commander (#92)
