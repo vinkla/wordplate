@@ -47,6 +47,9 @@ define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
 /* Set the default WordPress theme. */
 define('WP_DEFAULT_THEME', env('WP_THEME', 'wordplate'));
 
+/* Specify the Number of Post Revisions. */
+define('WP_POST_REVISIONS', env('EMPTY_TRASH_DAYS', 2));
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
