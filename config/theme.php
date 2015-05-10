@@ -66,7 +66,7 @@ return [
     */
 
     'gzip' => true,
-    
+
     /*
     |--------------------------------------------------------------------------
     | Require SSL for Admin and Logins
@@ -76,7 +76,7 @@ return [
     | area so that both passwords and cookies are never sent in the clear.
     |
     */
-    
+
     'secure' => false,
 
     /*
