@@ -7,7 +7,6 @@
 - Disable WordPress core updates (#97)
 - Disable plugin and theme update and installation (#95)
 - Make Whoops to handle all errors (#93)
-- Require SSL for admin and logins (#99)
 
 ## 2.3.0 (released 2015-05-03)
 
