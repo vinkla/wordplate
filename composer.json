@@ -29,9 +29,6 @@
         ]
     },
     "extra":{
-        "branch-alias": {
-            "dev-master": "2.3-dev"
-        },
         "installer-paths": {
             "public/mu-plugins/{$name}": ["type:wordpress-muplugin"],
             "public/plugins/{$name}": ["type:wordpress-plugin"],
