@@ -34,7 +34,9 @@ return [
     | WordPress Updates
     |--------------------------------------------------------------------------
     |
-    | Enable or disable WordPress core, plugins and themes updates.
+    | Enable or disable WordPress core, plugins and themes updates. Please note
+    | that if your account has administrative privileges you'll still be able
+    | to update.
     |
     */
 
@@ -64,6 +66,18 @@ return [
     */
 
     'gzip' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Require SSL for Admin and Logins
+    |--------------------------------------------------------------------------
+    |
+    | By setting this option to true, you want to secure logins and the admin
+    | area so that both passwords and cookies are never sent in the clear.
+    |
+    */
+
+    'secure' => false,
 
     /*
     |--------------------------------------------------------------------------
