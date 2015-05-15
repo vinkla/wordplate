@@ -14,10 +14,10 @@ A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project 
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```bash
-composer create-project wordplate/wordplate --prefer-dist
+composer create-project wordplate/wordplate
 ```
 
-Read more about setting up WordPlate in our [installation documentation](https://wordplate.org/docs/installation) page.
+Read more about setting up WordPlate on our [installation documentation](https://wordplate.org/docs/installation) page.
 
 ## Documentation
 
