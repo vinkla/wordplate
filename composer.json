@@ -24,7 +24,6 @@
     ],
     "scripts": {
         "post-create-project-cmd": [
-            "php plate clear",
             "php plate salts:generate"
         ]
     },
