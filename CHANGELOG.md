@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.5.1 (released 2015-05-21)
+
+- Remove Clear Command (#105)
+
 ## 2.5.0 (released 2015-05-21)
 
 - Fix Permalink Update Method Bug (#104)
