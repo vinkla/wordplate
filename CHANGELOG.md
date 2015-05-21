@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.5.0 (released 2015-05-21)
+
+- Fix Permalink Update Method Bug (#104)
+- Move Docs to Website (#102)
+- Add Test Coverage (#103)
+- Add Mail Configuration (#100)
+
 ## 2.4.0 (released 2015-05-10)
 
 - Add post revisions to config (#98)
