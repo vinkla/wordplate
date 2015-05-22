@@ -71,7 +71,7 @@ add_filter('wp_title', function ($title) {
         return sprintf('%s - %s', trim(single_cat_title('', false)), $name);
     }
 
-    return sprintf('%s - %s', trim($post->post_name), $name);
+    return sprintf('%s - %s', trim($post->post_title), $name);
 });
 
 /*
