@@ -64,6 +64,10 @@ add_filter('wp_title', function ($title) {
 
         return $name;
     }
+    
+    if (is_category()) {
+        return sprintf('%s - %s', trim(single_cat_title('', false)), $name);
+    }
 
     return sprintf('%s - % s', trim($title), $name);
 });
