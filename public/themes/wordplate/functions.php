@@ -55,6 +55,7 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_filter('wp_title', function ($title) {
     global $post;
+    
     $name = get_bloginfo('name');
     $description = get_bloginfo('description');
 
