@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 2.5.2 (released 2015-05-28)
+
+- Added Charset and Language Attributes to Header (#111)
+- Added wp_nav_menu to Header (#108)
+- Fixed wp_title Category Bug (#107)
+
 ## 2.5.1 (released 2015-05-21)
 
 - Remove Clear Command (#105)

@@ -16,3 +16,9 @@
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body>
+
+    <header id="masthead" class="site-header" role="banner">
+        <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+            <?php wp_nav_menu(array('theme_location' => 'primary-menu', 'menu_class' => 'nav-menu')); ?>
+        </nav>
+    </header>
