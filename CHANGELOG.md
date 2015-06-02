@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.5.3 (released 2015-06-02)
+
+- Fix Mail From and Name Bug (#112)
+
 ## 2.5.2 (released 2015-05-28)
 
 - Added Charset and Language Attributes to Header (#111)
