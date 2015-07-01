@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.5.4 (released 2015-07-01)
+
+- Sanitize File Name on Save (#113)
+
 ## 2.5.3 (released 2015-06-02)
 
 - Fix Mail From and Name Bug (#112)
