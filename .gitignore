@@ -1,10 +1,13 @@
 composer.lock
 phpunit.xml
+
 vendor
+wp-content
+wordpress
+
 .env
 
 /public/languages
 /public/plugins
 /public/upgrade
 /public/uploads
-/public/wordpress
