@@ -55,7 +55,7 @@ add_action('wp_enqueue_scripts', function () {
  */
 add_filter('wp_title', function ($title) {
     global $post;
-    
+
     $name = get_bloginfo('name');
     $description = get_bloginfo('description');
 
@@ -66,7 +66,7 @@ add_filter('wp_title', function ($title) {
 
         return $name;
     }
-    
+
     if (is_category()) {
         return sprintf('%s - %s', trim(single_cat_title('', false)), $name);
     }

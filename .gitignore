@@ -1,6 +1,7 @@
 composer.lock
 phpunit.xml
 vendor
+node_modules
 .env
 
 /public/languages
@@ -8,3 +9,4 @@ vendor
 /public/upgrade
 /public/uploads
 /public/wordpress
+/public/themes/wordplate/assets
