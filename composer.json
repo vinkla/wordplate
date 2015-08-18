@@ -3,12 +3,6 @@
     "description": "The WordPlate Boilerplate",
     "keywords": ["wordplate", "wordpress", "boilerplate"],
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Vincent Klaiber",
-            "email": "hello@vinkla.com"
-        }
-    ],
     "require": {
         "wordplate/framework": "2.6.*",
         "wpackagist-plugin/advanced-custom-fields": "~4.0",
