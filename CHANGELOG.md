@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.6.0 (released 2015-08-18)
+
+- Added [Elixir](http://laravel.com/docs/elixir) Support (#117)
+
 ## 2.5.4 (released 2015-07-01)
 
 - Sanitize File Name on Save (#113)
