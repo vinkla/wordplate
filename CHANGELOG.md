@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.7.0 (released 2015-08-20)
+
+- Updated to WordPress 4.3
+- Removed unused server page
+- Removed the ability to hide updates
+- Code cleanup
+
 ## 2.6.0 (released 2015-08-18)
 
 - Added [Elixir](http://laravel.com/docs/elixir) Support (#117)
