@@ -4,7 +4,7 @@
     "keywords": ["wordplate", "wordpress", "boilerplate"],
     "license": "MIT",
     "require": {
-        "wordplate/framework": "2.6.*",
+        "wordplate/framework": "2.7.*",
         "wpackagist-plugin/advanced-custom-fields": "~4.0",
         "wpackagist-plugin/tiny-compress-images": "~1.0",
         "wpackagist-plugin/wordpress-importer": "~0.6",
