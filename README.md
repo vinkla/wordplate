@@ -18,11 +18,11 @@ Install WordPlate by issuing the Composer `create-project` command in your termi
 composer create-project wordplate/wordplate
 ```
 
-Read more about setting up WordPlate on our [installation documentation](https://wordplate.org/docs/installation) page.
+Read more about setting up WordPlate on our [installation documentation](https://github.com/wordplate/wordplate/wiki/installation) page.
 
 ## Documentation
 
-WordPlate's documentation has been moved to [https://wordplate.org](https://wordplate.org) you can [find it there](https://wordplate.org/docs/installation/).
+WordPlate's features an extensive [wiki documentation](https://github.com/wordplate/wordplate/wiki), you can [find it there](https://github.com/wordplate/wordplate/wiki).
 
 ## Contributing
 
