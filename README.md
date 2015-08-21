@@ -26,7 +26,7 @@ WordPlate features an extensive [wiki documentation](https://github.com/wordplat
 
 ## Contributing
 
-Please review our [contribution guidelines](CONTRIBUTING.md) before submitting a pull request.
+Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
