@@ -22,7 +22,7 @@ Read more about setting up WordPlate on our [installation documentation](https:/
 
 ## Documentation
 
-WordPlate's features an extensive [wiki documentation](https://github.com/wordplate/wordplate/wiki), you can [find it there](https://github.com/wordplate/wordplate/wiki).
+WordPlate features an extensive [wiki documentation](https://github.com/wordplate/wordplate/wiki) to help you getting started. [Take me to the docs!](https://github.com/wordplate/wordplate/wiki)
 
 ## Contributing
 
