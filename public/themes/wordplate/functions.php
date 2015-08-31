@@ -59,7 +59,7 @@ add_filter('wp_title', function ($title) {
     $name = get_bloginfo('name');
     $description = get_bloginfo('description');
 
-    if (is_front_page()) {
+    if (is_front_page() || is_home()) {
         if ($description) {
             return sprintf('%s - %s', $name, $description);
         }
