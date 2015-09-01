@@ -1,16 +1,7 @@
 <?php
 
-/**
- * Initialize the WordPlate Application.
- */
-new WordPlate\Foundation\Application(
-    realpath(ABSPATH.'../../')
-);
-
-/**
- * Load admin includes.
- */
-require get_template_directory().'/includes/includes.php';
+/** Register The Environment. */
+(new WordPlate\Application(realpath(ABSPATH.'../../')))->bootstrap();
 
 /*
  * Theme set up settings.
@@ -26,6 +17,14 @@ add_action('after_setup_theme', function () {
     // Add support for post formats.
     // $formats = ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio'];
     // add_theme_support('post-formats', $formats);
+    
+    // Register soil modules.
+    add_theme_support('soil-clean-up');
+    add_theme_support('soil-disable-asset-versioning');
+    add_theme_support('soil-disable-trackbacks');
+    add_theme_support('soil-js-to-footer');
+    add_theme_support('soil-nice-search');
+    add_theme_support('soil-relative-urls');
 
     // Add title tag theme support.
     add_theme_support('title-tag');
@@ -72,6 +71,13 @@ add_filter('wp_title', function ($title) {
     }
 
     return sprintf('%s - %s', trim($post->post_title), $name);
+});
+
+/**
+ * Add a primary WordPress menu.
+ */
+add_action('after_setup_theme', function () {
+    register_nav_menu('primary-menu', __('Primary Menu', 'wordplate'));
 });
 
 /*

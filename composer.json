@@ -4,11 +4,9 @@
     "keywords": ["wordplate", "wordpress", "boilerplate"],
     "license": "MIT",
     "require": {
-        "wordplate/framework": "2.7.*",
-        "wpackagist-plugin/advanced-custom-fields": "~4.0",
-        "wpackagist-plugin/tiny-compress-images": "~1.0",
-        "wpackagist-plugin/wordpress-importer": "~0.6",
-        "wpackagist-plugin/wp-sweep": "~1.0"
+        "wordplate/framework": "3.0.*",
+        "wpackagist-plugin/advanced-custom-fields": "^4.0.0",
+        "roots/soil": "^3.4.0"
     },
     "repositories": [
         {

@@ -10,7 +10,10 @@
  */
 
 /** Register The Auto Loader. */
-require __DIR__.'/../bootstrap/autoload.php';
+require __DIR__.'/../vendor/autoload.php';
+
+/** Detect The Environment. */
+(new WordPlate\Application(ABSPATH.'/../..'))->detectEnvironment();
 
 //** MySQL settings - You can get this info from your web host ** //
 /* The name of the database for WordPress */
