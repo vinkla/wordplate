@@ -9,14 +9,13 @@
  * file that was distributed with this source code.
  */
 
-/** Register The Auto Loader. */
+/* Register The Auto Loader. */
 require __DIR__.'/../vendor/autoload.php';
 
-/** Detect The Environment. */
+/* Detect The Environment. */
 (new WordPlate\Application(ABSPATH.'/../..'))->detectEnvironment();
 
-//** MySQL settings - You can get this info from your web host ** //
-/* The name of the database for WordPress */
+/* MySQL database name. */
 define('DB_NAME', env('DB_NAME'));
 
 /* MySQL database username. */

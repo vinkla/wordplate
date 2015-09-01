@@ -17,7 +17,7 @@ add_action('after_setup_theme', function () {
     // Add support for post formats.
     // $formats = ['aside', 'gallery', 'image', 'link', 'quote', 'video', 'audio'];
     // add_theme_support('post-formats', $formats);
-    
+
     // Register soil modules.
     add_theme_support('soil-clean-up');
     add_theme_support('soil-disable-asset-versioning');
@@ -73,7 +73,7 @@ add_filter('wp_title', function ($title) {
     return sprintf('%s - %s', trim($post->post_title), $name);
 });
 
-/**
+/*
  * Add a primary WordPress menu.
  */
 add_action('after_setup_theme', function () {
