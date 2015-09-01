@@ -5,7 +5,6 @@
     "license": "MIT",
     "require": {
         "wordplate/framework": "3.0.*",
-        "wpackagist-plugin/advanced-custom-fields": "^4.0.0",
         "roots/soil": "^3.4.0"
     },
     "repositories": [
