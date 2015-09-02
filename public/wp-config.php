@@ -10,7 +10,7 @@
  */
 
 /* Register the autoloader. */
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__.'/../bootstrap/autoload.php';
 
 /* MySQL database name. */
 define('DB_NAME', env('DB_NAME'));
