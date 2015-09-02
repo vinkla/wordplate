@@ -9,11 +9,8 @@
  * file that was distributed with this source code.
  */
 
-/* Register The Auto Loader. */
+/* Register the autoloader. */
 require __DIR__.'/../vendor/autoload.php';
-
-/* Detect The Environment. */
-(new WordPlate\Application(ABSPATH.'/../..'))->detectEnvironment();
 
 /* MySQL database name. */
 define('DB_NAME', env('DB_NAME'));

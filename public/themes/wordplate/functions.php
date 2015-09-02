@@ -1,7 +1,7 @@
 <?php
 
-/** Register The Environment. */
-(new WordPlate\Application(realpath(ABSPATH.'../../')))->bootstrap();
+/* Register the application. */
+app()->register();
 
 /*
  * Theme set up settings.
