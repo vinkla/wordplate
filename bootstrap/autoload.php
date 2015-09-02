@@ -49,3 +49,4 @@ $app = new WordPlate\Application(
 */
 
 $app->bootstrap();
+
