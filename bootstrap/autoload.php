@@ -43,9 +43,8 @@ $app = new WordPlate\Application(
 | Bootstrap The Application
 |--------------------------------------------------------------------------
 |
-| Initialize the environment file `.env` from the the root of the
-| application. This file stores all your configuration keys which you don't
-| want to commit to the GIT repository.
+| This initializes the environment file `.env` from the the root of the
+| application, loads the configuration files and handles the errors.
 |
 */
 
