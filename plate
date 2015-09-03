@@ -13,7 +13,7 @@
 require __DIR__.'/bootstrap/autoload.php';
 
 $app = new WordPlate\Console\Application(
-  realpath(__DIR__)
+    realpath(__DIR__)
 );
 
 $app->run();
