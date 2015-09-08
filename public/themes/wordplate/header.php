@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <meta name="theme-color" content="#464646">
 
-  <title><?php wp_title(); ?></title>
-
   <meta name="author" content="">
   <meta name="description" content="">
 
