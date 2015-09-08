@@ -1,9 +1,9 @@
 WordPlate
 =========
 
-![wordplate](https://cloud.githubusercontent.com/assets/499192/9404207/ba83bdc4-47ed-11e5-9e30-269c0c343b55.png)
+![wordplate](https://cloud.githubusercontent.com/assets/499192/9743256/a84e145c-5665-11e5-9ed1-235c0b395459.png)
 
-A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project is trying to simplify the way we're setting up a new WordPress project. [Don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself).
+A [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project is trying to simplify the way we're setting up a new WordPress projects. Following the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) principle.
 
 [![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
