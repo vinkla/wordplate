@@ -25,13 +25,28 @@ require __DIR__.'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
-| Load The Environment Variables
+| Create The Application
 |--------------------------------------------------------------------------
 |
-| Initialize the environment file `.env` from the the root of the
-| application. This file stores all your configuration keys which you don't
-| want to commit to the GIT repository.
+| The first thing we will do is create a new WordPlate application instance
+| which serves as the "glue" for all the components of WordPlate, and is
+| the IoC container for the system binding all of the various parts.
 |
 */
 
-Dotenv::load(__DIR__.'/..');
+$app = new WordPlate\Application(
+    realpath(__DIR__.'/../')
+);
+
+/*
+|--------------------------------------------------------------------------
+| Bootstrap The Application
+|--------------------------------------------------------------------------
+|
+| This initializes the environment file `.env` from the the root of the
+| application, loads the configuration files and handles the errors.
+|
+*/
+
+$app->bootstrap();
+

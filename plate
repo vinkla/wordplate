@@ -10,12 +10,10 @@
  * file that was distributed with this source code.
  */
 
-if (file_exists(__DIR__.'/../../autoload.php')) {
-    require __DIR__.'/../../autoload.php';
-} else {
-    require __DIR__.'/vendor/autoload.php';
-}
+require __DIR__.'/bootstrap/autoload.php';
 
-$app = new WordPlate\Console\Application(__DIR__);
+$app = new WordPlate\Console\Application(
+    realpath(__DIR__)
+);
 
 $app->run();

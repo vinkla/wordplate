@@ -9,11 +9,10 @@
  * file that was distributed with this source code.
  */
 
-/** Register The Auto Loader. */
+/* Register the autoloader. */
 require __DIR__.'/../bootstrap/autoload.php';
 
-//** MySQL settings - You can get this info from your web host ** //
-/* The name of the database for WordPress */
+/* MySQL database name. */
 define('DB_NAME', env('DB_NAME'));
 
 /* MySQL database username. */
