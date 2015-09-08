@@ -1,6 +1,6 @@
 {
     "name": "wordplate/wordplate",
-    "description": "The WordPlate Boilerplate",
+    "description": "A WordPress boilerplate",
     "keywords": ["wordplate", "wordpress", "boilerplate"],
     "license": "MIT",
     "require": {
