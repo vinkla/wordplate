@@ -31,7 +31,7 @@ add_action('after_setup_theme', function () {
 
     // Show the admin bar.
     show_admin_bar(false);
-    
+
     // Add HTML5 support.
     add_theme_support('html5', [
         'search-form',
