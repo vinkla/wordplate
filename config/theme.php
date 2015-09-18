@@ -31,6 +31,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Blog description
+    |--------------------------------------------------------------------------
+    |
+    | Set the blog description, instead of 'Just another WordPress site', you
+    | can now change to something that suits your project better.
+    |
+    */
+
+    'description' => '',
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
