@@ -43,7 +43,7 @@ $app = new WordPlate\Application(
 | Bootstrap The Application
 |--------------------------------------------------------------------------
 |
-| This initializes the environment file `.env` from the the root of the
+| This initializes the environment file `.env` from the root of the
 | application, loads the configuration files and handles the errors.
 |
 */
