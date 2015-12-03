@@ -1,5 +1,11 @@
 {
-  "private": true,
+  "name": "wordplate",
+  "description": "A WordPress boilerplate",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wordplate/wordplate"
+  },
   "scripts": {
     "dev": "gulp watch",
     "prod": "gulp --production"
