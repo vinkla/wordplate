@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "wordplate/framework": "3.0.*",
-        "roots/soil": "^3.5.0"
+        "roots/soil": "^3.6.0"
     },
     "repositories": [
         {
