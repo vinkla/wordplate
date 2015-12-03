@@ -2,9 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "gulp watch",
-    "development": "gulp watch",
-    "prod": "gulp --production",
-    "production": "gulp --production"
+    "prod": "gulp --production"
   },
   "devDependencies": {
     "gulp": "^3.8.8",
