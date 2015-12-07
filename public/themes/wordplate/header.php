@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
-<body>
+<body <?php body_class(); ?>>
 
     <header id="masthead" class="site-header" role="banner">
         <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
