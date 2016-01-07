@@ -6,7 +6,7 @@
     "require": {
         "php": ">=5.5.9",
         "wordplate/framework": "3.0.*",
-        "roots/soil": "^3.6.0"
+        "roots/soil": "^3.6"
     },
     "repositories": [
         {
