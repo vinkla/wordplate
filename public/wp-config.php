@@ -49,8 +49,8 @@ define('WP_DEFAULT_THEME', env('WP_THEME', 'wordplate'));
 /* Specify the Number of Post Revisions. */
 define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
 
-/* WordPress environment */
-define(’WP_ENV’, env(’WP_ENV’, 'local'));
+/* WordPress environment. */
+define('WP_ENV', env('WP_ENV', 'local'));
 
 /**#@+
  * Authentication Unique Keys and Salts.
