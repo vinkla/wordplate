@@ -1,6 +1,6 @@
 {
   "name": "wordplate",
-  "description": "A WordPress boilerplate",
+  "description": "A WordPress framework built with Laravel and Symfony components",
   "license": "MIT",
   "repository": {
     "type": "git",
