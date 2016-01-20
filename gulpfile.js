@@ -1,4 +1,4 @@
-import elixir from 'laravel-elixir';
+var elixir = require('laravel-elixir');
 
 /*
  |--------------------------------------------------------------------------
@@ -15,19 +15,16 @@ elixir.config.publicPath = 'public/themes/wordplate/assets';
 elixir.config.css.outputFolder = elixir.config.css.sass.folder = 'styles';
 elixir.config.js.folder = elixir.config.js.outputFolder = 'scripts';
 
-elixir((mix) => {
-  mix.sass('app.scss');
-
-  mix.browserify('app.js');
-
-  mix.copy(elixir.config.assetsPath + '/images', elixir.config.publicPath + '/images');
-
-  mix.browserSync({
-    proxy: 'wordplate.dev',
-    files: [
-      'public/themes/wordplate/**/*.php',
-      elixir.config.publicPath + '/**/*.js',
-      elixir.config.publicPath + '/**/*.css'
-    ]
-  });
+elixir(function(mix) {
+  mix.sass('app.scss')
+    .browserify('app.js')
+    .copy(elixir.config.assetsPath + '/images', elixir.config.publicPath + '/images');
+    .browserSync({
+      proxy: 'wordplate.dev',
+      files: [
+        'public/themes/wordplate/**/*.php',
+        elixir.config.publicPath + '/**/*.js',
+        elixir.config.publicPath + '/**/*.css'
+      ]
+    });
 });
