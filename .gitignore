@@ -1,12 +1,3 @@
-composer.lock
-phpunit.xml
-vendor
 node_modules
+vendor
 .env
-
-/public/languages
-/public/plugins
-/public/upgrade
-/public/uploads
-/public/wordpress
-/public/themes/wordplate/assets
