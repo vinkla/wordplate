@@ -30,7 +30,6 @@ return [
             'plugins',
             'settings',
             'tools',
-            'users',
         ],
 
         // Hidden for user with admin capabilities.
