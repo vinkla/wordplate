@@ -26,8 +26,8 @@ return [
             'dashboard_plugins',
             'dashboard_recent_comments',
             'dashboard_incoming_links',
-            'dashboard_right_now',
             'dashboard_activity',
+            //'dashboard_right_now',
         ],
 
     ],
