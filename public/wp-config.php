@@ -39,11 +39,11 @@ define('DB_COLLATE', env('DB_COLLATE', ''));
 define('WP_HOME', env('WP_URL', 'http://'.$_SERVER['HTTP_HOST']));
 
 /* Custom WordPress directory. */
-define('WP_SITEURL', WP_HOME.'/wordpress');
+define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/wordpress'));
 
 /* Custom content directory. */
-define('WP_CONTENT_DIR', __DIR__);
-define('WP_CONTENT_URL', WP_HOME);
+define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
+define('WP_CONTENT_URL', env('WP_CONTENT_URL', WP_HOME));
 
 /* Set the trash to less days to optimize WordPress. */
 define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
@@ -55,7 +55,10 @@ define('WP_DEFAULT_THEME', env('WP_THEME', 'wordplate'));
 define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
 
 /* WordPress environment. */
-define('WP_ENV', env('WP_ENV', 'local'));
+define('WP_ENV', env('WP_ENV', 'production'));
+
+/* Cleanup image edits. */
+define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
 
 /**#@+
  * Authentication Unique Keys and Salts.

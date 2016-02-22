@@ -33,11 +33,13 @@ add_action('after_setup_theme', function () {
 });
 
 /*
- * Register soil modules.
+ * Register Soil modules. For more modules, please see:
+ * https://github.com/roots/soil#modules
  */
 add_theme_support('soil-clean-up');
 add_theme_support('soil-disable-asset-versioning');
 add_theme_support('soil-disable-trackbacks');
+add_theme_support('soil-google-analytics', env('GOOGLE_ANALYTICS'), 'wp_head');
 add_theme_support('soil-js-to-footer');
 add_theme_support('soil-nice-search');
 add_theme_support('soil-relative-urls');
@@ -61,7 +63,7 @@ add_action('wp_enqueue_scripts', function () {
  *
  * @return string
  */
-add_filter('wp_title', function ($title) {
+add_filter('wp_title', function () {
     global $post;
 
     $name = get_bloginfo('name');
@@ -83,7 +85,7 @@ add_filter('wp_title', function ($title) {
 });
 
 /*
- * Add a primary WordPress menu.
+ * Add primary WordPress menu.
  */
 add_action('after_setup_theme', function () {
     register_nav_menu('primary-menu', __('Primary Menu', 'wordplate'));
@@ -95,7 +97,7 @@ add_action('after_setup_theme', function () {
  * @return string
  */
 add_filter('excerpt_more', function () {
-    return '…';
+    return '...';
 });
 
 /*

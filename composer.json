@@ -5,8 +5,8 @@
     "license": "MIT",
     "require": {
         "php": "^5.5.9 || ^7.0",
-        "wordplate/framework": "3.1.*",
-        "roots/soil": "^3.6"
+        "wordplate/framework": "^4.0",
+        "roots/soil": "^3.0"
     },
     "repositories": [
         {
@@ -17,12 +17,9 @@
     "scripts": {
         "post-root-package-install": [
             "php -r \"copy('.env.example', '.env');\""
-        ],
-        "post-create-project-cmd": [
-            "php plate salts:generate"
         ]
     },
-    "extra":{
+    "extra": {
         "installer-paths": {
             "public/mu-plugins/{$name}": ["type:wordpress-muplugin"],
             "public/plugins/{$name}": ["type:wordpress-plugin"],

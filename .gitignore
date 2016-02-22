@@ -1,7 +1,8 @@
-node_modules
-vendor
-Homestead.yaml
-Homestead.json
-Vagrantfile
-.vagrant
+.DS_Store
 .env
+.vagrant
+Homestead.json
+Homestead.yaml
+node_modules
+Vagrantfile
+vendor
