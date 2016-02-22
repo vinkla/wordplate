@@ -1,8 +1,5 @@
 <?php
 
-/* Register the application. */
-app()->register();
-
 /*
  * Theme set up settings.
  *
