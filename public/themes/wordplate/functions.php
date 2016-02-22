@@ -52,8 +52,8 @@ add_theme_support('soil-relative-urls');
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
 
-    // wp_enqueue_style('wordplate', get_template_directory_uri().'/assets/styles/wordplate.css');
-    // wp_register_script('wordplate', get_template_directory_uri().'/assets/scripts/wordplate.js', '', '', true);
+    // wp_enqueue_style('wordplate', get_bloginfo('url').'/assets/styles/wordplate.css');
+    // wp_register_script('wordplate', get_bloginfo('url').'/assets/scripts/wordplate.js', '', '', true);
 
     // wp_enqueue_script('wordplate');
 });
