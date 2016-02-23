@@ -6,6 +6,8 @@ WordPlate
 A [WordPress](https://github.com/WordPress/WordPress) framework built with [Laravel](https://laravel.com/) and [Symfony](https://symfony.com/) components. With a familiar setup for every Laravel enthusiast. Following the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) principle.
 
 [![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/wordplate/framework.svg?style=flat)](https://scrutinizer-ci.com/g/wordplate/framework/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/wordplate/framework.svg?style=flat)](https://scrutinizer-ci.com/g/wordplate/framework)
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
