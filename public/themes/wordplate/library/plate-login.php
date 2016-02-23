@@ -24,7 +24,7 @@ add_filter('login_headerurl', function () {
  * @return string|null
  */
 add_filter('login_errors', function () {
-    return 'Whoops! Looks like you missed something there. Have another go.';
+    return '<strong>Whoops!</strong> Looks like you missed something there. Have another go.';
 });
 
 /**
