@@ -1,7 +1,7 @@
 {
     "name": "wordplate/wordplate",
-    "description": "A WordPress boilerplate using Composer",
-    "keywords": ["wordplate", "wordpress", "boilerplate"],
+    "description": "A modern WordPress stack. Don't repeat yourself.",
+    "keywords": ["wordplate", "wordpress", "boilerplate", "plate"],
     "license": "MIT",
     "require": {
         "php": "^5.5.9 || ^7.0",

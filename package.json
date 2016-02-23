@@ -1,6 +1,6 @@
 {
   "name": "wordplate",
-  "description": "A WordPress boilerplate using Composer",
+  "description": "A modern WordPress stack. Don't repeat yourself.",
   "license": "MIT",
   "repository": {
     "type": "git",

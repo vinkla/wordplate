@@ -60,6 +60,9 @@ define('WP_ENV', env('WP_ENV', 'production'));
 /* Cleanup image edits. */
 define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
 
+/* Prevent file edit from the dashboard. */
+define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT', true));
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
