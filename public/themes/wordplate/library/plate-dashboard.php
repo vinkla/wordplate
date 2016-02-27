@@ -105,5 +105,5 @@ add_action('admin_head', function () {
  * @return bool
  */
 add_filter('screen_options_show_screen', function () {
-    return true;
+    return false;
 });

@@ -33,7 +33,7 @@ add_filter('login_errors', function () {
  * @return void
  */
 add_action('login_head', function () {
-    $path = sprintf('%s/%s', get_bloginfo('url'), 'logo.png');
+    $path = sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.svg');
 
-    echo "<style> h1 a { background-image: url($path) !important; background-size: 100% auto !important; width: 200px !important; } </style>";
+    echo "<style> .login h1 a { background-image: url($path); } </style>";
 });
