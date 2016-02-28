@@ -3,7 +3,7 @@ WordPlate
 
 ![wordplate](https://cloud.githubusercontent.com/assets/499192/9743256/a84e145c-5665-11e5-9ed1-235c0b395459.png)
 
-A modern [WordPress](https://github.com/WordPress/WordPress) stack. Following the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) principle.
+A modern [WordPress](https://github.com/WordPress/WordPress) stack following the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) principle.
 
 [![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/wordplate/framework.svg?style=flat)](https://scrutinizer-ci.com/g/wordplate/framework/code-structure)
