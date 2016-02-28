@@ -11,7 +11,7 @@
 
 /**
  * Register Soil modules, for more information
- * please see: https://github.com/roots/soil
+ * please see: https://github.com/roots/soil.
  *
  * @return void
  */

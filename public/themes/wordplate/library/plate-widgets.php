@@ -22,7 +22,7 @@ add_filter('widget_text', 'do_shortcode');
  *
  * @return void
  */
-add_action('widgets_init', function() {
+add_action('widgets_init', function () {
     unregister_widget('WP_Widget_Archives');
     unregister_widget('WP_Widget_Calendar');
     unregister_widget('WP_Widget_Categories');

@@ -14,7 +14,7 @@
  *
  * @return string|null
  */
-add_action('admin_init', function() {
+add_action('admin_init', function () {
     global $wp_rewrite;
 
     $wp_rewrite->set_permalink_structure('/%postname%/');
