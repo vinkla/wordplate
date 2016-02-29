@@ -9,13 +9,11 @@
  * file that was distributed with this source code.
  */
 
-use Dotenv\Dotenv;
-
 /* Register the composer auto loader. */
 require __DIR__.'/../vendor/autoload.php';
 
 /* Detect the environment. */
-(new Dotenv(__DIR__.'/..'))->load();
+(new Dotenv\Dotenv(__DIR__.'/..'))->load();
 
 /* MySQL database name. */
 define('DB_NAME', env('DB_NAME'));
