@@ -67,7 +67,7 @@ add_action('admin_bar_menu', function ($menu) {
  * @return string|null
  */
 add_filter('admin_footer_text', function () {
-    return 'Thank you for creating with WordPress.';
+    return 'Thank you for creating with <a href="https://github.com/wordplate/wordplate" target="_blank">WordPlate</a>.';
 });
 
 /**
