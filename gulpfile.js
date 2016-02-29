@@ -11,7 +11,7 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir.config.publicPath = 'public/assets';
+elixir.config.publicPath = 'public/themes/wordplate/assets';
 elixir.config.css.outputFolder = 'styles'
 elixir.config.css.sass.folder = 'styles';
 elixir.config.js.folder = 'scripts'
