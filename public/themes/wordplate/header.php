@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width">
   <meta name="theme-color" content="#464646">
 
-  <meta name="author" content="">
-  <meta name="description" content="">
-
   <?php wp_head(); ?>
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
