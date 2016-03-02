@@ -107,3 +107,12 @@ add_action('admin_head', function () {
 add_filter('screen_options_show_screen', function () {
     return false;
 });
+
+/**
+ * Hide the welcome panel.
+ *
+ * @return void
+ */
+add_action('admin_init', function () {
+    remove_action('welcome_panel', 'wp_welcome_panel');
+});
