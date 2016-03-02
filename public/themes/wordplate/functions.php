@@ -11,6 +11,12 @@ require __DIR__.'/library/plate.php';
  * @return void
  */
 add_action('after_setup_theme', function () {
+    // Add post thumbnails support.
+    // http://codex.wordpress.org/Post_Thumbnails
+    // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
+    // http://codex.wordpress.org/Function_Reference/add_image_size
+    add_theme_support('post-thumbnails');
+
     // Show the admin bar.
     show_admin_bar(false);
 
