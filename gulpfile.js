@@ -24,6 +24,11 @@ elixir(function (mix) {
 
   mix.copy(elixir.config.assetsPath + '/images', elixir.config.publicPath + '/images');
 
+  mix.version([
+    elixir.config.publicPath + '/styles/*.css',
+    elixir.config.publicPath + '/scripts/*.js'
+  ]);
+
   mix.browserSync({
     proxy: 'wordplate.dev',
     files: [
