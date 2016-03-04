@@ -9,11 +9,9 @@
  * file that was distributed with this source code.
  */
 
-/**
- * Remove menu items depending on user role.
- *
- * @return void
- */
+ /*
+  * Remove menu items depending on user role.
+  */
 add_action('admin_head', function () {
     $items = [
         'comments',
@@ -37,12 +35,8 @@ add_action('admin_head', function () {
     echo sprintf('<style> #menu-%s { display: none !important; } </style>', $elements);
 });
 
-/**
+/*
  * Remove links from admin toolbar.
- *
- * @param mixed $menu
- *
- * @return void
  */
 add_action('admin_bar_menu', function ($menu) {
     $items = [
@@ -61,19 +55,15 @@ add_action('admin_bar_menu', function ($menu) {
     }
 }, 999);
 
-/**
- * Add custom footer text.
- *
- * @return string|null
+/*
+ * Set custom footer text.
  */
 add_filter('admin_footer_text', function () {
     return 'Thank you for creating with <a href="https://github.com/wordplate/wordplate" target="_blank">WordPlate</a>.';
 });
 
-/**
- * Cleanup dashboard widgets.
- *
- * @return void
+/*
+ * Remove dashboard widgets.
  */
 add_action('wp_dashboard_setup', function () {
     global $wp_meta_boxes;
@@ -89,29 +79,23 @@ add_action('wp_dashboard_setup', function () {
     unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
 });
 
-/**
- * Hide help panel tab.
- *
- * @return void
+/*
+ * Remove help tab.
  */
 add_action('admin_head', function () {
     $screen = get_current_screen();
     $screen->remove_help_tabs();
 });
 
-/**
- * Hide screen options tab.
- *
- * @return bool
+/*
+ * Remove screen tab.
  */
 add_filter('screen_options_show_screen', function () {
     return false;
 });
 
-/**
- * Hide the welcome panel.
- *
- * @return void
+/*
+ * Remove the welcome panel.
  */
 add_action('admin_init', function () {
     remove_action('welcome_panel', 'wp_welcome_panel');

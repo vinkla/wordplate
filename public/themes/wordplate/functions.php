@@ -1,33 +1,20 @@
 <?php
 
 /**
- * Register plate dependencies.
+ * Register WordPlate library.
  */
-require __DIR__.'/library/plate.php';
+require __DIR__.'/library/index.php';
 
-/**
- * Theme setup defaults.
- *
- * @return void
+/*
+ * Set theme defaults.
  */
 add_action('after_setup_theme', function () {
-    // Add post thumbnails support.
-    // http://codex.wordpress.org/Post_Thumbnails
-    // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
-    // http://codex.wordpress.org/Function_Reference/add_image_size
-    add_theme_support('post-thumbnails');
-
-    // Show the admin bar.
-    show_admin_bar(false);
-
     // Add primary WordPress menu.
     register_nav_menu('primary-menu', __('Primary Menu', 'wordplate'));
 });
 
-/**
+/*
  * Enqueue and register scripts the right way.
- *
- * @return void
  */
 add_action('wp_enqueue_scripts', function () {
     wp_deregister_script('jquery');
@@ -38,10 +25,8 @@ add_action('wp_enqueue_scripts', function () {
     // wp_enqueue_script('wordplate');
 });
 
-/**
- * Configure default title.
- *
- * @return string
+/*
+ * Set custom title.
  */
 add_filter('wp_title', function () {
     global $post;

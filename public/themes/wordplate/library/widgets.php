@@ -9,18 +9,14 @@
  * file that was distributed with this source code.
  */
 
-/**
+/*
  * Add shortcode support to widgets.
- *
- * @return void
  */
 add_filter('widget_text', 'shortcode_unautop');
 add_filter('widget_text', 'do_shortcode');
 
-/**
+/*
  * Remove default widgets.
- *
- * @return void
  */
 add_action('widgets_init', function () {
     unregister_widget('WP_Widget_Archives');
