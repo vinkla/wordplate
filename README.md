@@ -1,7 +1,7 @@
 WordPlate
 =========
 
-![wordplate](https://cloud.githubusercontent.com/assets/499192/9743256/a84e145c-5665-11e5-9ed1-235c0b395459.png)
+![wordplate](https://cloud.githubusercontent.com/assets/499192/13548215/67986f9e-e2eb-11e5-8f24-35186824e2f8.png)
 
 A modern [WordPress](https://github.com/WordPress/WordPress) stack following the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) principle.
 
@@ -11,7 +11,7 @@ A modern [WordPress](https://github.com/WordPress/WordPress) stack following the
 
 ## What is WordPlate?
 
-WordPlate is a [WordPress](https://github.com/WordPress/WordPress) boilerplate. This project tries to simplify the way we're setting up new WordPress projects. Using the latest standards from PHP, WordPlate utilizes WordPress as its dependency through [Composer](https://getcomposer.org/). We follow the [don't repeat yourself](http://en.wikipedia.org/wiki/Don't_repeat_yourself) workflow.
+WordPlate is a modern WordPress stack which tries to simplify the fuzziness around WordPress development. Using the latest standards from PHP. WordPlate utilizes WordPress as its dependency through Composer.
 
 ## Installation
 
