@@ -1,7 +1,7 @@
 WordPlate
 =========
 
-![wordplate](https://cloud.githubusercontent.com/assets/499192/13548215/67986f9e-e2eb-11e5-8f24-35186824e2f8.png)
+![wordplate](https://cloud.githubusercontent.com/assets/499192/13548234/e5df4ee0-e2eb-11e5-939c-5f1635a72334.png)
 
 Wordplate is a modern WordPress stack. Don't repeat yourself.
 
