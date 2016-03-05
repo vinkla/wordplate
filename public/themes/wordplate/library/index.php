@@ -1,14 +1,8 @@
 <?php
 
 /*
- * This file is part of WordPlate.
- *
- * (c) Vincent Klaiber <hello@vinkla.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * Register WordPlate components.
  */
-
 require __DIR__.'/dashboard.php';
 require __DIR__.'/editor.php';
 require __DIR__.'/login.php';

@@ -1,14 +1,5 @@
 <?php
 
-/*
- * This file is part of WordPlate.
- *
- * (c) Vincent Klaiber <hello@vinkla.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
-
  /*
   * Remove menu items depending on user role.
   */
@@ -59,7 +50,7 @@ add_action('admin_bar_menu', function ($menu) {
  * Set custom footer text.
  */
 add_filter('admin_footer_text', function () {
-    return 'Thank you for creating with <a href="https://github.com/wordplate/wordplate" target="_blank">WordPlate</a>.';
+    return 'Thank you for creating with <a href="https://wordplate.github.io" target="_blank">WordPlate</a>.';
 });
 
 /*
