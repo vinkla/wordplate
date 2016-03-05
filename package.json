@@ -1,6 +1,6 @@
 {
   "name": "wordplate",
-  "description": "A modern WordPress stack. Don't repeat yourself.",
+  "description": "Wordplate is a modern WordPress stack. Don't repeat yourself.",
   "license": "MIT",
   "repository": {
     "type": "git",

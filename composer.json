@@ -1,6 +1,6 @@
 {
     "name": "wordplate/wordplate",
-    "description": "A modern WordPress stack. Don't repeat yourself.",
+    "description": "Wordplate is a modern WordPress stack. Don't repeat yourself.",
     "keywords": ["wordplate", "wordpress", "boilerplate", "plate"],
     "license": "MIT",
     "require": {
