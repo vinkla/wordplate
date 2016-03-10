@@ -69,6 +69,11 @@ add_theme_support('plate-clean-toolbar', [
 add_theme_support('plate-clean-tabs', ['help', 'screen-options']);
 
 /*
+ * Set custom permalink structure.
+ */
+add_theme_support('plate-permalink', '/%postname%/');
+
+/*
  * Set custom login logo.
  */
 add_theme_support('plate-login', sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.png'));
