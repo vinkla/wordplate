@@ -1,14 +1,14 @@
 <?php
 
 /*
- * Cleanup and enhance WordPress defaults.
+ * Set WordPlate theme defaults.
  */
-add_theme_support('plate-cleanup');
+add_theme_support('plate-defaults');
 
 /*
  * Remove menu items.
  */
-add_theme_support('plate-clean-menu', [
+add_theme_support('plate-menu', [
    'comments',
    'dashboard',
    'links',
@@ -18,7 +18,7 @@ add_theme_support('plate-clean-menu', [
 /*
  * Remove meta boxes in post editor.
  */
-add_theme_support('plate-clean-editor', [
+add_theme_support('plate-editor', [
     'commentsdiv',
     'commentstatusdiv',
     'linkadvanceddiv',
@@ -37,7 +37,7 @@ add_theme_support('plate-clean-editor', [
 /*
  * Remove dashboard widgets.
  */
-add_theme_support('plate-clean-dashboard', [
+add_theme_support('plate-dashboard', [
     'dashboard_activity',
     'dashboard_incoming_links',
     'dashboard_plugins',
@@ -52,7 +52,7 @@ add_theme_support('plate-clean-dashboard', [
 /*
  * Remove links from admin toolbar.
  */
-add_theme_support('plate-clean-toolbar', [
+add_theme_support('plate-toolbar', [
     'comments',
     'wp-logo',
     'edit',
@@ -66,7 +66,7 @@ add_theme_support('plate-clean-toolbar', [
 /*
  * Remove dashboard tabs.
  */
-add_theme_support('plate-clean-tabs', ['help', 'screen-options']);
+add_theme_support('plate-tabs', ['help', 'screen-options']);
 
 /*
  * Set custom permalink structure.
