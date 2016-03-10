@@ -107,7 +107,6 @@ add_theme_support('plate-clean-toolbar', [
  */
 add_theme_support('plate-login', sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.svg'));
 
-
 /*
  * Register Soil modules.
  */
