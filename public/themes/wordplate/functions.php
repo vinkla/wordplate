@@ -107,6 +107,17 @@ add_theme_support('plate-clean-toolbar', [
  */
 add_theme_support('plate-login', sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.svg'));
 
+
+/*
+ * Register Soil modules.
+ */
+add_theme_support('soil-clean-up');
+add_theme_support('soil-disable-asset-versioning');
+add_theme_support('soil-disable-trackbacks');
+add_theme_support('soil-js-to-footer');
+add_theme_support('soil-nice-search');
+add_theme_support('soil-relative-urls');
+
 /*
  * Set custom title.
  */
@@ -130,16 +141,6 @@ add_filter('wp_title', function () {
 
     return sprintf('%s - %s', trim($post->post_title), $name);
 });
-
-/*
- * Register Soil modules.
- */
-add_theme_support('soil-clean-up');
-add_theme_support('soil-disable-asset-versioning');
-add_theme_support('soil-disable-trackbacks');
-add_theme_support('soil-js-to-footer');
-add_theme_support('soil-nice-search');
-add_theme_support('soil-relative-urls');
 
 /*
  * Set custom excerpt more.
