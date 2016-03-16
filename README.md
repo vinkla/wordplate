@@ -16,7 +16,7 @@ composer create-project wordplate/wordplate
 ## Table of Contents
 
 - [Installation](#installation)
-- [Documentation](#documentation)
+- [Plugins](#plugins)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -39,11 +39,24 @@ Install WordPlate by issuing the Composer `create-project` command in your termi
 composer create-project wordplate/wordplate
 ```
 
-Read more about setting up WordPlate on our [installation documentation](https://github.com/wordplate/wordplate/wiki/installation) page.
+## Plugins
 
-## Documentation
+[WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
 
-WordPlate features an extensive [wiki documentation](https://github.com/wordplate/wordplate/wiki) to help you getting started. [Take me to the docs!](https://github.com/wordplate/wordplate/wiki)
+### How do I use it?
+
+1. Add the repository to your `composer.json` file.
+1. Add the desired plugins and themes to your requirements using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
+1. Run `composer update`.
+1. Packages are installed to `public/plugins` or `public/themes`.
+
+### Example
+```json
+"require": {
+    "wordplate/framework": "^4.0",
+    "wpackagist-plugin/polylang": "^1.0",
+},
+```
 
 ## Contributing
 
