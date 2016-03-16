@@ -5,9 +5,31 @@ WordPlate
 
 WordPlate is a modern WordPress stack which tries to simplify the fuzziness around WordPress development. Using the latest standards from PHP. WordPlate utilizes WordPress as its dependency through Composer.
 
+```bash
+composer create-project wordplate/wordplate
+```
+
 [![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+
+## Why WordPlate?
+
+- [Easy to setup](#installation)
+- [Built with Composer](https://getcomposer.org/)
+- [Environment files](https://github.com/vlucas/phpdotenv)
+- [Versioning and cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting)
+- Clean dashboard interface
+- [WordPress Packagist](https://wpackagist.org/)
+- [Laravel Elixir](https://laravel.com/docs/elixir)
+- [Real GUIDs](https://github.com/wordplate/uuid)
+- [Soil plugin](https://roots.io/plugins/soil/)
 
 ## Installation
 
