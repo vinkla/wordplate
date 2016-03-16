@@ -47,9 +47,11 @@ composer create-project wordplate/wordplate
 
 ## Configuration
 
-The first thing you should do after installing WordPlate is to add [WordPress salts](https://api.wordpress.org/secret-key/1.1/salt/) to your `.env` environment file.
+The first thing you should do after installing WordPlate is to add [WordPress salts](https://wordplate.github.io/salt/) to your `.env` environment file.
 
-Typically, these strings should be 32 characters long. The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://api.wordpress.org/secret-key/1.1/salt/) is not set, your user sessions and other encrypted data will not be secure!
+Typically, these strings should be [64 characters long](https://wordplate.github.io/salt/). The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://wordplate.github.io/salt/) is not set, your user sessions and other encrypted data will not be secure!
+
+Please visit https://wordplate.github.io/salt and copy the WordPress salts to your environment file.
 
 ## Plugins & Themes
 
