@@ -26,7 +26,6 @@ composer create-project wordplate/wordplate
 - [WordPress as a dependency](composer.json)
 - [Environment files](https://github.com/vlucas/phpdotenv)
 - [Versioning and cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting)
-- Clean dashboard interface
 - [WordPress Packagist](https://wpackagist.org/)
 - [Laravel Elixir](https://laravel.com/docs/elixir)
 - [Real GUIDs](https://github.com/wordplate/uuid)
