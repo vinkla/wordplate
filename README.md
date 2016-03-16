@@ -50,13 +50,16 @@ composer create-project wordplate/wordplate
 1. Run `composer update`.
 1. Packages are installed to `public/plugins` or `public/themes`.
 
+#### Example
 This is an example of how your `composer.json` file might look like.
+
 ```json
 "require": {
     "wordplate/framework": "^4.0",
     "wpackagist-plugin/polylang": "^1.0",
 },
 ```
+Please visit [WordPress Packagist](https://wpackagist.org/) website for more information and examples.
 
 ## Contributing
 
