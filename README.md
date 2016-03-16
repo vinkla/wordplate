@@ -16,7 +16,8 @@ composer create-project wordplate/wordplate
 ## Table of Contents
 
 - [Installation](#installation)
-- [Plugins](#plugins)
+- [Configuration](#configuration)
+- [Plugins & Themes](#plugins-themes)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -33,13 +34,24 @@ composer create-project wordplate/wordplate
 
 ## Installation
 
+The WordPlate framework has a few system requirements. You will need to make sure your server meets the following requirements:
+
+- PHP >= 5.5.9
+- Mbstring PHP Extension
+
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```bash
 composer create-project wordplate/wordplate
 ```
 
-## Plugins
+## Configuration
+
+The first thing you should do after installing WordPlate is to add WordPress salts to your `.env` environment file.
+
+Typically, these strings should be 32 characters long. The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the application salts is not set, your user sessions and other encrypted data will not be secure!
+
+## Plugins & Themes
 
 [WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
 
