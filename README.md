@@ -23,6 +23,7 @@ composer create-project wordplate/wordplate
 
 - [Easy to setup](#installation)
 - [Built with Composer](https://getcomposer.org/)
+- [WordPress as a dependency](composer.json)
 - [Environment files](https://github.com/vlucas/phpdotenv)
 - [Versioning and cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting)
 - Clean dashboard interface
