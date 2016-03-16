@@ -43,6 +43,8 @@ composer create-project wordplate/wordplate
 
 [WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
 
+#### How do I use it?
+
 1. Add the repository to your `composer.json` file.
 1. Add the desired plugins and themes to your requirements using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
 1. Run `composer update`.
