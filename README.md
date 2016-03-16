@@ -17,7 +17,7 @@ composer create-project wordplate/wordplate
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Plugins & Themes](#plugins-themes)
+- [Plugins & Themes](#plugins--themes)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
