@@ -51,7 +51,7 @@ The first thing you should do after installing WordPlate is to add [WordPress sa
 
 Typically, these strings should be [64 characters long](https://wordplate.github.io/salt/). The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://wordplate.github.io/salt/) is not set, your user sessions and other encrypted data will not be secure!
 
-Please visit https://wordplate.github.io/salt and copy the WordPress salts to your environment file.
+Please visit [WordPlate's salt page](https://wordplate.github.io/salt) and copy the WordPress salts to your environment file.
 
 ## Plugins & Themes
 
