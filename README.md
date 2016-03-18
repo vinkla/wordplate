@@ -18,6 +18,7 @@ composer create-project wordplate/wordplate
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Plugins & Themes](#plugins--themes)
+- [Gulp](#gulp)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -73,7 +74,40 @@ This is an example of how your `composer.json` file might look like.
     "wpackagist-plugin/polylang": "^1.0",
 },
 ```
+
 Please visit [WordPress Packagist](https://wpackagist.org/) website for more information and examples.
+
+## Gulp
+
+WordPlate has integrated [Elixir](https://laravel.com/docs/elixir). It provides a clean, fluent API for defining basic Gulp tasks for your WordPlate application.
+
+#### Installation
+
+Before triggering Elixir, you must first ensure that [Node.js](https://nodejs.org/en/) is installed on your machine.
+
+```sh
+node -v
+```
+
+If you don't have Node on your machine you can install it by visiting their [download page](https://nodejs.org/download/).
+
+#### Usage
+
+Out of the box WordPlate provides two NPM scripts to get you going without having to install Gulp globally on you machine.
+
+First of there is a script for development.
+
+```sh
+npm run dev
+```
+
+Then there is a script you should run before publishing your application.
+
+```sh
+npm run prod
+```
+
+For more information about Elixir please visit the [official document page](https://laravel.com/docs/elixir).
 
 ## Contributing
 
