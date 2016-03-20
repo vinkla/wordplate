@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Set WordPlate theme defaults.
+ * Setup WordPlate defaults.
  */
-add_theme_support('plate-defaults');
+add_theme_support('plate-theme');
 
 /*
  * Remove menu items.
@@ -62,6 +62,11 @@ add_theme_support('plate-toolbar', [
     'updates',
     'search',
 ]);
+
+/*
+ * Use UUID instead of permalinks.
+ */
+add_theme_support('plate-uuid');
 
 /*
  * Remove dashboard tabs.
