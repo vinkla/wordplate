@@ -27,9 +27,9 @@ composer create-project wordplate/wordplate
 - [Built with Composer](https://getcomposer.org/)
 - [WordPress as a dependency](composer.json)
 - [Environment files](https://github.com/vlucas/phpdotenv)
-- [Versioning and cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting)
+- [Versioning and cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting)
 - [WordPress Packagist](https://wpackagist.org/)
-- [Laravel Elixir](https://laravel.com/docs/elixir)
+- [Laravel Elixir](https://laravel.com/docs/5.2/elixir)
 - [Real GUIDs](https://github.com/wordplate/uuid)
 - [Soil plugin](https://roots.io/plugins/soil/)
 
@@ -79,7 +79,7 @@ Please visit [WordPress Packagist](https://wpackagist.org/) website for more inf
 
 ## Gulp
 
-WordPlate has integrated [Elixir](https://laravel.com/docs/elixir). It provides a clean, fluent API for defining basic Gulp tasks for your WordPlate application.
+WordPlate has integrated [Elixir](https://laravel.com/docs/5.2/elixir). It provides a clean, fluent API for defining basic Gulp tasks for your WordPlate application.
 
 #### Installation
 
@@ -101,13 +101,13 @@ First of there is a script for development. This script will first run all the G
 npm run dev
 ```
 
-Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for [cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting).
+Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for [cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting).
 
 ```sh
 npm run prod
 ```
 
-For more information about Elixir please visit the [official document page](https://laravel.com/docs/elixir).
+For more information about Elixir please visit the [official document page](https://laravel.com/docs/5.2/elixir).
 
 ## Contributing
 
