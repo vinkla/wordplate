@@ -101,7 +101,7 @@ First of there is a script for development. This script will first run all the G
 npm run dev
 ```
 
-Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for cache busting.
+Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for [cache busting](https://laravel.com/docs/elixir#versioning-and-cache-busting).
 
 ```sh
 npm run prod
