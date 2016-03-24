@@ -95,16 +95,22 @@ If you don't have Node on your machine you can install it by visiting their [dow
 
 Out of the box WordPlate provides two NPM scripts to get you going without having to install Gulp globally on you machine.
 
+##### Development
+
 First of there is a script for development. This script will first run all the Gulp tasks and then keep listening for changes you make in your asset files.
 
 ```sh
 npm run dev
 ```
 
+This script will automagically start a [BrowserSync](https://www.browsersync.io/) proxy. For more information about getting started with BrowserSync, please visit the [Elixir documentation](https://laravel.com/docs/5.2/elixir#browser-sync).
+
+##### Production
+
 Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for [cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting).
 
 ```sh
-npm run prod
+npm run pro
 ```
 
 For more information about Elixir please visit the [official document page](https://laravel.com/docs/5.2/elixir).
