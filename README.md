@@ -91,13 +91,19 @@ node -v
 
 If you don't have Node on your machine you can install it by visiting their [download page](https://nodejs.org/download/).
 
+After you have installed Node, you need to install the required NPM packages for Elixir. You can find them in `/package.json`. To install, run the following command:
+
+```sh
+npm install
+```
+
 #### Usage
 
-Out of the box WordPlate provides two NPM scripts to get you going without having to install Gulp globally on you machine.
+To use Elixir and Gulp, please run on of the following commands:
 
 ##### Development
 
-First of there is a script for development. This script will first run all the Gulp tasks and then keep listening for changes you make in your asset files.
+This script is for development. This script will first run all the Gulp tasks and then keep listening for changes you make in your asset files.
 
 ```sh
 npm run dev
