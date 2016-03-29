@@ -17,7 +17,7 @@ composer create-project wordplate/wordplate
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [Plugins & Themes](#plugins--themes)
+- [WordPress Packagist](#wordpress-packagist)
 - [Gulp](#gulp)
 - [Contributing](#contributing)
 
@@ -54,7 +54,7 @@ Typically, these strings should be [64 characters long](https://wordplate.github
 
 Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy the WordPress salts to your environment file.
 
-## Plugins & Themes
+## WordPress Packagist
 
 [WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
 
@@ -91,7 +91,7 @@ node -v
 
 If you don't have Node on your machine you can install it by visiting their [download page](https://nodejs.org/download/).
 
-After you have installed Node, you need to install the required NPM packages for Elixir. You can find them in `/package.json`. To install, run the following command:
+After you have installed Node, you need to install the required NPM packages for Elixir. You can find them in the `package.json` file. To install, run the following command:
 
 ```sh
 npm install
