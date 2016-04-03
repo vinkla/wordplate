@@ -55,7 +55,7 @@ Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy
 
 ## Theming
 
-Building your theme with WordPlate is like any other WordPress environment. Please use the [WordPress documentation](https://codex.wordpress.org/Theme_Development) for reference.
+Building your theme with WordPlate works like any other WordPress environment. Please use the [WordPress documentation](https://codex.wordpress.org/Theme_Development) for reference.
 
 #### Plate
 
