@@ -19,6 +19,7 @@ composer create-project wordplate/wordplate
 - [Configuration](#configuration)
 - [Plugins](#plugins)
 - [Gulp](#gulp)
+- [Helpers](#helpers)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -117,6 +118,51 @@ npm run pro
 ```
 
 For more information about Elixir please visit the [official document page](https://laravel.com/docs/5.2/elixir).
+
+## Helpers
+
+WordPlate includes a variety of "helper" PHP functions. You are free to use them in your own applications if you find them convenient.
+
+##### `dd()`
+
+The `dd` function dumps the given variable and ends execution of the script:
+
+```php
+dd($value);
+```
+
+If you do not want to halt the execution of your script, use the `dump` function instead:
+
+```php
+dump($value);
+```
+
+##### `elixir()`
+
+The elixir function gets the path to the versioned [Elixir](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting) file:
+
+```php
+elixir($file);
+```
+
+##### `env()`
+
+The env function gets the value of an environment variable or returns a default value:
+
+```php
+$env = env('APP_ENV');
+
+// Return a default value if the variable doesn't exist...
+$env = env('APP_ENV', 'production');
+```
+
+##### `value()`
+
+The `value` function's behavior will simply return the value it is given. However, if you pass a `Closure` to the function, the `Closure` will be executed then its result will be returned:
+
+```php
+$value = value(function() { return 'bar'; });
+```
 
 ## Contributing
 
