@@ -17,7 +17,7 @@ composer create-project wordplate/wordplate
 
 - [Installation](#installation)
 - [Configuration](#configuration)
-- [WordPress Packagist](#wordpress-packagist)
+- [Plugins](#plugins)
 - [Gulp](#gulp)
 - [Contributing](#contributing)
 
@@ -51,7 +51,7 @@ Typically, these strings should be [64 characters long](https://wordplate.github
 
 Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy the WordPress salts to your environment file.
 
-## WordPress Packagist
+## Plugins
 
 [WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
 
