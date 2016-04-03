@@ -17,6 +17,7 @@ composer create-project wordplate/wordplate
 
 - [Installation](#installation)
 - [Configuration](#configuration)
+- [Theming](#theming)
 - [Plugins](#plugins)
 - [Gulp](#gulp)
 - [Helpers](#helpers)
@@ -51,6 +52,18 @@ The first thing you should do after installing WordPlate is to add [WordPress sa
 Typically, these strings should be [64 characters long](https://wordplate.github.io/salt/). The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://wordplate.github.io/salt/) is not set, your user sessions and other encrypted data will not be secure!
 
 Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy the WordPress salts to your environment file.
+
+## Theming
+
+Building your theme with WordPlate is like any other WordPress environment. Please use the [WordPress documentation](https://codex.wordpress.org/Theme_Development) for reference.
+
+#### Plate
+
+Plate is a plugin with a bunch of defaults to help you make the most out of WordPress. It comes with handy features such as customizing the administrator dashboard. It is required by default. Please see [the documentation](https://github.com/wordplate/plate#readme) for more information.
+
+#### Soil
+
+Soil is a plugin which contains a collection of modules to apply theme-agnostic front-end modifications. Since it is such a good plugin WordPlate requires it by default. If you like it, we [encourage you to buy a license](https://roots.io/plugins/soil).
 
 ## Plugins
 
