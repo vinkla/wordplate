@@ -1,6 +1,18 @@
 <?php
 
 /*
+ |--------------------------------------------------------------------------
+ | Plate
+ |--------------------------------------------------------------------------
+ |
+ | Plate provides a bunch of handy WordPress defaults to help you get the
+ | most out of WordPress development.
+ |
+ | Please see https://github.com/wordplate/plate
+ |
+ */
+
+/*
  * Setup WordPlate defaults.
  */
 add_theme_support('plate-theme');
