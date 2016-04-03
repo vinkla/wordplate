@@ -32,7 +32,7 @@ composer create-project wordplate/wordplate
 - [Versioning and cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting)
 - [WordPress Packagist](https://wpackagist.org/)
 - [Laravel Elixir](https://laravel.com/docs/5.2/elixir)
-- [Real GUIDs](https://github.com/wordplate/uuid)
+- [Real GUIDs](https://github.com/wordplate/plate/blob/master/src/uuid.php)
 - [Soil plugin](https://roots.io/plugins/soil/)
 
 ## Installation
