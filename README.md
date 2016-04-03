@@ -150,10 +150,10 @@ elixir($file);
 The env function gets the value of an environment variable or returns a default value:
 
 ```php
-$env = env('APP_ENV');
+$env = env('WP_ENV');
 
 // Return a default value if the variable doesn't exist...
-$env = env('APP_ENV', 'production');
+$env = env('WP_ENV', 'production');
 ```
 
 ##### `value()`
