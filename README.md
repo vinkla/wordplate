@@ -145,25 +145,25 @@ WordPlate support both Laravel's [collections](https://laravel.com/docs/5.2/coll
 
 Arrays | Strings | Miscellaneous
 ------ | ------- | -------------
-[array_add](https://laravel.com/docs/5.2/helpers#method-array-add) | camel_case | collect
-[array_collapse](https://laravel.com/docs/5.2/helpers#method-array-collapse) | class_basename | dd
-array_divide | e | dump
-array_dot | ends_with | elixir
-array_except | snake_case | env
-array_first | starts_with | value
-array_flatten | str_contains |
-array_forget | str_finish |
-array_get | str_is |
-array_has | str_limit |
-array_only | str_plural |
-array_pluck | str_random |
-array_pull | str_singular |
-array_set | str_slug |
-array_sort | studly_case |
-array_sort_recursive | |
-array_where |  |
-head |  |
-last |  |
+[array_add](https://laravel.com/docs/5.2/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.2/helpers#method-camel-case) | [collect](https://laravel.com/docs/5.2/helpers#method-collect)
+[array_collapse](https://laravel.com/docs/5.2/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.2/helpers#method-class-basename) | [dd](https://laravel.com/docs/5.2/helpers#method-dd)
+[array_divide](https://laravel.com/docs/5.2/helpers#method-array-divide) | [e](https://laravel.com/docs/5.2/helpers#method-e) | [dump](https://laravel.com/docs/5.2/helpers#method-dd)
+[array_dot](https://laravel.com/docs/5.2/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.2/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.2/helpers#method-elixir)
+[array_except](https://laravel.com/docs/5.2/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.2/helpers#method-snake-case) | [env](https://laravel.com/docs/5.2/helpers#method-env)
+[array_first](https://laravel.com/docs/5.2/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.2/helpers#method-starts-with) | [value](https://laravel.com/docs/5.2/helpers#method-env)
+[array_flatten](https://laravel.com/docs/5.2/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.2/helpers#method-str-contains) | [with](https://laravel.com/docs/5.2/helpers#method-with)
+[array_forget](https://laravel.com/docs/5.2/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.2/helpers#method-str-finish) |
+[array_get](https://laravel.com/docs/5.2/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.2/helpers#method-str-is) |
+[array_has](https://laravel.com/docs/5.2/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.2/helpers#method-str-limit) |
+[array_only](https://laravel.com/docs/5.2/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.2/helpers#method-str-plural) |
+[array_pluck](https://laravel.com/docs/5.2/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.2/helpers#method-str-random) |
+[array_pull](https://laravel.com/docs/5.2/helpers#method-array-pull) | [str_singular](https://laravel.com/docs/5.2/helpers#method-str-singular) |
+[array_set](https://laravel.com/docs/5.2/helpers#method-array-set) | [str_slug](https://laravel.com/docs/5.2/helpers#method-str-slug) |
+[array_sort](https://laravel.com/docs/5.2/helpers#method-array-sort) | [studly_case](https://laravel.com/docs/5.2/helpers#method-studly-case) |
+[array_sort_recursive](https://laravel.com/docs/5.2/helpers#method-array-sort-recursive) | |
+[array_where](https://laravel.com/docs/5.2/helpers#method-array-where) |  |
+[head](https://laravel.com/docs/5.2/helpers#method-head) |  |
+[last](https://laravel.com/docs/5.2/helpers#method-last) |  |
 
 ## Contributing
 
