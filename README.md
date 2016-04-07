@@ -141,26 +141,29 @@ For more information about Elixir please visit the [official document page](http
 
 WordPlate includes a variety of "helper" PHP functions. You are free to use them in your own applications if you find them convenient.
 
-WordPlate support both Laravel's [collections](https://laravel.com/docs/5.2/collections) and [helper methods](https://laravel.com/docs/5.2/helpers#available-methods). This means you can use great debugging methods such as [`dd()`](https://laravel.com/docs/5.2/helpers#method-dd) and string helpers like [`str_contains()`](https://laravel.com/docs/5.2/helpers#method-str-contains). There are a lot more array and string methods available which you can read more about in [Laravel helpers documentation](https://laravel.com/docs/5.2/helpers#available-methods).
+WordPlate support both Laravel's [collections](https://laravel.com/docs/5.2/collections) and [helper methods](https://laravel.com/docs/5.2/helpers#available-methods). This means you can use great debugging methods such as [`dd()`](https://laravel.com/docs/5.2/helpers#method-dd) and string helpers like [`str_contains()`](https://laravel.com/docs/5.2/helpers#method-str-contains). Below is a list of all supported methods.
 
-##### `elixir()`
-
-The elixir function gets the path to the versioned [Elixir](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting) file:
-
-```php
-elixir($file);
-```
-
-##### `env()`
-
-The env function gets the value of an environment variable or returns a default value:
-
-```php
-$env = env('WP_ENV');
-
-// Return a default value if the variable doesn't exist...
-$env = env('WP_ENV', 'production');
-```
+Arrays | Strings | Miscellaneous
+------ | ------- | -------------
+[array_add](https://laravel.com/docs/5.2/helpers#method-array-add) | camel_case | collect
+[array_collapse](https://laravel.com/docs/5.2/helpers#method-array-collapse) | class_basename | dd
+array_divide | e | dump
+array_dot | ends_with | elixir
+array_except | snake_case | env
+array_first | starts_with | value
+array_flatten | str_contains |
+array_forget | str_finish |
+array_get | str_is |
+array_has | str_limit |
+array_only | str_plural |
+array_pluck | str_random |
+array_pull | str_singular |
+array_set | str_slug |
+array_sort | studly_case |
+array_sort_recursive | |
+array_where |  |
+head |  |
+last |  |
 
 ## Contributing
 
