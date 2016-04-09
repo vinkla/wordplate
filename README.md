@@ -179,9 +179,10 @@ $browser = browser()->getName();
 // chrome
 ```
 
+##### `os()`
+
 The `os` function detects the operating system. Read more about [OS detection here](https://github.com/sinergi/php-browser-detector#os-detected).
 
-##### `os()`
 
 ```php
 $os = os()->getName();
