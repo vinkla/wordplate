@@ -174,7 +174,7 @@ Arrays | Strings | Miscellaneous
 The `browser` function detects the browser. Read more about [browser detection here](https://github.com/sinergi/php-browser-detector#browsers-detected).
 
 ```php
-$browser = browser->getName();
+$browser = browser()->getName();
 
 // chrome
 ```
@@ -184,7 +184,7 @@ The `os` function detects the operating system. Read more about [OS detection he
 ##### `os()`
 
 ```php
-$os = os->getName();
+$os = os()->getName();
 
 // windows
 ```
