@@ -189,8 +189,6 @@ $os = os->getName();
 // windows
 ```
 
-https://github.com/sinergi/php-browser-detector#usage
-
 ## Contributing
 
 Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
