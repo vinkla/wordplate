@@ -149,15 +149,15 @@ Below is a list of all supported helper methods.
 
 Arrays | Strings | Miscellaneous
 ------ | ------- | -------------
-[array_add](https://laravel.com/docs/5.2/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.2/helpers#method-camel-case) | [collect](https://laravel.com/docs/5.2/helpers#method-collect)
-[array_collapse](https://laravel.com/docs/5.2/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.2/helpers#method-class-basename) | [dd](https://laravel.com/docs/5.2/helpers#method-dd)
-[array_divide](https://laravel.com/docs/5.2/helpers#method-array-divide) | [e](https://laravel.com/docs/5.2/helpers#method-e) | [dump](https://laravel.com/docs/5.2/helpers#method-dd)
-[array_dot](https://laravel.com/docs/5.2/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.2/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.2/helpers#method-elixir)
-[array_except](https://laravel.com/docs/5.2/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.2/helpers#method-snake-case) | [env](https://laravel.com/docs/5.2/helpers#method-env)
-[array_first](https://laravel.com/docs/5.2/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.2/helpers#method-starts-with) | [value](https://laravel.com/docs/5.2/helpers#method-value)
-[array_flatten](https://laravel.com/docs/5.2/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.2/helpers#method-str-contains) | [with](https://laravel.com/docs/5.2/helpers#method-with)
-[array_forget](https://laravel.com/docs/5.2/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.2/helpers#method-str-finish) |
-[array_get](https://laravel.com/docs/5.2/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.2/helpers#method-str-is) |
+[array_add](https://laravel.com/docs/5.2/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.2/helpers#method-camel-case) | [browser](#browser)
+[array_collapse](https://laravel.com/docs/5.2/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.2/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.2/helpers#method-collect)
+[array_divide](https://laravel.com/docs/5.2/helpers#method-array-divide) | [e](https://laravel.com/docs/5.2/helpers#method-e) | [dd](https://laravel.com/docs/5.2/helpers#method-dd)
+[array_dot](https://laravel.com/docs/5.2/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.2/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.2/helpers#method-dd)
+[array_except](https://laravel.com/docs/5.2/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.2/helpers#method-snake-case) | [elixir](https://laravel.com/docs/5.2/helpers#method-elixir)
+[array_first](https://laravel.com/docs/5.2/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.2/helpers#method-starts-with) | [env](https://laravel.com/docs/5.2/helpers#method-env)
+[array_flatten](https://laravel.com/docs/5.2/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.2/helpers#method-str-contains) | [os](#os)
+[array_forget](https://laravel.com/docs/5.2/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.2/helpers#method-str-finish) | [value](https://laravel.com/docs/5.2/helpers#method-value)
+[array_get](https://laravel.com/docs/5.2/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.2/helpers#method-str-is) | [with](https://laravel.com/docs/5.2/helpers#method-with)
 [array_has](https://laravel.com/docs/5.2/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.2/helpers#method-str-limit) |
 [array_only](https://laravel.com/docs/5.2/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.2/helpers#method-str-plural) |
 [array_pluck](https://laravel.com/docs/5.2/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.2/helpers#method-str-random) |
@@ -168,6 +168,28 @@ Arrays | Strings | Miscellaneous
 [array_where](https://laravel.com/docs/5.2/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.2/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.2/helpers#method-last) |  |
+
+##### `browser()`
+
+The `browser` function detects the browser. Read more about [browser detection here](https://github.com/sinergi/php-browser-detector#browsers-detected).
+
+```php
+$browser = browser->getName();
+
+// chrome
+```
+
+The `os` function detects the operating system. Read more about [OS detection here](https://github.com/sinergi/php-browser-detector#os-detected).
+
+##### `os()`
+
+```php
+$os = os->getName();
+
+// windows
+```
+
+https://github.com/sinergi/php-browser-detector#usage
 
 ## Contributing
 
