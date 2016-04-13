@@ -50,6 +50,12 @@ Install WordPlate by issuing the Composer `create-project` command in your termi
 composer create-project wordplate/wordplate
 ```
 
+#### Homestead
+
+Since we're big fans of the [Laravel](https://laravel.com/) framework we recommend you to look at [Homestead](https://laravel.com/docs/5.2/homestead) to setup a local development environment. Homestead is a pre-packaged [Vagrant](https://www.vagrantup.com/) box that provides you a wonderful development environment without requiring you to install PHP, HHVM, a web server, and any other server software on your local machine.
+
+Of course, WordPlate will work with any other development environment you prefer.
+
 ## Configuration
 
 The first thing you should do after installing WordPlate is to add [WordPress salts](https://wordplate.github.io/salt/) to your `.env` environment file.
