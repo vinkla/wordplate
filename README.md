@@ -178,7 +178,7 @@ Arrays | Strings | Miscellaneous
 
 ## Security
 
-Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide/) to learn more about WordPress security.
+Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide/) to learn more about [WordPress security](http://codex.wordpress.org/Hardening_WordPress).
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
