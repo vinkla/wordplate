@@ -21,6 +21,7 @@ composer create-project wordplate/wordplate
 - [Plugins](#plugins)
 - [Gulp](#gulp)
 - [Helpers](#helpers)
+- [Security](#security)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -174,6 +175,12 @@ Arrays | Strings | Miscellaneous
 [array_where](https://laravel.com/docs/5.2/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.2/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.2/helpers#method-last) |  |
+
+## Security
+
+Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide/) to learn more about WordPress security.
+
+WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
 ## Contributing
 
