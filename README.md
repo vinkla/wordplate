@@ -83,10 +83,13 @@ Building your theme with WordPlate works like any other WordPress environment. P
 
 #### How do I use it?
 
-1. Add the repository to your `composer.json` file.
-1. Add the desired plugins and themes to your requirements using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
-1. Run `composer update`.
-1. Packages are installed to `public/plugins` or `public/themes`.
+Require the desired plugin or theme using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
+
+```bash
+composer require wpackagist-plugin/wp-migrate-db
+```
+
+Packages are installed to `public/plugins` or `public/themes`.
 
 #### Example
 This is an example of how your `composer.json` file might look like.
