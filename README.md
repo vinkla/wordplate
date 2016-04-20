@@ -168,9 +168,7 @@ add_action('phpmailer_init', function (PHPMailer $mail) {
 });
 ```
 
-Then update the credentials in your `.env` environment file with your SMTP credentials.
-
-Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
+Then update the credentials in your `.env` environment file with your SMTP keys. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
 
 ## Helpers
 
