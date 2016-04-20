@@ -160,7 +160,7 @@ add_action('phpmailer_init', function (PHPMailer $mail) {
     $mail->SMTPAuth = true;
 
     $mail->Host = env('MAIL_HOST');
-    $mail->Port = env('MAIL_PORT', 2525);
+    $mail->Port = env('MAIL_PORT', 587);
     $mail->Username = env('MAIL_USERNAME');
     $mail->Password = env('MAIL_PASSWORD');
 
