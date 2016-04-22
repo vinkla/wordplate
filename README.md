@@ -152,23 +152,7 @@ For more information about Elixir please visit the [official document page](http
 
 To send email with WordPress you can use the [`wp_mail`](https://developer.wordpress.org/reference/functions/wp_mail/) helper method. WordPlate provides a simple way to add custom SMTP credentials.
 
-First copy the action below to your `functions.php` file within your theme directory.
-
-```php
-add_action('phpmailer_init', function (PHPMailer $mail) {
-    $mail->IsSMTP();
-    $mail->SMTPAuth = true;
-
-    $mail->Host = env('MAIL_HOST');
-    $mail->Port = env('MAIL_PORT', 587);
-    $mail->Username = env('MAIL_USERNAME');
-    $mail->Password = env('MAIL_PASSWORD');
-
-    return $mail;
-});
-```
-
-Then update the credentials in your `.env` environment file with your SMTP keys. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
+Update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
 
 ## Helpers
 
