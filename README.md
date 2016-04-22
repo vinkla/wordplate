@@ -132,7 +132,7 @@ npm install --no-bin-links
 
 #### Usage
 
-To use Elixir and Gulp, please run on of the following commands:
+To use Elixir and Gulp, please run one of the following commands:
 
 ##### Development
 
