@@ -63,7 +63,7 @@ add_filter('wp_title', function () {
  * Set SMTP credentials.
  */
 add_action('phpmailer_init', function (PHPMailer $mail) {
-    if (empty(env('MAIL_HOST', false))) {
+    if (empty(env('MAIL_USERNAME', false))) {
         return;
     }
 
