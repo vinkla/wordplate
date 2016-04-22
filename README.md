@@ -118,10 +118,16 @@ node -v
 
 If you don't have Node on your machine you can install it by visiting their [download page](https://nodejs.org/download/).
 
-After you have installed Node, you need to install the required NPM packages for Elixir. You can find them in the `package.json` file. To install, run the following command:
+Within a fresh installation of WordPlate, you'll find a `package.json` file in the root. Think of this like your `composer.json` file, except it defines Node dependencies instead of PHP. You may install the dependencies it references by running:
 
 ```sh
 npm install
+```
+
+If you are developing on a Windows system or you are running your VM on a Windows host system, you may need to run the `npm install` command with the `--no-bin-links` switch enabled:
+
+```sh
+npm install --no-bin-links
 ```
 
 #### Usage
