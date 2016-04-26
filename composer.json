@@ -20,6 +20,9 @@
             "php -r \"copy('.env.example', '.env');\""
         ]
     },
+    "config": {
+        "preferred-install": "dist"
+    },
     "extra": {
         "installer-paths": {
             "public/mu-plugins/{$name}": ["type:wordpress-muplugin"],
@@ -27,8 +30,5 @@
             "public/themes/{$name}": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "public/wordpress"
-    },
-    "config": {
-        "preferred-install": "dist"
     }
 }
