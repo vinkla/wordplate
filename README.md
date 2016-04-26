@@ -76,7 +76,7 @@ WordPlate supports WordPress `4.0+` and comes with the latest version out of the
 }
 ```
 
-This way you can lock the WordPress version number to the version you're working with. This could come in handy if you're opening your project six months from now and WordPress has released a new version with breaking changes.
+This way you can lock the WordPress version number to the one you're working with. This could come in handy if you're opening your project six months from now and WordPress has released a new version with breaking changes.
 
 ## Theming
 
