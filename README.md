@@ -66,6 +66,18 @@ Typically, these strings should be [64 characters long](https://wordplate.github
 
 Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy the WordPress salts to your environment file.
 
+#### WordPress
+
+WordPlate supports WordPress `4.0+` and comes with the latest version out of the box. If you want to specify an older version of WordPress you may add it to your `composer.json` file.
+
+```json
+"require": {
+  "johnpbloch/wordpress": "4.5.1"
+}
+```
+
+This way you can lock the WordPress version number to the version you're working with. This could come in handy if you're opening your project six months from now and WordPress has released a new version with breaking changes.
+
 ## Theming
 
 Building your theme with WordPlate works like any other WordPress environment. Please use the [WordPress documentation](https://codex.wordpress.org/Theme_Development) for reference.
