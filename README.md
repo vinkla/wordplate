@@ -21,6 +21,7 @@ composer create-project wordplate/wordplate
 - [Plugins](#plugins)
 - [Gulp](#gulp)
 - [Mail](#mail)
+- [Multisite](#multisite)
 - [Helpers](#helpers)
 - [Security](#security)
 - [Contributing](#contributing)
@@ -177,6 +178,16 @@ composer require wordplate/mail
 ```
 
 Then update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
+
+## Multisite
+
+To add multisite support to WordPlate first require the [multisite package](https://github.com/wordplate/multisite) in the root directory of your project.
+
+```sh
+composer require wordplate/multisite
+```
+
+Then set the `WP_MULTISITE` environment variable, in your `.env` file, to true.
 
 ## Helpers
 
