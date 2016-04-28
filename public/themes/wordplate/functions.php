@@ -60,25 +60,6 @@ add_filter('wp_title', function () {
 });
 
 /*
- * Set SMTP credentials.
- */
-add_action('phpmailer_init', function (PHPMailer $mail) {
-    if (empty(env('MAIL_USERNAME', false))) {
-        return;
-    }
-
-    $mail->IsSMTP();
-    $mail->SMTPAuth = true;
-
-    $mail->Host = env('MAIL_HOST');
-    $mail->Port = env('MAIL_PORT', 587);
-    $mail->Username = env('MAIL_USERNAME');
-    $mail->Password = env('MAIL_PASSWORD');
-
-    return $mail;
-});
-
-/*
  * Set custom excerpt more.
  */
 add_filter('excerpt_more', function () {
