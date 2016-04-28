@@ -170,7 +170,13 @@ For more information about Elixir please visit the [official document page](http
 
 To send email with WordPress you can use the [`wp_mail`](https://developer.wordpress.org/reference/functions/wp_mail/) helper method. WordPlate provides a simple way to add custom SMTP credentials.
 
-Update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
+Require the [mail package](https://github.com/wordplate/mail) in the root directory of your project.
+
+```sh
+composer require wordplate/mail
+```
+
+Then update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
 
 ## Helpers
 
