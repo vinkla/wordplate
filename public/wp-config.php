@@ -28,7 +28,7 @@ define('DB_COLLATE', env('DB_COLLATE', ''));
 define('WP_HOME', env('WP_URL', 'http://'.$_SERVER['HTTP_HOST']));
 
 /* Custom WordPress directory. */
-define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/wordpress'));
+define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/'.env('WP_DIR', 'wordpress')));
 
 /* Custom content directory. */
 define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
@@ -91,11 +91,23 @@ define('WP_DEBUG', env('WP_DEBUG', false));
 define('WP_DEBUG_DISPLAY', env('WP_DEBUG', false));
 define('SCRIPT_DEBUG', env('WP_DEBUG', false));
 
+/* Add multisite support. */
+define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', false));
+
+if (env('WP_MULTISITE', false)) {
+    define('MULTISITE', env('WP_MULTISITE', false));
+    define('SUBDOMAIN_INSTALL', env('SUBDOMAIN_INSTALL', false));
+    define('DOMAIN_CURRENT_SITE', env('DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST']));
+    define('PATH_CURRENT_SITE', env('PATH_CURRENT_SITE', '/'));
+    define('SITE_ID_CURRENT_SITE', env('SITE_ID_CURRENT_SITE', 1));
+    define('BLOG_ID_CURRENT_SITE', env('BLOG_ID_CURRENT_SITE', 1));
+}
+
 /* That's all, stop editing! Happy blogging. */
 
 /* Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
-    define('ABSPATH', __DIR__.'/wordpress');
+    define('ABSPATH', __DIR__.'/'.env('WP_DIR', 'wordpress'));
 }
 
 /** Sets up WordPress vars and included files. */

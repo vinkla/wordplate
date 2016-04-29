@@ -187,7 +187,17 @@ To add multisite support to WordPlate first require the [multisite package](http
 composer require wordplate/multisite
 ```
 
-Then set the `WP_MULTISITE` environment variable, in your `.env` file, to true.
+1. Login to the WordPress administrator dashboard and active the Multisite plugin.
+
+2. Update the `WP_ALLOW_MULTISITE` environment variable, in your `.env` file, to true.
+
+3. Navigate to *Tools > Network Setup* in the administrator dashboard and install either sub-domains or sub-directories.
+
+4. Logout from WordPress.
+
+5. Update the `WP_MULTISITE` environment variable, in your `.env` file, to true.
+
+6. Log back in to WordPress and you're all set.
 
 ## Helpers
 
