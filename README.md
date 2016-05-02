@@ -37,7 +37,6 @@ composer create-project wordplate/wordplate
 - [WordPress Packagist](https://wpackagist.org/)
 - [Laravel Elixir](https://laravel.com/docs/5.2/elixir)
 - [Real GUIDs](https://github.com/wordplate/plate/blob/master/src/uuid.php)
-- [Soil plugin](https://roots.io/plugins/soil/)
 
 ## Installation
 
@@ -86,10 +85,6 @@ Building your theme with WordPlate works like any other WordPress environment. P
 #### Plate
 
 [Plate](https://github.com/wordplate/plate) is a plugin with a bunch of defaults to help you make the most out of WordPress. It comes with handy features such as customizing the administrator dashboard. It is required by default. Please see [the documentation](https://github.com/wordplate/plate#readme) for more information.
-
-#### Soil
-
-[Soil](https://github.com/roots/soil) is a plugin which contains a collection of modules to apply theme-agnostic front-end modifications. Since it is such a good plugin WordPlate requires it by default. If you like it, we [encourage you to buy a license](https://roots.io/plugins/soil).
 
 ## Plugins
 
