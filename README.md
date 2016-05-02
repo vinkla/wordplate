@@ -22,6 +22,7 @@ composer create-project wordplate/wordplate
 - [Gulp](#gulp)
 - [Mail](#mail)
 - [Multisite](#multisite)
+- [Post Types](#post-types)
 - [Helpers](#helpers)
 - [Security](#security)
 - [Contributing](#contributing)
@@ -193,6 +194,14 @@ composer require wordplate/multisite
 5. Update the `WP_MULTISITE` environment variable, in your `.env` file, to true.
 
 6. Log back in to WordPress and you're all set.
+
+## Post Types
+
+For [custom post types](https://codex.wordpress.org/Post_Types) we recommend looking at [Extended CPTs](https://github.com/johnbillion/extended-cpts) by [John Blackbourn](https://github.com/johnbillion). The package provides extended functionality to WordPress custom post types, allowing developers to quickly build post types without having to write the same code again and again.
+
+```php
+register_extended_post_type('event');
+```
 
 ## Helpers
 
