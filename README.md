@@ -216,7 +216,9 @@ register_extended_taxonomy('location', 'event');
 
 ## Custom Fields
 
-WordPlate by default, doesn't provide any custom fields features. Though, there are great plugins we recommend using such as [Advanced Custom Fields](http://www.advancedcustomfields.com/) and [Papi](https://wp-papi.github.io/).
+For [custom fields](https://codex.wordpress.org/Custom_Fields) recommend looking at the following plugins:
+- [Advanced Custom Fields](http://www.advancedcustomfields.com/) - Powerful fields for WordPress developers.
+- [Papi](https://wp-papi.github.io/) - A different approach on how to work with fields and page types in WordPress.
 
 ## Helpers
 
