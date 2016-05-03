@@ -24,6 +24,7 @@ composer create-project wordplate/wordplate
 - [Multisite](#multisite)
 - [Post Types](#post-types)
 - [Taxonomies](#taxonomies)
+- [Custom Fields](#custom-fields)
 - [Helpers](#helpers)
 - [Security](#security)
 - [Contributing](#contributing)
@@ -212,6 +213,10 @@ For [taxonomies](https://codex.wordpress.org/Taxonomies) we recommend looking at
 ```php
 register_extended_taxonomy('location', 'event');
 ```
+
+## Custom Fields
+
+WordPlate by default, doesn't provide any custom fields features. Though, there are great plugins we recommend using such as [Advanced Custom Fields](http://www.advancedcustomfields.com/) and [Papi](https://wp-papi.github.io/).
 
 ## Helpers
 
