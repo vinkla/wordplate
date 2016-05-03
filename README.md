@@ -258,6 +258,8 @@ Though WordPlate makes your WordPress site more secure out of the box you should
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
+We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil/) by [Roots](https://roots.io). It is a A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+
 ## Contributing
 
 Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
