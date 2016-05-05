@@ -4,7 +4,6 @@
  * Register plugin helpers.
  */
 require __DIR__.'/library/plate.php';
-require __DIR__.'/library/soil.php';
 
 /*
  * Set theme defaults.
