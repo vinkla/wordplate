@@ -33,7 +33,7 @@ composer create-project wordplate/wordplate
 
 - [Easy to setup](#installation)
 - [Built with Composer](https://getcomposer.org/)
-- [WordPress as a dependency](composer.json)
+- [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
 - [BrowserSync](https://www.browsersync.io/)
 - [Environment files](https://github.com/vlucas/phpdotenv)
 - [Versioning and cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting)
