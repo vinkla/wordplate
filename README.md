@@ -224,6 +224,8 @@ For [custom fields](https://codex.wordpress.org/Custom_Fields) recommend looking
 
 ## Translations
 
+WordPlate by default, doesn't provide translations. However, we're big fans of the [Polylang](https://wordpress.org/plugins/polylang/) plugin. We've created a bridge which makes it easy to integrate Polylang within your application.
+
 Require the translator package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
