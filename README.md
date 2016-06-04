@@ -163,7 +163,7 @@ This script will automagically start a [BrowserSync](https://www.browsersync.io/
 Then there is a script you should run before publishing your application. This script will compile all your asset files and revision them for [cache busting](https://laravel.com/docs/5.2/elixir#versioning-and-cache-busting).
 
 ```sh
-npm run pro
+npm run prod
 ```
 
 For more information about Elixir please visit the [official document page](https://laravel.com/docs/5.2/elixir).
