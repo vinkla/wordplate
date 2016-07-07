@@ -46,10 +46,10 @@ composer create-project wordplate/wordplate
 
 ## Installation
 
-To use WordPlate, you need to have PHP 5.5.9+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed if you want to use [Elixir](https://laravel.com/docs/5.2/elixir) to compile your CSS and Javascript.
+To use WordPlate, you need to have PHP 5.6.4+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed if you want to use [Elixir](https://laravel.com/docs/5.2/elixir) to compile your CSS and Javascript.
 
 Make sure your server meets the following requirements:
-- PHP >= 5.5.9
+- PHP >= 5.6.4
 - Mbstring PHP Extension
 
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
