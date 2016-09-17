@@ -25,7 +25,7 @@ define('DB_CHARSET', env('DB_CHARSET', 'utf8'));
 define('DB_COLLATE', env('DB_COLLATE', ''));
 
 /* Set the home url to the current domain. */
-define('WP_HOME', env('WP_URL', 'http://'.array_get($_SERVER, 'HTTP_HOST'));
+define('WP_HOME', env('WP_URL', 'http://'.array_get($_SERVER, 'HTTP_HOST')));
 
 /* Custom WordPress directory. */
 define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/'.env('WP_DIR', 'wordpress')));
