@@ -182,23 +182,9 @@ Then update the credentials in your `.env` environment file with your SMTP keys 
 
 ## Multisite
 
-To add multisite support to WordPlate first require the [multisite package](https://github.com/wordplate/multisite) in the root directory of your project.
+To add multisite support to WordPlate you can [head over to our multisite plugin](https://github.com/wordplate/multisite) here on GitHub.
 
-```sh
-composer require wordplate/multisite
-```
-
-1. Login to the WordPress administrator dashboard and active the Multisite plugin.
-
-2. Update the `WP_ALLOW_MULTISITE` environment variable, in your `.env` file, to true.
-
-3. Navigate to *Tools > Network Setup* in the administrator dashboard and install either sub-domains or sub-directories.
-
-4. Logout from WordPress.
-
-5. Update the `WP_MULTISITE` environment variable, in your `.env` file, to true.
-
-6. Log back in to WordPress and you're all set.
+> **Note:** This plugin is still under development, you may use it at your own risk. We haven't had any issues ourselves but please be cautious.
 
 ## Post Types
 
