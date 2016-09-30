@@ -72,6 +72,13 @@ add_filter('wp_title', function () {
 });
 
 /*
+ * Remove JPG compression.
+ */
+add_filter('jpeg_quality', function () {
+    return 100;
+}, 10, 2);
+
+/*
  * Set custom excerpt more.
  */
 add_filter('excerpt_more', function () {
