@@ -262,12 +262,13 @@ Arrays | Strings | Miscellaneous
 [array_forget](https://laravel.com/docs/5.3/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.3/helpers#method-str-finish) |
 [array_get](https://laravel.com/docs/5.3/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.3/helpers#method-str-is) |
 [array_has](https://laravel.com/docs/5.3/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.3/helpers#method-str-limit) |
-[array_only](https://laravel.com/docs/5.3/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.3/helpers#method-str-plural) |
-[array_pluck](https://laravel.com/docs/5.3/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.3/helpers#method-str-random) |
-[array_pull](https://laravel.com/docs/5.3/helpers#method-array-pull) | [str_singular](https://laravel.com/docs/5.3/helpers#method-str-singular) |
-[array_set](https://laravel.com/docs/5.3/helpers#method-array-set) | [str_slug](https://laravel.com/docs/5.3/helpers#method-str-slug) |
-[array_sort](https://laravel.com/docs/5.3/helpers#method-array-sort) | [studly_case](https://laravel.com/docs/5.3/helpers#method-studly-case) |
-[array_sort_recursive](https://laravel.com/docs/5.3/helpers#method-array-sort-recursive) | [title_case](https://laravel.com/docs/5.3/helpers#method-title-case) |
+[array_last](https://laravel.com/docs/5.3/helpers#method-array-last) | [str_plural](https://laravel.com/docs/5.3/helpers#method-str-plural) |
+[array_only](https://laravel.com/docs/5.3/helpers#method-array-only) | [str_random](https://laravel.com/docs/5.3/helpers#method-str-random) |
+[array_pluck](https://laravel.com/docs/5.3/helpers#method-array-pluck) | [str_singular](https://laravel.com/docs/5.3/helpers#method-str-singular) |
+[array_pull](https://laravel.com/docs/5.3/helpers#method-array-pull) | [str_slug](https://laravel.com/docs/5.3/helpers#method-str-slug) |
+[array_set](https://laravel.com/docs/5.3/helpers#method-array-set) | [studly_case](https://laravel.com/docs/5.3/helpers#method-studly-case) |
+[array_sort](https://laravel.com/docs/5.3/helpers#method-array-sort) | [title_case](https://laravel.com/docs/5.3/helpers#method-title-case) |
+[array_sort_recursive](https://laravel.com/docs/5.3/helpers#method-array-sort-recursive) |  |
 [array_where](https://laravel.com/docs/5.3/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.3/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.3/helpers#method-last) |  |
