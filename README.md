@@ -267,7 +267,7 @@ Arrays | Strings | Miscellaneous
 [array_pull](https://laravel.com/docs/5.3/helpers#method-array-pull) | [str_singular](https://laravel.com/docs/5.3/helpers#method-str-singular) |
 [array_set](https://laravel.com/docs/5.3/helpers#method-array-set) | [str_slug](https://laravel.com/docs/5.3/helpers#method-str-slug) |
 [array_sort](https://laravel.com/docs/5.3/helpers#method-array-sort) | [studly_case](https://laravel.com/docs/5.3/helpers#method-studly-case) |
-[array_sort_recursive](https://laravel.com/docs/5.3/helpers#method-array-sort-recursive) | |
+[array_sort_recursive](https://laravel.com/docs/5.3/helpers#method-array-sort-recursive) | [title_case](https://laravel.com/docs/5.3/helpers#method-title-case) |
 [array_where](https://laravel.com/docs/5.3/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.3/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.3/helpers#method-last) |  |
