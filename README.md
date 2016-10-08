@@ -258,7 +258,7 @@ Arrays | Strings | Miscellaneous
 [array_dot](https://laravel.com/docs/5.3/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.3/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.3/helpers#method-elixir)
 [array_except](https://laravel.com/docs/5.3/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.3/helpers#method-snake-case) | [env](https://laravel.com/docs/5.3/helpers#method-env)
 [array_first](https://laravel.com/docs/5.3/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.3/helpers#method-starts-with) | [value](https://laravel.com/docs/5.3/helpers#method-value)
-[array_flatten](https://laravel.com/docs/5.3/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.3/helpers#method-str-contains) | [with](https://laravel.com/docs/5.3/helpers#method-with)
+[array_flatten](https://laravel.com/docs/5.3/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.3/helpers#method-str-contains) | 
 [array_forget](https://laravel.com/docs/5.3/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.3/helpers#method-str-finish) |
 [array_get](https://laravel.com/docs/5.3/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.3/helpers#method-str-is) |
 [array_has](https://laravel.com/docs/5.3/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.3/helpers#method-str-limit) |
