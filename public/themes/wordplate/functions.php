@@ -72,7 +72,7 @@ add_filter('wp_title', function () {
 });
 
 /*
- * Remove JPG compression.
+ * Remove JPEG compression.
  */
 add_filter('jpeg_quality', function () {
     return 100;
