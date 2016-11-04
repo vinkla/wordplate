@@ -288,4 +288,4 @@ Please review our [contribution guidelines](https://github.com/wordplate/framewo
 
 ## License
 
-WordPlate is licensed under [The MIT License (MIT)](LICENSE).
+[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
