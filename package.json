@@ -3,6 +3,7 @@
   "description": "A modern WordPress stack. Don't repeat yourself.",
   "license": "MIT",
   "repository": "wordplate/wordplate",
+  "private": true,
   "scripts": {
     "dev": "gulp watch",
     "prod": "gulp --production"
