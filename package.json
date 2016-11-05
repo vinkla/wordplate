@@ -2,10 +2,7 @@
   "name": "wordplate",
   "description": "A modern WordPress stack. Don't repeat yourself.",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wordplate/wordplate"
-  },
+  "repository": "wordplate/wordplate",
   "scripts": {
     "dev": "gulp watch",
     "prod": "gulp --production"
