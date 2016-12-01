@@ -17,7 +17,7 @@ elixir.config.css.sass.folder = 'styles';
 elixir.config.js.folder = 'scripts';
 elixir.config.js.outputFolder = 'scripts';
 
-elixir((mix) => {
+elixir(mix => {
   mix.sass('app.scss', null, null, {
     includePaths: [
       './node_modules'
