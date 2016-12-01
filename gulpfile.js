@@ -19,9 +19,7 @@ elixir.config.js.outputFolder = 'scripts';
 
 elixir(mix => {
   mix.sass('app.scss', null, null, {
-    includePaths: [
-      './node_modules'
-    ]
+    includePaths: ['./node_modules']
   });
 
   mix.browserify('app.js');
