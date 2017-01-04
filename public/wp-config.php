@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /* Register the composer auto loader. */
 require __DIR__.'/../vendor/autoload.php';
 
