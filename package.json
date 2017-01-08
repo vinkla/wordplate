@@ -7,6 +7,6 @@
     "webpack": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "laravel-mix": "^0.2.10"
+    "laravel-mix": "^0.3.0"
   }
 }
