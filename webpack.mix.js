@@ -11,6 +11,9 @@ const mix = require('laravel-mix').mix;
  |
  */
 
-mix.js('resources/assets/scripts/app.js', 'public/themes/wordplate/assets/scripts')
-   .sass('resources/assets/styles/app.scss', 'public/themes/wordplate/assets/styles')
+const resources = 'resources/assets';
+const public = 'public/themes/wordplate/assets';
+
+mix.js(`${resources}/scripts/app.js`, `${public}/scripts`)
+   .sass(`${resources}/styles/app.scss`, `${public}/styles`)
    .version();
