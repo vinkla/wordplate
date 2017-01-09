@@ -70,11 +70,11 @@ Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy
 
 #### WordPress
 
-WordPlate supports WordPress `4.0+` and comes with the latest version out of the box. If you want to specify an older version of WordPress you may add it to your `composer.json` file.
+WordPlate supports WordPress `4.7+` and comes with the latest version out of the box. If you want to specify an exact version of WordPress you may add it to your `composer.json` file.
 
 ```json
 "require": {
-  "johnpbloch/wordpress": "4.5.1"
+  "johnpbloch/wordpress": "4.7.1"
 }
 ```
 
