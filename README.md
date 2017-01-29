@@ -40,18 +40,19 @@ composer create-project wordplate/wordplate
 - [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
 - [BrowserSync](https://www.browsersync.io/)
 - [Environment files](https://github.com/vlucas/phpdotenv)
-- [Versioning and cache busting](https://laravel.com/docs/5.3/elixir#versioning-and-cache-busting)
+- [Versioning and cache busting](https://laravel.com/docs/5.4/mix#versioning-and-cache-busting)
 - [WordPress Packagist](https://wpackagist.org/)
-- [Laravel Elixir](https://laravel.com/docs/5.3/elixir)
+- [Laravel Mix](https://laravel.com/docs/5.4/mix)
 - [Real GUIDs](https://github.com/wordplate/uuid)
 - [Mail](#mail)
 
 ## Installation
 
-To use WordPlate, you need to have PHP 5.6.4+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed if you want to use [Elixir](https://laravel.com/docs/5.3/elixir) to compile your CSS and Javascript.
+To use WordPlate, you need to have PHP 7.0+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed if you want to use [Laravel Mix](https://laravel.com/docs/5.4/mix) to compile your CSS and Javascript.
 
 Make sure your server meets the following requirements:
-- PHP >= 5.6.4
+
+- PHP >= 7.0
 - Mbstring PHP Extension
 
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
@@ -108,7 +109,7 @@ This is an example of how your `composer.json` file might look like.
 
 ```json
 "require": {
-    "wordplate/framework": "^4.0",
+    "wordplate/framework": "^4.3",
     "wpackagist-plugin/polylang": "^1.0",
 },
 ```
@@ -117,9 +118,9 @@ Please visit [WordPress Packagist](https://wpackagist.org/) website for more inf
 
 ## Webpack
 
-WordPlate has integrated [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
+WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
 
-[Read more about how to install and use Laravel Mix in the official documentation.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
+[Read more about how to install and use Laravel Mix in the official documentation.](https://laravel.com/docs/5.4/mix)
 
 ## Mail
 
