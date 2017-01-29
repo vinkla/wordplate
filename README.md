@@ -117,7 +117,7 @@ Please visit [WordPress Packagist](https://wpackagist.org/) website for more inf
 
 ## Webpack
 
-WordPlate has integrated [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme). It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
+WordPlate has integrated [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
 
 [Read more about how to install and use Laravel Mix in the official documentation.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
 
