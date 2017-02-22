@@ -34,18 +34,18 @@ composer create-project wordplate/wordplate
 ## Why WordPlate?
 
 - [Easy to setup](#installation)
-- [Built with Composer](https://getcomposer.org/)
+- [Built with Composer](https://getcomposer.org)
 - [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
-- [BrowserSync](https://www.browsersync.io/)
+- [BrowserSync](https://www.browsersync.io)
 - [Environment files](https://github.com/vlucas/phpdotenv)
 - [Versioning and cache busting](https://laravel.com/docs/5.4/mix#versioning-and-cache-busting)
-- [WordPress Packagist](https://wpackagist.org/)
+- [WordPress Packagist](https://wpackagist.org)
 - [Laravel Mix](https://laravel.com/docs/5.4/mix)
 - [Mail](#mail)
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.0+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en/) and [NPM](https://www.npmjs.com/) installed if you want to use [Laravel Mix](https://laravel.com/docs/5.4/mix) to compile your CSS and Javascript.
+To use WordPlate, you need to have PHP 7.0+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en) and [NPM](https://www.npmjs.com) installed if you want to use [Laravel Mix](https://laravel.com/docs/5.4/mix) to compile your CSS and Javascript.
 
 Make sure your server meets the following requirements:
 
@@ -60,11 +60,11 @@ composer create-project wordplate/wordplate
 
 ## Configuration
 
-The first thing you should do after installing WordPlate is to add [WordPress salts](https://wordplate.github.io/salt/) to your `.env` environment file.
+The first thing you should do after installing WordPlate is to add [WordPress salts](https://wordplate.github.io/salt) to your `.env` environment file.
 
-Typically, these strings should be [64 characters long](https://wordplate.github.io/salt/). The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://wordplate.github.io/salt/) is not set, your user sessions and other encrypted data will not be secure!
+Typically, these strings should be [64 characters long](https://wordplate.github.io/salt). The strings can be set in the `.env` environment file. If you have not renamed the `.env.example` file to `.env`, you may do that now. If the [WordPress salts](https://wordplate.github.io/salt) is not set, your user sessions and other encrypted data will not be secure!
 
-Please visit [WordPlate's salt page](https://wordplate.github.io/salt/) and copy the WordPress salts to your environment file.
+Please visit [WordPlate's salt page](https://wordplate.github.io/salt) and copy the WordPress salts to your environment file.
 
 #### WordPress
 
@@ -88,7 +88,7 @@ Building your theme with WordPlate works like any other WordPress environment. P
 
 ## Plugins
 
-[WordPress Packagist](https://wpackagist.org/) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org/) and [theme](https://themes.svn.wordpress.org/) directories as a Composer repository.
+[WordPress Packagist](https://wpackagist.org) comes straight out of the box with WordPlate. It mirrors the WordPress [plugin](https://plugins.svn.wordpress.org) and [theme](https://themes.svn.wordpress.org) directories as a Composer repository.
 
 #### How do I use it?
 
@@ -111,7 +111,7 @@ This is an example of how your `composer.json` file might look like.
 },
 ```
 
-Please visit [WordPress Packagist](https://wpackagist.org/) website for more information and examples.
+Please visit [WordPress Packagist](https://wpackagist.org) website for more information and examples.
 
 ## Webpack
 
@@ -121,7 +121,7 @@ WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of 
 
 ## Mail
 
-To send email with WordPress you can use the [`wp_mail`](https://developer.wordpress.org/reference/functions/wp_mail/) helper method. WordPlate provides a simple way to add custom SMTP credentials.
+To send email with WordPress you can use the [`wp_mail`](https://developer.wordpress.org/reference/functions/wp_mail) helper method. WordPlate provides a simple way to add custom SMTP credentials.
 
 Require the [mail package](https://github.com/wordplate/mail) in the root directory of your project.
 
@@ -152,8 +152,8 @@ register_extended_taxonomy('location', 'event');
 
 For [custom fields](https://codex.wordpress.org/Custom_Fields) we recommend looking at the following plugins:
 
-- [Advanced Custom Fields](http://www.advancedcustomfields.com/) - Powerful fields for WordPress developers.
-- [Papi](https://wp-papi.github.io/) - A different approach on how to work with fields and page types in WordPress.
+- [Advanced Custom Fields](http://www.advancedcustomfields.com) - Powerful fields for WordPress developers.
+- [Papi](https://wp-papi.github.io) - A different approach on how to work with fields and page types in WordPress.
 
 ## Helpers
 
@@ -191,11 +191,11 @@ Arrays | Strings | Miscellaneous
 
 ## Security
 
-Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide/) to learn more about [WordPress security](http://codex.wordpress.org/Hardening_WordPress).
+Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide) to learn more about [WordPress security](http://codex.wordpress.org/Hardening_WordPress).
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
-We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil/) by [Roots](https://roots.io). It is a A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
 
 ## Contributing
 
