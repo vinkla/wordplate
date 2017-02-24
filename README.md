@@ -170,7 +170,7 @@ Arrays | Strings | Miscellaneous
 [array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [collect](https://laravel.com/docs/5.4/helpers#method-collect)
 [array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
-[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.4/helpers#method-elixir)
+[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.3/helpers#method-elixir)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env)
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [value](https://laravel.com/docs/5.4/helpers#method-value)
 [array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) |
