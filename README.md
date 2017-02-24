@@ -172,8 +172,8 @@ Arrays | Strings | Miscellaneous
 [array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.3/helpers#method-elixir)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env)
-[array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [value](https://laravel.com/docs/5.4/helpers#method-value)
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) |
+[array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
+[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [value](https://laravel.com/docs/5.4/helpers#method-value)
 [array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) |
 [array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
 [array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
