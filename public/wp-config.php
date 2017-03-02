@@ -27,10 +27,10 @@ define('DB_CHARSET', env('DB_CHARSET', 'utf8'));
 define('DB_COLLATE', env('DB_COLLATE', ''));
 
 /* Set the home url to the current domain. */
-define('WP_HOME', env('WP_URL', 'http://'.array_get($_SERVER, 'HTTP_HOST')));
+define('WP_HOME', env('WP_URL', request()->getSchemeAndHttpHost()));
 
 /* Custom WordPress directory. */
-define('WP_SITEURL', env('WP_SITEURL', WP_HOME.'/'.env('WP_DIR', 'wordpress')));
+define('WP_SITEURL', env('WP_SITEURL', sprintf('%s/%s', WP_HOME, env('WP_DIR', 'wordpress'))));
 
 /* Custom content directory. */
 define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
@@ -97,7 +97,7 @@ define('SCRIPT_DEBUG', env('WP_DEBUG', false));
 
 /* Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
-    define('ABSPATH', __DIR__.'/'.env('WP_DIR', 'wordpress'));
+    define('ABSPATH', sprintf('%s/%s', __DIR__, env('WP_DIR', 'wordpress')));
 }
 
 /** Sets up WordPress vars and included files. */
