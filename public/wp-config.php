@@ -93,18 +93,6 @@ define('WP_DEBUG', env('WP_DEBUG', false));
 define('WP_DEBUG_DISPLAY', env('WP_DEBUG', false));
 define('SCRIPT_DEBUG', env('WP_DEBUG', false));
 
-/* Add multisite support. */
-define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', false));
-
-if (env('WP_MULTISITE', false)) {
-    define('MULTISITE', env('WP_MULTISITE', false));
-    define('SUBDOMAIN_INSTALL', env('SUBDOMAIN_INSTALL', false));
-    define('DOMAIN_CURRENT_SITE', env('DOMAIN_CURRENT_SITE', $_SERVER['HTTP_HOST']));
-    define('PATH_CURRENT_SITE', env('PATH_CURRENT_SITE', '/'));
-    define('SITE_ID_CURRENT_SITE', env('SITE_ID_CURRENT_SITE', 1));
-    define('BLOG_ID_CURRENT_SITE', env('BLOG_ID_CURRENT_SITE', 1));
-}
-
 /* That's all, stop editing! Happy blogging. */
 
 /* Absolute path to the WordPress directory. */
