@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 /*
 |--------------------------------------------------------------------------
-| Booting WordPress
+| Theming WordPress
 |--------------------------------------------------------------------------
 |
 | We need to define and tell WordPress to load the WordPress theme and
