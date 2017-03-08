@@ -79,3 +79,9 @@ add_filter('excerpt_more', function () {
 add_filter('excerpt_length', function () {
     return 101;
 });
+
+// Sanitize filename on save.
+add_filter('sanitize_file_name', function($filename) {
+    $sanitized_filename = remove_accents($filename);
+    return $sanitized_filename;
+}, 10, 2);
