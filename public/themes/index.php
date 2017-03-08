@@ -1,3 +1,3 @@
 <?php
 
-// Good work getting here, future starter!
+// Good work getting this far, future starter!
