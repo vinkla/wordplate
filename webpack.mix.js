@@ -10,12 +10,15 @@ const mix = require('laravel-mix').mix;
  | file for your application, as well as bundling up your JS files.
  |
  */
-
 const resources = 'resources/assets';
-const public = 'public/themes/wordplate/assets';
+const public = 'public';
+const theme_name = 'wordplate';
+const theme_dir = `themes/${theme_name}`;
+const theme_assets = `${theme_dir}/assets`;
 
-mix.setPublicPath(public);
+mix.setPublicPath(`${public}/${theme_assets}`);
+mix.setResourceRoot(`../../../../${theme_assets}/`);
 
-mix.js(`${resources}/scripts/app.js`, `${public}/scripts`)
-   .sass(`${resources}/styles/app.scss`, `${public}/styles`)
-   .version();
+mix.js(`${resources}/js/app.js`, `js`)
+  .sass(`${resources}/scss/app.scss`, `css`)
+  .version();
