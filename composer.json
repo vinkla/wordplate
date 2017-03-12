@@ -6,7 +6,7 @@
     "require": {
         "php": "^7.0",
         "wordplate/framework": "^5.0",
-        "wordplate/plate": "^2.2"
+        "wordplate/plate": "^2.3"
     },
     "repositories": [
         {
