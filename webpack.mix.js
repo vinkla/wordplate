@@ -19,6 +19,6 @@ const theme_assets = `${theme_dir}/assets`;
 mix.setPublicPath(`${public}/${theme_assets}`);
 mix.setResourceRoot(`../../../../${theme_assets}/`);
 
-mix.js(`${resources}/js/app.js`, `js`)
-  .sass(`${resources}/scss/app.scss`, `css`)
+mix.js(`${resources}/scripts/app.js`, `js`)
+  .sass(`${resources}/styles/app.scss`, `css`)
   .version();
