@@ -16,6 +16,8 @@ const public = 'public/themes/wordplate/assets';
 
 mix.setPublicPath(public);
 
+mix.copy(`${resources}/images`, `${public}/images`);
+
 mix.js(`${resources}/scripts/app.js`, `${public}/scripts`)
    .sass(`${resources}/styles/app.scss`, `${public}/styles`)
    .version();
