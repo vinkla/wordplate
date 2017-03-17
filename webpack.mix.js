@@ -26,10 +26,10 @@ mix.browserSync({
     ]
 });
 
-mix.js(`${resources}/scripts/app.js`, `${assetsPath}/scripts`)
-    .sass(`${resources}/styles/app.scss`, `${assetsPath}/styles`, {
-        includePaths: ['node_modules']
-    });
+mix.js(`${resources}/scripts/app.js`, `${assetsPath}/scripts`);
+mix.sass(`${resources}/styles/app.scss`, `${assetsPath}/styles`, {
+    includePaths: ['node_modules']
+});
 
 // Hash and version files in production.
 if (mix.config.inProduction) {
