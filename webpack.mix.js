@@ -12,10 +12,26 @@ const mix = require('laravel-mix').mix;
  */
 
 const resources = 'resources/assets';
-const public = 'public/themes/wordplate/assets';
+const themePath = 'public/themes/wordplate';
+const assetsPath = `${themePath}/assets`;
 
-mix.setPublicPath(public);
+mix.setPublicPath(assetsPath);
 
-mix.js(`${resources}/scripts/app.js`, `${public}/scripts`)
-   .sass(`${resources}/styles/app.scss`, `${public}/styles`)
-   .version();
+mix.browserSync({
+    proxy: 'wordplate.dev',
+    files: [
+        `${themePath}/**/*.php`,
+        `${assetsPath}/**/*.js`,
+        `${assetsPath}/**/*.css`
+    ]
+});
+
+mix.js(`${resources}/scripts/app.js`, `${assetsPath}/scripts`);
+mix.sass(`${resources}/styles/app.scss`, `${assetsPath}/styles`, {
+    includePaths: ['node_modules']
+});
+
+// Hash and version files in production.
+if (mix.config.inProduction) {
+    mix.version();
+}

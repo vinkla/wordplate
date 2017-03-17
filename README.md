@@ -106,8 +106,8 @@ This is an example of how your `composer.json` file might look like.
 
 ```json
 "require": {
-    "wordplate/framework": "^4.3",
-    "wpackagist-plugin/polylang": "^1.0",
+    "wordplate/framework": "^5.0",
+    "wpackagist-plugin/polylang": "^2.0",
 },
 ```
 
@@ -167,15 +167,15 @@ Below is a list of all supported helper methods.
 
 Arrays | Strings | Miscellaneous
 ------ | ------- | -------------
-[array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [collect](https://laravel.com/docs/5.4/helpers#method-collect)
-[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
-[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
-[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.3/helpers#method-elixir)
+[array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [asset](https://laravel.com/docs/5.4/helpers#method-asset)
+[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.4/helpers#method-collect)
+[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
+[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env)
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [value](https://laravel.com/docs/5.4/helpers#method-value)
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) |
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
+[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [template_path](#template_path)
+[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [value](https://laravel.com/docs/5.4/helpers#method-value)
+[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) | 
 [array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
 [array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
 [array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |
@@ -188,6 +188,16 @@ Arrays | Strings | Miscellaneous
 [array_where](https://laravel.com/docs/5.4/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.4/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.4/helpers#method-last) |  |
+
+##### `template_path()`
+
+The `template_path` function returns the fully qualified path to the current theme directory.
+
+```php
+$path = template_path();
+
+$path = template_path('includes/article.php');
+```
 
 ## Security
 

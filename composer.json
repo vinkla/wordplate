@@ -5,8 +5,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "wordplate/framework": "^4.3",
-        "wordplate/plate": "^2.2"
+        "wordplate/framework": "^5.0",
+        "wordplate/plate": "^2.3"
     },
     "repositories": [
         {
@@ -29,5 +29,7 @@
             "public/themes/{$name}": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "public/wordpress"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

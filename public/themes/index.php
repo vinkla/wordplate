@@ -1,3 +1,3 @@
 <?php
 
-// Silence is golden.
+// Good work getting this far, future starter!
