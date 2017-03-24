@@ -16,6 +16,7 @@ const themePath = 'public/themes/wordplate';
 const assetsPath = `${themePath}/assets`;
 
 mix.setPublicPath(assetsPath);
+mix.setResourceRoot('../');
 
 mix.browserSync({
     proxy: 'wordplate.dev',
