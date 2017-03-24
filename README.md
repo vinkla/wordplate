@@ -1,7 +1,6 @@
-WordPlate
-=========
+# WordPlate
 
-![wordplate](https://cloud.githubusercontent.com/assets/499192/13548328/22cb8d6c-e2ee-11e5-8adf-33c8184181b1.jpg)
+![WordPlate](https://cloud.githubusercontent.com/assets/499192/24306598/68480012-10c1-11e7-9f4c-708822da731b.png)
 
 WordPlate is a modern WordPress stack which tries to simplify the fuzziness around WordPress development. Using the latest standards from PHP. WordPlate utilizes WordPress as its dependency through Composer.
 
