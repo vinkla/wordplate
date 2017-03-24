@@ -94,7 +94,7 @@ Building your theme with WordPlate works like any other WordPress environment. P
 Require the desired plugin or theme using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
 
 ```bash
-composer require wpackagist-plugin/wp-migrate-db
+composer require wpackagist-plugin/polylang
 ```
 
 Packages are installed to `public/plugins` or `public/themes`.
@@ -106,7 +106,7 @@ This is an example of how your `composer.json` file might look like.
 ```json
 "require": {
     "wordplate/framework": "^5.0",
-    "wpackagist-plugin/polylang": "^2.0",
+    "wpackagist-plugin/polylang": "^2.1",
 },
 ```
 
@@ -204,7 +204,7 @@ Though WordPlate makes your WordPress site more secure out of the box you should
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
-We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
 
 ## Contributing
 
