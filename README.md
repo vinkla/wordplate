@@ -1,7 +1,6 @@
-WordPlate
-=========
+# WordPlate
 
-![wordplate](https://cloud.githubusercontent.com/assets/499192/13548328/22cb8d6c-e2ee-11e5-8adf-33c8184181b1.jpg)
+[![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)](https://wordplate.github.io)
 
 WordPlate is a modern WordPress stack which tries to simplify the fuzziness around WordPress development. Using the latest standards from PHP. WordPlate utilizes WordPress as its dependency through Composer.
 
@@ -29,6 +28,7 @@ composer create-project wordplate/wordplate
 - [Custom Fields](#custom-fields)
 - [Helpers](#helpers)
 - [Security](#security)
+- [Upgrade Guide](#upgrade-guide)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -95,7 +95,7 @@ Building your theme with WordPlate works like any other WordPress environment. P
 Require the desired plugin or theme using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
 
 ```bash
-composer require wpackagist-plugin/wp-migrate-db
+composer require wpackagist-plugin/polylang
 ```
 
 Packages are installed to `public/plugins` or `public/themes`.
@@ -106,8 +106,8 @@ This is an example of how your `composer.json` file might look like.
 
 ```json
 "require": {
-    "wordplate/framework": "^4.3",
-    "wpackagist-plugin/polylang": "^1.0",
+    "wordplate/framework": "^5.0",
+    "wpackagist-plugin/polylang": "^2.1",
 },
 ```
 
@@ -167,15 +167,15 @@ Below is a list of all supported helper methods.
 
 Arrays | Strings | Miscellaneous
 ------ | ------- | -------------
-[array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [collect](https://laravel.com/docs/5.4/helpers#method-collect)
-[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
-[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
-[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [elixir](https://laravel.com/docs/5.3/helpers#method-elixir)
+[array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [asset](https://laravel.com/docs/5.4/helpers#method-asset)
+[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.4/helpers#method-collect)
+[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
+[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env)
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [value](https://laravel.com/docs/5.4/helpers#method-value)
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) |
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
+[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [template_path](#template_path)
+[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [value](https://laravel.com/docs/5.4/helpers#method-value)
+[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) | 
 [array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
 [array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
 [array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |
@@ -189,13 +189,33 @@ Arrays | Strings | Miscellaneous
 [head](https://laravel.com/docs/5.4/helpers#method-head) |  |
 [last](https://laravel.com/docs/5.4/helpers#method-last) |  |
 
+##### `template_path()`
+
+The `template_path` function returns the fully qualified path to the current theme directory.
+
+```php
+$path = template_path();
+
+$path = template_path('includes/article.php');
+```
+
 ## Security
 
 Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide) to learn more about [WordPress security](http://codex.wordpress.org/Hardening_WordPress).
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
-We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+
+## Upgrade Guide
+
+If you want to upgrade from WordPlate 4 to 5 you can follow this guide.
+
+1. Bump the version number in the `composer.json` file to `^5.0`.
+
+2. Copy and paste the contents of the [`wp-config.php`](public/wp-config.php) file into your application.
+
+3. Run `composer update` and everything should work as before.
 
 ## Contributing
 

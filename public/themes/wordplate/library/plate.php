@@ -3,20 +3,18 @@
 declare(strict_types=1);
 
 /*
- |--------------------------------------------------------------------------
- | Plate
- |--------------------------------------------------------------------------
- |
- | Plate provides a bunch of handy WordPress defaults to help you get the
- | most out of WordPress development.
- |
- | Please see https://github.com/wordplate/plate
- |
- */
+|--------------------------------------------------------------------------
+| Plate
+|--------------------------------------------------------------------------
+|
+| Plate provides a bunch of handy WordPress defaults to help you get the
+| most out of WordPress development.
+|
+| Please see https://github.com/wordplate/plate
+|
+*/
 
-/*
- * Remove menu items.
- */
+// Remove menu items.
 add_theme_support('plate-menu', [
    'comments',
    'dashboard',
@@ -24,9 +22,7 @@ add_theme_support('plate-menu', [
    'media',
 ]);
 
-/*
- * Remove meta boxes in post editor.
- */
+// Remove meta boxes in post editor.
 add_theme_support('plate-editor', [
     'commentsdiv',
     'commentstatusdiv',
@@ -43,9 +39,7 @@ add_theme_support('plate-editor', [
     //'tagsdiv-post_tag',
 ]);
 
-/*
- * Remove dashboard widgets.
- */
+// Remove dashboard widgets.
 add_theme_support('plate-dashboard', [
     'dashboard_activity',
     'dashboard_incoming_links',
@@ -58,9 +52,7 @@ add_theme_support('plate-dashboard', [
     //'dashboard_right_now',
 ]);
 
-/*
- * Remove links from admin toolbar.
- */
+// Remove links from admin toolbar.
 add_theme_support('plate-toolbar', [
     'comments',
     'wp-logo',
@@ -72,22 +64,14 @@ add_theme_support('plate-toolbar', [
     'search',
 ]);
 
-/*
- * Remove dashboard tabs.
- */
+// Remove dashboard tabs.
 add_theme_support('plate-tabs', ['help', 'screen-options']);
 
-/*
- * Set custom permalink structure.
- */
+// Set custom permalink structure.
 add_theme_support('plate-permalink', '/%postname%/');
 
-/*
- * Set custom login logo.
- */
+// Set custom login logo.
 add_theme_support('plate-login', sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.png'));
 
-/*
- * Set custom footer text.
- */
+// Set custom footer text.
 add_theme_support('plate-footer', 'Thank you for creating with <a href="https://wordplate.github.io" target="_blank">WordPlate</a>.');
