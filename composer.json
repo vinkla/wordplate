@@ -29,7 +29,5 @@
             "public/themes/{$name}": ["type:wordpress-theme"]
         },
         "wordpress-install-dir": "public/wordpress"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
