@@ -28,6 +28,7 @@ composer create-project wordplate/wordplate
 - [Custom Fields](#custom-fields)
 - [Helpers](#helpers)
 - [Security](#security)
+- [Upgrade Guide](#upgrade-guide)
 - [Contributing](#contributing)
 
 ## Why WordPlate?
@@ -205,6 +206,16 @@ Though WordPlate makes your WordPress site more secure out of the box you should
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
 We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) by [Roots](https://roots.io). It is a WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications. The plugin also address some security concerns for WordPress themes.
+
+## Upgrade Guide
+
+If you want to upgrade from WordPlate 4 to 5 you can follow this guide.
+
+1. Bump the version number in the `composer.json` file to `^5.0`.
+
+2. Copy and paste the contents of the [`wp-config.php`](public/wp-config.php) file into your application.
+
+3. Run `composer update` and everything should work as before.
 
 ## Contributing
 
