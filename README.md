@@ -194,9 +194,9 @@ Arrays | Strings | Miscellaneous
 The `template_path` function returns the fully qualified path to the current theme directory.
 
 ```php
-$path = template_path();
+$path = template_path('components/article.php');
 
-$path = template_path('includes/article.php');
+require $path;
 ```
 
 ## Security
