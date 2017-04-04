@@ -215,7 +215,7 @@ If you want to upgrade from WordPlate 4 to 5 you can follow this guide.
 
 2. Copy and paste the contents of the [`wp-config.php`](public/wp-config.php) file into your application.
 
-  > **Note:** Make sure you don't overwrite any of your custom constants.
+    > **Note:** Make sure you don't overwrite any of your custom constants.
 
 3. Run `composer update` and everything should work as before.
 
