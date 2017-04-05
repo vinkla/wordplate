@@ -4,8 +4,8 @@
 
 WordPlate is a modern WordPress stack which tries to simplify the fuzziness around WordPress development. Using the latest standards from PHP. WordPlate utilizes WordPress as its dependency through Composer.
 
-```bash
-composer create-project wordplate/wordplate
+```sh
+$ composer create-project wordplate/wordplate
 ```
 
 [![Build Status](https://img.shields.io/travis/wordplate/framework/master.svg?style=flat)](https://travis-ci.org/wordplate/framework)
