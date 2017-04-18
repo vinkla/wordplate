@@ -42,6 +42,18 @@ $application = new WordPlate\Application(
 
 /*
 |--------------------------------------------------------------------------
+| Custom WordPress Constants
+|--------------------------------------------------------------------------
+|
+| Below you can add custom WordPress constants which aren't specified in
+| application class. You may of course use the env() helper function.
+|
+*/
+
+// define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
+
+/*
+|--------------------------------------------------------------------------
 | Run The Application
 |--------------------------------------------------------------------------
 |
