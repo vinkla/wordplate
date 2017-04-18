@@ -56,16 +56,25 @@ $application->run();
 
 /*
 |--------------------------------------------------------------------------
-| WP-CLI Compatibility
+| WordPress Database Table Prefix
 |--------------------------------------------------------------------------
 |
-| WP-CLI need 'wp-settings.php' to be required in 'wp-config.php'.
-| WP-CL regex will parse the configuration file and replace
-| 'wp-settings.php' with there own.
+| You can have multiple installations in one database if you give each
+| a unique prefix. Only numbers, letters, and underscores please!
 |
 */
 
-if (class_exists('WP_CLI')) {
-    $table_prefix = $application->tablePrefix;
-    require_once ABSPATH.'wp-settings.php';
-}
+$table_prefix = env('WP_PREFIX', 'wp_');
+
+/*
+|--------------------------------------------------------------------------
+| Bootstrap WordPress Framework
+|--------------------------------------------------------------------------
+|
+| The settings file is used to set up and fix common variables and include
+| the WordPress procedural and class library. We also need to keep this
+| include here in order to support WP-CLI.
+|
+*/
+
+require_once ABSPATH.'wp-settings.php';
