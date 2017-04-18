@@ -50,7 +50,7 @@ $application = new WordPlate\Application(
 |
 */
 
-// define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
+// define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
 
 /*
 |--------------------------------------------------------------------------
