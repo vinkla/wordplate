@@ -53,3 +53,19 @@ $application = new WordPlate\Application(
 */
 
 $application->run();
+
+/*
+|--------------------------------------------------------------------------
+| WP-CLI Compatibility
+|--------------------------------------------------------------------------
+|
+| WP-CLI need 'wp-settings.php' to be required in 'wp-config.php'.
+| WP-CL regex will parse the configuration file and replace
+| 'wp-settings.php' with there own.
+|
+*/
+
+if (class_exists('WP_CLI')) {
+    $table_prefix = $application->tablePrefix;
+    require_once ABSPATH.'wp-settings.php';
+}
