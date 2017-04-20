@@ -157,6 +157,9 @@ register_extended_taxonomy('location', 'event');
 For [custom fields](https://codex.wordpress.org/Custom_Fields) we recommend looking at the following plugins:
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com) - Powerful fields for WordPress developers.
+
+  > If you're like us and prefer to write your fields in PHP you should [checkout out our ACF helper package](https://github.com/wordplate/acf)!
+  
 - [Papi](https://wp-papi.github.io) - A different approach on how to work with fields and page types in WordPress.
 
 ## Helpers
