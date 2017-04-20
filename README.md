@@ -113,6 +113,10 @@ This is an example of how your `composer.json` file might look like.
 
 Please visit [WordPress Packagist](https://wpackagist.org) website for more information and examples.
 
+## Autoloader
+
+If you want to enable standard plugins to be required just like [must-use](https://codex.wordpress.org/Must_Use_Plugins) plugins in WordPlate, [please see our autoloader package](https://github.com/wordplate/autoloader).
+
 ## Webpack
 
 WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
