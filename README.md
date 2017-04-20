@@ -113,7 +113,7 @@ This is an example of how your `composer.json` file might look like.
 
 Please visit [WordPress Packagist](https://wpackagist.org) website for more information and examples.
 
-## Autoloader
+#### Autoloader
 
 If you want to enable standard plugins to be required just like [must-use](https://codex.wordpress.org/Must_Use_Plugins) plugins in WordPlate, [please see our autoloader package](https://github.com/wordplate/autoloader).
 
