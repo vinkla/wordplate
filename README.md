@@ -198,7 +198,7 @@ Arrays | Strings | Miscellaneous
 
 ##### `base_path()`
 
-The `base_path` function returns the fully qualified path to the project root. You may also use the `base_path` function to generate a fully qualified path to a given file relative to the project root directory:
+The `base_path` function returns the fully qualified path to the project root. You may also use the `base_path` function to generate a fully qualified path to a given file relative to the project root directory.
 
 ```php
 $path = base_path();
