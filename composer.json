@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "wordplate/framework": "^5.0",
+        "wordplate/framework": "^5.1",
         "wordplate/plate": "^2.3"
     },
     "repositories": [
