@@ -71,7 +71,7 @@ add_theme_support('plate-tabs', ['help', 'screen-options']);
 add_theme_support('plate-permalink', '/%postname%/');
 
 // Set custom login logo.
-add_theme_support('plate-login', sprintf('%s/%s', get_template_directory_uri(), '/assets/images/logo.png'));
+add_theme_support('plate-login', asset('assets/images/logo.png'));
 
 // Set custom footer text.
 add_theme_support('plate-footer', 'Thank you for creating with <a href="https://wordplate.github.io" target="_blank">WordPlate</a>.');
