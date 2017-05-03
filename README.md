@@ -55,7 +55,7 @@ Make sure your server meets the following requirements:
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```bash
-composer create-project wordplate/wordplate
+$ composer create-project wordplate/wordplate
 ```
 
 ## Configuration
@@ -106,7 +106,7 @@ This is an example of how your `composer.json` file might look like.
 
 ```json
 "require": {
-    "wordplate/framework": "^5.0",
+    "wordplate/framework": "^5.1",
     "wpackagist-plugin/polylang": "^2.1",
 },
 ```
@@ -213,7 +213,7 @@ The `template_path` function returns the fully qualified path to the current the
 ```php
 $path = template_path();
 
-$path template_path('components/article.php');
+$path = template_path('components/article.php');
 ```
 
 ## Security
