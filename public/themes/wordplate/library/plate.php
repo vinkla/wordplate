@@ -16,10 +16,10 @@ declare(strict_types=1);
 
 // Remove menu items.
 add_theme_support('plate-menu', [
-   'comments',
-   'dashboard',
-   'links',
-   'media',
+    'edit-comments.php', // comments
+    'index.php', // dashboard
+    'link-manager.php', // links
+    'upload.php', // media
 ]);
 
 // Remove meta boxes in post editor.
