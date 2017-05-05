@@ -95,7 +95,7 @@ Building your theme with WordPlate works like any other WordPress environment. P
 Require the desired plugin or theme using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
 
 ```bash
-composer require wpackagist-plugin/polylang
+$ composer require wpackagist-plugin/polylang
 ```
 
 Packages are installed to `public/plugins` or `public/themes`.
@@ -130,7 +130,7 @@ To send email with WordPress you can use the [`wp_mail`](https://developer.wordp
 Require the [mail package](https://github.com/wordplate/mail) in the root directory of your project.
 
 ```sh
-composer require wordplate/mail
+$ composer require wordplate/mail
 ```
 
 Then update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
