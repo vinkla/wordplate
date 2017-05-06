@@ -60,7 +60,7 @@ $ composer create-project wordplate/wordplate
 
 #### Laravel Valet
 
-If you want to use [Laravel Valet](https://laravel.com/docs/5.4/valet) with WordPlate, [please see our local valet driver repository](https://github.com/wordplate/valet).
+If you want to use [Laravel Valet](https://laravel.com/docs/5.4/valet) with WordPlate, [please see our local valet driver repository](https://github.com/wordplate/valet#readme).
 
 ## Configuration
 
