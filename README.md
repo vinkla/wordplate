@@ -58,6 +58,10 @@ Install WordPlate by issuing the Composer `create-project` command in your termi
 $ composer create-project wordplate/wordplate
 ```
 
+#### Laravel Valet
+
+If you want to use WordPlate with [Laravel Valet](https://laravel.com/docs/5.4/valet), [please see our local valet driver repository](https://github.com/wordplate/valet).
+
 ## Configuration
 
 The first thing you should do after installing WordPlate is to add [WordPress salts](https://wordplate.github.io/salt) to your `.env` environment file.
