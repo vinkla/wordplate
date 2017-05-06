@@ -125,6 +125,14 @@ If you want to enable standard plugins to be required just like [must-use](https
 
 WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
 
+#### Tasks
+
+WordPlate ships with three [npm scripts](https://docs.npmjs.com/misc/scripts) in the `package.json` file for Laravel Mix.
+
+- `dev` - Run all Laravel Mix tasks.
+- `production` - Run all Laravel Mix tasks and minify output.
+- `watch` - Run all Laravel Mix tasks, start Browsersync and watch for file changes.
+
 [Read more about how to install and use Laravel Mix in the official documentation.](https://laravel.com/docs/5.4/mix)
 
 ## Mail
