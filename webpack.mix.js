@@ -16,5 +16,4 @@ const theme = 'wordplate';
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
-  .sass('resources/assets/styles/app.scss', 'styles')
-  .version();
+  .sass('resources/assets/styles/app.scss', 'styles');
