@@ -72,6 +72,10 @@ Please visit [WordPlate's salt page](https://wordplate.github.io/salt) and copy 
 
 > If you're using WP-CLI and want to generate your salt keys on the CLI. Please see the [WP-CLI Dotenv helper](https://aaemnnost.tv/wp-cli-commands/dotenv) command by [Evan Mattson](https://github.com/aaemnnosttv).
 
+#### Public Directory
+
+After installing WordPlate, you should configure your web server's document / web root to be the `public` directory. The `index.php` in this directory serves as the front controller for all HTTP requests entering your application.
+
 #### WordPress
 
 WordPlate supports WordPress `4.7+` and comes with the latest version out of the box. If you want to specify an exact version of WordPress you may add it to your `composer.json` file.
