@@ -192,17 +192,17 @@ Arrays | Strings | Miscellaneous
 [array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dd](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [env](https://laravel.com/docs/5.4/helpers#method-env)
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [template_path](#template_path)
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) | [value](https://laravel.com/docs/5.4/helpers#method-value)
-[array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
-[array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
-[array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |
-[array_pluck](https://laravel.com/docs/5.4/helpers#method-array-pluck) | [str_singular](https://laravel.com/docs/5.4/helpers#method-str-singular) |
-[array_prepend](https://laravel.com/docs/5.4/helpers#method-array-prepend) | [str_slug](https://laravel.com/docs/5.4/helpers#method-str-slug) |
-[array_pull](https://laravel.com/docs/5.4/helpers#method-array-pull) | [studly_case](https://laravel.com/docs/5.4/helpers#method-studly-case) |
-[array_set](https://laravel.com/docs/5.4/helpers#method-array-set) | [title_case](https://laravel.com/docs/5.4/helpers#method-title-case) |
-[array_sort](https://laravel.com/docs/5.4/helpers#method-array-sort) |  |
+[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
+[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [template_path](#template_path)
+[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [value](https://laravel.com/docs/5.4/helpers#method-value)
+[array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
+[array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
+[array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
+[array_pluck](https://laravel.com/docs/5.4/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |
+[array_prepend](https://laravel.com/docs/5.4/helpers#method-array-prepend) | [str_singular](https://laravel.com/docs/5.4/helpers#method-str-singular) |
+[array_pull](https://laravel.com/docs/5.4/helpers#method-array-pull) | [str_slug](https://laravel.com/docs/5.4/helpers#method-str-slug) |
+[array_set](https://laravel.com/docs/5.4/helpers#method-array-set) | [studly_case](https://laravel.com/docs/5.4/helpers#method-studly-case) |
+[array_sort](https://laravel.com/docs/5.4/helpers#method-array-sort) | [title_case](https://laravel.com/docs/5.4/helpers#method-title-case)  |
 [array_sort_recursive](https://laravel.com/docs/5.4/helpers#method-array-sort-recursive) |  |
 [array_where](https://laravel.com/docs/5.4/helpers#method-array-where) |  |
 [head](https://laravel.com/docs/5.4/helpers#method-head) |  |
