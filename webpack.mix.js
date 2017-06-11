@@ -13,7 +13,6 @@ const mix = require('laravel-mix');
 
 const theme = 'wordplate';
 
-mix.setRootPath('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix.js('resources/assets/scripts/app.js', 'scripts')
