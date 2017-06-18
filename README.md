@@ -21,7 +21,7 @@ $ composer create-project wordplate/wordplate
 - [Configuration](#configuration)
 - [Theming](#theming)
 - [Plugins](#plugins)
-- [Webpack](#webpack)
+- [Laravel Mix](#laravel-mix)
 - [Mail](#mail)
 - [Post Types](#post-types)
 - [Taxonomies](#taxonomies)
@@ -127,7 +127,7 @@ Please visit [WordPress Packagist](https://wpackagist.org) website for more info
 
 If you want to enable standard plugins to be required just like [must-use](https://codex.wordpress.org/Must_Use_Plugins) plugins in WordPlate, [please see our autoloader package](https://github.com/wordplate/autoloader#readme).
 
-## Webpack
+## Laravel Mix
 
 WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
 
