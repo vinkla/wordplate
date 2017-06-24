@@ -194,8 +194,8 @@ Arrays | Strings | Miscellaneous
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [env](https://laravel.com/docs/5.4/helpers#method-env)
 [array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
 [array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [stylesheet_path](#stylesheet_path)
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [template_path](#template_path) [value](https://laravel.com/docs/5.4/helpers#method-value)
-[array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
+[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [template_path](#template_path)
+[array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) | [value](https://laravel.com/docs/5.4/helpers#method-value)
 [array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
 [array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
 [array_pluck](https://laravel.com/docs/5.4/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |
