@@ -78,11 +78,11 @@ After installing WordPlate, you should configure your web server's document / we
 
 #### WordPress
 
-WordPlate supports WordPress `4.7+` and comes with the latest version out of the box. If you want to specify an exact version of WordPress you may add it to your `composer.json` file.
+WordPlate supports WordPress `4.8+` and comes with the latest version out of the box. If you want to specify an exact version of WordPress you may add it to your [`composer.json`](composer.json) file.
 
 ```json
 "require": {
-  "johnpbloch/wordpress": "4.7.1"
+  "johnpbloch/wordpress": "4.8.1"
 }
 ```
 
@@ -112,12 +112,12 @@ Packages are installed to `public/plugins` or `public/themes`.
 
 #### Example
 
-This is an example of how your `composer.json` file might look like.
+This is an example of how your [`composer.json`](composer.json) file might look like.
 
 ```json
 "require": {
-    "wordplate/framework": "^5.1",
-    "wpackagist-plugin/polylang": "^2.1",
+    "wordplate/framework": "^5.3",
+    "wpackagist-plugin/polylang": "^2.1"
 },
 ```
 
