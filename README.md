@@ -187,13 +187,13 @@ Below is a list of all supported helper methods.
 Arrays | Strings | Miscellaneous | Paths
 ------ | ------- | ------------- | -----
 [array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [asset](https://laravel.com/docs/5.4/helpers#method-asset)  | [base_path](#base_path)
-[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [stylesheet_path](#stylesheet_path) [collect](https://laravel.com/docs/5.4/helpers#method-collect) | [template_path](#template_path)
-[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dd](https://laravel.com/docs/5.4/helpers#method-dd) |
-[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.4/helpers#method-dd) |
+[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.4/helpers#method-collect) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
+[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dd](https://laravel.com/docs/5.4/helpers#method-dd) | [stylesheet_path](#stylesheet_path)
+[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.4/helpers#method-dd) | [template_path](#template_path)
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env) |
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [info](#info) |
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [mix](https://laravel.com/docs/5.4/helpers#method-mix) |
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [value](https://laravel.com/docs/5.4/helpers#method-value) |
+[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [value](https://laravel.com/docs/5.4/helpers#method-value) |
+[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | |
 [array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) |  |
 [array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |  |
 [array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |  |
