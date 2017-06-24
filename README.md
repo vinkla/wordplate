@@ -193,8 +193,8 @@ Arrays | Strings | Miscellaneous
 [array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [dump](https://laravel.com/docs/5.4/helpers#method-dd)
 [array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [env](https://laravel.com/docs/5.4/helpers#method-env)
 [array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [template_path](#template_path)
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [value](https://laravel.com/docs/5.4/helpers#method-value)
+[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | [stylesheet_path](#stylesheet_path)
+[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) | [template_path](#template_path) [value](https://laravel.com/docs/5.4/helpers#method-value)
 [array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |
 [array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |
 [array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |
@@ -218,9 +218,19 @@ $path = base_path();
 $path = base_path('vendor/bin');
 ```
 
+##### `stylesheet_path()`
+
+The `stylesheet_path` function returns the fully qualified path for the current/child theme directory.
+
+```php
+$path = stylesheet_path();
+
+$path = stylesheet_path('components/article.php');
+```
+
 ##### `template_path()`
 
-The `template_path` function returns the fully qualified path to the current theme directory.
+The `template_path` function returns the fully qualified path to the current theme directory or to the parent theme if a child theme is being used.
 
 ```php
 $path = template_path();
