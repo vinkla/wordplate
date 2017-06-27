@@ -89,7 +89,7 @@ This way you can lock the WordPress version number to the one you're working wit
 
 ## Theming
 
-Building your theme with WordPlate works like any other WordPress environment. Please use the [WordPress documentation](https://codex.wordpress.org/Theme_Development) for reference.
+Building your theme with WordPlate works like any other WordPress environment. Please use the [WordPress documentation](https://developer.wordpress.org/themes) for reference.
 
 #### Plate
 
@@ -144,11 +144,11 @@ Require the [mail package](https://github.com/wordplate/mail#readme) in the root
 $ composer require wordplate/mail
 ```
 
-Then update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress codex](https://codex.wordpress.org/Plugin_API/Action_Reference/phpmailer_init) to read more about the `phpmailer_init` action hook.
+Then update the credentials in your `.env` environment file with your SMTP keys and you're good to go. Please visit the [WordPress documentation](https://developer.wordpress.org/reference/hooks/phpmailer_init) to read more about the `phpmailer_init` action hook.
 
 ## Post Types
 
-For [custom post types](https://codex.wordpress.org/Post_Types#Custom_Post_Types) we recommend looking at [Extended CPTs](https://github.com/johnbillion/extended-cpts#readme) by [John Blackbourn](https://github.com/johnbillion). The package provides extended functionality to WordPress custom post types, allowing developers to quickly build post types without having to write the same code again and again.
+For [custom post types](https://developer.wordpress.org/plugins/post-types/registering-custom-post-types) we recommend looking at [Extended CPTs](https://github.com/johnbillion/extended-cpts#readme) by [John Blackbourn](https://github.com/johnbillion). The package provides extended functionality to WordPress custom post types, allowing developers to quickly build post types without having to write the same code again and again.
 
 ```php
 register_extended_post_type('event');
@@ -156,7 +156,7 @@ register_extended_post_type('event');
 
 ## Taxonomies
 
-For [taxonomies](https://codex.wordpress.org/Taxonomies) we recommend looking at [Extended Taxonomies
+For [taxonomies](https://developer.wordpress.org/plugins/taxonomies) we recommend looking at [Extended Taxonomies
 ](https://github.com/johnbillion/extended-taxos#readme) by [John Blackbourn](https://github.com/johnbillion). The package provides extended functionality to WordPress custom taxonomies, allowing developers to quickly build custom taxonomies without having to write the same code again and again.
 
 ```php
@@ -165,7 +165,7 @@ register_extended_taxonomy('location', 'event');
 
 ## Custom Fields
 
-For [custom fields](https://codex.wordpress.org/Custom_Fields) we recommend looking at the following plugins:
+For [custom meta boxes](https://developer.wordpress.org/plugins/metadata/custom-meta-boxes) we recommend looking at the following plugins:
 
 - [Advanced Custom Fields](http://www.advancedcustomfields.com) - Powerful fields for WordPress developers.
 
@@ -247,7 +247,7 @@ $path = template_path('components/article.php');
 
 ## Security
 
-Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide) to learn more about [WordPress security](http://codex.wordpress.org/Hardening_WordPress).
+Though WordPlate makes your WordPress site more secure out of the box you should always try to get ahead. We suggest [reading this article](https://premium.wpmudev.org/blog/keeping-wordpress-secure-the-ultimate-guide) to learn more about [theme security](https://developer.wordpress.org/themes/theme-security).
 
 WordPlate comes with the [`wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package to replace WordPress's outdated and insecure [MD5-based](https://en.wikipedia.org/wiki/MD5) password hashing with the modern and secure [bcrypt](https://en.wikipedia.org/wiki/Bcrypt).
 
