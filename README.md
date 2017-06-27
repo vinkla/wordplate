@@ -37,14 +37,14 @@ $ composer create-project wordplate/wordplate
 - [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
 - [BrowserSync](https://www.browsersync.io)
 - [Environment files](https://github.com/vlucas/phpdotenv)
-- [Versioning and cache busting](https://laravel.com/docs/5.4/mix#versioning-and-cache-busting)
+- [Versioning and cache busting](https://laravel.com/docs/5.5/mix#versioning-and-cache-busting)
 - [WordPress Packagist](https://wpackagist.org)
-- [Laravel Mix](https://laravel.com/docs/5.4/mix)
+- [Laravel Mix](https://laravel.com/docs/5.5/mix)
 - [Mail](#mail)
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.0+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en) and [NPM](https://www.npmjs.com) installed if you want to use [Laravel Mix](https://laravel.com/docs/5.4/mix) to compile your CSS and Javascript.
+To use WordPlate, you need to have PHP 7.0+ installed on your machine. You'll also optionally need [Node.js](https://nodejs.org/en) and [NPM](https://www.npmjs.com) installed if you want to use [Laravel Mix](https://laravel.com/docs/5.5/mix) to compile your CSS and Javascript.
 
 Make sure your server meets the following requirements:
 
@@ -59,7 +59,7 @@ $ composer create-project wordplate/wordplate
 
 #### Laravel Valet
 
-If you want to use [Laravel Valet](https://laravel.com/docs/5.4/valet) with WordPlate, [please see our local valet driver repository](https://github.com/wordplate/valet#readme).
+If you want to use [Laravel Valet](https://laravel.com/docs/5.5/valet) with WordPlate, [please see our local valet driver repository](https://github.com/wordplate/valet#readme).
 
 ## Configuration
 
@@ -115,7 +115,7 @@ This is an example of how your [`composer.json`](composer.json) file might look 
 
 ```json
 "require": {
-    "wordplate/framework": "^5.3",
+    "wordplate/framework": "^6.0",
     "wpackagist-plugin/polylang": "^2.1"
 },
 ```
@@ -128,11 +128,11 @@ If you want to enable standard plugins to be required just like [must-use](https
 
 ## Laravel Mix
 
-WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.4/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
+WordPlate has integrated [Laravel Mix](https://laravel.com/docs/5.5/mix) out of the box. It provides a clean, fluent API for defining basic Webpack build steps for your WordPlate application.
 
 > If you're looking for a more advanced Laravel Mix setup, [please see this gist](https://gist.github.com/puredazzle/3c631af402ee9edcff89389e0904834d) by [Chris Andersson](https://github.com/puredazzle).
 
-[Read more about how to install and use Laravel Mix in the official documentation.](https://laravel.com/docs/5.4/mix)
+[Read more about how to install and use Laravel Mix in the official documentation.](https://laravel.com/docs/5.5/mix)
 
 ## Mail
 
@@ -177,7 +177,7 @@ For [custom fields](https://codex.wordpress.org/Custom_Fields) we recommend look
 
 WordPlate includes a variety of "helper" PHP functions. You are free to use them in your own applications if you find them convenient.
 
-WordPlate support both Laravel's [collections](https://laravel.com/docs/5.4/collections) and [helper methods](https://laravel.com/docs/5.4/helpers#available-methods). This means you can use great debugging methods such as [`dd()`](https://laravel.com/docs/5.4/helpers#method-dd) and string helpers like [`str_contains()`](https://laravel.com/docs/5.4/helpers#method-str-contains).
+WordPlate support both Laravel's [collections](https://laravel.com/docs/5.5/collections) and [helper methods](https://laravel.com/docs/5.5/helpers#available-methods). This means you can use great debugging methods such as [`dd()`](https://laravel.com/docs/5.5/helpers#method-dd) and string helpers like [`str_contains()`](https://laravel.com/docs/5.5/helpers#method-str-contains).
 
 #### Available Methods
 
@@ -185,27 +185,27 @@ Below is a list of all supported helper methods.
 
 Arrays | Strings | Miscellaneous | Paths
 ------ | ------- | ------------- | -----
-[array_add](https://laravel.com/docs/5.4/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.4/helpers#method-camel-case) | [asset](https://laravel.com/docs/5.4/helpers#method-asset)  | [base_path](#base_path)
-[array_collapse](https://laravel.com/docs/5.4/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.4/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.4/helpers#method-collect) | [mix](https://laravel.com/docs/5.4/helpers#method-mix)
-[array_divide](https://laravel.com/docs/5.4/helpers#method-array-divide) | [e](https://laravel.com/docs/5.4/helpers#method-e) | [dd](https://laravel.com/docs/5.4/helpers#method-dd) | [stylesheet_path](#stylesheet_path)
-[array_dot](https://laravel.com/docs/5.4/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.4/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.4/helpers#method-dd) | [template_path](#template_path)
-[array_except](https://laravel.com/docs/5.4/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.4/helpers#method-snake-case) | [env](https://laravel.com/docs/5.4/helpers#method-env) |
-[array_first](https://laravel.com/docs/5.4/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.4/helpers#method-starts-with) | [info](#info) |
-[array_flatten](https://laravel.com/docs/5.4/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.4/helpers#method-str-after) | [value](https://laravel.com/docs/5.4/helpers#method-value) |
-[array_forget](https://laravel.com/docs/5.4/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.4/helpers#method-str-contains) | |
-[array_get](https://laravel.com/docs/5.4/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.4/helpers#method-str-finish) |  |
-[array_has](https://laravel.com/docs/5.4/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.4/helpers#method-str-is) |  |
-[array_last](https://laravel.com/docs/5.4/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.4/helpers#method-str-limit) |  |
-[array_only](https://laravel.com/docs/5.4/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.4/helpers#method-str-plural) |  |
-[array_pluck](https://laravel.com/docs/5.4/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.4/helpers#method-str-random) |  |
-[array_prepend](https://laravel.com/docs/5.4/helpers#method-array-prepend) | [str_singular](https://laravel.com/docs/5.4/helpers#method-str-singular) |  |
-[array_pull](https://laravel.com/docs/5.4/helpers#method-array-pull) | [str_slug](https://laravel.com/docs/5.4/helpers#method-str-slug) |  |
-[array_set](https://laravel.com/docs/5.4/helpers#method-array-set) | [studly_case](https://laravel.com/docs/5.4/helpers#method-studly-case) |  |
-[array_sort](https://laravel.com/docs/5.4/helpers#method-array-sort) | [title_case](https://laravel.com/docs/5.4/helpers#method-title-case)  |  |
-[array_sort_recursive](https://laravel.com/docs/5.4/helpers#method-array-sort-recursive) |  |  |
-[array_where](https://laravel.com/docs/5.4/helpers#method-array-where) |  |  |
-[head](https://laravel.com/docs/5.4/helpers#method-head) |  |  |
-[last](https://laravel.com/docs/5.4/helpers#method-last) |  |  |
+[array_add](https://laravel.com/docs/5.5/helpers#method-array-add) | [camel_case](https://laravel.com/docs/5.5/helpers#method-camel-case) | [asset](https://laravel.com/docs/5.5/helpers#method-asset)  | [base_path](#base_path)
+[array_collapse](https://laravel.com/docs/5.5/helpers#method-array-collapse) | [class_basename](https://laravel.com/docs/5.5/helpers#method-class-basename) | [collect](https://laravel.com/docs/5.5/helpers#method-collect) | [mix](https://laravel.com/docs/5.5/helpers#method-mix)
+[array_divide](https://laravel.com/docs/5.5/helpers#method-array-divide) | [e](https://laravel.com/docs/5.5/helpers#method-e) | [dd](https://laravel.com/docs/5.5/helpers#method-dd) | [stylesheet_path](#stylesheet_path)
+[array_dot](https://laravel.com/docs/5.5/helpers#method-array-dot) | [ends_with](https://laravel.com/docs/5.5/helpers#method-ends-with) | [dump](https://laravel.com/docs/5.5/helpers#method-dd) | [template_path](#template_path)
+[array_except](https://laravel.com/docs/5.5/helpers#method-array-except) | [snake_case](https://laravel.com/docs/5.5/helpers#method-snake-case) | [env](https://laravel.com/docs/5.5/helpers#method-env) |
+[array_first](https://laravel.com/docs/5.5/helpers#method-array-first) | [starts_with](https://laravel.com/docs/5.5/helpers#method-starts-with) | [info](#info) |
+[array_flatten](https://laravel.com/docs/5.5/helpers#method-array-flatten) | [str_after](https://laravel.com/docs/5.5/helpers#method-str-after) | [value](https://laravel.com/docs/5.5/helpers#method-value) |
+[array_forget](https://laravel.com/docs/5.5/helpers#method-array-forget) | [str_contains](https://laravel.com/docs/5.5/helpers#method-str-contains) | |
+[array_get](https://laravel.com/docs/5.5/helpers#method-array-get) | [str_finish](https://laravel.com/docs/5.5/helpers#method-str-finish) |  |
+[array_has](https://laravel.com/docs/5.5/helpers#method-array-has) | [str_is](https://laravel.com/docs/5.5/helpers#method-str-is) |  |
+[array_last](https://laravel.com/docs/5.5/helpers#method-array-last) | [str_limit](https://laravel.com/docs/5.5/helpers#method-str-limit) |  |
+[array_only](https://laravel.com/docs/5.5/helpers#method-array-only) | [str_plural](https://laravel.com/docs/5.5/helpers#method-str-plural) |  |
+[array_pluck](https://laravel.com/docs/5.5/helpers#method-array-pluck) | [str_random](https://laravel.com/docs/5.5/helpers#method-str-random) |  |
+[array_prepend](https://laravel.com/docs/5.5/helpers#method-array-prepend) | [str_singular](https://laravel.com/docs/5.5/helpers#method-str-singular) |  |
+[array_pull](https://laravel.com/docs/5.5/helpers#method-array-pull) | [str_slug](https://laravel.com/docs/5.5/helpers#method-str-slug) |  |
+[array_set](https://laravel.com/docs/5.5/helpers#method-array-set) | [studly_case](https://laravel.com/docs/5.5/helpers#method-studly-case) |  |
+[array_sort](https://laravel.com/docs/5.5/helpers#method-array-sort) | [title_case](https://laravel.com/docs/5.5/helpers#method-title-case)  |  |
+[array_sort_recursive](https://laravel.com/docs/5.5/helpers#method-array-sort-recursive) |  |  |
+[array_where](https://laravel.com/docs/5.5/helpers#method-array-where) |  |  |
+[head](https://laravel.com/docs/5.5/helpers#method-head) |  |  |
+[last](https://laravel.com/docs/5.5/helpers#method-last) |  |  |
 
 ##### `base_path()`
 
