@@ -105,7 +105,7 @@ Building your theme with WordPlate works like any other WordPress environment. P
 Require the desired plugin or theme using `wpackagist-plugin` or `wpackagist-theme` as the vendor name.
 
 ```bash
-$ composer require wpackagist-plugin/polylang
+$ composer require wpackagist-plugin/hide-updates
 ```
 
 Packages are installed to `public/plugins` or `public/themes`.
@@ -117,7 +117,7 @@ This is an example of how your [`composer.json`](composer.json) file might look 
 ```json
 "require": {
     "wordplate/framework": "^6.0",
-    "wpackagist-plugin/polylang": "^2.1"
+    "wpackagist-plugin/hide-updates": "^1.0"
 },
 ```
 
