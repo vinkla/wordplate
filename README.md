@@ -256,6 +256,16 @@ We recommend taking a look at the [Soil plugin](https://roots.io/plugins/soil) b
 
 ## Upgrade Guide
 
+#### 5 -> 6
+
+If you want to upgrade from WordPlate 5 to 6 you can follow this guide.
+
+1. Bump the version number in the `composer.json` file to `^6.0`.
+
+2. Update the `realpath(__DIR__.'/../')` to `realpath(__DIR__)` in the `wp-config.php` file.
+
+#### 4 -> 5
+
 If you want to upgrade from WordPlate 4 to 5 you can follow this guide.
 
 1. Bump the version number in the `composer.json` file to `^5.0`.
