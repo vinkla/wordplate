@@ -15,21 +15,7 @@ $ composer create-project wordplate/wordplate
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
-## Why WordPlate?
-
-- [Easy to setup](https://wordplate.github.io/docs/getting-started)
-- [Built with Composer](https://getcomposer.org)
-- [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
-- [BrowserSync](https://www.browsersync.io)
-- [Environment files](https://github.com/vlucas/phpdotenv)
-- [Versioning and cache busting](https://laravel.com/docs/5.5/mix#versioning-and-cache-busting)
-- [WordPress Packagist](https://wpackagist.org)
-- [Laravel Mix](https://laravel.com/docs/5.5/mix)
-- [Mail](https://wordplate.github.io/docs/mail)
-
-## Documentation
-
-The [WordPlate documentation](https://wordplate.github.io/docs/getting-started) is thorough, complete, and makes it a breeze to get started learning the framework.
+A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development. If you want to dive right in, the [WordPlate documentation](https://wordplate.github.io/docs/getting-started) is thorough, complete, and makes it a breeze to get started learning the framework.
 
 ## Contributing
 
