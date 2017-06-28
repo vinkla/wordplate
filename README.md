@@ -15,7 +15,7 @@ $ composer create-project wordplate/wordplate
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
-A modern WordPress stack built with Composer. It simplifies the fuzziness around WordPress development. If you want to dive right in, the [WordPlate documentation](https://wordplate.github.io/docs/getting-started) is thorough, complete, and makes it a breeze to get started learning the framework.
+If you want to dive right in and start building WordPlate applications, visit the [documentation](https://wordplate.github.io/docs/getting-started). The [documentation](https://wordplate.github.io/docs/getting-started) is thorough, complete, and makes it a breeze to get started learning WordPlate.
 
 ## Contributing
 
