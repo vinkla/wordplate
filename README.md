@@ -15,25 +15,9 @@ $ composer create-project wordplate/wordplate
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
-## Contents
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Theming](#theming)
-- [Plugins](#plugins)
-- [Laravel Mix](#laravel-mix)
-- [Mail](#mail)
-- [Post Types](#post-types)
-- [Taxonomies](#taxonomies)
-- [Custom Fields](#custom-fields)
-- [Helpers](#helpers)
-- [Security](#security)
-- [Upgrade Guide](#upgrade-guide)
-- [Contributing](#contributing)
-
 ## Why WordPlate?
 
-- [Easy to setup](#installation)
+- [Easy to setup](https://wordplate.github.io/docs/getting-started)
 - [Built with Composer](https://getcomposer.org)
 - [WordPress as a dependency](https://github.com/wordplate/framework/blob/master/composer.json)
 - [BrowserSync](https://www.browsersync.io)
@@ -41,7 +25,7 @@ $ composer create-project wordplate/wordplate
 - [Versioning and cache busting](https://laravel.com/docs/5.5/mix#versioning-and-cache-busting)
 - [WordPress Packagist](https://wpackagist.org)
 - [Laravel Mix](https://laravel.com/docs/5.5/mix)
-- [Mail](#mail)
+- [Mail](https://wordplate.github.io/docs/mail)
 
 ## Contributing
 
