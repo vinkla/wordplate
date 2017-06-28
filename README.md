@@ -27,6 +27,10 @@ $ composer create-project wordplate/wordplate
 - [Laravel Mix](https://laravel.com/docs/5.5/mix)
 - [Mail](https://wordplate.github.io/docs/mail)
 
+## Documentation
+
+The [WordPlate documentation](https://wordplate.github.io/docs/getting-started) is thorough, complete, and makes it a breeze to get started learning the framework.
+
 ## Contributing
 
 Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
