@@ -15,6 +15,8 @@ $ composer create-project wordplate/wordplate
 [![Latest Version](https://img.shields.io/github/release/wordplate/wordplate.svg?style=flat)](https://github.com/wordplate/wordplate/releases)
 [![License](https://img.shields.io/packagist/l/wordplate/wordplate.svg?style=flat)](https://packagist.org/packages/wordplate/wordplate)
 
+## Documentation
+
 Visit the [official documentation](https://wordplate.github.io/docs/getting-started) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
 
 ## Contributing
