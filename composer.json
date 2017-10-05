@@ -1,11 +1,11 @@
 {
     "name": "wordplate/wordplate",
-    "description": "A modern WordPress stack with zero fuzz",
+    "description": "A modern WordPress stack built with Composer",
     "keywords": ["wordplate", "wordpress", "boilerplate", "plate"],
     "license": "MIT",
     "require": {
         "php": "^7.0",
-        "wordplate/framework": "^5.2",
+        "wordplate/framework": "^6.0",
         "wordplate/plate": "^3.0"
     },
     "repositories": [

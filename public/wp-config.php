@@ -37,7 +37,7 @@ require __DIR__.'/../vendor/autoload.php';
 */
 
 $application = new WordPlate\Application(
-    realpath(__DIR__.'/../')
+    realpath(__DIR__)
 );
 
 /*
@@ -54,6 +54,18 @@ $application = new WordPlate\Application(
 
 /*
 |--------------------------------------------------------------------------
+| WordPress Database Table Prefix
+|--------------------------------------------------------------------------
+|
+| You can have multiple installations in one database if you give each
+| a unique prefix. Only numbers, letters, and underscores please!
+|
+*/
+
+$table_prefix = env('WP_PREFIX', 'wp_');
+
+/*
+|--------------------------------------------------------------------------
 | Run The Application
 |--------------------------------------------------------------------------
 |
@@ -65,18 +77,6 @@ $application = new WordPlate\Application(
 */
 
 $application->run();
-
-/*
-|--------------------------------------------------------------------------
-| WordPress Database Table Prefix
-|--------------------------------------------------------------------------
-|
-| You can have multiple installations in one database if you give each
-| a unique prefix. Only numbers, letters, and underscores please!
-|
-*/
-
-$table_prefix = env('WP_PREFIX', 'wp_');
 
 /*
 |--------------------------------------------------------------------------
