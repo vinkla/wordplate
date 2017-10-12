@@ -20,7 +20,9 @@
         ]
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "sort-packages": true
     },
     "extra": {
         "installer-paths": {
