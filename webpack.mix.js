@@ -14,7 +14,7 @@ const mix = require('laravel-mix');
 const theme = 'wordplate';
 
 mix.setResourceRoot('../');
-mix.setPublicPath(`public/themes/${theme}/assets`);
+mix.setPublicPath(path.normalize(`public/themes/${theme}/assets`));
 
 mix.js('resources/assets/scripts/app.js', 'scripts');
 mix.sass('resources/assets/styles/app.scss', 'styles');
