@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('dotenv').config();
 
 /*
  |--------------------------------------------------------------------------
@@ -11,7 +12,7 @@ const mix = require('laravel-mix');
  |
  */
 
-const theme = 'wordplate';
+const theme = process.env.WP_THEME;
 
 mix.setResourceRoot('../');
 mix.setPublicPath(path.normalize(`public/themes/${theme}/assets`));
