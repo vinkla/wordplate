@@ -32,9 +32,9 @@ add_theme_support('plate-editor', [
     'postcustom',
     'postexcerpt',
     'revisionsdiv',
-    'slugdiv',
     'sqpt-meta-tags',
     'trackbacksdiv',
+    //'slugdiv',
     //'categorydiv',
     //'tagsdiv-post_tag',
 ]);
