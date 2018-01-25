@@ -4,8 +4,8 @@
     "keywords": ["wordplate", "wordpress", "boilerplate", "plate"],
     "license": "MIT",
     "require": {
-        "php": "^7.1",
-        "wordplate/framework": "^6.1",
+        "php": "^7.1.3",
+        "wordplate/framework": "^6.2",
         "wordplate/plate": "^3.0"
     },
     "repositories": [
