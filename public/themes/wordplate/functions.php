@@ -13,9 +13,6 @@ add_action('after_setup_theme', function () {
     // Add post thumbnails support.
     add_theme_support('post-thumbnails');
 
-    // Add support for post formats.
-    //add_theme_support('post-formats', ['aside', 'audio', 'gallery', 'image', 'link', 'quote', 'video']);
-
     // Add title tag theme support.
     add_theme_support('title-tag');
 
