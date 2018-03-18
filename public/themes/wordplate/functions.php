@@ -44,13 +44,3 @@ add_action('wp_enqueue_scripts', function () {
 add_filter('jpeg_quality', function () {
     return 100;
 }, 10, 2);
-
-// Set custom excerpt more.
-add_filter('excerpt_more', function () {
-    return '...';
-});
-
-// Set custom excerpt length.
-add_filter('excerpt_length', function () {
-    return 101;
-});
