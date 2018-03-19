@@ -16,7 +16,7 @@ add_action('after_setup_theme', function () {
     // Add title tag theme support.
     add_theme_support('title-tag');
 
-    // Add HTML5 support.
+    // Add HTML5 theme support.
     add_theme_support('html5', [
         'caption',
         'comment-form',
@@ -26,8 +26,10 @@ add_action('after_setup_theme', function () {
         'widgets',
     ]);
 
-    // Add primary WordPress menu.
-    register_nav_menu('primary-menu', __('Primary Menu', 'wordplate'));
+    // Register navigation menus.
+    register_nav_menus([
+        'navigation' => __('Navigation', 'wordplate'),
+    ]);
 });
 
 // Enqueue and register scripts the right way.
