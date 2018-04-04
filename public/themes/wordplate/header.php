@@ -6,8 +6,6 @@
   <meta name="theme-color" content="#6d9aea">
 
   <?php wp_head(); ?>
-
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body <?php body_class(); ?>>
 
