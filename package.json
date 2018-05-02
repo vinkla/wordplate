@@ -13,5 +13,10 @@
         "cross-env": "^5.1.4",
         "dotenv": "^5.0.1",
         "laravel-mix": "^2.1.11"
-    }
+    },
+    "browserslist": [
+      ">0.25%",
+      "not ie 11",
+      "not op_mini all"
+    ]
 }
