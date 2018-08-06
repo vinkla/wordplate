@@ -15,8 +15,8 @@
         "laravel-mix": "^2.1.11"
     },
     "browserslist": [
-      ">0.25%",
-      "not ie 11",
-      "not op_mini all"
+        ">0.25%",
+        "not ie 11",
+        "not op_mini all"
     ]
 }
