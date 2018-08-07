@@ -6,7 +6,8 @@
     "require": {
         "php": "^7.1.3",
         "wordplate/framework": "^6.3",
-        "wordplate/plate": "^4.0"
+        "wordplate/plate": "^4.0",
+        "wpackagist-plugin/classic-editor": "^0.4.0"
     },
     "repositories": [
         {
@@ -23,7 +24,8 @@
         "installer-paths": {
             "public/mu-plugins/{$name}": [
               "type:wordpress-muplugin",
-              "wordplate/plate"
+              "wordplate/plate",
+              "wpackagist-plugin/classic-editor"
             ],
             "public/plugins/{$name}": ["type:wordpress-plugin"],
             "public/themes/{$name}": ["type:wordpress-theme"]
