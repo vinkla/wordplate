@@ -53,6 +53,7 @@ add_theme_support('plate-disable-dashboard', [
 
 // Disable links from admin toolbar.
 add_theme_support('plate-disable-toolbar', [
+    'archive',
     'comments',
     'wp-logo',
     'edit',
