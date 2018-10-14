@@ -1,12 +1,37 @@
 {
     "name": "wordplate/wordplate",
     "description": "A modern WordPress stack built with Composer",
-    "keywords": ["wordplate", "wordpress", "boilerplate", "plate"],
+    "keywords": [
+        "wordplate",
+        "wordpress",
+        "boilerplate",
+        "plate"
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
         "wordplate/framework": "^6.3",
         "wordplate/plate": "^4.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-paths": {
+            "public/mu-plugins/{$name}": [
+                "type:wordpress-muplugin",
+                "wordplate/plate"
+            ],
+            "public/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "wordpress-install-dir": "public/wordpress"
     },
     "repositories": [
         {
@@ -18,21 +43,5 @@
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ]
-    },
-    "extra": {
-        "installer-paths": {
-            "public/mu-plugins/{$name}": [
-              "type:wordpress-muplugin",
-              "wordplate/plate"
-            ],
-            "public/plugins/{$name}": ["type:wordpress-plugin"],
-            "public/themes/{$name}": ["type:wordpress-theme"]
-        },
-        "wordpress-install-dir": "public/wordpress"
-    },
-    "config": {
-        "preferred-install": "dist",
-        "optimize-autoloader": true,
-        "sort-packages": true
     }
 }
