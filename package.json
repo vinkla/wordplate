@@ -6,8 +6,8 @@
     },
     "dependencies": {
         "cross-env": "^5.2.0",
-        "dotenv": "^6.0.0",
-        "laravel-mix": "^2.1.11"
+        "dotenv": "^6.1.0",
+        "laravel-mix": "^4.0.0"
     },
     "browserslist": [
         ">0.25%",
