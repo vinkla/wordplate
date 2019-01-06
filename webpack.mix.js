@@ -8,8 +8,8 @@ require('dotenv').config();
  |--------------------------------------------------------------------------
  |
  | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
- | file for your application, as well as bundling up your JS files.
+ | for your WordPlate application. By default, we are compiling the Sass
+ | file for your application, as well as bundling up your JavaScript files.
  |
  */
 
