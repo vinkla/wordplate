@@ -24,4 +24,4 @@ Please review our [contribution guidelines](https://github.com/wordplate/framewo
 
 ## License
 
-[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
+[MIT](LICENSE) © [Vincent Klaiber](https://doubledip.se)
