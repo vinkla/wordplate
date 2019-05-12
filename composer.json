@@ -10,7 +10,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "wordplate/framework": "^7.1",
+        "wordplate/framework": "^8.0",
         "wordplate/plate": "^4.1"
     },
     "config": {
