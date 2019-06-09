@@ -21,23 +21,6 @@ add_theme_support('plate-disable-menu', [
     'upload.php', // media
 ]);
 
-// Disable meta boxes in editor.
-add_theme_support('plate-disable-editor', [
-    'commentsdiv',
-    'commentstatusdiv',
-    'linkadvanceddiv',
-    'linktargetdiv',
-    'linkxfndiv',
-    'postcustom',
-    'postexcerpt',
-    'revisionsdiv',
-    'slugdiv',
-    'sqpt-meta-tags',
-    'trackbacksdiv',
-    //'categorydiv',
-    //'tagsdiv-post_tag',
-]);
-
 // Disable dashboard widgets.
 add_theme_support('plate-disable-dashboard', [
     'dashboard_activity',
@@ -63,9 +46,6 @@ add_theme_support('plate-disable-toolbar', [
     'updates',
     'search',
 ]);
-
-// Disable dashboard tabs.
-add_theme_support('plate-disable-tabs', ['help']);
 
 // Set custom permalink structure.
 add_theme_support('plate-permalink', '/%postname%/');
