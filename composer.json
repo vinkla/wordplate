@@ -11,7 +11,7 @@
     "require": {
         "php": "^7.1.3",
         "wordplate/framework": "^7.1",
-        "wordplate/plate": "^4.1"
+        "wordplate/plate": "^6.0"
     },
     "config": {
         "optimize-autoloader": true,
