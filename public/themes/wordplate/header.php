@@ -8,7 +8,6 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
     <header>
         <nav role="navigation">
             <?php wp_nav_menu(['theme_location' => 'navigation']); ?>
