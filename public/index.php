@@ -13,6 +13,20 @@ declare(strict_types=1);
 
 /*
 |--------------------------------------------------------------------------
+| Register The Composer Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader
+| for our application. We just need to utilize it! We'll require it
+| into the script here so that we do not have to worry about the
+| loading of any our classes "manually".
+|
+*/
+
+require __DIR__.'/../vendor/autoload.php';
+
+/*
+|--------------------------------------------------------------------------
 | Theming WordPress
 |--------------------------------------------------------------------------
 |
@@ -34,4 +48,5 @@ define('WP_USE_THEMES', true);
 |
 */
 
-require __DIR__.'/wordpress/wp-blog-header.php';
+Dotenv\Dotenv::create(realpath(__DIR__.'/../'))->safeLoad();
+require sprintf('%s/%s/wp-blog-header.php', __DIR__, env('WP_DIR', 'wordpress'));
