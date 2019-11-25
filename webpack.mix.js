@@ -20,5 +20,3 @@ mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix.js('resources/scripts/app.js', 'scripts');
 mix.sass('resources/styles/app.scss', 'styles');
-
-mix.version();

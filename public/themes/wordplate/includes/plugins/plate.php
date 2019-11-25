@@ -21,23 +21,6 @@ add_theme_support('plate-disable-menu', [
     'upload.php', // media
 ]);
 
-// Disable meta boxes in editor.
-add_theme_support('plate-disable-editor', [
-    'commentsdiv',
-    'commentstatusdiv',
-    'linkadvanceddiv',
-    'linktargetdiv',
-    'linkxfndiv',
-    'postcustom',
-    'postexcerpt',
-    'revisionsdiv',
-    'slugdiv',
-    'sqpt-meta-tags',
-    'trackbacksdiv',
-    //'categorydiv',
-    //'tagsdiv-post_tag',
-]);
-
 // Disable dashboard widgets.
 add_theme_support('plate-disable-dashboard', [
     'dashboard_activity',
@@ -64,14 +47,11 @@ add_theme_support('plate-disable-toolbar', [
     'search',
 ]);
 
-// Disable dashboard tabs.
-add_theme_support('plate-disable-tabs', ['help']);
-
 // Set custom permalink structure.
 add_theme_support('plate-permalink', '/%postname%/');
 
 // Set custom login logo.
-add_theme_support('plate-login-logo', asset('assets/images/logo.png'));
+add_theme_support('plate-login-logo', get_theme_file_uri('assets/images/logo.png'));
 
 // Set custom footer text.
 add_theme_support('plate-footer-text', 'Thank you for creating with <a href="https://wordplate.github.io/">WordPlate</a>.');
