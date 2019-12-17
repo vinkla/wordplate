@@ -16,16 +16,6 @@ add_action('after_setup_theme', function () {
     // Add title tag theme support.
     add_theme_support('title-tag');
 
-    // Add HTML5 theme support.
-    add_theme_support('html5', [
-        'caption',
-        'comment-form',
-        'comment-list',
-        'gallery',
-        'search-form',
-        'widgets',
-    ]);
-
     // Register navigation menus.
     register_nav_menus([
         'navigation' => __('Navigation', 'wordplate'),
