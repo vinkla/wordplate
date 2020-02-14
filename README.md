@@ -10,7 +10,7 @@ $ composer create-project wordplate/wordplate
 
 [![Build Status](https://badgen.net/travis/wordplate/framework/master)](https://travis-ci.org/wordplate/framework)
 [![Coverage Status](https://badgen.net/codecov/c/github/wordplate/framework)](https://codecov.io/github/wordplate/framework)
-[![Total Downloads](https://badgen.net/packagist/dt/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
+[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 [![Latest Version](https://badgen.net/github/release/wordplate/wordplate)](https://github.com/wordplate/wordplate/releases)
 [![License](https://badgen.net/packagist/license/wordplate/wordplate)](https://packagist.org/packages/wordplate/wordplate)
 
