@@ -4,14 +4,12 @@
     "keywords": [
         "wordplate",
         "wordpress",
-        "boilerplate",
-        "plate"
+        "boilerplate"
     ],
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "wordplate/framework": "^8.0",
-        "wordplate/plate": "^6.0"
+        "wordplate/framework": "^8.0"
     },
     "config": {
         "optimize-autoloader": true,
@@ -21,8 +19,7 @@
     "extra": {
         "installer-paths": {
             "public/mu-plugins/{$name}": [
-                "type:wordpress-muplugin",
-                "wordplate/plate"
+                "type:wordpress-muplugin"
             ],
             "public/plugins/{$name}": [
                 "type:wordpress-plugin"
