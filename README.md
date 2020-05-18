@@ -26,7 +26,7 @@ $ composer create-project wordplate/wordplate
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
-#### WordPress + Composer = &#x2665;
+#### WordPress + Composer = ♥️
 
 WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
 
@@ -98,6 +98,21 @@ The next thing you should do after installing WordPlate is adding salt keys to y
 Typically, these strings should be 64 characters long. The keys can be set in the `.env` environment file. If you have not copied the `.env.example` file to a new file named `.env`, you should do that now. **If the salt keys isn't set, your user sessions and other encrypted data will not be secure.**
 
 If you're lazy like us, [visit our salt key generator](https://wordplate.github.io/salt) and copy the randomly generated keys to your `.env` file.
+
+## Laravel Mix
+
+To get started with Laravel Mix, [please visit their documentation](https://laravel-mix.com/docs/5.0/basic-example).
+> [Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+
+By default there are two npm scripts available:
+
+```sh
+// Run all mix tasks...
+npm run dev
+
+// Run all mix tasks and minify output...
+npm run build
+```
 
 ## Upgrade Guide
 
@@ -251,7 +266,7 @@ final class LocalValetDriver extends BasicValetDriver
 ```
 </details>
 
-## Support &#x2665;
+## Support ♥️
 
 If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help use maintain and push WordPlate forward.
 
