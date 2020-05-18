@@ -73,7 +73,7 @@ If you're running an older version of WordPlate and want to upgrade, please see 
    $application->setPublicPath(realpath(__DIR__));
    ```
 
-1. Run `composer update` and everything should work as before.
+1. Run `composer update` in the root of your project and your app should be up and running!
 </details>
 <details>
 <summary><strong>Upgrading from 5 to 6</strong></summary>
@@ -82,7 +82,7 @@ If you're running an older version of WordPlate and want to upgrade, please see 
 
 1. Update the `realpath(__DIR__.'/../')` to `realpath(__DIR__)` in the `wp-config.php` file.
 
-1. Run `composer update` and everything should work as before.
+1. Run `composer update` in the root of your project and your app should be up and running!
 </details>
 <details>
 <summary><strong>Upgrading from 4 to 5</strong></summary>
@@ -93,7 +93,7 @@ If you're running an older version of WordPlate and want to upgrade, please see 
 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
-1. Run `composer update`.
+1. Run `composer update` in the root of your project and your app should be up and running!
 </details>
 
 ## Contributing
