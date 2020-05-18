@@ -13,11 +13,34 @@ $ composer create-project wordplate/wordplate
 [![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 
 - [Installation](#installation)
+- [Configuration](#configuration)
 - [Upgrade Guide](#upgrade-guide)
 
 ## Installation
 
-Visit the [official documentation](https://wordplate.github.io/) page if you want to dive right in and start building WordPress applications with WordPlate. The documentation is thorough, complete, and makes it a breeze to get started learning WordPlate.
+To use WordPlate, you need to have PHP 7.2+ and MySQL 5.7+ installed on your machine. 
+
+WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
+
+Install WordPlate by issuing the Composer `create-project` command in your terminal:
+
+```sh
+$ composer create-project --prefer-dist laravel/laravel blog
+```
+
+## Configuration
+
+### Public Directory
+
+After installing WordPlate, you should configure your web server's document / web root to be the `public` directory. The `index.php` in this directory serves as the front controller for all HTTP requests entering your application.
+
+### Salt Keys
+
+The next thing you should do after installing WordPlate is adding salt keys to your environment file.
+
+Typically, these strings should be 64 characters long. The keys can be set in the `.env` environment file. If you have not copied the `.env.example` file to a new file named `.env`, you should do that now. **If the salt keys isn't set, your user sessions and other encrypted data will not be secure.**
+
+If you're lazy like us, [visit our salt key generator](https://wordplate.github.io/salt) and copy the randomly generated keys to your `.env` file.
 
 ## Upgrade Guide
 
@@ -94,6 +117,20 @@ If you're running an older version of WordPlate and want to upgrade, please see 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
 1. Run `composer update` in the root of your project and your app should be up and running!
+</details>
+
+## FAQ
+
+<details>
+<summary><strong>Can I change the name of the public directory?</strong></summary>
+
+If you want to rename the `public` directory you'll need to add the following line to the `wp-config.php` file:
+
+```php
+$application->setPublicPath(realpath(__DIR__));
+```
+
+Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
 </details>
 
 ## Contributing
