@@ -4,6 +4,20 @@
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
+[![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
+[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
+[![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
+
+- [Features](#features)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Upgrade Guide](#upgrade-guide)
+- [FAQ](#faq)
+- [Support](#support)
+- [Contributing](#contributing)
+
+## Features
+
 - **WordPress + Composer = ♥️**
     
     WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
@@ -35,17 +49,6 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - **Security**
     
     With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
-
-[![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
-[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
-[![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Upgrade Guide](#upgrade-guide)
-- [FAQ](#faq)
-- [Support](#support)
-- [Contributing](#contributing)
 
 ## Installation
 
