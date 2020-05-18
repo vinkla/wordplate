@@ -62,30 +62,30 @@ To use WordPlate, you need to have PHP 7.2+ and MySQL 5.7+ installed on your mac
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 
-1. Install WordPlate by issuing the Composer `create-project` command in your terminal:
+Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
-    ```sh
-    $ composer create-project --prefer-dist wordplate/wordplate blog
-    ```
+```sh
+$ composer create-project --prefer-dist wordplate/wordplate blog
+```
 
-1. Update the database credentials in the `.env` file:
+Update the database credentials in the `.env` file:
 
-    ```
-    DB_NAME=database
-    DB_USER=username
-    DB_PASSWORD=password
-    ```
+```
+DB_NAME=database
+DB_USER=username
+DB_PASSWORD=password
+```
 
-1. Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
+Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
 
-    ```sh
-    $ php -S localhost:8000 -t public/
-    ```
+```sh
+$ php -S localhost:8000 -t public/
+```
 
-1. Visit your application in the browser:
+Visit your application in the browser:
 
-    - [`http://localhost:8000/`](http://localhost:8000/) - Your website.
-    - [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The administration dashboard.
+- [`http://localhost:8000/`](http://localhost:8000/) - Your website.
+- [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The administration dashboard.
 
 ## Configuration
 
