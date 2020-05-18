@@ -11,5 +11,8 @@ trim_trailing_whitespace = true
 [*.php]
 indent_size = 4
 
+[composer.json]
+indent_size = 4
+
 [*.md]
 trim_trailing_whitespace = false
