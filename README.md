@@ -50,6 +50,10 @@ If you want to use custom SMTP credentials to send emails, we've a package for t
 
 With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
 
+#### Debugging
+
+Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
+
 #### Security
 
 With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
@@ -115,8 +119,6 @@ npm run build
 ```
 
 ## Upgrade Guide
-
-If you're running an older version of WordPlate and want to upgrade, please see the guides below.
 
 <details>
 <summary><strong>Upgrading from 7 to 8</strong></summary>
@@ -194,7 +196,7 @@ If you're running an older version of WordPlate and want to upgrade, please see 
 ## FAQ
 
 <details>
-<summary><strong>Can I change the name of the public directory?</strong></summary>
+<summary><strong>Can I rename the public directory?</strong></summary>
 
 If you want to rename the `public` directory you'll need to add the following line to the `wp-config.php` file:
 
@@ -203,6 +205,30 @@ $application->setPublicPath(realpath(__DIR__));
 ```
 
 Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
+</details>
+<details>
+<summary><strong>Can I rename the WordPress directory?</strong></summary>
+
+By default WordPlate will put the WordPress in `public/wordpress`. If you want to change this there are a couple of steps you need to go through. Let's say you want to change the default WordPress location to `public/wp`:
+
+1. Update the `wordpress-install-dir` path in your `composer.json` file.
+
+2. Update `wordpress` to `wp` in `wordplate/public/.gitignore`.
+
+3. Update the last line in the `public/index.php` file to:
+    
+    ```php
+    require __DIR__.'/wp/wp-blog-header.php';
+    ```
+
+4. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
+
+5. Remove the `public/wordpress` directory if it exist and then run `composer update`.
+</details>
+<details>
+<summary><strong>Can I rename the theme directory?</strong></summary>
+
+For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_THEME` environment variable in the `.env` file.
 </details>
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
