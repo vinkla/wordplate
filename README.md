@@ -15,8 +15,6 @@ $ composer create-project wordplate/wordplate
 - [What is WordPlate?](#what-is-wordplate)
 - [Installation](#installation)
 - [Configuration](#configuration)
-  - [Public Directory](#public-directory)
-  - [Salt Keys](#salt-keys)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Support](#support)
