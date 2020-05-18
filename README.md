@@ -12,7 +12,7 @@ $ composer create-project wordplate/wordplate
 [![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
 [![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 
-- [What is WordPlate?](#what-is-word-plate)
+- [What is WordPlate?](#what-is-wordplate)
 - [Installation](#installation)
 - [Configuration](#configuration)
   - [Public Directory](#public-directory)
