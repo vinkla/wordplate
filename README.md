@@ -12,7 +12,8 @@ $ composer create-project wordplate/wordplate
 [![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
 [![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 
-- [Installation](#installation)
+- [Introduction](#introduction)
+- [Getting Started](#getting-started)
 - [Configuration](#configuration)
   - [Public Directory](#public-directory)
   - [Salt Keys](#salt-keys)
@@ -21,7 +22,40 @@ $ composer create-project wordplate/wordplate
 - [Support](#support)
 - [Contributing](#contributing)
 
-## Installation
+## Introduction
+
+WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins).
+
+### WordPress as a dependency
+
+WordPress is installed using Composer as a dependency. This allows WordPress to be updated by running `composer update` in the root of the project.
+
+### Environment Files
+
+Similar to Laravel and Symfony, WordPlate puts environment variables within an `.env` file such as database credentials and WordPress salts.
+
+### WordPress Packagist
+
+Manage your WordPress plugins and themes with Composer. WordPlate has integrated WordPress Packagist out of the box.
+
+### Must-use plugins
+
+WordPlate comes with a [must-use plugin](https://wordpress.org/support/article/must-use-plugins/) loader out of the box. This means you can lock your plugins to specific versions and they are auto-activated by default.
+
+### Mail
+
+Are you using custom SMTP credentials to send emails? WordPlate provides a package to add your credentials to the environment file.
+
+### Laravel Mix
+
+Integrated Webpack build tool which comes with several common CSS and JavaScript pre-processors. Versioning and cache busting built right in.
+
+### Security
+
+WordPlate installs the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package out of the box.
+
+
+## Getting Started
 
 To use WordPlate, you need to have PHP 7.2+ and MySQL 5.7+ installed on your machine. 
 
