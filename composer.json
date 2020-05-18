@@ -1,6 +1,6 @@
 {
     "name": "wordplate/wordplate",
-    "description": "A modern WordPress stack built with Composer",
+    "description": "A modern WordPress stack to make PHP developers happier",
     "keywords": [
         "wordplate",
         "wordpress",

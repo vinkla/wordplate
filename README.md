@@ -2,7 +2,7 @@
 
 [![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)](https://wordplate.github.io)
 
-WordPlate is a modern WordPress stack which simplifies WordPress development.
+A modern WordPress stack to make PHP developers happier.
 
 ```sh
 $ composer create-project wordplate/wordplate
