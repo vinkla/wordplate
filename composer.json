@@ -9,7 +9,6 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "roots/bedrock-autoloader": "^1.0",
         "wordplate/framework": "^8.1"
     },
     "config": {
