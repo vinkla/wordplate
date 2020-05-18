@@ -26,31 +26,31 @@ $ composer create-project wordplate/wordplate
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins).
 
-### WordPress as a dependency
+#### WordPress as a dependency
 
 WordPress is installed using Composer as a dependency. This allows WordPress to be updated by running `composer update` in the root of the project.
 
-### Environment Files
+#### Environment Files
 
 Similar to Laravel and Symfony, WordPlate puts environment variables within an `.env` file such as database credentials and WordPress salts.
 
-### WordPress Packagist
+#### WordPress Packagist
 
 Manage your WordPress plugins and themes with Composer. WordPlate has integrated WordPress Packagist out of the box.
 
-### Must-use plugins
+#### Must-use plugins
 
 WordPlate comes with a [must-use plugin](https://wordpress.org/support/article/must-use-plugins/) loader out of the box. This means you can lock your plugins to specific versions and they are auto-activated by default.
 
-### Mail
+#### Mail
 
 Are you using custom SMTP credentials to send emails? WordPlate provides a package to add your credentials to the environment file.
 
-### Laravel Mix
+#### Laravel Mix
 
 Integrated Webpack build tool which comes with several common CSS and JavaScript pre-processors. Versioning and cache busting built right in.
 
-### Security
+#### Security
 
 WordPlate installs the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package out of the box.
 
