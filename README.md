@@ -123,7 +123,7 @@ If you're running an older version of WordPlate and want to upgrade, please see 
 
 <details>
 <summary><strong>Can I change the name of the public directory?</strong></summary>
-<br>
+
 If you want to rename the `public` directory you'll need to add the following line to the `wp-config.php` file:
 
 ```php
