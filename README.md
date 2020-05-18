@@ -120,8 +120,6 @@ Read more about environment variables in Laravel's documentation:
 
 To get started with Laravel Mix, [please visit the documentation](https://laravel-mix.com/docs/5.0/basic-example).
 
-By default there are two npm scripts available:
-
 ```sh
 // Run all mix tasks...
 npm run dev
