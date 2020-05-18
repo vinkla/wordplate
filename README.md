@@ -12,8 +12,8 @@ $ composer create-project wordplate/wordplate
 [![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
 [![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
+- [What is WordPlate?](#what-is-word-plate)
+- [Installation](#installation)
 - [Configuration](#configuration)
   - [Public Directory](#public-directory)
   - [Salt Keys](#salt-keys)
@@ -22,40 +22,39 @@ $ composer create-project wordplate/wordplate
 - [Support](#support)
 - [Contributing](#contributing)
 
-## Introduction
+## What is WordPlate?
 
-WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins).
+WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
-#### WordPress as a dependency
+#### WordPress + Composer = ♥️
 
-WordPress is installed using Composer as a dependency. This allows WordPress to be updated by running `composer update` in the root of the project.
+WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
 
 #### Environment Files
 
-Similar to Laravel and Symfony, WordPlate puts environment variables within an `.env` file such as database credentials and WordPress salts.
+Similar to Laravel, WordPlate puts environment variables within an `.env` file such as database credentials.
 
 #### WordPress Packagist
 
-Manage your WordPress plugins and themes with Composer. WordPlate has integrated WordPress Packagist out of the box.
+With WordPress Packagist you may manage your WordPress plugins and themes with Composer.
 
 #### Must-use plugins
 
-WordPlate comes with a [must-use plugin](https://wordpress.org/support/article/must-use-plugins/) loader out of the box. This means you can lock your plugins to specific versions and they are auto-activated by default.
+Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
 
 #### Mail
 
-Are you using custom SMTP credentials to send emails? WordPlate provides a package to add your credentials to the environment file.
+If you want to use custom SMTP credentials to send emails, we've a package for that!
 
 #### Laravel Mix
 
-Integrated Webpack build tool which comes with several common CSS and JavaScript pre-processors. Versioning and cache busting built right in.
+With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
 
 #### Security
 
-WordPlate installs the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package out of the box.
+With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
 
-
-## Getting Started
+## Installation
 
 To use WordPlate, you need to have PHP 7.2+ and MySQL 5.7+ installed on your machine. 
 
