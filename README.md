@@ -26,37 +26,37 @@ $ composer create-project wordplate/wordplate
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
-#### WordPress + Composer = ♥️
+- **WordPress + Composer = ♥️**
+    
+    WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
 
-WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
+- **Environment Files**
+    
+    Similar to Laravel, WordPlate puts environment variables within an `.env` file such as database credentials.
 
-#### Environment Files
+- **WordPress Packagist**
+    
+    With WordPress Packagist you may manage your WordPress plugins and themes with Composer.
 
-Similar to Laravel, WordPlate puts environment variables within an `.env` file such as database credentials.
+- **Must-use plugins**
+    
+    Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
 
-#### WordPress Packagist
+- **Mail**
+    
+    If you want to use custom SMTP credentials to send emails, we've a package for that!
 
-With WordPress Packagist you may manage your WordPress plugins and themes with Composer.
+- **Laravel Mix**
+    
+    With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
 
-#### Must-use plugins
+- **Debugging**
+    
+    Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
 
-Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
-
-#### Mail
-
-If you want to use custom SMTP credentials to send emails, we've a package for that!
-
-#### Laravel Mix
-
-With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
-
-#### Debugging
-
-Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
-
-#### Security
-
-With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
+- **Security**
+    
+    With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
 
 ## Installation
 
@@ -294,7 +294,7 @@ final class LocalValetDriver extends BasicValetDriver
 
 ## Support ♥️
 
-If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help use maintain and push WordPlate forward.
+If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help us maintain and push WordPlate forward.
 
 ## Contributing
 
