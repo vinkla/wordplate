@@ -18,6 +18,8 @@ $ composer create-project wordplate/wordplate
   - [Salt Keys](#salt-keys)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
+- [Support](#support)
+- [Contributing](#contributing)
 
 ## Installation
 
@@ -31,11 +33,13 @@ WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependenci
     $ composer create-project --prefer-dist wordplate/wordplate blog
     ```
 
-1. Add your database credentials to the `.env` file.
+1. Update the database credentials in the `.env` file:
 
-    - `DB_NAME`
-    - `DB_USER`
-    - `DB_PASSWORD`
+    ```
+    DB_NAME=database
+    DB_USER=username
+    DB_PASSWORD=password
+    ```
 
 1. Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
 
@@ -45,8 +49,8 @@ WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependenci
 
 1. Visit your application in the browser:
 
-    - [`http://localhost:8000/`](http://localhost:8000/) - The WordPress application.
-    - [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The WordPress administration dashboard.
+    - [`http://localhost:8000/`](http://localhost:8000/) - Your website.
+    - [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The administration dashboard.
 
 ## Configuration
 
@@ -152,6 +156,71 @@ $application->setPublicPath(realpath(__DIR__));
 
 Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
 </details>
+<details>
+<summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
+
+If you're using [Laravel Valet](https://laravel.com/docs/7.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+final class LocalValetDriver extends BasicValetDriver
+{
+    public function serves(string $sitePath): bool
+    {
+        return is_dir($sitePath . '/vendor/wordplate/framework');
+    }
+
+    /**
+     * @return false|string
+     */
+    public function isStaticFile(string $sitePath, string $siteName, string $uri)
+    {
+        $staticFilePath = $sitePath . '/public' . $uri;
+
+        if ($this->isActualFile($staticFilePath)) {
+            return $staticFilePath;
+        }
+
+        return false;
+    }
+
+    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
+    {
+        $_SERVER['PHP_SELF'] = $uri;
+        $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
+
+        if (strpos($uri, '/wordpress/') === 0) {
+            if (is_dir($sitePath . '/public' . $uri)) {
+                $uri = $this->forceTrailingSlash($uri);
+
+                return $sitePath . '/public' . $uri . '/index.php';
+            }
+
+            return $sitePath . '/public' . $uri;
+        }
+
+        return $sitePath . '/public/index.php';
+    }
+
+    private function forceTrailingSlash(string $uri): string
+    {
+        if (substr($uri, -1 * strlen('/wordpress/wp-admin')) == '/wordpress/wp-admin') {
+            header('Location: ' . $uri . '/');
+            die;
+        }
+
+        return $uri;
+    }
+}
+```
+</details>
+
+## Support ♥️
+
+If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help use maintain and push WordPlate forward.
 
 ## Contributing
 
