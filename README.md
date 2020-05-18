@@ -1,26 +1,6 @@
 # WordPlate
 
-[![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)](https://wordplate.github.io)
-
-A modern WordPress stack to make PHP developers happier.
-
-```sh
-$ composer create-project wordplate/wordplate
-```
-
-[![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
-[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
-[![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
-
-- [What is WordPlate?](#what-is-wordplate)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Upgrade Guide](#upgrade-guide)
-- [FAQ](#faq)
-- [Support](#support)
-- [Contributing](#contributing)
-
-## What is WordPlate?
+![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
@@ -55,6 +35,17 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - **Security**
     
     With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
+
+[![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
+[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
+[![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Upgrade Guide](#upgrade-guide)
+- [FAQ](#faq)
+- [Support](#support)
+- [Contributing](#contributing)
 
 ## Installation
 
