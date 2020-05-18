@@ -26,7 +26,7 @@ $ composer create-project wordplate/wordplate
 
 WordPlate is simply a wrapper around WordPress to make developers life easier. It is just like building any other WordPress website with [themes](https://developer.wordpress.org/themes) and [plugins](https://developer.wordpress.org/plugins). Just with sprinkles on top.
 
-#### WordPress + Composer = ♥️
+#### WordPress + Composer = &#x2665;
 
 WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
 
@@ -251,7 +251,7 @@ final class LocalValetDriver extends BasicValetDriver
 ```
 </details>
 
-## Support ♥️
+## Support &#x2665;
 
 If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help use maintain and push WordPlate forward.
 
