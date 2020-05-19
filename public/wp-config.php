@@ -23,7 +23,7 @@ declare(strict_types=1);
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ require __DIR__.'/../vendor/autoload.php';
 */
 
 $application = new WordPlate\Application(
-    realpath(__DIR__.'/../')
+    realpath(__DIR__ . '/../')
 );
 
 /*
@@ -89,4 +89,4 @@ $application->run();
 |
 */
 
-require_once ABSPATH.'wp-settings.php';
+require_once ABSPATH . 'wp-settings.php';
