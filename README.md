@@ -12,10 +12,12 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Plugins](#plugins)
+- [Integrations](#integrations)
 - [Laravel Mix](#laravel-mix)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Support](#support)
+- [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
 ## Features
@@ -126,7 +128,7 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^7.1",
+    "wordplate/framework": "^9.0",
     "wpackagist-plugin/hide-updates": "^1.0"
 },
 ```
@@ -157,6 +159,52 @@ composer require wpackagist-plugin/hide-updates
 The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
+
+## Integrations
+
+- [**Administration UI**](https://vinkla.dev/administration-ui)
+
+  The plugin lets you take control over the WordPress administration dashboard by turning off features you don't use. 
+
+- [**Blade**](https://github.com/fiskhandlarn/blade)
+
+  The plugin integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
+
+- [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
+
+  The plugin removes special characters from filenames.
+
+- [**Extended ACF**](https://github.com/wordplate/extended-acf)
+
+  The package provides an object oriented API to register fields, groups and layouts with Advanced Custom Fields.
+
+- [**Extended CPTs**](https://github.com/johnbillion/extended-cpts)
+
+  The package provides extended functionality to WordPress custom post types and taxonomies.
+
+- [**Disable Embeds**](https://wordpress.org/plugins/disable-embeds/)
+
+  The plugin prevents others from embedding your site.
+
+- [**Disable Emojis**](https://wordpress.org/plugins/disable-emojis/)
+
+  The plugin disables the new WordPress emoji functionality.
+
+- [**Email Log**](https://wordpress.org/plugins/email-log/)
+
+  The plugin that allows you to log and view all emails sent from WordPress.
+
+- [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
+
+  The plugin hides update notices for updates in WordPress.
+
+- [**WP Languages**](https://github.com/wp-languages/wp-languages.github.io)
+
+  The Composer repository for WordPress translation files.
+
+- [**WP Migrate DB**](https://wordpress.org/plugins/wp-migrate-db/)
+
+  The plugin help you export your database as a MySQL data dump.
 
 ## Laravel Mix
 
@@ -346,9 +394,23 @@ final class LocalValetDriver extends BasicValetDriver
 ```
 </details>
 
-## Support ♥️
+## Support
 
 If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help us maintain and push WordPlate forward.
+
+## Acknowledgements
+
+WordPlate wouldn't be possible without these amazing open-source projects.
+
+- [`composer/installers`](https://github.com/composer/installers)
+- [`johnpbloch/wordpress`](https://github.com/johnpbloch/wordpress)
+- [`laravel-mix`](https://github.com/JeffreyWay/laravel-mix)
+- [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
+- [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
+- [`symfony/dotenv`](https://github.com/symfony/dotenv)
+- [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
+- [`symfony/routing`](https://github.com/symfony/var-dumper)
+- [`symfony/var-dumper`](https://github.com/symfony/routing)
 
 ## Contributing
 
