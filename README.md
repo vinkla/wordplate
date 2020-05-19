@@ -11,6 +11,8 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
+- [Plugins](#plugins)
+- [Laravel Mix](#laravel-mix)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Support](#support)
@@ -59,7 +61,7 @@ WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependenci
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```sh
-$ composer create-project --prefer-dist wordplate/wordplate blog
+composer create-project --prefer-dist wordplate/wordplate blog
 ```
 
 Update the database credentials in the `.env` file:
@@ -73,7 +75,7 @@ DB_PASSWORD=password
 Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
 
 ```sh
-$ php -S localhost:8000 -t public/
+php -S localhost:8000 -t public/
 ```
 
 Visit your application in the browser:
@@ -108,11 +110,59 @@ Read more about environment variables in Laravel's documentation:
 - [Environment Variable Types](https://laravel.com/docs/7.x/configuration#environment-variable-types)
 - [Retrieving Environment Configuration](https://laravel.com/docs/7.x/configuration#retrieving-environment-configuration)
 
+## Plugins
+
+### WordPress Packagist
+
+We've integrated [WordPress Packagist](https://wpackagist.org) which makes it possible to install plugins with Composer. WordPress Packagist mirrors the WordPress plugin and theme directories as a Composer repository.
+
+Install the desired plugins using `wpackagist-plugin` as the vendor name. Packages are installed in the `public/plugins` directory.
+
+```bash
+composer require wpackagist-plugin/hide-updates
+```
+
+This is an example of how your `composer.json` file might look like:
+
+```json
+"require": {
+    "wordplate/framework": "^7.1",
+    "wpackagist-plugin/hide-updates": "^1.0"
+},
+```
+
+[Please visit WordPress Packagist for more information and examples.](https://wpackagist.org)
+
+### Must Use Plugins
+
+[Must-use plugins](https://wordpress.org/support/article/must-use-plugins/) (a.k.a. mu-plugins) are plugins installed in a special directory inside the content folder and which are automatically enabled on all sites in the installation.
+
+To install plugins into into the `mu-plugins` directory, add the plugin name to the `installer-paths` in your `composer.json` file:
+
+```json
+"installer-paths": {
+    "public/mu-plugins/{$name}": [
+        "type:wordpress-muplugin",
+        "wpackagist-plugin/hide-updates",
+    ]
+}
+```
+
+Install the plugin using `wpackagist-plugin` as the vendor name.
+
+```sh
+composer require wpackagist-plugin/hide-updates
+```
+
+The plugin should now be installed in the `public/mu-plugins` directory.
+
+[Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
+
 ## Laravel Mix
 
 [Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
 
-To get started with Laravel Mix, [please visit the documentation](https://laravel-mix.com/docs/5.0/basic-example).
+[To get started with Laravel Mix, please visit the documentation.](https://laravel-mix.com/docs/5.0/basic-example)
 
 ```sh
 // Run all mix tasks...
@@ -136,19 +186,19 @@ npm run build
 1. Laravel's helper functions is now optional in WordPlate. If you want to use the functions, install the [`laravel/helpers`](https://github.com/laravel/helpers#readme) package, with Composer, in the root of your project:
 
    ```sh
-   $ composer require laravel/helpers
+   composer require laravel/helpers
    ```
 
 1. Laravel's collections are now optional in WordPlate. If you want to use collections, install the [`tightenco/collect`](https://github.com/tightenco/collect#readme) package, with Composer, in the root of your project:
 
    ```sh
-   $ composer require tightenco/collect
+   composer require tightenco/collect
    ```
 
 1. The `mix` helper function is now optional in WordPlate. If you want to use the function, install the [`ibox/mix-function`](https://github.com/juanem1/mix-function#readme) package, with Composer, in the root of your project:
 
    ```sh
-   $ composer require ibox/mix-function
+   composer require ibox/mix-function
    ```
 
 1. Replace any usage of `asset`, `stylesheet_url` and `template_url` functions with WordPress's [`get_theme_file_uri`](https://developer.wordpress.org/reference/functions/get_theme_file_uri/) function.
