@@ -12,8 +12,8 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Plugins](#plugins)
-- [Integrations](#integrations)
 - [Laravel Mix](#laravel-mix)
+- [Integrations](#integrations)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Support](#support)
@@ -160,6 +160,20 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
 
+## Laravel Mix
+
+[Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+
+[To get started with Laravel Mix, please visit the documentation.](https://laravel-mix.com/docs/5.0/basic-example)
+
+```sh
+// Run all mix tasks...
+npm run dev
+
+// Run all mix tasks and minify output...
+npm run build
+```
+
 ## Integrations
 
 - [**Administration UI**](https://vinkla.dev/administration-ui)
@@ -205,20 +219,6 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 - [**WP Migrate DB**](https://wordpress.org/plugins/wp-migrate-db/)
 
   The plugin help you export your database as a MySQL data dump.
-
-## Laravel Mix
-
-[Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
-
-[To get started with Laravel Mix, please visit the documentation.](https://laravel-mix.com/docs/5.0/basic-example)
-
-```sh
-// Run all mix tasks...
-npm run dev
-
-// Run all mix tasks and minify output...
-npm run build
-```
 
 ## Upgrade Guide
 
