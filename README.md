@@ -176,8 +176,6 @@ npm run build
 
 ## Integrations
 
-### WordPlate Projects
-
 - [**Administration UI**](https://vinkla.dev/administration-ui)
 
   The plugin lets you take control over the WordPress administration dashboard by turning off features you don't use. 
@@ -186,19 +184,13 @@ npm run build
 
   The plugin integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
 
-- [**Extended ACF**](https://github.com/wordplate/extended-acf)
-
-  The package provides an object oriented API to register fields, groups and layouts with Advanced Custom Fields.
-
-- [**Mail**](https://github.com/wordplate/mail)
-
-  The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
-
-### Community Projects
-
 - [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
 
   The plugin removes special characters from filenames.
+
+- [**Extended ACF**](https://github.com/wordplate/extended-acf)
+
+  The package provides an object oriented API to register fields, groups and layouts with Advanced Custom Fields.
 
 - [**Extended CPTs**](https://github.com/johnbillion/extended-cpts)
 
@@ -219,6 +211,10 @@ npm run build
 - [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
 
   The plugin hides update notices for updates in WordPress.
+
+- [**Mail**](https://github.com/wordplate/mail)
+
+  The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
 
 - [**WP Languages**](https://github.com/wp-languages/wp-languages.github.io)
 
