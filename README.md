@@ -227,6 +227,15 @@ npm run build
 ## Upgrade Guide
 
 <details>
+<summary><strong>Upgrading from 8 to 9</strong></summary>
+
+1. Bump the version number in the `composer.json` file to `^9.0`.
+
+1. Copy the `public/mu-plugins/mu-plugins.php` file into your project.
+
+1. Run `composer update` in the root of your project and your app should be up and running!
+</details>
+<details>
 <summary><strong>Upgrading from 7 to 8</strong></summary>
 
 1. WordPlate now requires PHP 7.2 or later.
@@ -407,7 +416,8 @@ If you or a company you work for use WordPlate, please consider buying a copy of
 WordPlate wouldn't be possible without these amazing open-source projects.
 
 - [`composer/installers`](https://github.com/composer/installers)
-- [`johnpbloch/wordpress`](https://github.com/johnpbloch/wordpress)
+- [`johnpbloch/wordpress-core`](https://github.com/johnpbloch/wordpress-core)
+- [`johnpbloch/wordpress-core-installer`](https://github.com/johnpbloch/wordpress-core-installer)
 - [`laravel-mix`](https://github.com/JeffreyWay/laravel-mix)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
