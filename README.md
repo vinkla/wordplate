@@ -419,6 +419,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`johnpbloch/wordpress-core`](https://github.com/johnpbloch/wordpress-core)
 - [`johnpbloch/wordpress-core-installer`](https://github.com/johnpbloch/wordpress-core-installer)
 - [`laravel-mix`](https://github.com/JeffreyWay/laravel-mix)
+- [`outlandish/wpackagist`](https://github.com/outlandishideas/wpackagist)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
