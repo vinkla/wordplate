@@ -176,6 +176,8 @@ npm run build
 
 ## Integrations
 
+Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and other are created by other amazing developers.
+
 - [**Administration UI**](https://vinkla.dev/administration-ui)
 
   The plugin lets you take control over the WordPress administration dashboard by turning off features you don't use. 
