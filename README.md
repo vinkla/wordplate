@@ -176,7 +176,7 @@ npm run build
 
 ## Integrations
 
-Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and other are created by other amazing developers.
+Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and some are created by other amazing developers.
 
 - [**Administration UI**](https://vinkla.dev/administration-ui)
 
