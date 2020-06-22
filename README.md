@@ -235,6 +235,8 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Copy the `public/mu-plugins/mu-plugins.php` file into your project.
 
+1. Add `!mu-plugins/mu-plugins.php` to your project's `public/.gitignore` file.
+
 1. Run `composer update` in the root of your project and your app should be up and running!
 </details>
 <details>
