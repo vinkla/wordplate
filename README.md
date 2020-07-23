@@ -439,7 +439,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 
 ## Contributing
 
-Please review our [contribution guidelines](https://github.com/wordplate/framework/blob/master/CONTRIBUTING.md) before submitting a pull request.
+Please review our [contribution guidelines](https://github.com/wordplate/.github/blob/master/CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
