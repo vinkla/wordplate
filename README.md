@@ -178,10 +178,6 @@ npm run build
 
 Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and some are created by other amazing developers.
 
-- [**Administration UI**](https://vinkla.dev/administration-ui)
-
-  The plugin lets you take control over the WordPress administration dashboard by turning off features you don't use. 
-
 - [**Blade**](https://github.com/fiskhandlarn/blade)
 
   The plugin integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
