@@ -16,7 +16,6 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 - [Integrations](#integrations)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
-- [Support](#support)
 - [Acknowledgements](#acknowledgements)
 - [Contributing](#contributing)
 
@@ -412,10 +411,6 @@ final class LocalValetDriver extends BasicValetDriver
 }
 ```
 </details>
-
-## Support
-
-If you or a company you work for use WordPlate, please consider buying a copy of the [Administration UI](https://vinkla.dev/administration-ui) plugin. This will not only make your clients happy, it will also help us maintain and push WordPlate forward.
 
 ## Acknowledgements
 
