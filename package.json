@@ -1,13 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "build": "mix --production",
+    "dev": "mix watch"
   },
   "dependencies": {
-    "cross-env": "^7.0.0",
     "dotenv": "^8.2.0",
-    "laravel-mix": "^6.0.0-beta.9"
+    "laravel-mix": "^6.0.0-beta.11"
   },
   "browserslist": [
     ">0.25%",
