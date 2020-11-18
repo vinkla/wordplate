@@ -161,9 +161,9 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 ## Laravel Mix
 
-[Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+[Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
 
-[To get started with Laravel Mix, please visit the documentation.](https://laravel-mix.com/docs/5.0/basic-example)
+[To get started with Laravel Mix, please visit the documentation.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
 
 ```sh
 // Run all mix tasks...
