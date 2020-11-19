@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
-        "wordplate/framework": "^9.1"
+        "wordplate/framework": "^9.2"
     },
     "config": {
         "optimize-autoloader": true,
