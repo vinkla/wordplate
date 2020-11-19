@@ -55,7 +55,7 @@ WordPlate is simply a wrapper around WordPress to make developers life easier. I
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.2+ and MySQL 5.7+ installed on your machine. 
+To use WordPlate, you need to have PHP 7.3+ and MySQL 5.7+ installed on your machine. 
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 

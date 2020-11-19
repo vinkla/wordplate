@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.2",
+        "php": "^7.3",
         "wordplate/framework": "^9.1"
     },
     "config": {
