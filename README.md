@@ -213,6 +213,10 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
 
+- [**Timber**](https://upstatement.com/timber/)
+
+  A faster, easier and more powerful way to build themes. Because WordPress is awesome, but the loop isn’t.
+
 - [**WP Languages**](https://github.com/wp-languages/wp-languages.github.io)
 
   The Composer repository for WordPress translation files.
