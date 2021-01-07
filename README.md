@@ -439,4 +439,4 @@ Please review our [contribution guidelines](https://github.com/wordplate/.github
 
 ## License
 
-[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.dev/)
+[MIT](https://github.com/wordplate/framework/blob/master/LICENSE) © [Vincent Klaiber](https://vinkla.dev/)
