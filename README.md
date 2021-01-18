@@ -127,7 +127,7 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^9.0",
+    "wordplate/framework": "^9.4",
     "wpackagist-plugin/hide-updates": "^1.0"
 },
 ```
