@@ -193,37 +193,13 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The package provides extended functionality to WordPress custom post types and taxonomies.
 
-- [**Disable Embeds**](https://wordpress.org/plugins/disable-embeds/)
-
-  The plugin prevents others from embedding your site.
-
 - [**Disable Emojis**](https://wordpress.org/plugins/disable-emojis/)
 
   The plugin disables the new WordPress emoji functionality.
 
-- [**Email Log**](https://wordpress.org/plugins/email-log/)
-
-  The plugin that allows you to log and view all emails sent from WordPress.
-
 - [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
 
   The plugin hides update notices for updates in WordPress.
-
-- [**Mail**](https://github.com/wordplate/mail)
-
-  The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
-
-- [**Timber**](https://upstatement.com/timber/)
-
-  A faster, easier and more powerful way to build themes. Because WordPress is awesome, but the loop isn’t.
-
-- [**WP Languages**](https://github.com/wp-languages/wp-languages.github.io)
-
-  The Composer repository for WordPress translation files.
-
-- [**WP Migrate DB**](https://wordpress.org/plugins/wp-migrate-db/)
-
-  The plugin help you export your database as a MySQL data dump.
 
 ## Upgrade Guide
 
