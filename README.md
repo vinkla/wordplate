@@ -37,10 +37,6 @@ WordPlate is simply a wrapper around WordPress. It makes developers life easier.
     
     Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
 
-- **Mail**
-    
-    If you want to use custom SMTP credentials to send emails, we've a package for that!
-
 - **Laravel Mix**
     
     With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
