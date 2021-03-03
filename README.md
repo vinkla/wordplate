@@ -193,13 +193,17 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The package provides extended functionality to WordPress custom post types and taxonomies.
 
-- [**Disable Emojis**](https://wordpress.org/plugins/disable-emojis/)
+- [**Headache**](https://github.com/wordplate/headache)
 
-  The plugin disables the new WordPress emoji functionality.
+  The plugin removes a lot of default WordPress stuff you just can't wait to get rid of.
 
 - [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
 
   The plugin hides update notices for updates in WordPress.
+
+- [**Mail**](https://github.com/wordplate/mail)
+
+  The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
 
 ## Upgrade Guide
 
