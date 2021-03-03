@@ -179,7 +179,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 - [**Blade**](https://github.com/fiskhandlarn/blade)
 
-  The plugin integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
+  The package integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
 
 - [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
 
@@ -187,7 +187,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 - [**Extended ACF**](https://github.com/wordplate/extended-acf)
 
-  The package provides an object oriented API to register fields, groups and layouts with Advanced Custom Fields.
+  The package provides an object oriented API to register fields, groups and layouts with ACF.
 
 - [**Extended CPTs**](https://github.com/johnbillion/extended-cpts)
 
@@ -203,7 +203,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 - [**Mail**](https://github.com/wordplate/mail)
 
-  The plugin provides a simple way to add custom SMTP credentials and an easier way to working with attachments.
+  The plugin provides a simple way to add custom SMTP credentials.
 
 ## Upgrade Guide
 
