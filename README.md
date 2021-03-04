@@ -412,7 +412,3 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`symfony/routing`](https://github.com/symfony/var-dumper)
 - [`symfony/var-dumper`](https://github.com/symfony/routing)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
-
-## Contributing
-
-Please review our [contribution guidelines](https://github.com/wordplate/.github/blob/master/CONTRIBUTING.md) before submitting a pull request.
