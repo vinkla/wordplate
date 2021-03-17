@@ -408,7 +408,5 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`outlandish/wpackagist`](https://github.com/outlandishideas/wpackagist)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
-- [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
-- [`symfony/routing`](https://github.com/symfony/var-dumper)
 - [`symfony/var-dumper`](https://github.com/symfony/routing)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
