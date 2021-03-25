@@ -324,10 +324,12 @@ By default WordPlate will put the WordPress in `public/wordpress`. If you want t
     ```php
     require __DIR__.'/wp/wp-blog-header.php';
     ```
+    
+4. Update the `WP_DIR` environment variable in the `.env` file to `wp`.
 
-4. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
+5. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
 
-5. Remove the `public/wordpress` directory if it exist and then run `composer update`.
+6. Remove the `public/wordpress` directory if it exist and then run `composer update`.
 </details>
 <details>
 <summary><strong>Can I rename the theme directory?</strong></summary>
