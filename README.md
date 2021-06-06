@@ -300,9 +300,9 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 ## FAQ
 
 <details>
-<summary><strong>Can I add custom WordPress constants to the environment file?</strong></summary>
+<summary><strong>Can I add WordPress constants to the environment file?</strong></summary>
 
-This is possible by updating the `wp-config.php` file after the WordPlate application have been created.
+This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
 
 ```diff
 $application->run();
@@ -311,6 +311,14 @@ $application->run();
 
 require_once ABSPATH . 'wp-settings.php';
 ````
+
+Then you may add the constant to the `.env` file.
+
+```diff
+WP_PREFIX=wp_
++WP_ALLOW_MULTISITE=true
+````
+
 </details>
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
