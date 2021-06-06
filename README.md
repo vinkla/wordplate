@@ -300,7 +300,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 ## FAQ
 
 <details>
-<summary><strong>Can I add custom WordPress constants to the `.env` file?</strong></summary>
+<summary><strong>Can I add custom WordPress constants to the environment file?</strong></summary>
 
 This is possible by updating the `wp-config.php` file after the WordPlate application have been created.
 
