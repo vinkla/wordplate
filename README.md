@@ -108,8 +108,8 @@ Your `.env` file should not be committed to your application's source control, s
 
 Read more about environment variables in Laravel's documentation:
 
-- [Environment Variable Types](https://laravel.com/docs/7.x/configuration#environment-variable-types)
-- [Retrieving Environment Configuration](https://laravel.com/docs/7.x/configuration#retrieving-environment-configuration)
+- [Environment Variable Types](https://laravel.com/docs/8.x/configuration#environment-variable-types)
+- [Retrieving Environment Configuration](https://laravel.com/docs/8.x/configuration#retrieving-environment-configuration)
 
 ## Plugins
 
@@ -179,7 +179,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 - [**Blade**](https://github.com/fiskhandlarn/blade)
 
-  The package integrates [Blade](https://laravel.com/docs/7.x/blade) templating system in WordPress.
+  The package integrates [Blade](https://laravel.com/docs/8.x/blade) templating system in WordPress.
 
 - [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
 
@@ -339,7 +339,7 @@ For most applications you may leave the theme directory as it is. If you want to
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
 
-If you're using [Laravel Valet](https://laravel.com/docs/7.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
+If you're using [Laravel Valet](https://laravel.com/docs/8.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
 
 ```php
 <?php
