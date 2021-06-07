@@ -309,7 +309,7 @@ $application->run();
 
 +define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
 
-require_once ABSPATH . 'wp-settings.php';
+$table_prefix = env('WP_PREFIX', 'wp_');
 ````
 
 Then you may add the constant to the `.env` file.
