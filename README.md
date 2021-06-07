@@ -102,7 +102,7 @@ If you're lazy like us, [visit our salt key generator](https://wordplate.github.
 
 It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different database locally than you do on your production server.
 
-To make this a cinch, WordPlate utilizes the [Dotenv](https://symfony.com/doc/current/components/dotenv) PHP package by Symfony. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
+To make this a cinch, WordPlate utilizes the [Dotenv](https://github.com/vlucas/phpdotenv) PHP package. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
 
 Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
 
@@ -299,6 +299,27 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 ## FAQ
 
+<details>
+<summary><strong>Can I add WordPress constants to the environment file?</strong></summary>
+
+This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
+
+```diff
+$application->run();
+
++define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
+
+require_once ABSPATH . 'wp-settings.php';
+````
+
+Then you may add the constant to the `.env` file.
+
+```diff
+WP_PREFIX=wp_
++WP_ALLOW_MULTISITE=true
+````
+
+</details>
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
