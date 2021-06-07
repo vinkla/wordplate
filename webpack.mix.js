@@ -13,7 +13,7 @@ require('dotenv').config();
  |
  */
 
-const theme = process.env.WP_THEME;
+const theme = process.env.WP_DEFAULT_THEME;
 
 mix.setResourceRoot('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
