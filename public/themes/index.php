@@ -1,3 +1,1 @@
-<?php
-
-// Good work getting this far, future starter!
+<?php // Silence is golden.

@@ -1,3 +1,1 @@
-<?php
-
-// Sarcasm self test complete.
+<?php // Silence is golden.
