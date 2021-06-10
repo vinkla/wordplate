@@ -309,13 +309,13 @@ $application->run();
 
 +define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
 
-$table_prefix = env('WP_PREFIX', 'wp_');
+$table_prefix = env('DB_TABLE_PREFIX', 'wp_');
 ````
 
 Then you may add the constant to the `.env` file.
 
 ```diff
-WP_PREFIX=wp_
+WP_DEFAULT_THEME=wordplate
 +WP_ALLOW_MULTISITE=true
 ````
 
