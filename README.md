@@ -208,6 +208,30 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 ## Upgrade Guide
 
 <details>
+<summary><strong>Upgrading from 9 to 10</strong></summary>
+
+1. Bump the version number in the `composer.json` file to `^10.0`.
+
+1. Rename `WP_ENV` to `WP_ENVIRONMENT_TYPE` in the environment file.
+
+1. Rename `WP_THEME` to `WP_DEFAULT_THEME` in the environment file.
+
+1. Rename `WP_URL` to `WP_HOME` in the environment file (if it exists).
+
+1. If you're using the `WP_CACHE` environment variable you'll need to define it in the `public/wp-config.php` file:
+
+    ```diff
+    $application->run();
+
+    +define('WP_CACHE', env('WP_CACHE', false));
+
+    $table_prefix = env('DB_TABLE_PREFIX', 'wp_');
+    ````
+
+1. Run `composer update` in the root of your project.
+</details>
+
+<details>
 <summary><strong>Upgrading from 8 to 9</strong></summary>
 
 1. Bump the version number in the `composer.json` file to `^9.0`.
@@ -222,7 +246,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
     +!mu-plugins/mu-plugins.php
     ````
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 7 to 8</strong></summary>
@@ -257,7 +281,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. The `base_path` and `template_slug` functions have been removed.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 6 to 7</strong></summary>
@@ -274,7 +298,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
    $application->setPublicPath(realpath(__DIR__));
    ```
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 5 to 6</strong></summary>
@@ -283,7 +307,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Update the `realpath(__DIR__.'/../')` to `realpath(__DIR__)` in the `wp-config.php` file.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 4 to 5</strong></summary>
@@ -294,7 +318,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 
 ## FAQ
