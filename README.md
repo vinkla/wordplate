@@ -210,6 +210,8 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 <details>
 <summary><strong>Upgrading from 9 to 10</strong></summary>
 
+1. WordPlate now requires PHP 7.4 or later.
+
 1. Bump the version number in the `composer.json` file to `^10.0`.
 
 1. Rename `WP_ENV` to `WP_ENVIRONMENT_TYPE` in the environment file.
