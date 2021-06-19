@@ -232,9 +232,9 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Optional: Rename `WP_PREFIX` to `DB_TABLE_PREFIX` in the following files:
 
-  - `.env`
-  - `.env.example`
-  - `public/wp-config.php`
+    - `.env`
+    - `.env.example`
+    - `public/wp-config.php`
 
 1. Run `composer update` in the root of your project.
 </details>
