@@ -55,7 +55,7 @@ WordPlate is simply a wrapper around WordPress. It makes developers life easier.
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.3+ and MySQL 5.7+ installed on your machine. 
+To use WordPlate, you need to have PHP 7.4+ and MySQL 5.7+ installed on your machine. 
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 
@@ -127,8 +127,8 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^9.4",
-    "wpackagist-plugin/hide-updates": "^1.0"
+    "wordplate/framework": "^10.0",
+    "wpackagist-plugin/hide-updates": "^1.1"
 },
 ```
 
@@ -229,6 +229,12 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
     $table_prefix = env('DB_TABLE_PREFIX', 'wp_');
     ````
+
+1. Optional: Rename `WP_PREFIX` to `DB_TABLE_PREFIX` in the following files:
+
+  - `.env`
+  - `.env.example`
+  - `public/wp-config.php`
 
 1. Run `composer update` in the root of your project.
 </details>
