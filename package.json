@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "laravel-mix": "^6.0.19"
+    "laravel-mix": "^6.0.25"
   },
   "browserslist": [
     ">0.25%",
