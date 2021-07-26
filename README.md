@@ -55,7 +55,7 @@ WordPlate is simply a wrapper around WordPress. It makes developers life easier.
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.3+ and MySQL 5.7+ installed on your machine. 
+To use WordPlate, you need to have PHP 7.4+ and MySQL 5.7+ installed on your machine. 
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 
@@ -127,8 +127,8 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^9.4",
-    "wpackagist-plugin/hide-updates": "^1.0"
+    "wordplate/framework": "^10.0",
+    "wpackagist-plugin/hide-updates": "^1.1"
 },
 ```
 
@@ -208,6 +208,38 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 ## Upgrade Guide
 
 <details>
+<summary><strong>Upgrading from 9 to 10</strong></summary>
+
+1. WordPlate now requires PHP 7.4 or later.
+
+1. Bump the version number in the `composer.json` file to `^10.0`.
+
+1. Rename `WP_ENV` to `WP_ENVIRONMENT_TYPE` in the environment file.
+
+1. Rename `WP_THEME` to `WP_DEFAULT_THEME` in the environment file.
+
+1. Rename `WP_URL` to `WP_HOME` in the environment file (if it exists).
+
+1. If you're using the `WP_CACHE` environment variable you'll need to define it in the `public/wp-config.php` file:
+
+    ```diff
+    $application->run();
+
+    +define('WP_CACHE', env('WP_CACHE', false));
+
+    $table_prefix = env('DB_TABLE_PREFIX', 'wp_');
+    ````
+
+1. Optional: Rename `WP_PREFIX` to `DB_TABLE_PREFIX` in the following files:
+
+    - `.env`
+    - `.env.example`
+    - `public/wp-config.php`
+
+1. Run `composer update` in the root of your project.
+</details>
+
+<details>
 <summary><strong>Upgrading from 8 to 9</strong></summary>
 
 1. Bump the version number in the `composer.json` file to `^9.0`.
@@ -222,7 +254,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
     +!mu-plugins/mu-plugins.php
     ````
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 7 to 8</strong></summary>
@@ -257,7 +289,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. The `base_path` and `template_slug` functions have been removed.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 6 to 7</strong></summary>
@@ -274,7 +306,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
    $application->setPublicPath(realpath(__DIR__));
    ```
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 5 to 6</strong></summary>
@@ -283,7 +315,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Update the `realpath(__DIR__.'/../')` to `realpath(__DIR__)` in the `wp-config.php` file.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Upgrading from 4 to 5</strong></summary>
@@ -294,7 +326,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
-1. Run `composer update` in the root of your project and your app should be up and running!
+1. Run `composer update` in the root of your project.
 </details>
 
 ## FAQ
