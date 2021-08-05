@@ -387,7 +387,7 @@ By default WordPlate will put the WordPress in `public/wordpress`. If you want t
 <details>
 <summary><strong>Can I rename the theme directory?</strong></summary>
 
-For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_THEME` environment variable in the `.env` file.
+For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_DEFAULT_THEME` environment variable in the `.env` file.
 </details>
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
