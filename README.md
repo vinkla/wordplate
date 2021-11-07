@@ -185,6 +185,10 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The plugin removes special characters from filenames.
 
+- [**Clean UI**](https://github.com/wordplate/clean-ui)
+
+  The plugin takes control over the administration dashboard.
+
 - [**Extended ACF**](https://github.com/wordplate/extended-acf)
 
   The package provides an object oriented API to register fields, groups and layouts with ACF.
