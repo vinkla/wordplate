@@ -326,7 +326,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Bump the version number in the `composer.json` file to `^5.0`.
 
-1. Copy and paste the contents of the [`wp-config.php`](public/wp-config.php) file into your application.
+1. Copy and paste the contents of the [`wp-config.php`](https://github.com/wordplate/wordplate/blob/e301f9b093efdbd1bdeeb61e2f99f86e23c36fb2/public/wp-config.php) file into your application.
 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
