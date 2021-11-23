@@ -173,6 +173,8 @@ npm run dev
 npm run build
 ```
 
+If you want to use Vite.js with WordPlate, see our setup guide in the [FAQ](#faq) section.
+
 ## Integrations
 
 Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and some are created by other amazing developers.
@@ -453,6 +455,97 @@ final class LocalValetDriver extends BasicValetDriver
     }
 }
 ```
+</details>
+<details>
+<summary><strong>Can I use WordPlate with Vite.js?</strong></summary>
+
+1. It is possible to use Vite.js with WordPlate. First you'll need to replace the contents of the `package.json` file:
+
+    ```json
+    {
+        "private": true,
+        "scripts": {
+            "build": "vite build",
+            "dev": "vite"
+        },
+        "dependencies": {
+            "dotenv": "^10.0.0",
+            "vite": "^2.6.14"
+        }
+    }
+    ```
+
+2. Remove the `webpack.mix.js` file from the root of your project.
+
+3. Add a new file called `vite.config.js` in the root of your project and add the following script:
+
+    ```js
+    require('dotenv').config();
+
+    export default ({ command }) => ({
+    base: command === 'serve' ? '/' : '/build/',
+    publicDir: 'resources/static',
+    build: {
+        manifest: true,
+        outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
+        assetsDir: '',
+        rollupOptions: {
+            input: 'resources/scripts/index.js',
+        },
+    },
+    plugins: [
+        {
+            name: 'php',
+            handleHotUpdate({ file, server }) {
+                if (file.endsWith('.php')) {
+                server.ws.send({
+                    type: 'full-reload',
+                    path: '*',
+                });
+                }
+            },
+        },
+    ],
+    });
+    ```
+
+4. Remove the `<script>` tag from the `footer.php` file:
+
+    ```diff
+    -<script src="<?= get_theme_file_uri('assets/index.js') ?>" async></script>
+    ```
+
+5. Remove the `<link>` stylesheet tag from the `header.php` file:
+
+    ```diff
+    -<link rel="stylesheet" href="<?= get_theme_file_uri('assets/index.css') ?>">
+    ```
+
+6. Add the Vite.js `<script>` and `<link>` assets between the `<head>` tags in the `header.php` file:
+
+    ```php
+    <?php if (
+        wp_get_environment_type() === 'local' &&
+        is_array(wp_remote_get('http://localhost:3000'))
+    ) : ?>
+        <script type="module" src="http://localhost:3000/@vite/client"></script>
+        <script type="module" src="http://localhost:3000/resources/scripts/index.js"></script>
+    <?php else : ?>
+        <?php $manifest = json_decode(file_get_contents(get_theme_file_path('assets/manifest.json')), true); ?>
+        <script type="module" src="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['file']) ?>" defer></script>
+        <link rel="stylesheet" href="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['css'][0]) ?>">
+    <?php endif; ?>
+    ```
+
+7. Import the `index.css` file in the `resources/scripts/index.js` file:
+
+    ```diff
+    +import '../styles/index.css';
+    ```
+
+8. Move any static files such as fonts and images into the `resources/static` directory.
+ 
+9. Run `npm install` and then `npm run dev` to start the development server.
 </details>
 
 ## Acknowledgements
