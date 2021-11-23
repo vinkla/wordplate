@@ -18,7 +18,7 @@ const theme = process.env.WP_DEFAULT_THEME;
 mix.setResourceRoot('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
-mix.js('resources/scripts/app.js', 'app.js');
-mix.postCss('resources/styles/app.css', 'app.css', [
+mix.js('resources/scripts/index.js', 'index.js');
+mix.postCss('resources/styles/index.css', 'index.css', [
   //
 ]);
