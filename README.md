@@ -173,7 +173,7 @@ npm run dev
 npm run build
 ```
 
-If you want to use Vite.js with WordPlate, see our setup guide in the [FAQ](#faq) section.
+If you want to use [Vite.js](http://vitejs.dev/) with WordPlate, see our setup guide in the [FAQ](#faq) section.
 
 ## Integrations
 
