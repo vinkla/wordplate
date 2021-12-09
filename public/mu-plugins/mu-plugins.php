@@ -10,6 +10,4 @@
  * License: MIT
  */
 
-if (is_blog_installed()) {
-    new Roots\Bedrock\Autoloader();
-}
+if (is_blog_installed()) new Roots\Bedrock\Autoloader();
