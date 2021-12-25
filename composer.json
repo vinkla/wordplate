@@ -1,17 +1,31 @@
 {
     "name": "wordplate/wordplate",
     "description": "A WordPress stack with sprinkles on top",
+    "license": "MIT",
     "keywords": [
         "wordplate",
         "wordpress",
         "boilerplate"
     ],
-    "license": "MIT",
     "require": {
         "php": "^7.4 || ^8.0",
         "wordplate/framework": "^10.0"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
     "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true
+        },
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
@@ -30,16 +44,6 @@
         },
         "wordpress-install-dir": "public/wordpress"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://wpackagist.org",
-            "only": [
-                "wpackagist-plugin/*",
-                "wpackagist-theme/*"
-            ]
-        }
-    ],
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
