@@ -19,6 +19,4 @@ mix.setResourceRoot('../');
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
 mix.js('resources/scripts/index.js', 'index.js');
-mix.postCss('resources/styles/index.css', 'index.css', [
-  //
-]);
+mix.sass('resources/styles/index.scss', 'index.css');
