@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+
+  wordplate:
+    depends_on:
+      - db
+    build:
+      context: .
+      target: wordplate
+    volumes:
+      - ./:/var/www/html
+    ports:
+      - "${HOST_PORT:-8000}:80"
+    restart: always
+
+volumes:
+  data: {}

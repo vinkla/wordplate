@@ -73,6 +73,28 @@ DB_USER=username
 DB_PASSWORD=password
 ```
 
+## Running the server
+
+There are 2 ways to run the server.
+
+### 1 With docker
+
+- Modify the env var `DB_HOST` to `db` (`DB_HOST=db`)
+- Modify the env var `DB_USER` to a different user of `root` (example: `DB_USER=user_wordplate`)
+- env var `DB_PASSWORD` must not be blank (example: `DB_PASSWORD=toor`)
+- Run
+```sh
+docker-compose up
+```
+Visit your application in the browser:
+
+- [`http://localhost:8000/`](http://localhost:8000/) - Your website.
+- [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The administration dashboard.
+
+Xdebug is automatically provided when running with docker.
+
+### 2 Without docker
+
 Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
 
 ```sh
