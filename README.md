@@ -41,9 +41,9 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
     
     If you want to use custom SMTP credentials to send emails, we've a package for that!
 
-- **Laravel Mix**
+- **Vite.js**
     
-    With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
+    With Vite you can quickly get up and running to build and minify your CSS and JavaScript.
 
 - **Debugging**
     
@@ -159,17 +159,17 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
 
-## Laravel Mix
+## Vite.js
 
-[Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+[Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
 
-[To get started with Laravel Mix, please visit the documentation.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
+[To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
 
 ```sh
-// Run all mix tasks...
+// Start the development server...
 npm run dev
 
-// Run all mix tasks and minify output...
+// Vuild for production...
 npm run build
 ```
 
