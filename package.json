@@ -1,16 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "mix --production",
-    "dev": "mix watch"
+    "build": "vite build",
+    "dev": "vite"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "laravel-mix": "^6.0.37"
-  },
-  "browserslist": [
-    ">0.25%",
-    "not ie 11",
-    "not op_mini all"
-  ]
+    "vite": "^2.7.12"
+  }
 }
