@@ -16,10 +16,7 @@ export default ({ command }) => ({
       name: 'php',
       handleHotUpdate({ file, server }) {
         if (file.endsWith('.php')) {
-          server.ws.send({
-            type: 'full-reload',
-            path: '*',
-          });
+          server.ws.send({ type: 'full-reload', path: '*'});
         }
       },
     },
