@@ -1,6 +1,8 @@
+import { defineConfig } from 'vite';
+
 require('dotenv').config();
 
-export default ({ command }) => ({
+export default defineConfig(({ command }) => ({
   base: command === 'serve' ? '/' : '/build/',
   publicDir: 'resources/static',
   build: {
@@ -16,9 +18,9 @@ export default ({ command }) => ({
       name: 'php',
       handleHotUpdate({ file, server }) {
         if (file.endsWith('.php')) {
-          server.ws.send({ type: 'full-reload', path: '*'});
+          server.ws.send({ type: 'full-reload', path: '*' });
         }
       },
     },
   ],
-});
+}));
