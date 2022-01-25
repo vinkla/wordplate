@@ -41,9 +41,9 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
     
     If you want to use custom SMTP credentials to send emails, we've a package for that!
 
-- **Laravel Mix**
+- **Vite.js**
     
-    With Laravel Mix you can quickly get up and running with Webpack to build and minify your CSS and JavaScript.
+    With Vite you can quickly get up and running to build and minify your CSS and JavaScript.
 
 - **Debugging**
     
@@ -159,21 +159,19 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
 
-## Laravel Mix
+## Vite.js
 
-[Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) is a clean layer on top of Webpack to make the 80% use case laughably simple to execute. Most would agree that, though incredibly powerful, Webpack ships with a steep learning curve. But what if you didn't have to worry about that?
+[Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
 
-[To get started with Laravel Mix, please visit the documentation.](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme)
+[To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
 
 ```sh
-// Run all mix tasks...
+// Start the dev server...
 npm run dev
 
-// Run all mix tasks and minify output...
+// Build for production...
 npm run build
 ```
-
-If you want to use [Vite.js](http://vitejs.dev/) with WordPlate, see our setup guide in the [FAQ](#faq) section.
 
 ## Integrations
 
@@ -455,97 +453,6 @@ final class LocalValetDriver extends BasicValetDriver
     }
 }
 ```
-</details>
-<details>
-<summary><strong>Can I use WordPlate with Vite.js?</strong></summary>
-
-1. It is possible to use Vite.js with WordPlate. First you'll need to replace the contents of the `package.json` file:
-
-    ```json
-    {
-        "private": true,
-        "scripts": {
-            "build": "vite build",
-            "dev": "vite"
-        },
-        "dependencies": {
-            "dotenv": "^10.0.0",
-            "vite": "^2.6.14"
-        }
-    }
-    ```
-
-2. Remove the `webpack.mix.js` file from the root of your project.
-
-3. Add a new file called `vite.config.js` in the root of your project and add the following script:
-
-    ```js
-    require('dotenv').config();
-
-    export default ({ command }) => ({
-      base: command === 'serve' ? '/' : '/build/',
-      publicDir: 'resources/static',
-      build: {
-        manifest: true,
-        outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
-        assetsDir: '',
-        rollupOptions: {
-          input: 'resources/scripts/index.js',
-        },
-      },
-      plugins: [
-          {
-            name: 'php',
-            handleHotUpdate({ file, server }) {
-              if (file.endsWith('.php')) {
-              server.ws.send({
-                type: 'full-reload',
-                path: '*',
-              });
-              }
-            },
-        },
-      ],
-    });
-    ```
-
-4. Remove the `<script>` tag from the `footer.php` file:
-
-    ```diff
-    -<script src="<?= get_theme_file_uri('assets/index.js') ?>" async></script>
-    ```
-
-5. Remove the `<link>` stylesheet tag from the `header.php` file:
-
-    ```diff
-    -<link rel="stylesheet" href="<?= get_theme_file_uri('assets/index.css') ?>">
-    ```
-
-6. Add the Vite.js `<script>` and `<link>` assets between the `<head>` tags in the `header.php` file:
-
-    ```php
-    <?php if (
-        wp_get_environment_type() === 'local' &&
-        is_array(wp_remote_get('http://localhost:3000'))
-    ) : ?>
-        <script type="module" src="http://localhost:3000/@vite/client"></script>
-        <script type="module" src="http://localhost:3000/resources/scripts/index.js"></script>
-    <?php else : ?>
-        <?php $manifest = json_decode(file_get_contents(get_theme_file_path('assets/manifest.json')), true); ?>
-        <script type="module" src="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['file']) ?>" defer></script>
-        <link rel="stylesheet" href="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['css'][0]) ?>">
-    <?php endif; ?>
-    ```
-
-7. Import the `index.css` file in the `resources/scripts/index.js` file:
-
-    ```diff
-    +import '../styles/index.css';
-    ```
-
-8. Move any static files such as fonts and images into the `resources/static` directory.
- 
-9. Run `npm install` and then `npm run dev` to start the development server.
 </details>
 
 ## Acknowledgements
