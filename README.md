@@ -55,7 +55,7 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
 
 ## Installation
 
-To use WordPlate, you need to have PHP 7.4+ and MySQL 5.7+ installed on your machine. 
+To use WordPlate, you need to have PHP 8.0+ and MySQL 5.7+ installed on your machine. 
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 
@@ -127,7 +127,7 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^10.0",
+    "wordplate/framework": "^11.0",
     "wpackagist-plugin/hide-updates": "^1.1"
 },
 ```
@@ -166,10 +166,10 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 [To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
 
 ```sh
-// Start the dev server...
+# Start the dev server...
 npm run dev
 
-// Build for production...
+# Build for production...
 npm run build
 ```
 
@@ -210,7 +210,15 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
   The plugin provides a simple way to add custom SMTP credentials.
 
 ## Upgrade Guide
+<details>
+<summary><strong>Upgrading from 10 to 11</strong></summary>
 
+1. WordPlate now requires PHP 8.0 or later.
+
+1. Bump the version number in the `composer.json` file to `^11.0`.
+
+1. Run `composer update` in the root of your project.
+</details>
 <details>
 <summary><strong>Upgrading from 9 to 10</strong></summary>
 
@@ -242,7 +250,6 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 1. Run `composer update` in the root of your project.
 </details>
-
 <details>
 <summary><strong>Upgrading from 8 to 9</strong></summary>
 

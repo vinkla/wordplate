@@ -8,8 +8,8 @@
         "boilerplate"
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
-        "wordplate/framework": "^10.0"
+        "php": "^8.0",
+        "wordplate/framework": "^11.0"
     },
     "repositories": [
         {
