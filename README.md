@@ -12,7 +12,7 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Plugins](#plugins)
-- [Laravel Mix](#laravel-mix)
+- [Vite.js](#vitejs)
 - [Integrations](#integrations)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
