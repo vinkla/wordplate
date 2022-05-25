@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "wordplate/framework": "^11.0"
+        "wordplate/framework": "^11.1"
     },
     "repositories": [
         {
