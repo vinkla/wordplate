@@ -9,8 +9,8 @@
 
                 <?php the_content(); ?>
             </article>
-        <?php endwhile;
-    else : ?>
+        <?php endwhile; ?>
+    <?php else : ?>
         <article>
             <p>Nothing to see.</p>
         </article>
