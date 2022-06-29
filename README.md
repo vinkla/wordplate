@@ -500,3 +500,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
 - [`vitejs/vite`](https://github.com/vitejs/vite)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
+
+## License
+
+The WordPlate package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
