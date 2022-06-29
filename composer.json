@@ -1,12 +1,9 @@
 {
-    "name": "wordplate/wordplate",
-    "description": "A WordPress stack with sprinkles on top",
+    "name": "vinkla/wordplate",
+    "type": "project",
+    "description": "The WordPlate boilerplate",
+    "keywords": ["wordplate", "wordpress"],
     "license": "MIT",
-    "keywords": [
-        "wordplate",
-        "wordpress",
-        "boilerplate"
-    ],
     "require": {
         "php": "^8.0",
         "composer/installers": "^2.1",
