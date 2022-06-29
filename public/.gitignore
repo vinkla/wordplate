@@ -1,7 +1,7 @@
 languages
 mu-plugins/*
 !mu-plugins/clean-ui
-!mu-plugins/headache
+!mu-plugins/headaches
 !mu-plugins/mu-plugins.php
 plugins/*
 !plugins/index.php
