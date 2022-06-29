@@ -2,11 +2,11 @@
 
 /*
  * Plugin Name: Clean UI
+ * Plugin URI: https://github.com/vinkla/wordplate
  * Description: Take control over the administration dashboard.
+ * Version: 1.0.0
  * Author: Vincent Klaiber
  * Author URI: https://github.com/vinkla
- * Version: 1.0.0
- * Plugin URI: https://github.com/vinkla/wordplate
  * License: MIT
  */
 
