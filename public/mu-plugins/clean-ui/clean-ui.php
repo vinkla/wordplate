@@ -7,6 +7,7 @@
  * Author URI: https://github.com/vinkla
  * Version: 1.0.0
  * Plugin URI: https://github.com/vinkla/wordplate
+ * License: MIT
  */
 
 // Remove administrator menu items.
