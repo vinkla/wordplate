@@ -43,8 +43,11 @@ remove_action('wp_head', 'wp_generator');
 // Removes generated icons.
 remove_action('wp_head', 'wp_site_icon', 99);
 
-// Removes shortlink.
+// Removes shortlink tag from <head>.
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+
+// Removes shortlink tag from HTML headers.
+remove_action('template_redirect', 'wp_shortlink_header', 11, 0);
 
 // Removes Really Simple Discovery link.
 remove_action('wp_head', 'rsd_link');
@@ -64,8 +67,11 @@ remove_action('wp_head', 'wp_resource_hints', 2);
 // Removes relational links for the posts.
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
-// Removes REST API link tag from header.
-remove_action('wp_head', 'rest_output_link_wp_head', 10);
+// Removes REST API link tag from <head>.
+remove_action('wp_head', 'rest_output_link_wp_head', 10, 0);
+
+// Removes REST API link tag from HTML headers.
+remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 // Removes emojis.
 remove_action('wp_head', 'print_emoji_detection_script', 7);
