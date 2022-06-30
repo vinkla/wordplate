@@ -374,9 +374,9 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
 This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
 
 ```diff
-+define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
+define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
 
-$table_prefix = env('DB_TABLE_PREFIX', 'wp_');
++define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
 ````
 
 Then you may add the constant to the `.env` file.
@@ -390,10 +390,11 @@ WP_DEFAULT_THEME=wordplate
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
-If you want to rename the `public` directory you'll need to add the following line to the `wp-config.php` file:
+If you want to rename the `public` directory you'll need to update the `wp-config.php` file in two places:
 
 ```php
-$application->setPublicPath(realpath(__DIR__));
+-realpath(__DIR__ . '/../public');
++realpath(__DIR__ . '/../public_html');
 ```
 
 Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
