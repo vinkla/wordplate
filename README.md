@@ -220,15 +220,7 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
 
 1. Replace your `public/wp-config.php` file [the one in this repository](public/wp-config.php). Remember to save any custom constans defined in your `wp-config.php` file.
 
-1. Add the [`src/helpers.php`](public/wp-config.php) file from this repository and autoload it in the `composer.json` file:
-
-    ```diff
-    +"autoload": {
-    +    "files": [
-    +        "src/helpers.php"
-    +    ]
-    +}
-    ```
+1. Replace any usage of the `env` function with the native [`$_ENV`](https://github.com/vlucas/phpdotenv#usage) PHP superglobal.
 
 1. Run `composer update` in the root of your project.
 
