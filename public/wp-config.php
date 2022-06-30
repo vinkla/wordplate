@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-Dotenv\Dotenv::createImmutable(realpath(__DIR__ . '/../'))->safeLoad();
+use Dotenv\Dotenv;
+use Symfony\Component\HttpFoundation\Request;
+
+// Load the environment variables.
+Dotenv::createImmutable(realpath(__DIR__ . '/../'))->safeLoad();
 
 // Set the environment type.
 define('WP_ENVIRONMENT_TYPE', env('WP_ENVIRONMENT_TYPE', 'production'));
@@ -41,7 +45,7 @@ define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
 define('NONCE_SALT', env('NONCE_SALT'));
 
 // Set the home url to the current domain.
-define('WP_HOME', env('WP_HOME', (new Symfony\Component\HttpFoundation\Request())->getSchemeAndHttpHost()));
+define('WP_HOME', env('WP_HOME', (new Request())->getSchemeAndHttpHost()));
 
 // Set the WordPress directory path.
 define('WP_SITEURL', env('WP_SITEURL', sprintf('%s/%s', WP_HOME, env('WP_DIR', 'wordpress'))));
@@ -76,6 +80,7 @@ if (!defined('ABSPATH')) {
     define('ABSPATH', sprintf('%s/%s/', realpath(__DIR__ . '/../public'), env('WP_DIR', 'wordpress')));
 }
 
+// Set the database table prefix.
 $table_prefix = env('DB_TABLE_PREFIX', 'wp_');
 
 require_once ABSPATH . 'wp-settings.php';
