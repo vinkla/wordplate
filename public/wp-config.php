@@ -45,7 +45,7 @@ define('LOGGED_IN_SALT', $_ENV['LOGGED_IN_SALT']);
 define('NONCE_SALT', $_ENV['NONCE_SALT']);
 
 // Set the home url to the current domain.
-define('WP_HOME', $_ENV['WP_HOME'] ?? (new Request())->getSchemeAndHttpHost());
+define('WP_HOME', $_ENV['WP_HOME'] ?? Request::createFromGlobals()->getSchemeAndHttpHost());
 
 // Set the WordPress directory path.
 define('WP_SITEURL', $_ENV['WP_SITEURL'] ?? sprintf('%s/%s', WP_HOME, $_ENV['WP_DIR'] ?? 'wordpress'));
