@@ -42,7 +42,7 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 
 - **Clean UI**
 
-    WordPlate takes control over the WordPress dashboard and provides a better UX for your clients.
+    WordPlate takes control over the WordPress dashboard and provides a [better UX](https://user-images.githubusercontent.com/499192/143415951-b01e9498-5f18-44dd-9d4b-51fb2d479a22.png) for your clients.
 
 - **Security**
     
