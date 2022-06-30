@@ -1,15 +1,18 @@
 {
-    "name": "wordplate/wordplate",
-    "description": "A WordPress stack with sprinkles on top",
+    "name": "vinkla/wordplate",
+    "type": "project",
+    "description": "The WordPlate boilerplate",
+    "keywords": ["wordplate", "wordpress"],
     "license": "MIT",
-    "keywords": [
-        "wordplate",
-        "wordpress",
-        "boilerplate"
-    ],
     "require": {
         "php": "^8.0",
-        "wordplate/framework": "^11.1"
+        "composer/installers": "^2.1",
+        "roots/bedrock-autoloader": "^1.0",
+        "roots/wordpress": "^6.0",
+        "roots/wp-password-bcrypt": "^1.1",
+        "symfony/http-foundation": "^6.1",
+        "symfony/var-dumper": "^6.1",
+        "vlucas/phpdotenv": "^5.4"
     },
     "repositories": [
         {
@@ -21,10 +24,15 @@
             ]
         }
     ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
-            "johnpbloch/wordpress-core-installer": true
+            "roots/wordpress-core-installer": true
         },
         "optimize-autoloader": true,
         "preferred-install": "dist",

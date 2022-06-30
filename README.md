@@ -2,10 +2,9 @@
 
 # WordPlate
 
-WordPlate is a wrapper around WordPress. It's like building any other WordPress website with themes and plugins. Just with sprinkles on top.
+WordPlate is a boilerplate. It's like building any other WordPress website with themes and plugins. Just with sprinkles on top.
 
 [![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
-[![Monthly Downloads](https://badgen.net/packagist/dm/wordplate/framework)](https://packagist.org/packages/wordplate/framework/stats)
 [![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
 
 - [Features](#features)
@@ -17,7 +16,6 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Acknowledgements](#acknowledgements)
-- [Contributing](#contributing)
 
 ## Features
 
@@ -37,10 +35,6 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
     
     Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
 
-- **Mail**
-    
-    If you want to use custom SMTP credentials to send emails, we've a package for that!
-
 - **Vite.js**
     
     With Vite you can quickly get up and running to build and minify your CSS and JavaScript.
@@ -48,6 +42,10 @@ WordPlate is a wrapper around WordPress. It's like building any other WordPress 
 - **Debugging**
     
     Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
+
+- **Clean UI**
+
+    WordPlate takes control over the WordPress dashboard and provides a better UX for your clients.
 
 - **Security**
     
@@ -108,8 +106,8 @@ Your `.env` file should not be committed to your application's source control, s
 
 Read more about environment variables in Laravel's documentation:
 
-- [Environment Variable Types](https://laravel.com/docs/8.x/configuration#environment-variable-types)
-- [Retrieving Environment Configuration](https://laravel.com/docs/8.x/configuration#retrieving-environment-configuration)
+- [Environment Variable Types](https://laravel.com/docs/9.x/configuration#environment-variable-types)
+- [Retrieving Environment Configuration](https://laravel.com/docs/9.x/configuration#retrieving-environment-configuration)
 
 ## Plugins
 
@@ -127,9 +125,8 @@ This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wordplate/framework": "^11.0",
     "wpackagist-plugin/hide-updates": "^1.1"
-},
+}
 ```
 
 [Please visit WordPress Packagist for more information and examples.](https://wpackagist.org)
@@ -179,15 +176,11 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
 - [**Blade**](https://github.com/fiskhandlarn/blade)
 
-  The package integrates [Blade](https://laravel.com/docs/8.x/blade) templating system in WordPress.
+  The package integrates [Blade](https://laravel.com/docs/9.x/blade) templating system in WordPress.
 
 - [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
 
   The plugin removes special characters from filenames.
-
-- [**Clean UI**](https://github.com/wordplate/clean-ui)
-
-  The plugin takes control over the administration dashboard.
 
 - [**Extended ACF**](https://github.com/wordplate/extended-acf)
 
@@ -197,7 +190,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The package provides extended functionality to WordPress custom post types and taxonomies.
 
-- [**Headache**](https://github.com/wordplate/headache)
+- [**Headache**](https://github.com/vinkla/headache)
 
   The plugin removes a lot of default WordPress stuff you just can't wait to get rid of.
 
@@ -205,11 +198,44 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The plugin hides update notices for updates in WordPress.
 
-- [**Mail**](https://github.com/wordplate/mail)
-
-  The plugin provides a simple way to add custom SMTP credentials.
-
 ## Upgrade Guide
+
+WordPlate has archived the `wordplate/framework` package and moved everything into this repository instead. We keep this list for any old application out there which needs to be upgraded.
+
+<details>
+<summary><strong>Upgrading from 11 to 12</strong></summary>
+
+1. Update the `composer.json` file:
+
+    ```diff
+    "require": {
+    -   "wordplate/framework": "^11.1",
+    +   "composer/installers": "^2.1",
+    +   "johnpbloch/wordpress-core-installer": "^2.0",
+    +   "johnpbloch/wordpress-core": "^6.0",
+    +   "roots/bedrock-autoloader": "^1.0",
+    +   "roots/wp-password-bcrypt": "^1.1",
+    +   "symfony/http-foundation": "^6.1",
+    +   "symfony/var-dumper": "^6.1",
+    +   "vlucas/phpdotenv": "^5.4"
+    }
+    ```
+
+1. Replace your `public/wp-config.php` file [the one in this repository](public/wp-config.php). Remember to save any custom constans defined in your `wp-config.php` file.
+
+1. Add the [`src/helpers.php`](public/wp-config.php) file from this repository and autoload it in the `composer.json` file:
+
+    ```diff
+    +"autoload": {
+    +    "files": [
+    +        "src/helpers.php"
+    +    ]
+    +}
+    ```
+
+1. Run `composer update` in the root of your project.
+
+</details>
 <details>
 <summary><strong>Upgrading from 10 to 11</strong></summary>
 
@@ -348,11 +374,9 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
 
 ```diff
-$application->run();
+define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
 
 +define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
-
-$table_prefix = env('DB_TABLE_PREFIX', 'wp_');
 ````
 
 Then you may add the constant to the `.env` file.
@@ -366,10 +390,11 @@ WP_DEFAULT_THEME=wordplate
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
-If you want to rename the `public` directory you'll need to add the following line to the `wp-config.php` file:
+If you want to rename the `public` directory you'll need to update the `wp-config.php` file in two places:
 
 ```php
-$application->setPublicPath(realpath(__DIR__));
+-realpath(__DIR__ . '/../public');
++realpath(__DIR__ . '/../public_html');
 ```
 
 Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
@@ -403,7 +428,7 @@ For most applications you may leave the theme directory as it is. If you want to
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
 
-If you're using [Laravel Valet](https://laravel.com/docs/8.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
+If you're using [Laravel Valet](https://laravel.com/docs/9.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
 
 ```php
 <?php
@@ -467,12 +492,16 @@ final class LocalValetDriver extends BasicValetDriver
 WordPlate wouldn't be possible without these amazing open-source projects.
 
 - [`composer/installers`](https://github.com/composer/installers)
-- [`jeffreyway/laravel-mix`](https://github.com/JeffreyWay/laravel-mix)
-- [`johnpbloch/wordpress-core-installer`](https://github.com/johnpbloch/wordpress-core-installer)
-- [`johnpbloch/wordpress-core`](https://github.com/johnpbloch/wordpress-core)
 - [`motdotla/dotenv`](https://github.com/motdotla/dotenv)
 - [`outlandish/wpackagist`](https://github.com/outlandishideas/wpackagist)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
+- [`roots/wordpress`](https://github.com/roots/wordpress)
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
-- [`symfony/var-dumper`](https://github.com/symfony/routing)
+- [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
+- [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
+- [`vitejs/vite`](https://github.com/vitejs/vite)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
+
+## License
+
+The WordPlate package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
