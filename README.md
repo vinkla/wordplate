@@ -4,9 +4,6 @@
 
 WordPlate is a boilerplate. It's like building any other WordPress website with themes and plugins. Just with sprinkles on top.
 
-[![Build Status](https://badgen.net/github/checks/wordplate/framework?label=build&icon=github)](https://github.com/wordplate/framework/actions)
-[![Latest Version](https://badgen.net/packagist/v/wordplate/framework)](https://packagist.org/packages/wordplate/framework)
-
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -60,7 +57,7 @@ WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependenci
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```sh
-composer create-project --prefer-dist wordplate/wordplate blog
+composer create-project --prefer-dist vinkla/wordplate blog
 ```
 
 Update the database credentials in the `.env` file:
@@ -359,7 +356,7 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
 
 1. Bump the version number in the `composer.json` file to `^5.0`.
 
-1. Copy and paste the contents of the [`wp-config.php`](https://github.com/wordplate/wordplate/blob/e301f9b093efdbd1bdeeb61e2f99f86e23c36fb2/public/wp-config.php) file into your application.
+1. Copy and paste the contents of the [`wp-config.php`](https://github.com/vinkla/wordplate/blob/e301f9b093efdbd1bdeeb61e2f99f86e23c36fb2/public/wp-config.php) file into your application.
 
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
