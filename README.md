@@ -43,10 +43,6 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
     
     Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
 
-- **Headache**
-    
-    Remove WordPress defaults you can't wait to get rid of such as meta tags, emojis and media pages.
-
 - **Clean UI**
 
     WordPlate takes control over the WordPress dashboard and provides a better UX for your clients.
@@ -193,6 +189,10 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 - [**Extended CPTs**](https://github.com/johnbillion/extended-cpts)
 
   The package provides extended functionality to WordPress custom post types and taxonomies.
+
+- [**Headache**](https://github.com/vinkla/headache)
+
+  The plugin removes a lot of default WordPress stuff you just can't wait to get rid of.
 
 - [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
 
