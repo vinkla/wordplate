@@ -1,12 +1,9 @@
 {
     "name": "vinkla/wordplate",
-    "description": "The WordPlate boilerplate",
-    "license": "MIT",
     "type": "project",
-    "keywords": [
-        "wordplate",
-        "wordpress"
-    ],
+    "description": "The WordPlate boilerplate",
+    "keywords": ["wordplate", "wordpress"],
+    "license": "MIT",
     "require": {
         "php": "^8.0",
         "composer/installers": "^2.1",
@@ -27,6 +24,11 @@
             ]
         }
     ],
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ]
+    },
     "config": {
         "allow-plugins": {
             "composer/installers": true,
