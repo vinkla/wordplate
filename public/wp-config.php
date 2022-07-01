@@ -66,14 +66,17 @@ define('WP_AUTO_UPDATE_CORE', $_ENV['WP_AUTO_UPDATE_CORE'] ?? 'minor');
 // Specify the number of post revisions.
 define('WP_POST_REVISIONS', $_ENV['WP_POST_REVISIONS'] ?? 2);
 
+// Disable technical issues emails.
+define('WP_DISABLE_FATAL_ERROR_HANDLER', $_ENV['WP_DISABLE_FATAL_ERROR_HANDLER'] ?? false);
+
 // Cleanup WordPress image edits.
 define('IMAGE_EDIT_OVERWRITE', $_ENV['IMAGE_EDIT_OVERWRITE'] ?? true);
 
 // Prevent file edititing from the dashboard.
 define('DISALLOW_FILE_EDIT', $_ENV['DISALLOW_FILE_EDIT'] ?? true);
 
-// Disable technical issues emails.
-define('WP_DISABLE_FATAL_ERROR_HANDLER', $_ENV['WP_DISABLE_FATAL_ERROR_HANDLER'] ?? false);
+// Disable WP-Cron (wp-cron.php) for faster performance.
+define('DISABLE_WP_CRON', $_ENV['DISABLE_WP_CRON'] ?? false);
 
 // Set the absolute path to the WordPress directory.
 if (!defined('ABSPATH')) {
