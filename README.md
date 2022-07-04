@@ -434,11 +434,6 @@ declare(strict_types=1);
 
 final class LocalValetDriver extends BasicValetDriver
 {
-    public function serves(string $sitePath): bool
-    {
-        return is_dir($sitePath . '/vendor/wordplate/framework');
-    }
-
     /**
      * @return false|string
      */
