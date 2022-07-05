@@ -434,11 +434,19 @@ declare(strict_types=1);
 
 final class LocalValetDriver extends BasicValetDriver
 {
-    public function serves(string $sitePath): bool
+    /**
+     * Determine if the driver serves the request.
+     *
+     * @param  string  $sitePath
+     * @param  string  $siteName
+     * @param  string  $uri
+     * @return bool
+     */
+    public function serves($sitePath, $siteName, $uri)
     {
-        return is_dir($sitePath . '/vendor/wordplate/framework');
+        return is_dir($sitePath.'/public/wordpress/wp-admin');
     }
-
+    
     /**
      * @return false|string
      */
