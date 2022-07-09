@@ -45,7 +45,7 @@ define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
 define('NONCE_SALT', env('NONCE_SALT'));
 
 // Set the home url to the current domain.
-define('WP_HOME', $_ENV['WP_HOME'] ?? Request::createFromGlobals()->getSchemeAndHttpHost());
+define('WP_HOME', env('WP_HOME', Request::createFromGlobals()->getSchemeAndHttpHost()));
 
 // Set the WordPress directory path.
 define('WP_SITEURL', env('WP_SITEURL', sprintf('%s/%s', WP_HOME, env('WP_DIR', 'wordpress'))));
@@ -67,7 +67,7 @@ define('WP_AUTO_UPDATE_CORE', env('WP_AUTO_UPDATE_CORE', 'minor'));
 define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
 
 // Disable technical issues emails.
-define('WP_DISABLE_FATAL_ERROR_HANDLER', $_ENV['WP_DISABLE_FATAL_ERROR_HANDLER'] ?? false);
+define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
 
 // Cleanup WordPress image edits.
 define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
@@ -76,7 +76,7 @@ define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
 define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT', true));
 
 // Disable WP-Cron (wp-cron.php) for faster performance.
-define('DISABLE_WP_CRON', $_ENV['DISABLE_WP_CRON'] ?? false);
+define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
 // Set the absolute path to the WordPress directory.
 if (!defined('ABSPATH')) {
