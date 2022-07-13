@@ -9,6 +9,7 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 - [Configuration](#configuration)
 - [Plugins](#plugins)
 - [Vite.js](#vitejs)
+- [Mail](#mail)
 - [Integrations](#integrations)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
@@ -165,6 +166,40 @@ npm run dev
 
 # Build for production...
 npm run build
+```
+
+## Mail
+
+If you want to add custom SMTP credentials with WordPlate, you may add the following to your `functions.php` file:
+
+```php
+// Register SMTP email with HTML support.
+add_action('phpmailer_init', function (PHPMailer $mail) {
+    $mail->IsSMTP();
+    $mail->SMTPAutoTLS = false;
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
+    $mail->Host = env('MAIL_HOST');
+    $mail->Port = env('MAIL_PORT', 587);
+    $mail->Username = env('MAIL_USERNAME');
+    $mail->Password = env('MAIL_PASSWORD');
+    return $mail;
+});
+
+add_filter('wp_mail_content_type', fn () => 'text/html');
+add_filter('wp_mail_from_name', fn () => env('MAIL_FROM_NAME', 'Example'));
+add_filter('wp_mail_from', fn () => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
+```
+
+Then add the environment variables to you `.env` files:
+
+```
+MAIL_FROM_ADDRESS=
+MAIL_FROM_NAME=
+MAIL_HOST=
+MAIL_PASSWORD=
+MAIL_PORT=
+MAIL_USERNAME=
 ```
 
 ## Integrations
