@@ -175,9 +175,9 @@ If you want to add custom SMTP credentials with WordPlate, you may add the follo
 ```php
 // Register SMTP email with HTML support.
 add_action('phpmailer_init', function (PHPMailer $mail) {
-    $mail->IsSMTP();
+    $mail->isSMTP();
     $mail->SMTPAutoTLS = false;
-    $mail->SMTPAuth = true;
+    $mail->SMTPAuth = env('MAIL_USERNAME') && env('MAIL_PASSWORD');
     $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
     $mail->Host = env('MAIL_HOST');
     $mail->Port = env('MAIL_PORT', 587);
