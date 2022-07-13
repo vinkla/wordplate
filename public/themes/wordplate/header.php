@@ -7,10 +7,10 @@
 
     <?php if (
         wp_get_environment_type() === 'local' &&
-        is_array(wp_remote_get('http://localhost:3000'))
+        is_array(wp_remote_get('http://' . $_SERVER['REMOTE_ADDR'] . ':5173'))
     ) : ?>
-        <script type="module" src="http://localhost:3000/@vite/client"></script>
-        <script type="module" src="http://localhost:3000/resources/scripts/index.js"></script>
+        <script type="module" src="http://<?= $_SERVER['REMOTE_ADDR'] ?>:5173/@vite/client"></script>
+        <script type="module" src="http://<?= $_SERVER['REMOTE_ADDR'] ?>:5173/resources/scripts/index.js"></script>
     <?php else : ?>
         <?php $manifest = json_decode(file_get_contents(get_theme_file_path('assets/manifest.json')), true); ?>
         <script type="module" src="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['file']) ?>" defer></script>
