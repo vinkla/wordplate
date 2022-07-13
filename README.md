@@ -170,7 +170,7 @@ npm run build
 
 ## Mail
 
-If you want to add custom SMTP credentials with WordPlate, you may add the following to your `functions.php` file:
+If you want to add custom SMTP credentials, you may add the following to your `functions.php` file:
 
 ```php
 // Register SMTP email with HTML support.
@@ -191,7 +191,7 @@ add_filter('wp_mail_from_name', fn () => env('MAIL_FROM_NAME', 'Example'));
 add_filter('wp_mail_from', fn () => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
 ```
 
-Then add the environment variables to you `.env` files:
+Then add the environment variables to your `.env` file:
 
 ```
 MAIL_FROM_ADDRESS=
