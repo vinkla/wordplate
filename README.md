@@ -202,6 +202,12 @@ MAIL_PORT=
 MAIL_USERNAME=
 ```
 
+If you're using a service such as [MailHog](https://github.com/mailhog/MailHog) locally, you'll need to turn of encryption:
+
+```
+MAIL_ENCRYPTION=null
+```
+
 ## Integrations
 
 Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and some are created by other amazing developers.
