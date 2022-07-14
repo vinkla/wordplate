@@ -253,8 +253,8 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
     +   "johnpbloch/wordpress-core": "^6.0",
     +   "roots/bedrock-autoloader": "^1.0",
     +   "roots/wp-password-bcrypt": "^1.1",
-    +   "symfony/http-foundation": "^6.1",
-    +   "symfony/var-dumper": "^6.1",
+    +   "symfony/http-foundation": "^6.0",
+    +   "symfony/var-dumper": "^6.0",
     +   "vlucas/phpdotenv": "^5.4"
     }
     ```
