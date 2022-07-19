@@ -14,8 +14,10 @@
         "roots/wordpress": "^6.0",
         "roots/wp-password-bcrypt": "^1.1",
         "symfony/http-foundation": "^6.0",
-        "symfony/var-dumper": "^6.0",
         "vlucas/phpdotenv": "^5.4"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
     },
     "repositories": [
         {
