@@ -11,7 +11,7 @@
         "php": "^8.0.2",
         "composer/installers": "^2.1",
         "roots/bedrock-autoloader": "^1.0",
-        "roots/wordpress": "^6.0",
+        "roots/wordpress": "^6.0.1",
         "roots/wp-password-bcrypt": "^1.1",
         "symfony/http-foundation": "^6.0",
         "vlucas/phpdotenv": "^5.4"
