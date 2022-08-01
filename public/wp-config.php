@@ -63,8 +63,8 @@ define('WP_DEFAULT_THEME', env('WP_DEFAULT_THEME', 'wordplate'));
 // Constant to configure core updates.
 define('WP_AUTO_UPDATE_CORE', env('WP_AUTO_UPDATE_CORE', 'minor'));
 
-// Specify the number of post revisions.
-define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
+// Limit the number of post revisions.
+define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', true));
 
 // Disable technical issues emails.
 define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
