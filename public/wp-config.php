@@ -60,8 +60,8 @@ define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
 // Set the default WordPress theme.
 define('WP_DEFAULT_THEME', env('WP_DEFAULT_THEME', 'wordplate'));
 
-// Constant to configure core updates.
-define('WP_AUTO_UPDATE_CORE', env('WP_AUTO_UPDATE_CORE', 'minor'));
+// Disable WordPress auto updates.
+define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
 
 // Limit the number of post revisions.
 define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', true));
