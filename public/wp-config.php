@@ -60,9 +60,6 @@ define('WP_CONTENT_URL', env('WP_CONTENT_URL', WP_HOME));
 // Disable WordPress auto updates.
 define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
 
-// Set the trash to less days to optimize WordPress.
-define('EMPTY_TRASH_DAYS', env('EMPTY_TRASH_DAYS', 7));
-
 // Disable WP-Cron (wp-cron.php) for faster performance.
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
