@@ -75,6 +75,9 @@ define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
 // Prevent file edititing from the dashboard.
 define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT', true));
 
+// Disable plugin and theme updates and installation from the dashboard.
+define('DISALLOW_FILE_MODS', env('DISALLOW_FILE_MODS', true));
+
 // Disable WP-Cron (wp-cron.php) for faster performance.
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
