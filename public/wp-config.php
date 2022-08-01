@@ -21,7 +21,7 @@ define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY', $isDebugModeEnabled));
 define('SCRIPT_DEBUG', env('SCRIPT_DEBUG', $isDebugModeEnabled));
 
 // The database configuration with database name, username, password,
-// hostname charset and database collae type.
+// hostname charset and database collate type.
 define('DB_NAME', env('DB_NAME'));
 define('DB_USER', env('DB_USER'));
 define('DB_PASSWORD', env('DB_PASSWORD'));
