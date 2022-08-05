@@ -116,14 +116,14 @@ We've integrated [WordPress Packagist](https://wpackagist.org) which makes it po
 Install the desired plugins using `wpackagist-plugin` as the vendor name. Packages are installed in the `public/plugins` directory.
 
 ```bash
-composer require wpackagist-plugin/hide-updates
+composer require wpackagist-plugin/clean-image-filenames
 ```
 
 This is an example of how your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wpackagist-plugin/hide-updates": "^1.1"
+    "wpackagist-plugin/clean-image-filenames": "^1.3"
 }
 ```
 
@@ -139,7 +139,7 @@ To install plugins into into the `mu-plugins` directory, add the plugin name to 
 "installer-paths": {
     "public/mu-plugins/{$name}": [
         "type:wordpress-muplugin",
-        "wpackagist-plugin/hide-updates",
+        "wpackagist-plugin/clean-image-filenames",
     ]
 }
 ```
@@ -147,7 +147,7 @@ To install plugins into into the `mu-plugins` directory, add the plugin name to 
 Install the plugin using `wpackagist-plugin` as the vendor name.
 
 ```sh
-composer require wpackagist-plugin/hide-updates
+composer require wpackagist-plugin/clean-image-filenames
 ```
 
 The plugin should now be installed in the `public/mu-plugins` directory.
@@ -231,10 +231,6 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 - [**Headache**](https://github.com/vinkla/headache)
 
   The plugin removes a lot of default WordPress stuff you just can't wait to get rid of.
-
-- [**Hide Updates**](https://wordpress.org/plugins/hide-updates/)
-
-  The plugin hides update notices for updates in WordPress.
 
 ## Upgrade Guide
 
