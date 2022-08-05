@@ -1,4 +1,4 @@
-name: PSR-12
+name: PHP CS Fixer
 
 on: [push, pull_request]
 
@@ -6,7 +6,7 @@ jobs:
   run:
     runs-on: ubuntu-latest
 
-    name: PHP-CS-Fixer
+    name: PSR-12
 
     steps:
       - uses: actions/checkout@v3
