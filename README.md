@@ -14,7 +14,6 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 - [Plugins](#plugins)
 - [Vite.js](#vitejs)
 - [Mail](#mail)
-- [Integrations](#integrations)
 - [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
 - [Acknowledgements](#acknowledgements)
@@ -212,30 +211,6 @@ If you're using a service such as [MailHog](https://github.com/mailhog/MailHog) 
 MAIL_ENCRYPTION=null
 ```
 
-## Integrations
-
-Below you'll find a list of plugins and packages we use with WordPlate. Some of these projects are maintained by WordPlate and some are created by other amazing developers.
-
-- [**Blade**](https://github.com/fiskhandlarn/blade)
-
-  The package integrates [Blade](https://laravel.com/docs/9.x/blade) templating system in WordPress.
-
-- [**Clean Image Filenames**](https://wordpress.org/plugins/clean-image-filenames/)
-
-  The plugin removes special characters from filenames.
-
-- [**Extended ACF**](https://github.com/vinkla/extended-acf)
-
-  The package provides an object oriented API to register fields, groups and layouts with ACF.
-
-- [**Extended CPTs**](https://github.com/johnbillion/extended-cpts)
-
-  The package provides extended functionality to WordPress custom post types and taxonomies.
-
-- [**Headache**](https://github.com/vinkla/headache)
-
-  The plugin removes a lot of default WordPress stuff you just can't wait to get rid of.
-
 ## Upgrade Guide
 
 WordPlate has archived the `wordplate/framework` package and moved everything into this repository instead. We keep this list for any old application out there which needs to be upgraded.
@@ -259,7 +234,7 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
     }
     ```
 
-1. Replace your `public/wp-config.php` file [the one in this repository](public/wp-config.php). Remember to save any custom constans defined in your `wp-config.php` file.
+1. Replace your `public/wp-config.php` file with [the one in this repository](public/wp-config.php). Remember to save any custom constants defined in your `wp-config.php` file.
 
 1. Add the [`src/helpers.php`](src/helpers.php) file from this repository and autoload it in the `composer.json` file:
 
