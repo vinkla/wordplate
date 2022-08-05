@@ -4,6 +4,10 @@
 
 WordPlate is a boilerplate. It's like building any other WordPress website with themes and plugins. Just with sprinkles on top.
 
+[![Build Status](https://badgen.net/github/checks/vinkla/wordplate?label=build&icon=github)](https://github.com/vinkla/wordplate/actions)
+[![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/wordplate)](https://packagist.org/packages/vinkla/wordplate/stats)
+[![Latest Version](https://badgen.net/packagist/v/vinkla/wordplate)](https://packagist.org/packages/vinkla/wordplate)
+
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -220,7 +224,7 @@ Below you'll find a list of plugins and packages we use with WordPlate. Some of 
 
   The plugin removes special characters from filenames.
 
-- [**Extended ACF**](https://github.com/wordplate/extended-acf)
+- [**Extended ACF**](https://github.com/vinkla/extended-acf)
 
   The package provides an object oriented API to register fields, groups and layouts with ACF.
 
