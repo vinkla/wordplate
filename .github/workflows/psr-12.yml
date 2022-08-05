@@ -1,10 +1,10 @@
-name: CI
+name: PSR-12
 
 on: [push, pull_request]
 
 jobs:
   run:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
 
     name: PSR-12
 
