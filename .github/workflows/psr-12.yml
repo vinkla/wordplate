@@ -14,5 +14,5 @@ jobs:
         with:
           php-version: 8.1
           coverage: xdebug
-          tools: phpcs
-      - run: phpcs --standard=PSR12 --colors -n public src
+          tools: php-cs-fixer, cs2pr
+      - run: php-cs-fixer fix --dry-run --rules=@PSR12 --format=checkstyle | cs2pr
