@@ -20,7 +20,7 @@ add_action('admin_init', function () {
 });
 
 // Remove administrator toolbar menu items.
-add_action('admin_bar_menu', function ($menu) {
+add_action('admin_bar_menu', function (WP_Admin_Bar $menu) {
     $menu->remove_node('comments'); // Comments
     $menu->remove_node('customize'); // Customize
     $menu->remove_node('dashboard'); // Dashboard
