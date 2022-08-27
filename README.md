@@ -157,6 +157,10 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
 
+### Headache
+
+[Headache](https://github.com/vinkla/headache) is an easy-to-swallow painkiller plugin for WordPress. It is included by default in WordPlate. It removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
+
 ## Vite.js
 
 [Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
@@ -510,6 +514,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
+- [`vinkla/headache`](https://github.com/vinkla/headache)
 - [`vitejs/vite`](https://github.com/vitejs/vite)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
 
