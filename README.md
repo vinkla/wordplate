@@ -1,3 +1,5 @@
+> **Note** The project **has been renamed** in version 12, see the [upgrade guide](#upgrade-guide).
+
 ![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)
 
 # WordPlate
@@ -217,7 +219,7 @@ MAIL_ENCRYPTION=null
 
 ## Upgrade Guide
 
-WordPlate has archived the `wordplate/framework` package and moved everything into this repository instead. We keep this list for any old application out there which needs to be upgraded.
+WordPlate has archived the `wordplate/framework` package and moved everything into the boilerplate repository instead. We keep this list for any old application out there which needs to be upgraded.
 
 <details>
 <summary><strong>Upgrading from 11 to 12</strong></summary>
