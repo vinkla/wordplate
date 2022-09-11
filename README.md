@@ -1,4 +1,4 @@
-> **Note** The project **has been renamed** in version 12, see the [upgrade guide](#upgrade-guide).
+> **Note** The package **has been renamed** in version 12, see the [upgrade guide](#upgrade-guide).
 
 ![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)
 
