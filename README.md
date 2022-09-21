@@ -159,13 +159,15 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
 
-### Headache
+### Included Plugins
 
-[Headache](https://github.com/vinkla/headache) is an easy-to-swallow painkiller plugin for WordPress. It is included by default in WordPlate. It removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
+#### [Headache](https://github.com/vinkla/headache)
 
-### Clean Image Filenames
+An easy-to-swallow painkiller plugin for WordPress. It is included by default in WordPlate. It removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
 
-The plugin [`clean-image-filenames`](https://wordpress.org/plugins/clean-image-filenames/) is included by default. It automatically converts language accent characters in filenames when uploading to the media library. Characters are converted into browser and server friendly, non-accent characters.
+#### [Clean Image Filenames](https://wordpress.org/plugins/clean-image-filenames/)
+
+The plugin automatically converts language accent characters in filenames when uploading to the media library. Characters are converted into browser and server friendly, non-accent characters.
 
 - Räksmörgås.jpg → raksmorgas.jpg
 - Æblegrød_FTW!.gif → aeblegrod-ftw.gif
