@@ -163,6 +163,14 @@ The plugin should now be installed in the `public/mu-plugins` directory.
 
 [Headache](https://github.com/vinkla/headache) is an easy-to-swallow painkiller plugin for WordPress. It is included by default in WordPlate. It removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
 
+### Clean Image Filenames
+
+The plugin [`clean-image-filenames`](https://wordpress.org/plugins/clean-image-filenames/) is included by default. It automatically converts language accent characters in filenames when uploading to the media library. Characters are converted into browser and server friendly, non-accent characters.
+
+- Räksmörgås.jpg → raksmorgas.jpg
+- Æblegrød_FTW!.gif → aeblegrod-ftw.gif
+- Château de Ferrières.png → chateau-de-ferrieres.png
+
 ## Vite.js
 
 [Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
