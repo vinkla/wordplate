@@ -157,7 +157,7 @@ composer require wpackagist-plugin/clean-image-filenames
 
 The plugin should now be installed in the `public/mu-plugins` directory.
 
-[Read more about the must-use plugin autoloader in the documentation.](https://roots.io/docs/bedrock/master/mu-plugin-autoloader/)
+[Read more about the must-use plugin autoloader in the documentation.](https://docs.roots.io/bedrock/master/mu-plugin-autoloader/)
 
 ### Included Plugins
 
