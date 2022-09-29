@@ -192,6 +192,8 @@ npm run build
 If you want to add custom SMTP credentials, you may add the following to your `functions.php` file:
 
 ```php
+use PHPMailer\PHPMailer\PHPMailer;
+
 // Register SMTP email with HTML support.
 add_action('phpmailer_init', function (PHPMailer $mail) {
     $mail->isSMTP();
