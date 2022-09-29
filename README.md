@@ -526,6 +526,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
+- [`upperdog/clean-image-filenames`](https://github.com/upperdog/clean-image-filenames)
 - [`vinkla/headache`](https://github.com/vinkla/headache)
 - [`vitejs/vite`](https://github.com/vitejs/vite)
 - [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv)
