@@ -7,6 +7,7 @@ export default defineConfig(({ command }) => ({
   publicDir: 'resources/static',
   build: {
     manifest: true,
+    emptyOutDir: true,
     outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
     assetsDir: '',
     rollupOptions: {
