@@ -12,8 +12,9 @@
         <script type="module" src="http://localhost:5173/@vite/client"></script>
         <script type="module" src="http://localhost:5173/resources/scripts/index.js"></script>
     <?php else : ?>
-        <script type="module" src="<?= get_asset_file_uri('index.js') ?>" defer></script>
-        <link rel="stylesheet" href="<?= get_asset_file_uri('index.css') ?>">
+        <?php $manifest = json_decode(file_get_contents(get_theme_file_path('assets/manifest.json')), true); ?>
+        <script type="module" src="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['file']) ?>" defer></script>
+        <link rel="stylesheet" href="<?= get_theme_file_uri('assets/' . $manifest['resources/scripts/index.js']['css'][0]) ?>">
     <?php endif; ?>
 
     <?php wp_head(); ?>
