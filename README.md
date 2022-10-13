@@ -56,7 +56,7 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 
 ## Installation
 
-To use WordPlate, you need to have PHP 8.0+ and MySQL 5.7+ installed on your machine. 
+To use WordPlate, you need to have at least PHP 8.1 and MySQL 8.0 installed on your machine. 
 
 WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
 
@@ -77,13 +77,13 @@ DB_PASSWORD=password
 Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
 
 ```sh
-php -S localhost:8000 -t public/
+php -S 127.0.0.1:8000 -t public/
 ```
 
 Visit your application in the browser:
 
-- [`http://localhost:8000/`](http://localhost:8000/) - Your website.
-- [`http://localhost:8000/wordpress/wp-admin`](http://localhost:8000/wordpress/wp-admin) - The administration dashboard.
+- [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/) - Your website.
+- [`http://127.0.0.1:8000/wordpress/wp-admin`](http://127.0.0.1:8000/wordpress/wp-admin) - The administration dashboard.
 
 ## Configuration
 
