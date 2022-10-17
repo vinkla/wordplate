@@ -11,7 +11,7 @@ export default defineConfig(({ command }) => ({
     outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
     assetsDir: '',
     rollupOptions: {
-      input: 'resources/scripts/index.js',
+      input: 'resources/js/index.js',
     },
   },
   plugins: [
