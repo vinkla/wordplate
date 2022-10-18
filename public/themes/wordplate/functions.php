@@ -12,13 +12,39 @@ add_action('after_setup_theme', function () {
     ]);
 });
 
+// Register scripts and styles.
+add_action('wp_enqueue_scripts', function () {
+    $manifestPath = get_theme_file_path('assets/manifest.json');
+
+    if (
+        wp_get_environment_type() !== 'production' && // is development
+        is_array(wp_remote_get('http://localhost:5173/')) // is Vite.js running
+    ) {
+        wp_enqueue_script('vite', 'http://localhost:5173/@vite/client');
+        wp_enqueue_script('wordplate', 'http://localhost:5173/resources/js/index.js');
+    } else if (file_exists($manifestPath)) {
+        $manifest = json_decode(file_get_contents($manifestPath), true);
+        wp_enqueue_script('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
+        wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.css']['file']));
+    }
+});
+
+// Load scripts as modules.
+add_filter('script_loader_tag', function (string $tag, string $handle, string $src) {
+    if (in_array($handle, ['vite', 'wordplate'])) {
+        return '<script type="module" src="' . esc_url($src) . '" defer></script>';
+    }
+
+    return $tag;
+}, 10, 3);
+
 // Discourage search engines from indexing in non-production environments.
 add_action(
     'pre_option_blog_public',
     wp_get_environment_type() === 'production' ? '__return_true' : '__return_zero'
 );
 
-// Remove administrator menu items.
+// Remove admin menu items.
 add_action('admin_init', function () {
     remove_menu_page('edit-comments.php'); // Comments
     // remove_menu_page('edit.php?post_type=page'); // Pages
@@ -27,7 +53,7 @@ add_action('admin_init', function () {
     // remove_menu_page('upload.php'); // Media
 });
 
-// Remove administrator toolbar menu items.
+// Remove admin toolbar menu items.
 add_action('admin_bar_menu', function (WP_Admin_Bar $menu) {
     $menu->remove_node('comments'); // Comments
     $menu->remove_node('customize'); // Customize
@@ -45,7 +71,7 @@ add_action('admin_bar_menu', function (WP_Admin_Bar $menu) {
     $menu->remove_node('wp-logo'); // WordPress Logo
 }, 999);
 
-// Remove administrator dashboard widgets.
+// Remove admin dashboard widgets.
 add_action('wp_dashboard_setup', function () {
     global $wp_meta_boxes;
 
