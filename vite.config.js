@@ -2,14 +2,12 @@ import { defineConfig } from 'vite';
 
 require('dotenv').config();
 
-export default defineConfig(({ command }) => ({
-  base: command === 'serve' ? '/' : '/build/',
+export default defineConfig(() => ({
   publicDir: 'resources/static',
   build: {
     manifest: true,
     emptyOutDir: true,
     outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
-    assetsDir: '',
     rollupOptions: {
       input: 'resources/js/index.js',
     },
