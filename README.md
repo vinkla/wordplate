@@ -16,8 +16,8 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 - [Plugins](#plugins)
 - [Vite.js](#vitejs)
 - [Mail](#mail)
-- [Upgrade Guide](#upgrade-guide)
 - [FAQ](#faq)
+- [Upgrade Guide](#upgrade-guide)
 - [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -103,7 +103,7 @@ If you're lazy like us, [visit our salt key generator](https://wordplate.github.
 
 It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different database locally than you do on your production server.
 
-To make this a cinch, WordPlate utilizes the [Dotenv](https://github.com/vlucas/phpdotenv) PHP package. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
+To make this a cinch, WordPlate utilizes the [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv) PHP package. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
 
 Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
 
@@ -177,8 +177,6 @@ The plugin automatically converts language accent characters in filenames when u
 
 [Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
 
-[To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
-
 ```sh
 # Start the dev server...
 npm run dev
@@ -186,6 +184,8 @@ npm run dev
 # Build for production...
 npm run build
 ```
+
+[To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
 
 ## Mail
 
@@ -228,6 +228,125 @@ If you're using a service such as [MailHog](https://github.com/mailhog/MailHog) 
 ```
 MAIL_ENCRYPTION=null
 ```
+
+## FAQ
+
+<details>
+<summary><strong>Can I add WordPress constants to the environment file?</strong></summary>
+
+This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
+
+```diff
+define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
+
++define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
+````
+
+Then you may add the constant to the `.env` file.
+
+```diff
+WP_DEFAULT_THEME=wordplate
++WP_ALLOW_MULTISITE=true
+````
+
+</details>
+<details>
+<summary><strong>Can I rename the public directory?</strong></summary>
+
+If you want to rename the `public` directory you'll need to update the `wp-config.php` file in two places:
+
+```php
+-realpath(__DIR__ . '/../public');
++realpath(__DIR__ . '/../public_html');
+```
+
+Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
+</details>
+<details>
+<summary><strong>Can I rename the WordPress directory?</strong></summary>
+
+By default WordPlate will put the WordPress in `public/wordpress`. If you want to change this there are a couple of steps you need to go through. Let's say you want to change the default WordPress location to `public/wp`:
+
+1. Update the `wordpress-install-dir` path in your `composer.json` file.
+
+2. Update `wordpress` to `wp` in `wordplate/public/.gitignore`.
+
+3. Update the last line in the `public/index.php` file to:
+    
+    ```php
+    require __DIR__.'/wp/wp-blog-header.php';
+    ```
+    
+4. Update the `WP_DIR` environment variable in the `.env` file to `wp`.
+
+5. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
+
+6. Remove the `public/wordpress` directory if it exist and then run `composer update`.
+</details>
+<details>
+<summary><strong>Can I rename the theme directory?</strong></summary>
+
+For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_DEFAULT_THEME` environment variable in the `.env` file.
+</details>
+<details>
+<summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
+
+If you're using [Laravel Valet](https://laravel.com/docs/9.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
+
+```php
+<?php
+
+declare(strict_types=1);
+
+final class LocalValetDriver extends BasicValetDriver
+{
+    public function serves(string $sitePath, string $siteName, string $uri): bool
+    {
+        return is_dir($sitePath.'/public/wordpress');
+    }
+    
+    /** @return false|string */
+    public function isStaticFile(string $sitePath, string $siteName, string $uri): 
+    {
+        $staticFilePath = $sitePath . '/public' . $uri;
+
+        if ($this->isActualFile($staticFilePath)) {
+            return $staticFilePath;
+        }
+
+        return false;
+    }
+
+    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
+    {
+        $_SERVER['PHP_SELF'] = $uri;
+        $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
+
+        if (strpos($uri, '/wordpress/') === 0) {
+            if (is_dir($sitePath . '/public' . $uri)) {
+                $uri = $this->forceTrailingSlash($uri);
+
+                return $sitePath . '/public' . $uri . '/index.php';
+            }
+
+            return $sitePath . '/public' . $uri;
+        }
+
+        return $sitePath . '/public/index.php';
+    }
+
+    private function forceTrailingSlash(string $uri): string
+    {
+        if (substr($uri, -1 * strlen('/wordpress/wp-admin')) == '/wordpress/wp-admin') {
+            header('Location: ' . $uri . '/');
+            die;
+        }
+
+        return $uri;
+    }
+}
+```
+</details>
 
 ## Upgrade Guide
 
@@ -395,125 +514,6 @@ WordPlate has archived the `wordplate/framework` package and moved everything in
    > **Note:** Make sure you don't overwrite any of your custom constants.
 
 1. Run `composer update` in the root of your project.
-</details>
-
-## FAQ
-
-<details>
-<summary><strong>Can I add WordPress constants to the environment file?</strong></summary>
-
-This is possible by updating the `public/wp-config.php` file after the WordPlate application have been created.
-
-```diff
-define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
-
-+define('WP_ALLOW_MULTISITE', env('WP_ALLOW_MULTISITE', true));
-````
-
-Then you may add the constant to the `.env` file.
-
-```diff
-WP_DEFAULT_THEME=wordplate
-+WP_ALLOW_MULTISITE=true
-````
-
-</details>
-<details>
-<summary><strong>Can I rename the public directory?</strong></summary>
-
-If you want to rename the `public` directory you'll need to update the `wp-config.php` file in two places:
-
-```php
--realpath(__DIR__ . '/../public');
-+realpath(__DIR__ . '/../public_html');
-```
-
-Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
-</details>
-<details>
-<summary><strong>Can I rename the WordPress directory?</strong></summary>
-
-By default WordPlate will put the WordPress in `public/wordpress`. If you want to change this there are a couple of steps you need to go through. Let's say you want to change the default WordPress location to `public/wp`:
-
-1. Update the `wordpress-install-dir` path in your `composer.json` file.
-
-2. Update `wordpress` to `wp` in `wordplate/public/.gitignore`.
-
-3. Update the last line in the `public/index.php` file to:
-    
-    ```php
-    require __DIR__.'/wp/wp-blog-header.php';
-    ```
-    
-4. Update the `WP_DIR` environment variable in the `.env` file to `wp`.
-
-5. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
-
-6. Remove the `public/wordpress` directory if it exist and then run `composer update`.
-</details>
-<details>
-<summary><strong>Can I rename the theme directory?</strong></summary>
-
-For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_DEFAULT_THEME` environment variable in the `.env` file.
-</details>
-<details>
-<summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
-
-If you're using [Laravel Valet](https://laravel.com/docs/9.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-final class LocalValetDriver extends BasicValetDriver
-{
-    public function serves(string $sitePath, string $siteName, string $uri): bool
-    {
-        return is_dir($sitePath.'/public/wordpress');
-    }
-    
-    /** @return false|string */
-    public function isStaticFile(string $sitePath, string $siteName, string $uri): 
-    {
-        $staticFilePath = $sitePath . '/public' . $uri;
-
-        if ($this->isActualFile($staticFilePath)) {
-            return $staticFilePath;
-        }
-
-        return false;
-    }
-
-    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
-    {
-        $_SERVER['PHP_SELF'] = $uri;
-        $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
-
-        if (strpos($uri, '/wordpress/') === 0) {
-            if (is_dir($sitePath . '/public' . $uri)) {
-                $uri = $this->forceTrailingSlash($uri);
-
-                return $sitePath . '/public' . $uri . '/index.php';
-            }
-
-            return $sitePath . '/public' . $uri;
-        }
-
-        return $sitePath . '/public/index.php';
-    }
-
-    private function forceTrailingSlash(string $uri): string
-    {
-        if (substr($uri, -1 * strlen('/wordpress/wp-admin')) == '/wordpress/wp-admin') {
-            header('Location: ' . $uri . '/');
-            die;
-        }
-
-        return $uri;
-    }
-}
-```
 </details>
 
 ## Acknowledgements
