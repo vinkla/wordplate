@@ -350,12 +350,10 @@ final class LocalValetDriver extends BasicValetDriver
 
 ## Upgrade Guide
 
-WordPlate has archived the `wordplate/framework` package and moved everything into the boilerplate repository instead. We keep this list for any old application out there which needs to be upgraded.
-
 <details>
 <summary><strong>Upgrading from 11 to 12</strong></summary>
 
-1. Update the `composer.json` file:
+1. The `wordplate/framework` package has been archived. Update the `composer.json` file:
 
     ```diff
     "require": {
