@@ -38,12 +38,6 @@ add_filter('script_loader_tag', function (string $tag, string $handle, string $s
     return $tag;
 }, 10, 3);
 
-// Discourage search engines from indexing in non-production environments.
-add_action(
-    'pre_option_blog_public',
-    wp_get_environment_type() === 'production' ? '__return_true' : '__return_zero'
-);
-
 // Remove admin menu items.
 add_action('admin_init', function () {
     remove_menu_page('edit-comments.php'); // Comments
