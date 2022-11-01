@@ -319,7 +319,7 @@ class WordPlateValetDriver extends ValetDriver
         $_SERVER['PHP_SELF'] = $uri;
         $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
 
-        if (strpos($uri, '/wordpress/') === 0) {
+        if (strpos($uri, '/wordpress') === 0) {
             return is_dir($sitePath . '/public' . $uri)
                 ? $sitePath . '/public' . $this->forceTrailingSlash($uri) . '/index.php'
                 : $sitePath . '/public' . $uri;
