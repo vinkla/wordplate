@@ -291,12 +291,12 @@ For most applications you may leave the theme directory as it is. If you want to
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
 
-If you're using [Laravel Valet](https://laravel.com/docs/9.x/valet) together with WordPlate, you may use our local valet driver. Create a file named `LocalValetDriver.php` in the root of your project and copy and paste the class below:
+If you're using Laravel Valet together with WordPlate, you may use our [custom valet driver](https://laravel.com/docs/9.x/valet#custom-valet-drivers):
 
 ```php
 <?php
 
-final class LocalValetDriver extends BasicValetDriver
+class WordPlateValetDriver extends ValetDriver
 {
     public function serves($sitePath, $siteName, $uri)
     {
