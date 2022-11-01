@@ -296,17 +296,14 @@ If you're using [Laravel Valet](https://laravel.com/docs/9.x/valet) together wit
 ```php
 <?php
 
-declare(strict_types=1);
-
 final class LocalValetDriver extends BasicValetDriver
 {
-    public function serves(string $sitePath, string $siteName, string $uri): bool
+    public function serves($sitePath, $siteName, $uri)
     {
-        return is_dir($sitePath.'/public/wordpress');
+        return is_dir($sitePath . '/public/wordpress');
     }
-    
-    /** @return false|string */
-    public function isStaticFile(string $sitePath, string $siteName, string $uri): 
+
+    public function isStaticFile($sitePath, $siteName, $uri)
     {
         $staticFilePath = $sitePath . '/public' . $uri;
 
@@ -317,29 +314,29 @@ final class LocalValetDriver extends BasicValetDriver
         return false;
     }
 
-    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
+    public function frontControllerPath($sitePath, $siteName, $uri)
     {
         $_SERVER['PHP_SELF'] = $uri;
         $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
 
         if (strpos($uri, '/wordpress/') === 0) {
-            if (is_dir($sitePath . '/public' . $uri)) {
-                $uri = $this->forceTrailingSlash($uri);
+            return is_dir($sitePath . '/public' . $uri)
+                ? $sitePath . '/public' . $this->forceTrailingSlash($uri) . '/index.php'
+                : $sitePath . '/public' . $uri;
+        }
 
-                return $sitePath . '/public' . $uri . '/index.php';
-            }
-
+        if ($uri !== '/' && file_exists($sitePath . '/public' . $uri)) {
             return $sitePath . '/public' . $uri;
         }
 
         return $sitePath . '/public/index.php';
     }
 
-    private function forceTrailingSlash(string $uri): string
+    private function forceTrailingSlash($uri)
     {
-        if (substr($uri, -1 * strlen('/wordpress/wp-admin')) == '/wordpress/wp-admin') {
+        if (substr($uri, -1 * strlen('/wordpress/wp-admin')) === '/wordpress/wp-admin') {
             header('Location: ' . $uri . '/');
-            die;
+            exit;
         }
 
         return $uri;
