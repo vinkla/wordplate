@@ -17,7 +17,7 @@ add_action('wp_enqueue_scripts', function () {
     $manifestPath = get_theme_file_path('assets/manifest.json');
 
     if (
-        wp_get_environment_type() !== 'production' && // is development
+        wp_get_environment_type() === 'local' &&
         is_array(wp_remote_get('http://localhost:5173/')) // is Vite.js running
     ) {
         wp_enqueue_script('vite', 'http://localhost:5173/@vite/client');
