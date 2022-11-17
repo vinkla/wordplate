@@ -10,7 +10,10 @@ export default defineConfig(() => ({
     manifest: true,
     outDir: `public/themes/${process.env.WP_DEFAULT_THEME}/assets`,
     rollupOptions: {
-      input: 'resources/js/index.js',
+      input: [
+        'resources/js/index.js',
+        'resources/css/index.css',
+      ],
     },
   },
   plugins: [
