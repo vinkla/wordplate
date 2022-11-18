@@ -253,14 +253,7 @@ WP_DEFAULT_THEME=wordplate
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
-If you want to rename the `public` directory you'll need to update the `wp-config.php` file in two places:
-
-```php
--realpath(__DIR__ . '/../public');
-+realpath(__DIR__ . '/../public_html');
-```
-
-Please note that you also have to update your `composer.json` file with your new `public` directory path before you can run `composer update` again.
+Update your `composer.json` file with your new `public` directory path and run `composer update`.
 </details>
 <details>
 <summary><strong>Can I rename the WordPress directory?</strong></summary>

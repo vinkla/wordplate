@@ -54,7 +54,7 @@ define('WP_HOME', env('WP_HOME', Request::createFromGlobals()->getSchemeAndHttpH
 define('WP_SITEURL', env('WP_SITEURL', sprintf('%s/%s', WP_HOME, env('WP_DIR', 'wordpress'))));
 
 // Set the WordPress content directory path.
-define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', realpath(__DIR__ . '/../public')));
+define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
 define('WP_CONTENT_URL', env('WP_CONTENT_URL', WP_HOME));
 
 // Disable WordPress auto updates.
@@ -80,7 +80,7 @@ define('WP_POST_REVISIONS', env('WP_POST_REVISIONS', 2));
 
 // Set the absolute path to the WordPress directory.
 if (!defined('ABSPATH')) {
-    define('ABSPATH', sprintf('%s/%s/', realpath(__DIR__ . '/../public'), env('WP_DIR', 'wordpress')));
+    define('ABSPATH', sprintf('%s/%s/', __DIR__, env('WP_DIR', 'wordpress')));
 }
 
 // Set the database table prefix.
