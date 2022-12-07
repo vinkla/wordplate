@@ -289,6 +289,8 @@ If you're using Laravel Valet together with WordPlate, you may use our [custom v
 ```php
 <?php
 
+use Valet\Drivers\BasicValetDriver;
+
 class WordPlateValetDriver extends BasicValetDriver
 {
     public function serves($sitePath, $siteName, $uri)
