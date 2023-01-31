@@ -1,3 +1,4 @@
+.env
+auth.json
 node_modules
 vendor
-.env
