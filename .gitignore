@@ -1,4 +1,4 @@
 .env
+/node_modules
+/vendor
 auth.json
-node_modules
-vendor
