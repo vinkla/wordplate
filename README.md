@@ -251,6 +251,11 @@ WP_DEFAULT_THEME=wordplate
 
 </details>
 <details>
+<summary><strong>Can I install languages with Composer?</strong></summary>
+
+If you want to install language packs using Composer, we recommend looking at the [WP Languages](https://wp-languages.github.io/) project.
+</details>
+<details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
 Update your `composer.json` file with your new `public` directory path and run `composer update`.
