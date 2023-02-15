@@ -97,7 +97,7 @@ The next thing you should do after installing WordPlate is adding salt keys to y
 
 Typically, these strings should be 64 characters long. The keys can be set in the `.env` environment file. If you have not copied the `.env.example` file to a new file named `.env`, you should do that now. **If the salt keys isn't set, your user sessions and other encrypted data will not be secure.**
 
-If you're lazy like us, [visit our salt key generator](https://wordplate.github.io/salt) and copy the randomly generated keys to your `.env` file.
+If you're lazy like us, [visit our salt key generator](https://vinkla.github.io/salts/) and copy the randomly generated keys to your `.env` file.
 
 ### Environment Configuration
 
