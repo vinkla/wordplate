@@ -109,8 +109,8 @@ Your `.env` file should not be committed to your application's source control, s
 
 Read more about environment variables in Laravel's documentation:
 
-- [Environment Variable Types](https://laravel.com/docs/9.x/configuration#environment-variable-types)
-- [Retrieving Environment Configuration](https://laravel.com/docs/9.x/configuration#retrieving-environment-configuration)
+- [Environment Variable Types](https://laravel.com/docs/10.x/configuration#environment-variable-types)
+- [Retrieving Environment Configuration](https://laravel.com/docs/10.x/configuration#retrieving-environment-configuration)
 
 ## Plugins
 
@@ -157,7 +157,7 @@ composer require wpackagist-plugin/clean-image-filenames
 
 The plugin should now be installed in the `public/mu-plugins` directory.
 
-[Read more about the must-use plugin autoloader in the documentation.](https://docs.roots.io/bedrock/master/mu-plugin-autoloader/)
+[Read more about the must-use plugin autoloader in the documentation.](https://roots.io/bedrock/docs/mu-plugin-autoloader/)
 
 ### Included Plugins
 
@@ -289,7 +289,7 @@ For most applications you may leave the theme directory as it is. If you want to
 <details>
 <summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
 
-If you're using Laravel Valet together with WordPlate, you may use our [custom valet driver](https://laravel.com/docs/9.x/valet#custom-valet-drivers):
+If you're using Laravel Valet together with WordPlate, you may use our [custom valet driver](https://laravel.com/docs/10.x/valet#custom-valet-drivers):
 
 ```php
 <?php
