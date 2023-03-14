@@ -310,7 +310,7 @@ class WordPlateValetDriver extends BasicValetDriver
         $staticFilePath = $sitePath . '/public' . $url;
 
         if ($this->isActualFile($staticFilePath)) {
-            return true;
+            return $staticFilePath;
         }
 
         return false;
