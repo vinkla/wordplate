@@ -1,8 +1,9 @@
+import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
 
-require('dotenv').config();
+dotenv.config();
 
-export default defineConfig(() => ({
+export default defineConfig({
   publicDir: 'resources/static',
   build: {
     assetsDir: '',
@@ -23,4 +24,4 @@ export default defineConfig(() => ({
       },
     },
   ],
-}));
+});
