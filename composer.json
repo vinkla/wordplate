@@ -14,7 +14,7 @@
         "roots/wordpress": "^6.1.1",
         "roots/wp-password-bcrypt": "^1.1",
         "symfony/http-foundation": "^6.0",
-        "vinkla/headache": "^2.4",
+        "vinkla/headache": "^3.0",
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-plugin/clean-image-filenames": "^1.4"
     },
@@ -49,7 +49,6 @@
         "installer-paths": {
             "public/mu-plugins/{$name}": [
                 "type:wordpress-muplugin",
-                "vinkla/headache",
                 "wpackagist-plugin/clean-image-filenames"
             ],
             "public/plugins/{$name}": [
