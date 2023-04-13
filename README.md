@@ -63,7 +63,7 @@ WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependenci
 Install WordPlate by issuing the Composer `create-project` command in your terminal:
 
 ```sh
-composer create-project --prefer-dist vinkla/wordplate blog
+composer create-project --prefer-dist vinkla/wordplate example-app
 ```
 
 Update the database credentials in the `.env` file:
