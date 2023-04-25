@@ -1,6 +1,6 @@
 > **Note** The package **has been renamed** in version 12, see the [upgrade guide](#upgrade-guide).
 
-![WordPlate](https://user-images.githubusercontent.com/499192/234193094-da72bab4-6b46-42c4-9d5d-b908e6d00a7f.png)
+![WordPlate](https://user-images.githubusercontent.com/499192/234193266-001aec44-f930-4963-a4e5-cd89c0b6daf8.png)
 
 # WordPlate
 
