@@ -97,8 +97,6 @@ This configuration helps to improve the security and performance of your applica
 
 WordPlate makes it easy to manage different configuration values based on the environment where your application is running. For example, you may need to use a different database locally than you do on your production server.
 
-To make this a cinch, WordPlate utilizes the [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv) PHP package. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
-
 To accomplish this, WordPlate uses the [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv) PHP package. When you install WordPlate, a `.env.example` file is included in the root directory of your application. If you installed WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
 
 It's important to note that your `.env` file should not be committed to your application's source control. This is because each developer or server using your application may require a different environment configuration. Additionally, committing your `.env` file to source control would be a security risk in the event that an intruder gains access to your repository, as any sensitive credentials would be exposed.
