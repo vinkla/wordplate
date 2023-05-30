@@ -4,7 +4,7 @@
 
 # WordPlate
 
-WordPlate is a boilerplate. It's like building any other WordPress website with themes and plugins. Just with sprinkles on top.
+WordPlate is a boilerplate for WordPress websites, built with Composer and designed with sensible defaults.
 
 [![Build Status](https://badgen.net/github/checks/vinkla/wordplate?label=build&icon=github)](https://github.com/vinkla/wordplate/actions)
 [![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/wordplate)](https://packagist.org/packages/vinkla/wordplate/stats)
@@ -24,49 +24,47 @@ WordPlate is a boilerplate. It's like building any other WordPress website with 
 
 - **WordPress + Composer = ♥️**
     
-    WordPress is installed using Composer which allows WordPress to be updated by running `composer update`.
+    WordPress can be installed and updated with ease using Composer. To update WordPress, simply run the command `composer update`.
 
 - **Environment Files**
     
-    Similar to Laravel, WordPlate puts environment variables within an `.env` file such as database credentials.
+    Similar to Laravel, WordPlate stores environment variables, such as database credentials, in an `.env` file.
 
 - **WordPress Packagist**
     
-    With WordPress Packagist you may manage your WordPress plugins and themes with Composer.
+    WordPress Packagist enables the management of WordPress plugins and themes through Composer.
 
 - **Must-use plugins**
     
-    Don't worry about client deactivating plugins, [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) is enabled by default.
+    Don't worry about clients deactivating plugins; [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) are enabled by default.
 
 - **Vite.js**
     
-    With Vite you can quickly get up and running to build and minify your CSS and JavaScript.
+    Using Vite, you can rapidly set up and begin building and minifying your CSS and JavaScript.
 
 - **Debugging**
     
     Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
 
 - **Clean UI**
-
-    WordPlate takes control over the WordPress dashboard and provides a [better UX](https://user-images.githubusercontent.com/499192/143415951-b01e9498-5f18-44dd-9d4b-51fb2d479a22.png) for your clients.
+  
+    Enhance the WordPress dashboard and improves the [user experience](https://user-images.githubusercontent.com/499192/143415951-b01e9498-5f18-44dd-9d4b-51fb2d479a22.png) for clients.
 
 - **Security**
-    
-    With the [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package we've replaced WordPress outdated and insecure MD5-based password hashing with the modern and secure bcrypt.
+
+    We've replaced WordPress' outdated and insecure MD5-based password hashing with modern and secure bcrypt using the  [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package.
 
 ## Installation
 
-To use WordPlate, you need to have at least PHP 8.1 and MySQL 8.0 installed on your machine. 
+Before using WordPlate, make sure you have PHP 8.1 and MySQL 8.0 installed on your computer. You'll also need to have Composer, a package manager for PHP, installed on your computer.
 
-WordPlate utilizes [Composer](https://getcomposer.org/) to manage its dependencies. So, before using WordPlate, make sure you have Composer installed on your machine.
-
-Install WordPlate by issuing the Composer `create-project` command in your terminal:
+To install WordPlate, open your terminal and enter the following command:
 
 ```sh
 composer create-project --prefer-dist vinkla/wordplate example-app
 ```
 
-Update the database credentials in the `.env` file:
+After installing WordPlate, you'll need to update the database credentials in the `.env` file. This file is located in the root directory of your project. Open the file and update the following lines with your database credentials:
 
 ```
 DB_NAME=database
@@ -74,13 +72,13 @@ DB_USER=username
 DB_PASSWORD=password
 ```
 
-Serve your application using the [built-in web server in PHP](https://www.php.net/manual/en/features.commandline.webserver.php) (or your server of choice) from the `public` directory:
+To run your WordPlate application, you may serve it using PHP's built-in web server. Open your terminal and navigate to the `public` directory of your project. Then, enter the following command:
 
 ```sh
 php -S 127.0.0.1:8000 -t public/
 ```
 
-Visit your application in the browser:
+Finally, open your web browser and visit the following URLs to view your WordPlate application:
 
 - [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/) - Your website.
 - [`http://127.0.0.1:8000/wordpress/wp-admin`](http://127.0.0.1:8000/wordpress/wp-admin) - The administration dashboard.
@@ -89,42 +87,48 @@ Visit your application in the browser:
 
 ### Public Directory
 
-After installing WordPlate, you should configure your web server's document / web root to be the `public` directory. The `index.php` in this directory serves as the front controller for all HTTP requests entering your application.
+After installing WordPlate, you'll need to configure your web server's document or web root to be the `public` directory. This is where the main entry point for your application, `index.php`, is located.
 
-### Salt Keys
+By setting the `public` directory as your web server's document root, you ensure that all HTTP requests are routed through the front controller, which handles the requests and returns the appropriate responses.
 
-The next thing you should do after installing WordPlate is adding salt keys to your environment file.
-
-Typically, these strings should be 64 characters long. The keys can be set in the `.env` environment file. If you have not copied the `.env.example` file to a new file named `.env`, you should do that now. **If the salt keys isn't set, your user sessions and other encrypted data will not be secure.**
-
-If you're lazy like us, [visit our salt key generator](https://vinkla.github.io/salts/) and copy the randomly generated keys to your `.env` file.
+This configuration helps to improve the security and performance of your application by preventing direct access to files outside of the `public` directory.
 
 ### Environment Configuration
 
-It is often helpful to have different configuration values based on the environment where the application is running. For example, you may wish to use a different database locally than you do on your production server.
+WordPlate makes it easy to manage different configuration values based on the environment where your application is running. For example, you may need to use a different database locally than you do on your production server.
 
 To make this a cinch, WordPlate utilizes the [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv) PHP package. In a fresh WordPlate installation, the root directory of your application will contain a `.env.example` file. If you install WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
 
-Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
+To accomplish this, WordPlate uses the [`vlucas/phpdotenv`](https://github.com/vlucas/phpdotenv) PHP package. When you install WordPlate, a `.env.example` file is included in the root directory of your application. If you installed WordPlate via Composer, this file will automatically be renamed to `.env`. Otherwise, you should rename the file manually.
 
-Read more about environment variables in Laravel's documentation:
+It's important to note that your `.env` file should not be committed to your application's source control. This is because each developer or server using your application may require a different environment configuration. Additionally, committing your `.env` file to source control would be a security risk in the event that an intruder gains access to your repository, as any sensitive credentials would be exposed.
+
+To learn more about managing environment variables in WordPlate, you can refer to Laravel's documentation on the topic:
 
 - [Environment Variable Types](https://laravel.com/docs/10.x/configuration#environment-variable-types)
 - [Retrieving Environment Configuration](https://laravel.com/docs/10.x/configuration#retrieving-environment-configuration)
+
+### Salt Keys
+
+It's important to add salt keys to your environment file. These keys are used to encrypt sensitive data, such as user sessions, and help to ensure the security of your application.
+
+If you don't set the salt keys, your user sessions and other encrypted data may be vulnerable to attacks. To make it easier to generate secure salt keys, we've created a [salt key generator](https://vinkla.github.io/salts/) that you can use. If you haven't already done so, copy the `.env.example` file to a new file named `.env`. Then visit the generator and copy the randomly generated keys to your `.env` file.
 
 ## Plugins
 
 ### WordPress Packagist
 
-We've integrated [WordPress Packagist](https://wpackagist.org) which makes it possible to install plugins with Composer. WordPress Packagist mirrors the WordPress plugin and theme directories as a Composer repository.
+WordPlate includes integration with [WordPress Packagist](https://wpackagist.org), a Composer repository that mirrors the WordPress plugin and theme directories. With this integration, you can install and manage plugins using Composer.
 
-Install the desired plugins using `wpackagist-plugin` as the vendor name. Packages are installed in the `public/plugins` directory.
+To install a plugin, use `wpackagist-plugin` as the vendor name and the plugin slug as the package name. For example, to install the `clean-image-filenames` plugin, you would use the following command:
 
 ```bash
 composer require wpackagist-plugin/clean-image-filenames
 ```
 
-This is an example of how your `composer.json` file might look like:
+The installed packages will be located in the `public/plugins` directory.
+
+Here's an example of what your `composer.json` file might look like:
 
 ```json
 "require": {
@@ -132,13 +136,13 @@ This is an example of how your `composer.json` file might look like:
 }
 ```
 
-[Please visit WordPress Packagist for more information and examples.](https://wpackagist.org)
+For more information and examples, please visit the [WordPress Packagist website](https://wpackagist.org).
 
 ### Must Use Plugins
 
-[Must-use plugins](https://wordpress.org/support/article/must-use-plugins/) (a.k.a. mu-plugins) are plugins installed in a special directory inside the content folder and which are automatically enabled on all sites in the installation.
+[Must-use plugins](https://wordpress.org/support/article/must-use-plugins/) (also known as mu-plugins) are a type of WordPress plugin that is installed in a special directory inside the content folder. These plugins are automatically enabled on all sites in the WordPress installation.
 
-To install plugins into into the `mu-plugins` directory, add the plugin name to the `installer-paths` in your `composer.json` file:
+To install plugins into the `mu-plugins` directory, add the plugin name to the `installer-paths` of your `composer.json` file:
 
 ```json
 "installer-paths": {
@@ -149,15 +153,15 @@ To install plugins into into the `mu-plugins` directory, add the plugin name to 
 }
 ```
 
-Install the plugin using `wpackagist-plugin` as the vendor name.
+To install the plugin, use `wpackagist-plugin` as the vendor name and the plugin slug as the package name:
 
 ```sh
 composer require wpackagist-plugin/clean-image-filenames
 ```
 
-The plugin should now be installed in the `public/mu-plugins` directory.
+The plugin will be installed in the `public/mu-plugins` directory.
 
-[Read more about the must-use plugin autoloader in the documentation.](https://roots.io/bedrock/docs/mu-plugin-autoloader/)
+For more information on the must-use plugin autoloader, please refer to the [Bedrock documentation](https://roots.io/bedrock/docs/mu-plugin-autoloader/).
 
 ### Included Plugins
 
@@ -189,7 +193,7 @@ npm run build
 
 ## Mail
 
-If you want to add custom SMTP credentials, you may add the following to your `functions.php` file:
+If you need to set up custom SMTP credentials for your WordPlate application, you can add the necessary code to your `functions.php` file. This file is located in the theme directory of your WordPlate project and contains PHP functions that are loaded by WordPress during runtime. By adding the appropriate code to this file, you can configure your application to use custom SMTP credentials for sending emails.
 
 ```php
 use PHPMailer\PHPMailer\PHPMailer;
@@ -212,7 +216,7 @@ add_filter('wp_mail_from_name', fn () => env('MAIL_FROM_NAME', 'Example'));
 add_filter('wp_mail_from', fn () => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
 ```
 
-Then add the environment variables to your `.env` file:
+Next, you'll need to add the necessary environment variables to your `.env` file:
 
 ```
 MAIL_FROM_ADDRESS=
@@ -223,7 +227,7 @@ MAIL_PORT=
 MAIL_USERNAME=
 ```
 
-If you're using a service such as [MailHog](https://github.com/mailhog/MailHog) locally, you'll need to turn of encryption:
+If you're using a local email service like [MailHog](https://github.com/mailhog/MailHog), you may need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`:
 
 ```
 MAIL_ENCRYPTION=null
