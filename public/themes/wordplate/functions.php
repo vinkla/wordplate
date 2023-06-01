@@ -67,13 +67,11 @@ add_action('admin_bar_menu', function (WP_Admin_Bar $menu) {
 
 // Remove admin dashboard widgets.
 add_action('wp_dashboard_setup', function () {
-    global $wp_meta_boxes;
-
-    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']); // Activity
-    // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']); // At a Glance
-    unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_site_health']); // Site Health Status
-    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']); // WordPress Events and News
-    unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']); // Quick Draft
+    remove_meta_box('dashboard_activity', 'dashboard', 'normal'); // Activity
+    // remove_meta_box('dashboard_right_now', 'dashboard', 'normal'); // At a Glance
+    remove_meta_box('dashboard_site_health', 'dashboard', 'normal'); // Site Health Status
+    remove_meta_box('dashboard_primary', 'dashboard', 'side'); // WordPress Events and News
+    remove_meta_box('dashboard_quick_press', 'dashboard', 'side'); // Quick Draft
 });
 
 // Add custom login form logo.
