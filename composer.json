@@ -13,7 +13,7 @@
         "roots/bedrock-autoloader": "^1.0",
         "roots/wordpress": "^6.2.2",
         "roots/wp-password-bcrypt": "^1.1",
-        "symfony/http-foundation": "^6.2",
+        "symfony/http-foundation": "^6.3",
         "vinkla/headache": "^3.1",
         "vlucas/phpdotenv": "^5.5",
         "wpackagist-plugin/clean-image-filenames": "^1.4"
