@@ -77,17 +77,16 @@ add_action('wp_dashboard_setup', function () {
 // Add custom login form logo.
 add_action('login_head', function () {
     $url = get_theme_file_uri('favicon.svg');
-    $width = 200;
 
     $styles = [
-        sprintf('background-image: url(%s);', $url),
-        sprintf('width: %dpx;', $width),
-        'background-position: center;',
-        'background-size: contain;',
+        sprintf('background-image: url(%s)', $url),
+        'width: 200px',
+        'background-position: center',
+        'background-size: contain',
     ];
 
-    echo sprintf(
+    printf(
         '<style> .login h1 a { %s } </style>',
-        implode('', $styles)
+        implode(';', $styles)
     );
 });
