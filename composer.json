@@ -31,6 +31,8 @@
             ]
         }
     ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "autoload": {
         "files": [
             "src/helpers.php"
