@@ -260,7 +260,7 @@ If you want to install language packs using Composer, we recommend looking at th
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
 
-Update your `composer.json` file with your new `public` directory path and run `composer update`.
+Update your `.gitignore`, `composer.json`, `.vite.config.js`, and `wp-cli.yml` files with the new path to the `public` directory. Then, run `composer update` in the root of your project.
 </details>
 <details>
 <summary><strong>Can I rename the WordPress directory?</strong></summary>
@@ -269,19 +269,19 @@ By default WordPlate will put the WordPress in `public/wordpress`. If you want t
 
 1. Update the `wordpress-install-dir` path in your `composer.json` file.
 
-2. Update `wordpress` to `wp` in `wordplate/public/.gitignore`.
+1. Update `wordpress` to `wp` in `wordplate/public/.gitignore`.
 
-3. Update the last line in the `public/index.php` file to:
+1. Update the last line in the `public/index.php` file to:
     
     ```php
     require __DIR__.'/wp/wp-blog-header.php';
     ```
     
-4. Update the `WP_DIR` environment variable in the `.env` file to `wp`.
+1. Update the `WP_DIR` environment variable in the `.env` file to `wp`.
 
-5. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
+1. If you're using WP-CLI, update the path in the `wp-cli.yml` file to `public/wp`.
 
-6. Remove the `public/wordpress` directory if it exist and then run `composer update`.
+1. Remove the `public/wordpress` directory if it exist and then run `composer update`.
 </details>
 <details>
 <summary><strong>Can I rename the theme directory?</strong></summary>
