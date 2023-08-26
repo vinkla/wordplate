@@ -4,7 +4,7 @@
 
 # WordPlate
 
-WordPlate is a boilerplate for WordPress websites, built with Composer and designed with sensible defaults.
+WordPlate is a boilerplate for WordPress, built with Composer and designed with sensible defaults.
 
 [![Build Status](https://badgen.net/github/checks/vinkla/wordplate?label=build&icon=github)](https://github.com/vinkla/wordplate/actions)
 [![Monthly Downloads](https://badgen.net/packagist/dm/vinkla/wordplate)](https://packagist.org/packages/vinkla/wordplate/stats)
@@ -191,7 +191,7 @@ npm run build
 
 ## Mail
 
-If you need to set up custom SMTP credentials for your WordPlate application, you can add the necessary code to your `functions.php` file. This file is located in the theme directory of your WordPlate project and contains PHP functions that are loaded by WordPress during runtime. By adding the appropriate code to this file, you can configure your application to use custom SMTP credentials for sending emails.
+To configure custom SMTP credentials for sending emails in your WordPlate application, add the following code to your `functions.php` file.
 
 ```php
 use PHPMailer\PHPMailer\PHPMailer;
