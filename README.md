@@ -1,6 +1,3 @@
-> [!IMPORTANT]  
-> The package **has been renamed** in version 12, see the [upgrade guide](#upgrade-guide).
-
 ![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)
 
 # WordPlate
@@ -131,7 +128,7 @@ Here's an example of what your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wpackagist-plugin/clean-image-filenames": "^1.3"
+    "wpackagist-plugin/clean-image-filenames": "^1.4"
 }
 ```
 
@@ -441,7 +438,8 @@ class WordPlateValetDriver extends BasicValetDriver
 
 1. Bump the version number in the `composer.json` file to `^8.0`.
 
-   > **Note:** WordPlate 8.0 requires WordPress 5.3 or later.
+   > [!Note]  
+   > WordPlate 8.0 requires WordPress 5.3 or later.
 
 1. Laravel's helper functions is now optional in WordPlate. If you want to use the functions, install the [`laravel/helpers`](https://github.com/laravel/helpers#readme) package, with Composer, in the root of your project:
 
@@ -474,7 +472,8 @@ class WordPlateValetDriver extends BasicValetDriver
 
 1. Bump the version number in the `composer.json` file to `^7.0`.
 
-   > **Note:** WordPlate 7.0 requires WordPress 5.0 or later.
+   > [!Note]  
+   > WordPlate 7.0 requires WordPress 5.0 or later.
 
 1. Update the `realpath(__DIR__)` to `realpath(__DIR__.'/../')` in the `wp-config.php` file.
 
@@ -502,7 +501,8 @@ class WordPlateValetDriver extends BasicValetDriver
 
 1. Copy and paste the contents of the [`wp-config.php`](https://github.com/vinkla/wordplate/blob/e301f9b093efdbd1bdeeb61e2f99f86e23c36fb2/public/wp-config.php) file into your application.
 
-   > **Note:** Make sure you don't overwrite any of your custom constants.
+   > [!Note]  
+   > Make sure you don't overwrite any of your custom constants.
 
 1. Run `composer update` in the root of your project.
 </details>
