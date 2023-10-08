@@ -1,5 +1,6 @@
 .env
 /node_modules
+/public/debug.log
 /public/languages
 /public/mu-plugins/*
 !/public/mu-plugins/mu-plugins.php
