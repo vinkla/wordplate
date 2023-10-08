@@ -202,7 +202,6 @@ add_action('phpmailer_init', function (PHPMailer $mail) {
     $mail->SMTPAuth = env('MAIL_USERNAME') && env('MAIL_PASSWORD');
     $mail->SMTPDebug = env('WP_DEBUG') ? SMTP::DEBUG_SERVER : SMTP::DEBUG_OFF;
     $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
-    $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
     $mail->Debugoutput = 'error_log';
     $mail->Host = env('MAIL_HOST');
     $mail->Port = env('MAIL_PORT', 587);
