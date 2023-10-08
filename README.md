@@ -223,7 +223,7 @@ MAIL_PORT=
 MAIL_USERNAME=
 ```
 
-If you're using a local email service like [MailHog](https://github.com/mailhog/MailHog), you may need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`:
+If you're using a local email service like [Mailpit](https://github.com/axllent/mailpit), you may need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`:
 
 ```
 MAIL_ENCRYPTION=null
