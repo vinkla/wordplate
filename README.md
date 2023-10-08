@@ -193,6 +193,7 @@ To configure custom SMTP credentials for sending emails in your WordPlate applic
 
 ```php
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
 // Register SMTP email with HTML support.
 add_action('phpmailer_init', function (PHPMailer $mail) {
@@ -201,6 +202,8 @@ add_action('phpmailer_init', function (PHPMailer $mail) {
     $mail->SMTPAuth = env('MAIL_USERNAME') && env('MAIL_PASSWORD');
     $mail->SMTPDebug = env('WP_DEBUG') ? SMTP::DEBUG_SERVER : SMTP::DEBUG_OFF;
     $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
+    $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
+    $mail->Debugoutput = 'error_log';
     $mail->Host = env('MAIL_HOST');
     $mail->Port = env('MAIL_PORT', 587);
     $mail->Username = env('MAIL_USERNAME');
