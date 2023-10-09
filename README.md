@@ -189,48 +189,19 @@ npm run build
 
 ## Mail
 
-To configure custom SMTP credentials for sending emails in your WordPlate application, add the following code to your `functions.php` file.
-
-```php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
-// Register SMTP email with HTML support.
-add_action('phpmailer_init', function (PHPMailer $mail) {
-    $mail->isSMTP();
-    $mail->SMTPAutoTLS = false;
-    $mail->SMTPAuth = env('MAIL_USERNAME') && env('MAIL_PASSWORD');
-    $mail->SMTPDebug = env('WP_DEBUG') ? SMTP::DEBUG_SERVER : SMTP::DEBUG_OFF;
-    $mail->SMTPSecure = env('MAIL_ENCRYPTION', 'tls');
-    $mail->Debugoutput = 'error_log';
-    $mail->Host = env('MAIL_HOST');
-    $mail->Port = env('MAIL_PORT', 587);
-    $mail->Username = env('MAIL_USERNAME');
-    $mail->Password = env('MAIL_PASSWORD');
-    return $mail;
-});
-
-add_filter('wp_mail_content_type', fn () => 'text/html');
-add_filter('wp_mail_from_name', fn () => env('MAIL_FROM_NAME', 'Example'));
-add_filter('wp_mail_from', fn () => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
-```
-
-Next, you'll need to add the necessary environment variables to your `.env` file:
+To set up custom SMTP credentials for sending emails in your WordPlate application, you need to configure the required environment variables in your `.env` file.
 
 ```
-MAIL_FROM_ADDRESS=
-MAIL_FROM_NAME=
-MAIL_HOST=
-MAIL_PASSWORD=
-MAIL_PORT=
-MAIL_USERNAME=
-```
-
-If you're using a local email service like [Mailpit](https://github.com/axllent/mailpit), you may need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`:
-
-```
+MAIL_HOST=127.0.0.1
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="Example"
 ```
+
+If you're using a local email service like [Mailpit](https://github.com/axllent/mailpit), you need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`.
 
 ## FAQ
 
