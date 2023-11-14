@@ -52,6 +52,7 @@ add_action('admin_init', function () {
 
 // Remove admin toolbar menu items.
 add_action('admin_bar_menu', function (WP_Admin_Bar $menu) {
+    $menu->remove_node('archive'); // Archive
     $menu->remove_node('comments'); // Comments
     $menu->remove_node('customize'); // Customize
     $menu->remove_node('dashboard'); // Dashboard
