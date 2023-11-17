@@ -17,7 +17,7 @@ add_action('after_setup_theme', function () {
 
 // Register scripts and styles.
 add_action('wp_enqueue_scripts', function () {
-    $manifestPath = get_theme_file_path('assets/manifest.json');
+    $manifestPath = get_theme_file_path('assets/.vite/manifest.json');
 
     if (
         wp_get_environment_type() === 'local' &&
@@ -28,7 +28,7 @@ add_action('wp_enqueue_scripts', function () {
     } elseif (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
         wp_enqueue_script('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
-        wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.css']['file']));
+        wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['css'][0]));
     }
 });
 
