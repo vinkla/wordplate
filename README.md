@@ -261,9 +261,9 @@ By default WordPlate will put the WordPress in `public/wordpress`. If you want t
 For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_DEFAULT_THEME` environment variable in the `.env` file.
 </details>
 <details>
-<summary><strong>Can I use WordPlate with Laravel Valet?</strong></summary>
+<summary><strong>Can I use WordPlate with Laravel Herd or Valet?</strong></summary>
 
-If you're using Laravel Valet together with WordPlate, you may use our [custom valet driver](https://laravel.com/docs/10.x/valet#custom-valet-drivers):
+If you're using Laravel Herd or Valet together with WordPlate, you may use our [custom driver](https://laravel.com/docs/10.x/valet#custom-valet-drivers):
 
 ```php
 <?php
@@ -307,6 +307,33 @@ class WordPlateValetDriver extends BasicValetDriver
         }
 
         return $uri;
+    }
+}
+```
+</details>
+<details>
+<summary><strong>Can I use WordPlate with Tinkerwell?</strong></summary>
+
+If you're using Tinkerwell together with WordPlate, you may use our [custom driver](https://tinkerwell.app/docs/4/extending-tinkerwell/custom-drivers):
+
+```php
+<?php
+
+final class WordPlateTinkerwellDriver extends WordpressTinkerwellDriver
+{
+    public function canBootstrap($projectPath)
+    {
+        return file_exists($projectPath . '/public/wordpress/wp-load.php');
+    }
+
+    public function bootstrap($projectPath)
+    {
+        require $projectPath . '/public/wordpress/wp-load.php';
+    }
+
+    public function appVersion()
+    {
+        return 'WordPress '.get_bloginfo('version');
     }
 }
 ```
