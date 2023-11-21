@@ -333,7 +333,7 @@ final class WordPlateTinkerwellDriver extends WordpressTinkerwellDriver
 
     public function appVersion()
     {
-        return 'WordPress '.get_bloginfo('version');
+        return 'WordPlate ' . get_bloginfo('version');
     }
 }
 ```
