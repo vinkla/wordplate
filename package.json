@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "dotenv": "^16.3.1",
-    "vite": "^5.0.8"
+    "vite": "^5.0.9"
   }
 }
