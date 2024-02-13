@@ -5,7 +5,7 @@
     "dev": "vite"
   },
   "dependencies": {
-    "dotenv": "^16.4.2",
+    "dotenv": "^16.4.4",
     "vite": "^5.1.1"
   }
 }
