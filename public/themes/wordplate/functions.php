@@ -23,23 +23,14 @@ add_action('wp_enqueue_scripts', function () {
         wp_get_environment_type() === 'local' &&
         is_array(wp_remote_get('http://localhost:5173/')) // is Vite.js running
     ) {
-        wp_enqueue_script('vite', 'http://localhost:5173/@vite/client');
-        wp_enqueue_script('wordplate', 'http://localhost:5173/resources/js/index.js');
+        wp_enqueue_script_module('vite', 'http://localhost:5173/@vite/client');
+        wp_enqueue_script_module('wordplate', 'http://localhost:5173/resources/js/index.js');
     } elseif (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
-        wp_enqueue_script('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
+        wp_enqueue_script_module('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
         wp_enqueue_style('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['css'][0]));
     }
 });
-
-// Load scripts as modules.
-add_filter('script_loader_tag', function (string $tag, string $handle, string $src) {
-    if (in_array($handle, ['vite', 'wordplate'])) {
-        return '<script type="module" src="' . esc_url($src) . '" defer></script>';
-    }
-
-    return $tag;
-}, 10, 3);
 
 // Remove admin menu items.
 add_action('admin_init', function () {
@@ -110,5 +101,5 @@ add_action('phpmailer_init', function (PHPMailer $mailer) {
     return $mailer;
 });
 
-add_filter('wp_mail_from', fn() => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
-add_filter('wp_mail_from_name', fn() => env('MAIL_FROM_NAME', 'Example'));
+add_filter('wp_mail_from', fn () => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
+add_filter('wp_mail_from_name', fn () => env('MAIL_FROM_NAME', 'Example'));
