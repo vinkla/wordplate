@@ -1,4 +1,4 @@
-![WordPlate](https://cloud.githubusercontent.com/assets/499192/24309675/09eec350-10cd-11e7-98f3-094003bc8e15.png)
+![WordPlate](https://github.com/vinkla/wordplate/assets/499192/a6194bed-09c0-418e-8281-2541922aa5f0)
 
 # WordPlate
 
