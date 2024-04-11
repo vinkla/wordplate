@@ -193,7 +193,7 @@ To set up custom SMTP credentials for sending emails in your WordPlate applicati
 
 ```
 MAIL_HOST=127.0.0.1
-MAIL_PORT=1025
+MAIL_PORT=2525
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
