@@ -103,3 +103,6 @@ add_action('phpmailer_init', function (PHPMailer $mailer) {
 
 add_filter('wp_mail_from', fn() => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
 add_filter('wp_mail_from_name', fn() => env('MAIL_FROM_NAME', 'Example'));
+
+// Rename wp-json to api.
+add_filter('rest_url_prefix', fn () => 'api');
