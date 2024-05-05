@@ -65,7 +65,7 @@ composer create-project --prefer-dist vinkla/wordplate example-app
 
 After installing WordPlate, you'll need to update the database credentials in the `.env` file. This file is located in the root directory of your project. Open the file and update the following lines with your database credentials:
 
-```
+```env
 DB_NAME=database
 DB_USER=username
 DB_PASSWORD=password
@@ -79,8 +79,8 @@ php -S 127.0.0.1:8000 -t public/
 
 Finally, open your web browser and visit the following URLs to view your WordPlate application:
 
-- [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/) - Your website.
-- [`http://127.0.0.1:8000/wordpress/wp-admin`](http://127.0.0.1:8000/wordpress/wp-admin) - The administration dashboard.
+- [`http://127.0.0.1:8000/`](http://127.0.0.1:8000/) - Your website
+- [`http://127.0.0.1:8000/wordpress/wp-admin`](http://127.0.0.1:8000/wordpress/wp-admin) - The dashboard
 
 ## Configuration
 
@@ -176,7 +176,7 @@ The plugin automatically converts language accent characters in filenames when u
 
 ## Vite.js
 
-[Vite](https://vitejs.dev/) is a build tool that aims to provide a faster and leaner development experience for modern web projects. Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
+[Vite](https://vitejs.dev/) is a build tool that provides a faster and leaner development experience for modern web projects. It comes with sensible defaults and is highly extensible via its Plugin and JavaScript APIs with full typing support.
 
 ```sh
 # Start the dev server...
@@ -186,13 +186,13 @@ npm run dev
 npm run build
 ```
 
-[To get started with Vite, please visit the documentation.](https://vitejs.dev/guide/)
+[Learn more about Vite's backend integration.](https://vitejs.dev/guide/backend-integration.html)
 
 ## Mail
 
 To set up custom SMTP credentials for sending emails in your WordPlate application, you need to configure the required environment variables in your `.env` file.
 
-```
+```env
 MAIL_HOST=127.0.0.1
 MAIL_PORT=2525
 MAIL_USERNAME=null
@@ -202,7 +202,7 @@ MAIL_FROM_ADDRESS="hello@example.com"
 MAIL_FROM_NAME="Example"
 ```
 
-If you're using a local email service like [Mailpit](https://github.com/axllent/mailpit), you need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`.
+If you're using a local email service like Mailhog or Mailpit, you need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`.
 
 ## API
 
