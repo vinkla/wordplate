@@ -35,7 +35,7 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
 
 - **Must-use plugins**
     
-    Don't worry about clients deactivating plugins; [must-use plugins](https://wordpress.org/support/article/must-use-plugins/) are enabled by default.
+    Don't worry about clients deactivating plugins; [must-use plugins](https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/) are enabled by default.
 
 - **Vite.js**
     
@@ -137,7 +137,7 @@ For more information and examples, please visit the [WordPress Packagist website
 
 ### Must Use Plugins
 
-[Must-use plugins](https://wordpress.org/support/article/must-use-plugins/) (also known as mu-plugins) are a type of WordPress plugin that is installed in a special directory inside the content folder. These plugins are automatically enabled on all sites in the WordPress installation.
+[Must-use plugins](https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/) (also known as mu-plugins) are a type of WordPress plugin that is installed in a special directory inside the content folder. These plugins are automatically enabled on all sites in the WordPress installation.
 
 To install plugins into the `mu-plugins` directory, add the plugin name to the `installer-paths` of your `composer.json` file:
 
