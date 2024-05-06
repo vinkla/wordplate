@@ -11,13 +11,20 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
 - [Features](#features)
 - [Installation](#installation)
 - [Configuration](#configuration)
+    - [Public Directory](#public-directory)
+    - [Environment Configuration](#environment-configuration)
+    - [Salt Keys](#salt-keys)
 - [Plugins](#plugins)
+    - [WordPress Packagist](#wordpress-packagist)
+    - [Must Use Plugins](#must-use-plugins)
+    - [Included Plugins](#included-plugins)
 - [Vite.js](#vitejs)
 - [Mail](#mail)
 - [API](#api)
 - [FAQ](#faq)
 - [Upgrade Guide](#upgrade-guide)
 - [Acknowledgements](#acknowledgements)
+- [License](#license)
 
 ## Features
 
