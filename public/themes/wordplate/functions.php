@@ -86,7 +86,7 @@ add_action('login_head', function () {
     );
 });
 
-// Setup custom SMTP credentials.
+// Register custom SMTP credentials.
 add_action('phpmailer_init', function (PHPMailer $mailer) {
     $mailer->isSMTP();
     $mailer->SMTPAutoTLS = false;
@@ -104,5 +104,13 @@ add_action('phpmailer_init', function (PHPMailer $mailer) {
 add_filter('wp_mail_from', fn() => env('MAIL_FROM_ADDRESS', 'hello@example.com'));
 add_filter('wp_mail_from_name', fn() => env('MAIL_FROM_NAME', 'Example'));
 
-// Rename /wp-json to /api.
+// Rename route /wp-json to /api.
 add_filter('rest_url_prefix', fn() => 'api');
+
+// Update permalink structure.
+add_action('after_setup_theme', function () {
+    if (get_option('permalink_structure') !== '/%postname%/') {
+        update_option('permalink_structure', '/%postname%/');
+        flush_rewrite_rules();
+    }
+});
