@@ -19,7 +19,7 @@
         "wpackagist-plugin/clean-image-filenames": "^1.4"
     },
     "require-dev": {
-        "symfony/var-dumper": "^7.0"
+        "symfony/var-dumper": "^7.1"
     },
     "repositories": [
         {
