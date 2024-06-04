@@ -243,7 +243,37 @@ WP_DEFAULT_THEME=wordplate
 <details>
 <summary><strong>Can I install languages with Composer?</strong></summary>
 
-If you want to install language packs using Composer, we recommend looking at the [WP Languages](https://wp-languages.github.io/) project.
+If you want to install language packs using Composer, we recommend looking at the [WP Languages](https://wp-languages.github.io/) project. Below is an example of a `composer.json` file that installs the Swedish language pack for WordPress.
+
+```json
+{
+    "require": {
+        "koodimonni-language/core-sv_se": "*",
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wp-languages.github.io",
+            "only": [
+                "koodimonni-language/*"
+            ]
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "koodimonni/composer-dropin-installer": true
+        },
+    },
+    "extra": {
+        "dropin-paths": {
+            "public/languages/": [
+                "vendor:koodimonni-language"
+            ]
+        }
+    }
+}
+```
+
 </details>
 <details>
 <summary><strong>Can I rename the public directory?</strong></summary>
