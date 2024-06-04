@@ -241,6 +241,22 @@ WP_DEFAULT_THEME=wordplate
 
 </details>
 <details>
+<summary><strong>Can I disable WP-Cron and set up a manual cron job?</strong></summary>
+
+WordPlate allows you to disable the internal WordPress cron system via the `DISABLE_WP_CRON` environment variable:
+
+```env
+DISABLE_WP_CRON=true
+````
+
+It is recommended to manually set a cron job if you enable this setting and disable the WordPress cron. You'll need to add the following in your crontab file:
+
+```sh
+*/5 * * * * curl https://example.com/wp/wp-cron.php
+````
+
+</details>
+<details>
 <summary><strong>Can I install languages with Composer?</strong></summary>
 
 If you want to install language packs using Composer, we recommend looking at the [WP Languages](https://wp-languages.github.io/) project. Below is an example of a `composer.json` file that installs the Swedish language pack for WordPress.
