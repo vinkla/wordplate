@@ -177,9 +177,9 @@ An easy-to-swallow painkiller plugin for WordPress. It removes a lot of default 
 
 The plugin automatically converts language accent characters in filenames when uploading to the media library. Characters are converted into browser and server friendly, non-accent characters.
 
-- Räksmörgås.jpg → raksmorgas.jpg
-- Æblegrød_FTW!.gif → aeblegrod-ftw.gif
-- Château de Ferrières.png → chateau-de-ferrieres.png
+- `Räksmörgås.jpg` → `raksmorgas.jpg`
+- `Æblegrød_FTW!.gif` → `aeblegrod-ftw.gif`
+- `Château de Ferrières.png` → `chateau-de-ferrieres.png`
 
 ## Vite.js
 
