@@ -16,7 +16,7 @@
         "symfony/http-foundation": "^7.1",
         "vinkla/headache": "^3.3",
         "vlucas/phpdotenv": "^5.6",
-        "wpackagist-plugin/clean-image-filenames": "^1.4"
+        "wpackagist-plugin/clean-image-filenames": "^1.5"
     },
     "require-dev": {
         "symfony/var-dumper": "^7.1"
