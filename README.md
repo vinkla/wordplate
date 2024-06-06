@@ -136,7 +136,7 @@ Here's an example of what your `composer.json` file might look like:
 
 ```json
 "require": {
-    "wpackagist-plugin/clean-image-filenames": "^1.4"
+    "wpackagist-plugin/clean-image-filenames": "^1.5"
 }
 ```
 
