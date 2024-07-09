@@ -28,7 +28,7 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
 
 ## Features
 
-- **WordPress + Composer = ♥️**
+- **WordPress + Composer = ❤️**
     
     WordPress can be installed and updated with ease using Composer. To update WordPress, simply run the command `composer update`.
 
