@@ -20,7 +20,6 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
     - [Included Plugins](#included-plugins)
 - [Vite.js](#vitejs)
 - [Mail](#mail)
-- [API](#api)
 - [FAQ](#faq)
 - [Upgrade Guide](#upgrade-guide)
 - [Acknowledgements](#acknowledgements)
@@ -210,14 +209,6 @@ MAIL_FROM_NAME="Example"
 ```
 
 If you're using a local email service like Mailhog or Mailpit, you need to disable encryption by setting the `MAIL_ENCRYPTION` environment variable to `null`.
-
-## API
-
-WordPlate automagically renames API routes from `/wp-json` to `/api`, resulting in cleaner URLs. This feature can be disabled by removing the following line from the `functions.php` file:
-
-```diff
--add_filter('rest_url_prefix', fn() => 'api');
-```
 
 ## FAQ
 
