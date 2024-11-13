@@ -14,7 +14,7 @@
         "roots/wordpress": "^6.6.2",
         "roots/wp-password-bcrypt": "^1.2",
         "symfony/http-foundation": "^7.1",
-        "vinkla/headache": "^3.3",
+        "vinkla/headache": "^3.4",
         "vlucas/phpdotenv": "^5.6",
         "wpackagist-plugin/clean-image-filenames": "^1.5"
     },
