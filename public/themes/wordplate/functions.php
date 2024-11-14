@@ -90,7 +90,7 @@ add_action('login_head', function () {
     ];
 
     printf(
-        '<style> .login h1 a { %s } </style>',
+        '<style> .login .wp-login-logo a { %s } </style>',
         implode(';', $styles),
     );
 });
