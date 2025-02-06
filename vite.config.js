@@ -5,6 +5,10 @@ dotenv.config();
 
 export default defineConfig({
   publicDir: 'resources/static',
+  server: {
+    cors: true,
+    strictPort: true,
+  },
   build: {
     assetsDir: '',
     emptyOutDir: true,
