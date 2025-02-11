@@ -11,7 +11,7 @@
         "php": "^8.2",
         "composer/installers": "^2.3",
         "roots/bedrock-autoloader": "^1.0.4",
-        "roots/wordpress": "^6.7.1",
+        "roots/wordpress": "^6.7.2",
         "roots/wp-password-bcrypt": "^1.2",
         "symfony/http-foundation": "^7.2",
         "vinkla/headache": "^3.5",
