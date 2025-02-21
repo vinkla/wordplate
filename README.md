@@ -55,10 +55,6 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
   
     Enhance the WordPress dashboard and improves the [user experience](https://user-images.githubusercontent.com/499192/143415951-b01e9498-5f18-44dd-9d4b-51fb2d479a22.png) for clients.
 
-- **Security**
-
-    We've replaced WordPress' outdated and insecure MD5-based password hashing with modern and secure bcrypt using the  [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt#readme) package.
-
 ## Installation
 
 Before using WordPlate, make sure you have PHP 8.2 and MySQL 8.0 installed on your computer. You'll also need to have Composer, a package manager for PHP, installed on your computer.
@@ -570,7 +566,6 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`outlandish/wpackagist`](https://github.com/outlandishideas/wpackagist)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wordpress`](https://github.com/roots/wordpress)
-- [`roots/wp-password-bcrypt`](https://github.com/roots/wp-password-bcrypt)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
 - [`upperdog/clean-image-filenames`](https://github.com/upperdog/clean-image-filenames)
