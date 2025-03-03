@@ -361,6 +361,13 @@ class WordPlateValetDriver extends BasicValetDriver
 
         return $uri;
     }
+
+    public function logFilesPaths()
+    {
+        return [
+            '/public',
+        ];
+    }
 }
 ```
 </details>
