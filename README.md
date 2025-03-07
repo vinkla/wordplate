@@ -47,6 +47,10 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
     
     Using Vite, you can rapidly set up and begin building and minifying your CSS and JavaScript.
 
+- **Tailwind CSS**
+    
+    Tailwind CSS is included by default, allowing you to quickly build custom designs.
+
 - **Debugging**
     
     Familiar debugging helper functions are integrated such as `dump()` and `dd()`.
