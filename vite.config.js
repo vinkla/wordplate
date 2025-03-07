@@ -1,5 +1,6 @@
-import dotenv from 'dotenv';
 import { defineConfig } from 'vite';
+import dotenv from 'dotenv';
+import tailwindcss from '@tailwindcss/vite';
 
 dotenv.config();
 
@@ -27,5 +28,6 @@ export default defineConfig({
         }
       },
     },
+    tailwindcss(),
   ],
 });
