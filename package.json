@@ -8,6 +8,6 @@
     "@tailwindcss/vite": "^4.0.14",
     "dotenv": "^16.4.7",
     "tailwindcss": "^4.0.14",
-    "vite": "^6.2.1"
+    "vite": "^6.2.2"
   }
 }
