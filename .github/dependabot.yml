@@ -3,10 +3,10 @@ updates:
   - package-ecosystem: composer
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
     versioning-strategy: increase
   - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: daily
+      interval: weekly
     versioning-strategy: increase
