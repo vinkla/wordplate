@@ -108,8 +108,8 @@ It's important to note that your `.env` file should not be committed to your app
 
 To learn more about managing environment variables in WordPlate, you can refer to Laravel's documentation on the topic:
 
-- [Environment Variable Types](https://laravel.com/docs/11.x/configuration#environment-variable-types)
-- [Retrieving Environment Configuration](https://laravel.com/docs/11.x/configuration#retrieving-environment-configuration)
+- [Environment Variable Types](https://laravel.com/docs/12.x/configuration#environment-variable-types)
+- [Retrieving Environment Configuration](https://laravel.com/docs/12.x/configuration#retrieving-environment-configuration)
 
 ### Salt Keys
 
@@ -314,9 +314,9 @@ By default WordPlate will put the WordPress in `public/wordpress`. If you want t
 For most applications you may leave the theme directory as it is. If you want to rename the `wordplate` theme to something else you'll also need to update the `WP_DEFAULT_THEME` environment variable in the `.env` file.
 </details>
 <details>
-<summary><strong>Can I use WordPlate with Laravel Herd or Valet?</strong></summary>
+<summary><strong>Can I use WordPlate with Laravel Herd?</strong></summary>
 
-If you're using Laravel Herd or Valet together with WordPlate, you may use our [custom driver](https://laravel.com/docs/11.x/valet#custom-valet-drivers):
+If you're using Laravel Herd or Valet together with WordPlate, you may use our [custom driver](https://herd.laravel.com/docs/macos/extending-herd/custom-drivers):
 
 ```php
 <?php
