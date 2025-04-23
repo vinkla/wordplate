@@ -1,5 +1,6 @@
 .env
 /node_modules
+/public/cache
 /public/debug.log
 /public/languages
 /public/mu-plugins/*
