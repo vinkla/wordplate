@@ -1,4 +1,5 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "vinkla/wordplate",
     "description": "The WordPlate boilerplate",
     "license": "MIT",
