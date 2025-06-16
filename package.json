@@ -7,7 +7,7 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
     "dotenv": "^16.5.0",
-    "tailwindcss": "^4.1.8",
+    "tailwindcss": "^4.1.10",
     "vite": "^6.3.5"
   }
 }
