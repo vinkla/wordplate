@@ -404,21 +404,32 @@ final class WordPlateTinkerwellDriver extends WordpressTinkerwellDriver
 <details>
 <summary><strong>Upgrading from 11 to 12</strong></summary>
 
-1. The `wordplate/framework` package has been archived. Update the `composer.json` file:
+1. The `wordplate/framework` package has been archived. Remove the package from the `composer.json` file:
 
     ```diff
     "require": {
     -   "wordplate/framework": "^11.1",
-    +   "composer/installers": "^2.1",
-    +   "johnpbloch/wordpress-core-installer": "^2.0",
-    +   "johnpbloch/wordpress-core": "^6.0",
-    +   "roots/bedrock-autoloader": "^1.0",
-    +   "roots/wp-password-bcrypt": "^1.1",
-    +   "symfony/http-foundation": "^6.0",
-    +   "symfony/var-dumper": "^6.0",
-    +   "vlucas/phpdotenv": "^5.4"
     }
     ```
+
+1. Install the following package dependencies:
+
+    ```sh
+    composer require \
+        composer/installers \
+        roots/bedrock-autoloader \
+        roots/wordpress \
+        symfony/http-foundation \
+        vinkla/headache \
+        vlucas/phpdotenv \
+        wpackagist-plugin/clean-image-filenames
+    ``` 
+
+1. Install the following development package dependencies:
+
+    ```sh
+    composer require --dev symfony/var-dumper
+    ``` 
 
 1. Replace your `public/wp-config.php` file with [the one in this repository](public/wp-config.php). Remember to save any custom constants defined in your `wp-config.php` file.
 
