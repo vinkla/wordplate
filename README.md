@@ -412,7 +412,7 @@ final class WordPlateTinkerwellDriver extends WordpressTinkerwellDriver
     }
     ```
 
-1. Then install the following packages:
+1. Install the following package dependencies:
 
     ```sh
     composer require \
@@ -420,9 +420,15 @@ final class WordPlateTinkerwellDriver extends WordpressTinkerwellDriver
         roots/bedrock-autoloader \
         roots/wordpress \
         symfony/http-foundation \
-        symfony/var-dumper \
         vinkla/headache \
-        vlucas/phpdotenv
+        vlucas/phpdotenv \
+        wpackagist-plugin/clean-image-filenames
+    ``` 
+
+1. Install the following development package dependencies:
+
+    ```sh
+    composer require --dev symfony/var-dumper
     ``` 
 
 1. Replace your `public/wp-config.php` file with [the one in this repository](public/wp-config.php). Remember to save any custom constants defined in your `wp-config.php` file.
