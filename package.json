@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "type": "module",
   "scripts": {
     "build": "vite build",
