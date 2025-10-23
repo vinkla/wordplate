@@ -243,7 +243,7 @@ DISABLE_WP_CRON=true
 It is recommended to manually set a cron job if you enable this setting and disable the WordPress cron. You'll need to add the following in your crontab file:
 
 ```sh
-*/5 * * * * curl https://example.com/wp/wp-cron.php
+*/5 * * * * curl https://exempel.se/wordpress/wp-cron.php
 ````
 
 </details>
