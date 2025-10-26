@@ -23,8 +23,7 @@ define('WP_DEBUG_LOG', env('WP_DEBUG_LOG', false));
 define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY', $isDebugModeEnabled));
 define('SCRIPT_DEBUG', env('SCRIPT_DEBUG', $isDebugModeEnabled));
 
-// The database configuration with database name, username, password,
-// hostname charset and database collate type.
+// Database configuration with name, username, password, hostname, charset, and collation.
 define('DB_NAME', env('DB_NAME'));
 define('DB_USER', env('DB_USER'));
 define('DB_PASSWORD', env('DB_PASSWORD'));
@@ -47,32 +46,32 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
     $_SERVER['HTTPS'] = 'on';
 }
 
-// Set the home url to the current domain.
+// Set the home URL to the current domain.
 define('WP_HOME', env('WP_HOME', Request::createFromGlobals()->getSchemeAndHttpHost()));
 
 // Set the WordPress directory path.
 define('WP_SITEURL', env('WP_SITEURL', sprintf('%s/%s', WP_HOME, env('WP_DIR', 'wordpress'))));
 
-// Set the WordPress content directory path.
+// Set the WordPress content directory path and URL.
 define('WP_CONTENT_DIR', env('WP_CONTENT_DIR', __DIR__));
 define('WP_CONTENT_URL', env('WP_CONTENT_URL', WP_HOME));
 
-// Disable WordPress auto updates.
+// Disable WordPress automatic updates.
 define('AUTOMATIC_UPDATER_DISABLED', env('AUTOMATIC_UPDATER_DISABLED', true));
 
-// Disable WP-Cron (wp-cron.php) for faster performance.
+// Disable WP-Cron for better performance.
 define('DISABLE_WP_CRON', env('DISABLE_WP_CRON', false));
 
-// Prevent file edititing from the dashboard.
+// Prevent file editing from the dashboard.
 define('DISALLOW_FILE_EDIT', env('DISALLOW_FILE_EDIT', true));
 
 // Disable plugin and theme updates and installation from the dashboard.
 define('DISALLOW_FILE_MODS', env('DISALLOW_FILE_MODS', true));
 
-// Cleanup WordPress image edits.
+// Clean up WordPress image edits.
 define('IMAGE_EDIT_OVERWRITE', env('IMAGE_EDIT_OVERWRITE', true));
 
-// Disable technical issues emails.
+// Disable fatal error handler emails.
 define('WP_DISABLE_FATAL_ERROR_HANDLER', env('WP_DISABLE_FATAL_ERROR_HANDLER', false));
 
 // Limit the number of post revisions.
