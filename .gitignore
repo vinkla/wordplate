@@ -1,7 +1,9 @@
+*.log
+.DS_Store
 .env
+/auth.json
 /node_modules
 /public/cache
-/public/debug.log
 /public/languages
 /public/mu-plugins/*
 !/public/mu-plugins/mu-plugins.php
@@ -12,4 +14,3 @@
 /public/uploads
 /public/wordpress
 /vendor
-auth.json
