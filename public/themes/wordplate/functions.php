@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
         && is_array(wp_remote_get('http://localhost:5173/')) // is Vite.js running
     ) {
         wp_enqueue_script('vite', 'http://localhost:5173/@vite/client');
-        wp_enqueue_script('wordplate', 'http://localhost:5173/resources/js/index.js');
+        wp_enqueue_script('wordplate', 'http://localhost:5173/resources/js/index.js', ['vite']);
     } elseif (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
         wp_enqueue_script('wordplate', get_theme_file_uri('assets/' . $manifest['resources/js/index.js']['file']));
