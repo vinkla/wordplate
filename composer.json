@@ -9,7 +9,7 @@
         "wordpress"
     ],
     "require": {
-        "php": "^8.2",
+        "php": "^8.4",
         "composer/installers": "^2.3",
         "roots/bedrock-autoloader": "^1.0.4",
         "roots/wordpress": "^6.8.3",
