@@ -13,13 +13,13 @@
         "composer/installers": "^2.3",
         "roots/bedrock-autoloader": "^1.0.4",
         "roots/wordpress": "^6.8.3",
-        "symfony/http-foundation": "^7.3",
+        "symfony/http-foundation": "^8.0",
         "vinkla/headache": "^3.5",
         "vlucas/phpdotenv": "^5.6",
         "wpackagist-plugin/clean-image-filenames": "^1.5"
     },
     "require-dev": {
-        "symfony/var-dumper": "^7.3"
+        "symfony/var-dumper": "^8.0"
     },
     "repositories": [
         {
