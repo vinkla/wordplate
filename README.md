@@ -170,7 +170,12 @@ For more information on the must-use plugin autoloader, please refer to the [Bed
 
 #### [Headache](https://github.com/vinkla/headache)
 
-An easy-to-swallow painkiller plugin for WordPress. It removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
+An easy-to-swallow painkiller plugin for WordPress. The plugin removes a lot of default WordPress stuff you just can't wait to get rid of. It removes meta tags such as feeds, version numbers and emojis.
+
+- Disables XML-RPC and protects against user enumeration
+- Removes feeds, emoji scripts, oEmbed, and block styles
+- Disables attachment pages and randomizes media slugs
+- Prevents indexing on non-production environments
 
 #### [Clean Image Filenames](https://wordpress.org/plugins/clean-image-filenames/)
 
