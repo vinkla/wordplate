@@ -1,10 +1,10 @@
 name: PHP-CS-Fixer
 
 on:
+  pull_request:
   push:
     branches:
       - master
-  pull_request:
 
 jobs:
   run:
