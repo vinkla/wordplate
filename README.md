@@ -590,9 +590,9 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 
 - [`composer/installers`](https://github.com/composer/installers)
 - [`motdotla/dotenv`](https://github.com/motdotla/dotenv)
-- [`wp-composer`](https://wp-composer.com)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wordpress`](https://github.com/roots/wordpress)
+- [`roots/wp-composer`](https://github.com/roots/wp-composer)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
 - [`tailwindlabs/tailwindcss`](https://github.com/tailwindlabs/tailwindcss)
