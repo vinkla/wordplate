@@ -108,8 +108,8 @@ It's important to note that your `.env` file should not be committed to your app
 
 To learn more about managing environment variables in WordPlate, you can refer to Laravel's documentation on the topic:
 
-- [Environment Variable Types](https://laravel.com/docs/12.x/configuration#environment-variable-types)
-- [Retrieving Environment Configuration](https://laravel.com/docs/12.x/configuration#retrieving-environment-configuration)
+- [Environment Variable Types](https://laravel.com/docs/13.x/configuration#environment-variable-types)
+- [Retrieving Environment Configuration](https://laravel.com/docs/13.x/configuration#retrieving-environment-configuration)
 
 ### Salt Keys
 
