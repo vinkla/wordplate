@@ -23,13 +23,9 @@
     },
     "repositories": [
         {
-            "name": "wp-composer",
+            "name": "wp-packages",
             "type": "composer",
-            "url": "https://repo.wp-composer.com",
-            "only": [
-                "wp-plugin/*",
-                "wp-theme/*"
-            ]
+            "url": "https://repo.wp-packages.org"
         }
     ],
     "minimum-stability": "stable",

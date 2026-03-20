@@ -15,7 +15,7 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
     - [Environment Configuration](#environment-configuration)
     - [Salt Keys](#salt-keys)
 - [Plugins](#plugins)
-    - [WP Composer](#wp-composer)
+    - [WP Packages](#wp-packages)
     - [Must Use Plugins](#must-use-plugins)
     - [Included Plugins](#included-plugins)
 - [Vite.js](#vitejs)
@@ -35,9 +35,9 @@ WordPlate is a boilerplate for WordPress, built with Composer and designed with 
     
     Similar to Laravel, WordPlate stores environment variables, such as database credentials, in an `.env` file.
 
-- **WP Composer**
+- **WP Packages**
     
-    WP Composer enables the management of WordPress plugins and themes through Composer.
+    WP Packages enables the management of WordPress plugins and themes through Composer.
 
 - **Must-use plugins**
     
@@ -119,9 +119,9 @@ If you don't set the salt keys, your user sessions and other encrypted data may 
 
 ## Plugins
 
-### WP Composer
+### WP Packages
 
-WordPlate includes integration with [WP Composer](https://wp-composer.com), a Composer repository that mirrors the WordPress plugin and theme directories. With this integration, you can install and manage plugins using Composer.
+WordPlate includes integration with [WP Packages](https://wp-packages.org), a Composer repository that mirrors the WordPress plugin and theme directories. With this integration, you can install and manage plugins using Composer.
 
 To install a plugin, use `wp-plugin` as the vendor name and the plugin slug as the package name. For example, to install the `clean-image-filenames` plugin, you would use the following command:
 
@@ -139,7 +139,7 @@ Here's an example of what your `composer.json` file might look like:
 }
 ```
 
-For more information and examples, please visit the [WP Composer website](https://wp-composer.com).
+For more information and examples, please visit the [WP Packages website](https://wp-packages.org).
 
 ### Must Use Plugins
 
@@ -592,7 +592,7 @@ WordPlate wouldn't be possible without these amazing open-source projects.
 - [`motdotla/dotenv`](https://github.com/motdotla/dotenv)
 - [`roots/bedrock-autoloader`](https://github.com/roots/bedrock-autoloader)
 - [`roots/wordpress`](https://github.com/roots/wordpress)
-- [`roots/wp-composer`](https://github.com/roots/wp-composer)
+- [`roots/wp-packages`](https://github.com/roots/wp-packages)
 - [`symfony/http-foundation`](https://github.com/symfony/http-foundation)
 - [`symfony/var-dumper`](https://github.com/symfony/var-dumper)
 - [`tailwindlabs/tailwindcss`](https://github.com/tailwindlabs/tailwindcss)
