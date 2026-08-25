@@ -39,6 +39,13 @@ add_action('admin_init', function () {
     remove_menu_page('edit.php'); // Posts
     remove_menu_page('index.php'); // Dashboard
     // remove_menu_page('upload.php'); // Media
+
+    remove_submenu_page('themes.php', 'font-library.php'); // Fonts
+    remove_submenu_page('tools.php', 'export-personal-data.php'); // Export Personal Data
+    remove_submenu_page('tools.php', 'erase-personal-data.php'); // Erase Personal Data
+    remove_submenu_page('options-general.php', 'options-connectors.php'); // Connectors
+    remove_submenu_page('options-general.php', 'options-discussion.php'); // Discussion
+    remove_submenu_page('options-general.php', 'options-permalink.php'); // Permalinks
 });
 
 // Remove admin toolbar menu items.
