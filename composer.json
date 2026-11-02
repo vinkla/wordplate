@@ -15,7 +15,7 @@
         "roots/wordpress": "^7.1",
         "symfony/http-foundation": "^8.1",
         "vinkla/headache": "^3.7",
-        "vlucas/phpdotenv": "^5.6",
+        "vlucas/phpdotenv": "^5.8",
         "wp-plugin/clean-image-filenames": "^1.5"
     },
     "require-dev": {
