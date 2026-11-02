@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c180dba2a0ddaefa70ef04b4aacf1ec",
+    "content-hash": "82a205e0ef7b12a1e57b2e7be7046678",
     "packages": [
         {
             "name": "composer/installers",
@@ -951,16 +951,16 @@
         },
         {
             "name": "vinkla/headache",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vinkla/headache.git",
-                "reference": "b1c0c88aacea4b35015d46cc6f9e62bfec775a0a"
+                "reference": "0e636a9629fd380922f5e68e1f5456fb13e8060a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vinkla/headache/zipball/b1c0c88aacea4b35015d46cc6f9e62bfec775a0a",
-                "reference": "b1c0c88aacea4b35015d46cc6f9e62bfec775a0a",
+                "url": "https://api.github.com/repos/vinkla/headache/zipball/0e636a9629fd380922f5e68e1f5456fb13e8060a",
+                "reference": "0e636a9629fd380922f5e68e1f5456fb13e8060a",
                 "shasum": ""
             },
             "require": {
@@ -987,9 +987,9 @@
             ],
             "support": {
                 "issues": "https://github.com/vinkla/headache/issues",
-                "source": "https://github.com/vinkla/headache/tree/3.6.0"
+                "source": "https://github.com/vinkla/headache/tree/3.7.0"
             },
-            "time": "2025-12-03T08:12:36+00:00"
+            "time": "2026-08-25T07:30:43+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
