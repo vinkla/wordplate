@@ -366,7 +366,7 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "7.1",
+            "version": "7.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/wordpress.git",
@@ -397,7 +397,7 @@
             ],
             "support": {
                 "issues": "https://github.com/roots/wordpress/issues",
-                "source": "https://github.com/roots/wordpress/tree/7.1"
+                "source": "https://github.com/roots/wordpress/tree/7.1.4"
             },
             "funding": [
                 {
@@ -476,23 +476,23 @@
         },
         {
             "name": "roots/wordpress-no-content",
-            "version": "7.1",
+            "version": "7.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "7.1"
+                "reference": "7.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/release/wordpress-7.1-no-content.zip",
-                "reference": "7.1",
-                "shasum": "7b28e5af89345d79a30b44a16cbe3244379d1765"
+                "url": "https://downloads.w.org/release/wordpress-7.1.4-no-content.zip",
+                "reference": "7.1.4",
+                "shasum": "1dd4bfa7b13dec725c0062a3fb62ba0536cb8699"
             },
             "require": {
                 "php": ">= 7.4"
             },
             "provide": {
-                "wordpress/core-implementation": "7.1"
+                "wordpress/core-implementation": "7.1.4"
             },
             "suggest": {
                 "ext-curl": "Performs remote request operations.",
@@ -543,7 +543,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-08-19T20:16:40+00:00"
+            "time": "2026-10-28T17:15:58+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
